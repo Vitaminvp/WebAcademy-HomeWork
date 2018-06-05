@@ -92,6 +92,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .grid__blog_desc{
     flex: 0 0 70%;
     padding: 0.5rem;
@@ -104,18 +105,11 @@ body{
     margin-bottom: 0;
 }
 
-
-
-
-
 @media screen and (max-width: 768px){
     body{
         align-items:flex-start;
     }
 }
-
-
-
 
 @media screen and (max-width: 575px){
     .grid{
@@ -146,6 +140,5 @@ body{
     .grid__img_blog,
     .grid__blog_desc{
         flex: 0 0 50%;
-
     }
 }
