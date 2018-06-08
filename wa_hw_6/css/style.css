@@ -4,7 +4,6 @@ html {
     min-height: 100%;
     height: 100%;
 }
-
 body{
     padding: 0;
     margin: 0;
@@ -130,7 +129,6 @@ body{
 .grid__blog_desc > h3{
     margin-bottom: 0;
 }
-
 @media screen and (max-width: 768px){
     body{
         align-items:flex-start;
@@ -149,7 +147,6 @@ body{
             "contact2 contact2"
     }    
 }
-
 @media screen and (max-width: 370px){
     .grid{
         grid-template-columns: 1fr;
