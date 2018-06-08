@@ -11,7 +11,7 @@ body{
     min-height: 100%;
     background: url(../img/pattern.jpg);
     display: flex;
-    border: 0px solid orange;
+    border: 0 solid orange;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,10 @@ body{
         "home   contact hire hire photos about"
         "about2 about2  blog blog blog   contact2"
 }
+.grid__item:hover{
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 5px 5px 2px rgba(0, 0, 0, 0.24);
+    transform: scale(1.05);
+}
 .grid__item{
     box-sizing: border-box;
     padding: 0.5rem;
@@ -42,41 +46,63 @@ body{
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
+    cursor: pointer;
+    transition: all 0.25s;
+    animation: fadeIn 0.5s ease-out normal backwards;
+}
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .home{
     grid-area: home;
     background: #3387ea;
+    animation-delay: 0ms;
 }
 .contact{
     grid-area: contact;
     background: #f9be3e;
+    animation-delay: 100ms;
 }
 .hire{
     grid-area: hire;
     background: #d3573e;
+    animation-delay: 200ms;
 }
 .photos{
     grid-area: photos;
     background: #59b0e2;
+    animation-delay: 300ms;
 }
 .about{
     grid-area: about;
     background: #33af95;
+    animation-delay: 400ms;
 }
 .about2{
     grid-area: about2;
     background: #86a73f;
+    animation-delay: 500ms;
 }
 .blog{
     grid-area: blog;
     background: #151a26;
     display: flex;
     padding: 0;
-    align-items: flex-start
+    align-items: flex-start;
+    animation-delay: 600ms;
 }
 .contact2{
     grid-area: contact2;
     background: #7e5b8c;
+    animation-delay: 700ms;
 }
 .grid__img{
     position: absolute;
