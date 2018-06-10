@@ -20,6 +20,7 @@ $(function(){
             }else{
                $(".icon-Rounded-Rectangle-8").removeClass("active"); 
                 bar.value = 0;
+                clearInterval(timer);
             } 
          }
     
