@@ -41,10 +41,10 @@
         
     }
     .blocks .block{
-        width: calc(100% - 3rem);
-        margin: 1rem;
-        padding-right: 0px;
-        padding-left: 0px;
+        width: 100%;
+        margin: 1rem 0;
+        padding-right: 0;
+        padding-left: 0;
     }
     .section > h1 {
         font-size: 2.5rem;
