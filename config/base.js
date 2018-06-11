@@ -15,19 +15,19 @@ const baseConf = (_path) => {
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
         acc.push(new HtmlWebpackPlugin({
-            chunksSortMode: 'manual',
-            title: `${name}`,
-            template: `./src/${name}/${name}.html`,
-            chunks: [VENDORS_NAME, name],
-            filename: `./${name}.html`,
-        }));
-        acc.push(new ExtractTextPlugin({
-            filename: `styles/[name].css`,
-            allChunks: false
-        }));
+        chunksSortMode: 'manual',
+        title: `${name}`,
+        template: `./src/${name}/${name}.html`,
+        chunks: [VENDORS_NAME, name],
+        filename: `./${name}.html`,
+    }));
+    acc.push(new ExtractTextPlugin({
+        filename: `styles/[name].css`,
+        allChunks: false
+    }));
 
-        return acc;
-    }, []);
+    return acc;
+}, []);
 
     plugins.concat([
         new webpack.optimize.CommonsChunkPlugin({
