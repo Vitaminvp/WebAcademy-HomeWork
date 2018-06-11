@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" afterPath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/about.png" afterPath="$PROJECT_DIR$/assets/images/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/blog-image.png" afterPath="$PROJECT_DIR$/assets/images/blog-image.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/contact.png" afterPath="$PROJECT_DIR$/assets/images/contact.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/hire.png" afterPath="$PROJECT_DIR$/assets/images/hire.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/home.png" afterPath="$PROJECT_DIR$/assets/images/home.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/pattern.jpg" afterPath="$PROJECT_DIR$/assets/images/pattern.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/photos.png" afterPath="$PROJECT_DIR$/assets/images/photos.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="wa_hw_7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="306">
+              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -168,10 +160,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="845" />
+    <option name="width" value="1083" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -370,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528701762031</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="grid">
+      <created>1528701989072</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528701989072</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11694000" />
+    <option name="totallyTimeSpent" value="11831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -630,8 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="306">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding />
         </state>
       </provider>
