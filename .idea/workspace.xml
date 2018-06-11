@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="grid">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/blog-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/hire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/pattern.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/photos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/vendors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/wa_hw_7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/wa_hw_7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index/index.html" afterPath="$PROJECT_DIR$/src/index/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -236,7 +249,7 @@
       <workItem from="1528655134097" duration="1800000" />
       <workItem from="1528657167718" duration="1260000" />
       <workItem from="1528707068101" duration="2526000" />
-      <workItem from="1528711823106" duration="1465000" />
+      <workItem from="1528711823106" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="animation">
       <created>1528430599081</created>
@@ -459,7 +472,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19937000" />
+    <option name="totallyTimeSpent" value="20089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
