@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" afterPath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" afterPath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.scss" afterPath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,8 +71,8 @@
       <file leaf-file-name="_base.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="155" column="42" lean-forward="true" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
+            <state relative-caret-position="425">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -102,8 +101,8 @@
       <file leaf-file-name="wa_hw_7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="89" lean-forward="false" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+            <state relative-caret-position="714">
+              <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -147,9 +146,9 @@
         <option value="$PROJECT_DIR$/docs/styles/wa_hw_7.css" />
         <option value="$PROJECT_DIR$/docs/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.js" />
-        <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.scss" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/styles/_grid.css" />
+        <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
       </list>
     </option>
@@ -214,11 +213,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wa_hw_7" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_6" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528702319573</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="grid">
+      <created>1528703826985</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1528703826985</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13530000" />
+    <option name="totallyTimeSpent" value="13986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -637,22 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wa_hw_6/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="89" lean-forward="false" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wa_hw_7/styles/_grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7701">
@@ -677,10 +662,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wa_hw_6/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="155" column="42" lean-forward="true" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
+        <state relative-caret-position="425">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>
