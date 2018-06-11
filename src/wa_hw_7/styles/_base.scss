@@ -25,14 +25,6 @@ body{
 .title{
   padding: 0.5rem 0;
 }
-//.grid{
-//  display: grid;
-//  grid-gap: 1rem;
-//  grid-template-columns: repeat(6, 1fr);
-//  grid-template-areas:
-//          "home   contact hire hire photos about"
-//          "about2 about2  blog blog blog   contact2"
-//}
 
 .grid__item:hover{
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 5px 5px 2px rgba(0, 0, 0, 0.24);
@@ -144,15 +136,13 @@ body{
 .grid__blog_desc > h3{
   margin-bottom: 0;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
   body{
-    align-items:flex-start;
+    align-items: flex-start;
   }
 }
 
 @media screen and (max-width: 575px){
-
-
 
 
 }

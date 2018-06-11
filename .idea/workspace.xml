@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/styles/wa_hw_7.css" afterPath="$PROJECT_DIR$/docs/styles/wa_hw_7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/wa_hw_7.html" afterPath="$PROJECT_DIR$/docs/wa_hw_7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" afterPath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" afterPath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
     </list>
@@ -22,8 +25,12 @@
         <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-              <folding />
+              <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+              <folding>
+                <marker date="1528704531932" expanded="true" signature="2274:2290" ph="..." />
+                <marker date="1528704531932" expanded="true" signature="2274:2297" ph="..." />
+                <marker date="1528704531932" expanded="true" signature="2274:2425" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +68,8 @@
       <file leaf-file-name="wa_hw_7.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/styles/wa_hw_7.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="123" column="44" lean-forward="true" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+            <state relative-caret-position="25228">
+              <caret line="1592" column="44" lean-forward="true" selection-start-line="1592" selection-start-column="44" selection-end-line="1592" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -71,8 +78,8 @@
       <file leaf-file-name="_base.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -102,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+              <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -405,11 +412,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528703826985</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="grid">
+      <created>1528704283638</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1528704283638</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13986000" />
+    <option name="totallyTimeSpent" value="14251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -608,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/styles/wa_hw_7.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="123" column="44" lean-forward="true" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+        <state relative-caret-position="25228">
+          <caret line="1592" column="44" lean-forward="true" selection-start-line="1592" selection-start-column="44" selection-end-line="1592" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -625,8 +639,12 @@
     <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding />
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <marker date="1528704531932" expanded="true" signature="2274:2290" ph="..." />
+            <marker date="1528704531932" expanded="true" signature="2274:2297" ph="..." />
+            <marker date="1528704531932" expanded="true" signature="2274:2425" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,15 +691,15 @@
     <entry file="file://$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="357">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
