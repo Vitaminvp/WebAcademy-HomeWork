@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="grid">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/about.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/blog-image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/hire.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/pattern.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/photos.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" afterPath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" afterPath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/blog-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/hire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/pattern.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/photos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/vendors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/wa_hw_7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/wa_hw_7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,8 +53,8 @@
       <file leaf-file-name="wa_hw_7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="-54">
+              <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -113,9 +119,9 @@
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.js" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.scss" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/styles/_grid.css" />
-        <option value="$PROJECT_DIR$/docs/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
+        <option value="$PROJECT_DIR$/docs/wa_hw_7.html" />
       </list>
     </option>
   </component>
@@ -172,24 +178,6 @@
               <item name="HW" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_7" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -238,7 +226,7 @@
       <workItem from="1528612683450" duration="3270000" />
       <workItem from="1528655134097" duration="1800000" />
       <workItem from="1528657167718" duration="1260000" />
-      <workItem from="1528707068101" duration="481000" />
+      <workItem from="1528707068101" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="animation">
       <created>1528430599081</created>
@@ -447,7 +435,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16427000" />
+    <option name="totallyTimeSpent" value="16622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -720,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="-54">
+          <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
           <folding />
         </state>
       </provider>
