@@ -1,5 +1,26 @@
 body {
-  background: yellow;
+  background: wheat;
   font-size: 18px;
   font-family: 'Kerola', Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  list-style-type: none;
+}
+ul li::before{
+  content: "✔";
+  margin-right: 5px;
+  color: forestgreen;
+}
+ul a{
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
