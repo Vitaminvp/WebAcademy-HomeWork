@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="grid">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/about.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/blog-image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/hire.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/pattern.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/assets/images/photos.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/vendors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/js/wa_hw_7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/styles/wa_hw_7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.html" afterPath="" />
+    <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wa_hw_7.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wa_hw_7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/wa_hw_7.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-54">
               <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -122,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" />
         <option value="$PROJECT_DIR$/docs/wa_hw_7.html" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -226,7 +224,7 @@
       <workItem from="1528612683450" duration="3270000" />
       <workItem from="1528655134097" duration="1800000" />
       <workItem from="1528657167718" duration="1260000" />
-      <workItem from="1528707068101" duration="676000" />
+      <workItem from="1528707068101" duration="857000" />
     </task>
     <task id="LOCAL-00001" summary="animation">
       <created>1528430599081</created>
@@ -431,11 +429,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528705496025</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="grid">
+      <created>1528707794029</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1528707794029</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16622000" />
+    <option name="totallyTimeSpent" value="16803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -477,7 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack_seed-master/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/webpack_seed-master/package.json" />
     <entry file="file://$PROJECT_DIR$/wa_hw_6/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -593,6 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -600,6 +605,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -614,6 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,6 +642,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1071">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,6 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-754">
           <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,6 +719,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
           <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>
