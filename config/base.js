@@ -10,24 +10,25 @@ const baseConf = (_path) => {
     const VENDORS_NAME = 'vendors';
     const entry = {
         index: ['babel-polyfill', './src/index/index.js'],
-        wa_hw_7: ['./src/wa_hw_7/wa_hw_7.js']
+        wa_hw_7: ['./src/wa_hw_7/wa_hw_7.js'],
+        wa_hw_9: ['./src/wa_hw_9/wa_hw_9.js'],
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
         acc.push(new HtmlWebpackPlugin({
-        chunksSortMode: 'manual',
-        title: `${name}`,
-        template: `./src/${name}/${name}.html`,
-        chunks: [VENDORS_NAME, name],
-        filename: `./${name}.html`,
-    }));
-    acc.push(new ExtractTextPlugin({
-        filename: `[name].css`,
-        allChunks: false
-    }));
+            chunksSortMode: 'manual',
+            title: `${name}`,
+            template: `./src/${name}/${name}.html`,
+            chunks: [VENDORS_NAME, name],
+            filename: `./${name}.html`,
+        }));
+        acc.push(new ExtractTextPlugin({
+            filename: `[name].css`,
+            allChunks: false
+        }));
 
-    return acc;
-}, []);
+        return acc;
+    }, []);
 
     plugins.concat([
         new webpack.optimize.CommonsChunkPlugin({
