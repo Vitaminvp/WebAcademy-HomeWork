@@ -81,12 +81,32 @@ module.exports = __webpack_require__(331);
 
 __webpack_require__(332);
 
+__webpack_require__(333);
+
 /***/ }),
 
 /***/ 332:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 333:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+window.onload = function () {
+    var items = document.querySelectorAll(".grid__item");
+    console.log(items);
+    for (var i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function () {
+            this.classList.toggle("hidden");
+        }, false);
+    }
+};
 
 /***/ })
 

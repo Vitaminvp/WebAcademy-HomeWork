@@ -1623,5 +1623,4 @@ body {
         flex: 0 0 50%; } }
 
 .hidden {
-  visibility: hidden;
   opacity: 0; }
