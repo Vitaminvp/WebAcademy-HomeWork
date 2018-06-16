@@ -274,7 +274,7 @@ btn7.addEventListener("click", task7);
 function task7() {
     console.clear();
     console.log(arr7);
-    alert("\u0421\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442: " + arr7[randomInteger(0, arr7.length - 1)]);
+    alert("\u0421\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u0438\u0437 [" + arr7 + "]: " + arr7[randomInteger(0, arr7.length - 1)]);
 }
 
 /*----------------------Конец Задания 7----------------------------------------*/

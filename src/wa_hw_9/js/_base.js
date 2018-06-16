@@ -169,7 +169,7 @@ btn7.addEventListener("click", task7);
 function task7() {
     console.clear();
     console.log(arr7);
-    alert(`Случайный элемент: ${arr7[randomInteger(0, arr7.length-1)]}`);
+    alert(`Случайный элемент из [${arr7}]: ${arr7[randomInteger(0, arr7.length-1)]}`);
 }
 
 /*----------------------Конец Задания 7----------------------------------------*/
