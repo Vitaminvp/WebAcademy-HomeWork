@@ -306,7 +306,7 @@ function askAndPush(arr, element) {
 var btn9 = document.querySelector(".btn9");
 btn9.addEventListener("click", task9);
 function task9() {
-    var value = prompt('Введите значение эллемента масива', 'ЗОВ');
+    var value = prompt("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u044D\u043B\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u043C\u0430\u0441\u0438\u0432\u0430 " + arr7, 'ЗОВ');
     alert(find(arr7, value));
 }
 function find(arr, value) {
@@ -397,7 +397,7 @@ function task13() {
 }
 
 function getWeekDay(date) {
-    var days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+    var days = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
     console.clear();
     var day = date.getDay();
     console.log(days[day]);
@@ -408,9 +408,47 @@ function getWeekDay(date) {
 
 /*----------------------Задание 14---------------------------------------*/
 
+var btn14 = document.querySelector(".btn14");
+btn14.addEventListener("click", task14);
+function task14() {
+    var dateControl = document.querySelector('input[name=t14i1]');
+    var date = new Date(dateControl.value);
+    console.clear();
+    console.log(date);
+    console.log(getLocalDay(date));
+    alert(getLocalDay(date));
+}
+
+function getLocalDay(date) {
+
+    var day = date.getDay();
+    if (day == 0) {
+        day = 7;
+    }
+    return day;
+}
+
 /*----------------------Конец Задания 14----------------------------------------*/
 
 /*----------------------Задание 11---------------------------------------*/
+var btn15 = document.querySelector(".btn15");
+btn15.addEventListener("click", task15);
+function task15() {
+    var dateControl = document.querySelector('input[name=t15i1]');
+    var input15 = document.querySelector("input[name=t15i2]");
+    var date = new Date(dateControl.value);
+    // let daysAmount = prompt("Введите к-во дней от даты: ", "5");
+    alert(getDateAgo(date, +input15.value));
+    console.clear();
+    console.log(getDateAgo(date, +input15.value));
+}
+
+function getDateAgo(date, days) {
+
+    var dateCopy = new Date(date);
+    dateCopy.setDate(date.getDate() - days);
+    return dateCopy.getDate();
+}
 
 /***/ })
 

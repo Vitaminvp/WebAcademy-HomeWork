@@ -1522,6 +1522,7 @@ h2 {
 
 input {
   position: relative;
+  margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 3px;
   border: none;
@@ -1547,7 +1548,7 @@ input {
   transition: all 0.25s;
   color: #a59c26;
   max-width: 10rem;
-  margin: 0 auto; }
+  margin: 1rem auto 0; }
   .btn:hover {
     color: #fff;
     background-color: #9a9da1; }
