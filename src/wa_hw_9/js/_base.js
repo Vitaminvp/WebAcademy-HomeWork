@@ -201,7 +201,7 @@ function askAndPush(arr, element){
 const btn9 = document.querySelector(".btn9");
 btn9.addEventListener("click",  task9);
 function task9() {
-    let value = prompt('Введите значение эллемента масива', 'ЗОВ');
+    let value = prompt(`Введите значение эллемента масива ${arr7}`, 'ЗОВ');
     alert(find(arr7, value));
 }
 function  find(arr, value) {
@@ -294,7 +294,7 @@ function task13() {
 }
 
 function getWeekDay(date){
-    const days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+    const days = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
     console.clear();
     let day = date.getDay();
     console.log(days[day]);
@@ -305,8 +305,47 @@ function getWeekDay(date){
 
 /*----------------------Задание 14---------------------------------------*/
 
+const btn14 = document.querySelector(".btn14");
+btn14.addEventListener("click",  task14);
+function task14() {
+    const dateControl = document.querySelector('input[name=t14i1]');
+    const date = new Date(dateControl.value);
+    console.clear();
+    console.log(date);
+    console.log(getLocalDay(date));
+    alert(getLocalDay(date) );
+}
+
+function getLocalDay(date) {
+
+    let day = date.getDay();
+    if (day == 0) {
+        day = 7;
+    }
+    return day;
+}
+
 
 
 /*----------------------Конец Задания 14----------------------------------------*/
 
 /*----------------------Задание 11---------------------------------------*/
+const btn15 = document.querySelector(".btn15");
+btn15.addEventListener("click",  task15);
+function task15() {
+    const dateControl = document.querySelector('input[name=t15i1]');
+    const input15 = document.querySelector("input[name=t15i2]");
+    const date = new Date(dateControl.value);
+    // let daysAmount = prompt("Введите к-во дней от даты: ", "5");
+    alert( getDateAgo(date, +input15.value) );
+    console.clear();
+    console.log(getDateAgo(date, +input15.value));
+}
+
+function getDateAgo(date, days) {
+
+    var dateCopy = new Date(date);
+    dateCopy.setDate(date.getDate() - days);
+    return dateCopy.getDate();
+}
+
