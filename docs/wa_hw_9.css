@@ -1522,6 +1522,7 @@ h2 {
 
 input {
   position: relative;
+  margin: 1rem 0;
   padding: 0.5rem;
   border-radius: 3px;
   border: none;
@@ -1530,7 +1531,8 @@ input {
   color: #9a9da1;
   font-weight: bold;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 5px 5px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.25s; }
+  transition: all 0.25s;
+  outline: none; }
   input:active {
     top: 2px;
     left: 2px;
@@ -1547,7 +1549,8 @@ input {
   transition: all 0.25s;
   color: #a59c26;
   max-width: 10rem;
-  margin: 0 auto; }
+  margin: 1rem auto;
+  outline: none; }
   .btn:hover {
     color: #fff;
     background-color: #9a9da1; }
@@ -1572,4 +1575,30 @@ input {
   background-color: #f9be3e; }
 
 .btn7 {
-  background-color: #a59c26; }
+  background-color: #ffa4a4; }
+
+.btn8 {
+  background-color: #0056b3; }
+
+.btn9 {
+  background-color: #86a73f;
+  color: blue; }
+
+.btn10 {
+  background-color: #ffffff; }
+
+.btn11 {
+  background-color: #a59c26;
+  color: #fff; }
+
+.btn12 {
+  background-color: #ffa4a4; }
+
+.btn13 {
+  background-color: #f9be3e; }
+
+.btn14 {
+  background-color: #d66768; }
+
+.btn15 {
+  background-color: #7e5b8c; }

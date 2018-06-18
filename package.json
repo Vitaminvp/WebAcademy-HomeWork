@@ -10,11 +10,11 @@
     "build": "rimraf build && node node_modules/cross-env/dist/bin/cross-env NODE_ENV=production node node_modules/webpack/bin/webpack",
     "publish": "rimraf docs && node node_modules/cross-env/dist/bin/cross-env NODE_ENV=publish node node_modules/webpack/bin/webpack"
   },
-  "author": "",
+  "author": "Ilya Lytvynov",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/IlyaLytvynov/webpack-project-seed.git"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
