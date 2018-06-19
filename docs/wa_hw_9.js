@@ -444,13 +444,49 @@ function task15() {
 }
 
 function getDateAgo(date, days) {
-
     var dateCopy = new Date(date);
     dateCopy.setDate(date.getDate() - days);
     return dateCopy.getDate();
 }
 
 /*----------------------Конец Задания 15----------------------------------------*/
+
+/*-------------------------------TOOLTIP-----------------------------------------------*/
+
+var paragraph = document.querySelector(".pAll");
+function Tooltip() {
+    this.tooltip = document.createElement("div");
+    this.tooltip.style.position = "fixed";
+    this.tooltip.style.visibility = "hidden";
+    this.tooltip.style.border = "1px solid gray";
+    this.tooltip.style.backgroundColor = "lightgray";
+    this.tooltip.style.padding = "5px";
+    this.tooltip.style.color = "#1e1e1e";
+    this.tooltip.style.borderRadius = "3px";
+    this.tooltip.style.boxShadow = "2px 2px 3px black";
+    this.tooltip.style.font = "bold 10pt sans-serif";
+}
+
+Tooltip.prototype.show = function (text, x, y) {
+    this.tooltip.style.visibility = "visible";
+    this.tooltip.innerHTML = text;
+    this.tooltip.style.top = y + "px";
+    this.tooltip.style.left = x + "px";
+    if (this.tooltip.parentNode != document.body) {
+        document.body.appendChild(this.tooltip);
+    }
+};
+Tooltip.prototype.hide = function () {
+    this.tooltip.style.visibility = "hidden";
+};
+var tt = new Tooltip();
+
+paragraph.addEventListener("mousemove", function (event) {
+    tt.show("Some text example", event.clientX + 20, event.clientY - 50);
+});
+paragraph.addEventListener("mouseout", function (e) {
+    tt.hide();
+});
 
 /***/ })
 

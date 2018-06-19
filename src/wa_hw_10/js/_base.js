@@ -3,19 +3,6 @@ function Svetofor(w, h){
     this.svetofor.style.width = w +"px";
     this.svetofor.style.minHeight = h+ "px";
     this.svetofor.className = "svetofor";
-    // this.svetofor.style.position = "absolute";
-    // this.svetofor.style.top = "50%";
-    // this.svetofor.style.left = "50%";
-    // this.svetofor.style.transform = "translate(-50%, -50%)";
-    // this.svetofor.style.display = "flex";
-    // this.svetofor.style.flexDirection = "column";
-    // this.svetofor.style.justifyContent = "space-around";
-    // this.svetofor.style.alignItems = "center";
-    // this.svetofor.style.border = "1px solid gray";
-    // this.svetofor.style.backgroundColor = "lightgray";
-    // this.svetofor.style.padding = "5px";
-    // this.svetofor.style.borderRadius = "7px";
-    // this.svetofor.style.boxShadow = "2px 2px 3px black";
 }
 
 Svetofor.prototype.show = function(){
@@ -35,8 +22,6 @@ function Color(color, w) {
     this.color.className = color;
     this.color.style.width = w + "px";
     this.color.style.height = w + "px";
-    // this.color.style.borderRadius = "50%";
-    // this.color.style.border = "1px solid gray";
 }
 
 const strLight = new Svetofor(200, 400);
