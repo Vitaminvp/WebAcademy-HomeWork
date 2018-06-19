@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/wa_hw_10.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/wa_hw_10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/wa_hw_10.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.js" afterPath="$PROJECT_DIR$/docs/index.js" />
@@ -364,7 +367,7 @@
       <workItem from="1529301729924" duration="4820000" />
       <workItem from="1529308919275" duration="5263000" />
       <workItem from="1529389403117" duration="247000" />
-      <workItem from="1529389658495" duration="16867000" />
+      <workItem from="1529389658495" duration="16926000" />
     </task>
     <task id="LOCAL-00001" summary="animation">
       <created>1528430599081</created>
@@ -629,7 +632,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75493000" />
+    <option name="totallyTimeSpent" value="75552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
