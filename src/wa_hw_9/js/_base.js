@@ -66,14 +66,19 @@ function task3() {
         title: "Menu"
     };
 
+
+
+    console.log("Свойства есть: " + isEmpty(menu));
+    console.log("Свойства есть: " + isEmpty({}));
+}
+function isEmpty(obj) {
     let counter = 0;
 
-    for (let key in menu) {
-        console.log(key +": "+ menu[key]);
+    for (let key in obj) {
+        console.log(key +": "+ obj[key]);
         counter++;
     }
-
-    console.log("Всего свойств: " + counter);
+    return counter > 0;
 }
 /*----------------------Конец Задания 3----------------------------------------*/
 
