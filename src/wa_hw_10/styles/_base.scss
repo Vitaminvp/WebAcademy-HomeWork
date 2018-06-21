@@ -36,8 +36,11 @@ body{
   border-radius: 50%;
   border: 1px solid gray;
   transition: all .25s ease-out;
+  opacity: 0.2;
 }
-
+.svetofor .active{
+  opacity: 1;
+}
 @media screen and (max-width: 992px){
 }
 @media screen and (max-width: 575px){

@@ -48,4 +48,8 @@ body {
 .svetofor div {
   border-radius: 50%;
   border: 1px solid gray;
-  transition: all .25s ease-out; }
+  transition: all .25s ease-out;
+  opacity: 0.2; }
+
+.svetofor .active {
+  opacity: 1; }

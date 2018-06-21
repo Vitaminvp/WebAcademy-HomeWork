@@ -118,7 +118,6 @@ Svetofor.prototype.insert = function (color) {
 function Color(color, w) {
     this.color = document.createElement("div");
     this.color.style.backgroundColor = color;
-    this.color.style.opacity = 0.2;
     this.color.className = color;
     this.color.style.width = w + "px";
     this.color.style.height = w + "px";
@@ -135,28 +134,53 @@ strLight.insert(red);
 strLight.insert(yellow);
 strLight.insert(green);
 
+var timer = void 0;
+var shortTime = 1500; //Желтый короче
+var longTime = 3000;
+var time = longTime;
+
 var colors = document.querySelectorAll("#wrapper>div div");
 
-var _loop = function _loop(i) {
-    colors[i].addEventListener("click", function (e) {
-        if (colors[i].style.opacity == 0.2) {
-            for (var j = 0; j < colors.length; j++) {
-                colors[j].style.opacity = 0.2;
-            }
-            colors[i].style.opacity = 1;
-            var timer = setTimeout(function () {
-                colors[i].style.opacity = 0.2;
-            }, 5000);
-        } else {
-            colors[i].style.opacity = .2;
-        }
-    });
-};
-
 for (var i = 0; i < colors.length; i++) {
-    _loop(i);
+    colors[i].addEventListener("click", start);
+}function start(e) {
+
+    if (e.target) e = e.target;
+    if (e.classList.contains("active")) {
+        clearTimeout(timer);
+        turnoff();
+    } else {
+        clearTimeout(timer);
+        turnoff();
+        e.classList.add("active");
+        swtch(e);
+    }
 }
-console.log(colors);
+
+function turnoff() {
+    for (var j = 0; j < colors.length; j++) {
+        colors[j].classList.remove("active");
+    }
+}
+
+function swtch(e) {
+    if (e.nextSibling == null || !e.classList.contains("yellow")) {
+        time = longTime;
+    } else {
+        time = shortTime;
+    }
+
+    timer = setTimeout(function () {
+
+        if (e.nextSibling == null) {
+            start(colors[0]);
+        } else if (e.nextSibling.classList.contains("yellow") || e.nextSibling.classList.contains("green")) {
+            start(e.nextSibling);
+        } else {
+            alert("Непредвиденная херня.");
+        }
+    }, time);
+}
 
 /***/ })
 
