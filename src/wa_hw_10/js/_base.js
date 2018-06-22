@@ -44,7 +44,6 @@ const colors = document.querySelectorAll("#wrapper>div div");
 for (let i = 0; i < colors.length; i++) colors[i].addEventListener("click", start);
 
 function  start(e) {
-
     if (e.target) e = e.target;
     if (e.classList.contains("active")){
         clearTimeout(timer);

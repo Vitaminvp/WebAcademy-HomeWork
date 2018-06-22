@@ -1,0 +1,42 @@
+$light-size: 150px;
+
+.lighter {
+  width: $light-size + 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px black;
+  &__light {
+    width: $light-size;
+    height: $light-size;
+    margin: $light-size/15;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: all .25s ease-out;
+    cursor: pointer;
+    &_red {
+      &.lighter__light_active {
+        background-color: red;
+      }
+    }
+    &_yellow {
+      &.lighter__light_active {
+        background-color: yellow;
+      }
+    }
+    &_green {
+      &.lighter__light_active {
+        background-color: green;
+      }
+    }
+  }
+}
