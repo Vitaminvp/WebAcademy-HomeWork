@@ -11,14 +11,15 @@
   box-shadow: 1px 3px 5px rgba(0, 0, 0, .5);
   &__item{
     @include transition;
+    background-color: #fff;
     border-bottom: 2px solid #fff;
+    overflow: hidden;
     &:last-child{
       border-bottom: none;
     }
     &.active{
       .accordion__item_title{
         background-color: gray;
-        border: 1px solid gray;
         & i{
           transform: rotate(180deg);
         }
@@ -28,11 +29,11 @@
         padding: $padding;
         opacity: 1;
         height: auto;
+        border: 1px solid transparent;
       }
     }
     &_title{
       background-color: $bg-color;
-      border: 1px solid $bg-color;
       display: flex;
       margin: 0;
       justify-content: space-between;
@@ -48,14 +49,16 @@
       }
     }
     &_content{
-      background-color: #fff;
       visibility: hidden;
+
       opacity: 0;
       height: 0px;
       @include transition;
-      border-right: 1px solid lightgrey;
       p{
         margin: 0;
+        &+p{
+          margin-top: 10px;
+        }
       }
     }
 
