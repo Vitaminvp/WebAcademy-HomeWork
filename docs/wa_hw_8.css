@@ -1,0 +1,60 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background-size: 100% 100%; }
+
+::-webkit-input-placeholder {
+  color: #9a9da1; }
+
+:-ms-input-placeholder {
+  color: #9a9da1; }
+
+::placeholder {
+  color: #9a9da1; }
+
+::-moz-selection {
+  color: #fff; }
+
+::selection {
+  color: #fff; }
+.lighter {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px black; }
+  .lighter__light {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: all .25s ease-out;
+    cursor: pointer; }
+    .lighter__light_red.lighter__light_active {
+      background-color: red; }
+    .lighter__light_yellow.lighter__light_active {
+      background-color: yellow; }
+    .lighter__light_green.lighter__light_active {
+      background-color: green; }
