@@ -32,6 +32,8 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 50px; }
