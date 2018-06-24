@@ -85,6 +85,12 @@ __webpack_require__(351);
 
 var _accordion = __webpack_require__(352);
 
+var accordions = document.querySelectorAll(".accordion");
+
+for (var i = 0; i < accordions.length; i++) {
+    (0, _accordion.accordion)(accordions[i]);
+}
+
 /***/ }),
 
 /***/ 350:
@@ -115,20 +121,18 @@ exports.accordion = accordion;
 
 __webpack_require__(353);
 
-function accordion() {
+function accordion(element) {
     var index = 0;
-    var accordion = document.querySelector(".accordion");
-    var accordItrms = Array.from(accordion.querySelectorAll(".accordion__item_title"));
+    // const accordion  = document.querySelector(".accordion");
+    var accordItrms = Array.from(element.querySelectorAll(".accordion__item_title"));
 
     var _loop = function _loop(i) {
 
         accordItrms[i].addEventListener("click", function (e) {
-            // console.log("i= ",i);
-            // console.log("index = ",index);
             if (this.parentNode.classList.contains("active")) {
                 this.parentNode.classList.remove("active");
             } else {
-                if (index != i) {
+                if (index !== i) {
                     this.parentNode.classList.add("active");
                     accordItrms[index].parentNode.classList.remove("active");
                 } else {
@@ -143,7 +147,6 @@ function accordion() {
         _loop(i);
     }
 }
-accordion();
 
 /***/ }),
 
