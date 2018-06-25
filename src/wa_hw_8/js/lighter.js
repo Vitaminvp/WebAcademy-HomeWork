@@ -6,7 +6,9 @@ export function lighter() {
     const ACTIVE = "lighter__light_active";
     const lightsArray = Array.from(lights);
     const btn = lighter.querySelector(".btn");
-    let index;
+
+    let index=0;
+
     let isDisabled = lighter.classList.contains("disabled");
     let timer;
     lightsArray.forEach(function (item, i, lightsArray) {
@@ -40,12 +42,15 @@ export function lighter() {
          }
      }
      function turnOff() {
+
+        console.log("index = "+index)
         if (index !== undefined) lightsArray[index].classList.remove(ACTIVE);
      }
 
 
 
      timer = setInterval(function () {
+
          if (index++ < lights.length){
              turnOn(lights[index], index);
              turnOff();
@@ -54,6 +59,21 @@ export function lighter() {
              turnOn(lights[index], index);
              turnOff();
              index++;
+
+         if (!isDisabled){
+             if (index < lights.length){
+                 console.log("111 "+index);
+                 // turnOff();
+                 turnOn(lights[index], index);
+                 index++;
+             }else{
+                 console.log("2222 "+index);
+                 index = 0;
+                 // turnOff();
+                 turnOn(lights[index], index);
+                 index++;
+             }
+
          }
 
      }, 1500);

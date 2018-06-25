@@ -120,12 +120,20 @@ function lighter() {
     var lights = lighter.querySelectorAll(".lighter__light");
     var ACTIVE = "lighter__light_active";
     var lightsArray = Array.from(lights);
+<<<<<<< HEAD
     var index = 0;
+=======
+    var btn = lighter.querySelector(".btn");
+    var index = 0;
+    var isDisabled = lighter.classList.contains("disabled");
+    var timer = void 0;
+>>>>>>> 049645787480ef49fd4526ba479b5b3ecb60367a
     lightsArray.forEach(function (item, i, lightsArray) {
         item.addEventListener("click", function () {
             turnOn(item, i);
         });
     });
+<<<<<<< HEAD
     function turnOn(item, i) {
 
         console.log(item.className);
@@ -139,6 +147,54 @@ function lighter() {
     function turnOff() {
         lightsArray[index].classList.remove(ACTIVE);
     }
+=======
+    btn.addEventListener("click", function () {
+        if (lighter.classList.contains("disabled")) {
+            lighter.classList.remove("disabled");
+            isDisabled = false;
+        } else {
+            isDisabled = true;
+            lighter.classList.add("disabled");
+            turnOff();
+        }
+    });
+    function turnOn(item, i) {
+        if (!isDisabled) {
+            if (index !== undefined) {
+                if (item.classList.contains(ACTIVE)) {
+                    item.classList.remove(ACTIVE);
+                } else {
+                    turnOff();
+                    item.classList.add(ACTIVE);
+                }
+            } else {
+                item.classList.add(ACTIVE);
+            }
+            index = i;
+        }
+    }
+    function turnOff() {
+        console.log("index = " + index);
+        if (index !== undefined) lightsArray[index].classList.remove(ACTIVE);
+    }
+
+    timer = setInterval(function () {
+        if (!isDisabled) {
+            if (index < lights.length) {
+                console.log("111 " + index);
+                // turnOff();
+                turnOn(lights[index], index);
+                index++;
+            } else {
+                console.log("2222 " + index);
+                index = 0;
+                // turnOff();
+                turnOn(lights[index], index);
+                index++;
+            }
+        }
+    }, 1500);
+>>>>>>> 049645787480ef49fd4526ba479b5b3ecb60367a
 }
 lighter();
 

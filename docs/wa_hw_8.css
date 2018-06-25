@@ -40,10 +40,27 @@ body {
   -ms-flex-align: center;
       align-items: center;
   border: 1px solid gray;
+<<<<<<< HEAD
   background-color: lightgray;
   padding: 5px;
   border-radius: 7px;
   box-shadow: 2px 2px 3px black; }
+=======
+  background-color: #292928;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px black; }
+  .lighter .btn {
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white; }
+  .lighter.disabled {
+    background-color: lightgrey; }
+    .lighter.disabled .btn {
+      background-color: gray; }
+>>>>>>> 049645787480ef49fd4526ba479b5b3ecb60367a
   .lighter__light {
     width: 150px;
     height: 150px;
