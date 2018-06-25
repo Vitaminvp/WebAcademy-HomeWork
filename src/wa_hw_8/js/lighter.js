@@ -36,11 +36,12 @@ export function lighter() {
                      item.classList.add(ACTIVE);
                  }
              }else{
-                 item.classList.add(ACTIVE);
+                 // item.classList.add(ACTIVE);
              }
              index = i;
          }
      }
+
      function turnOff() {
 
         console.log("index = "+index)
@@ -54,12 +55,12 @@ export function lighter() {
          if (index++ < lights.length){
              turnOn(lights[index], index);
              turnOff();
-         }else{
+         }else {
              index = 0;
              turnOn(lights[index], index);
              turnOff();
              index++;
-
+         }
          if (!isDisabled){
              if (index < lights.length){
                  console.log("111 "+index);
