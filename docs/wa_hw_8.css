@@ -24,8 +24,8 @@ body {
 
 ::selection {
   color: #fff; }
-
-.svetofor {
+.lighter {
+  width: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,17 +40,31 @@ body {
   -ms-flex-align: center;
       align-items: center;
   border: 1px solid gray;
-  background-color: lightgray;
+  background-color: #292928;
   padding: 5px;
   border-radius: 7px;
   box-shadow: 2px 2px 3px black; }
-
-.svetofor div {
-  border-radius: 50%;
-  border: 1px solid gray;
-  transition: all .25s ease-out;
-  opacity: 0.2;
-  cursor: pointer; }
-
-.svetofor .active {
-  opacity: 1; }
+  .lighter .btn {
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white; }
+  .lighter.disabled {
+    background-color: lightgrey; }
+    .lighter.disabled .btn {
+      background-color: gray; }
+  .lighter__light {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: all .25s ease-out;
+    cursor: pointer; }
+    .lighter__light_red.lighter__light_active {
+      background-color: red; }
+    .lighter__light_yellow.lighter__light_active {
+      background-color: yellow; }
+    .lighter__light_green.lighter__light_active {
+      background-color: green; }
