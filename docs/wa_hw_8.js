@@ -85,6 +85,8 @@ __webpack_require__(337);
 
 var _lighter = __webpack_require__(338);
 
+(0, _lighter.lighter)();
+
 /***/ }),
 
 /***/ 336:
@@ -122,61 +124,80 @@ function lighter() {
     var lightsArray = Array.from(lights);
     var btn = lighter.querySelector(".btn");
     var index = 0;
+    var previndex = 0;
     var isDisabled = lighter.classList.contains("disabled");
     var timer = void 0;
+
     lightsArray.forEach(function (item, i, lightsArray) {
         item.addEventListener("click", function () {
-            turnOn(item, i);
+            if (!isDisabled) {
+                turnOn(i);
+            }
         });
     });
+
+    lighter.addEventListener("mouseenter", function () {
+        stopInterval();
+    });
+    lighter.addEventListener("mouseleave", function () {
+        startInterval();
+    });
     btn.addEventListener("click", function () {
-        if (lighter.classList.contains("disabled")) {
+        if (isDisabled) {
             lighter.classList.remove("disabled");
             isDisabled = false;
+            startInterval();
         } else {
             isDisabled = true;
             lighter.classList.add("disabled");
+            index = 0;
+            stopInterval();
             turnOff();
         }
     });
-    function turnOn(item, i) {
+    function turnOn(i) {
         if (!isDisabled) {
             if (index !== undefined) {
-                if (item.classList.contains(ACTIVE)) {
-                    item.classList.remove(ACTIVE);
+                if (lightsArray[i].classList.contains(ACTIVE)) {
+                    lightsArray[i].classList.remove(ACTIVE);
                 } else {
                     turnOff();
-                    item.classList.add(ACTIVE);
+                    lightsArray[i].classList.add(ACTIVE);
                 }
             } else {
-                item.classList.add(ACTIVE);
+                lightsArray[i].classList.add(ACTIVE);
             }
             index = i;
+            previndex = i;
         }
     }
     function turnOff() {
-        console.log("index = " + index);
-        if (index !== undefined) lightsArray[index].classList.remove(ACTIVE);
+        if (previndex !== undefined) lightsArray[previndex].classList.remove(ACTIVE);
+        previndex = 0;
     }
 
-    timer = setInterval(function () {
-        if (!isDisabled) {
-            if (index < lights.length) {
-                console.log("111 " + index);
-                // turnOff();
-                turnOn(lights[index], index);
-                index++;
-            } else {
-                console.log("2222 " + index);
-                index = 0;
-                // turnOff();
-                turnOn(lights[index], index);
-                index++;
+    function startInterval() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            if (!isDisabled) {
+                if (index < lights.length) {
+                    turnOff();
+                    turnOn(index);
+                    index++;
+                } else {
+                    index = 0;
+                    turnOff();
+                    turnOn(index);
+                    index++;
+                }
             }
-        }
-    }, 1500);
+        }, 1000);
+    }
+
+    function stopInterval() {
+        clearInterval(timer);
+    }
 }
-lighter();
 
 /***/ }),
 
