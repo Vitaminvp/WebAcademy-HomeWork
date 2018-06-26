@@ -55,6 +55,7 @@
       height: 0px;
       //@include transition;
       transition: opacity 0.25s 0.05s;
+      transform-origin: 0 center;
       p{
         margin: 0;
         &+p{
