@@ -87,7 +87,7 @@ body {
       visibility: hidden;
       opacity: 0;
       height: 0px;
-      transition: all 0.25s ease-in-out; }
+      transition: opacity 0.25s 0.05s; }
       .accordion__item_content p {
         margin: 0; }
         .accordion__item_content p + p {

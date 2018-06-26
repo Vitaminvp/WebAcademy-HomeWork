@@ -120,34 +120,17 @@ function lighter() {
     var lights = lighter.querySelectorAll(".lighter__light");
     var ACTIVE = "lighter__light_active";
     var lightsArray = Array.from(lights);
-<<<<<<< HEAD
-    var index = 0;
-=======
     var btn = lighter.querySelector(".btn");
+
     var index = 0;
+
     var isDisabled = lighter.classList.contains("disabled");
     var timer = void 0;
->>>>>>> 049645787480ef49fd4526ba479b5b3ecb60367a
     lightsArray.forEach(function (item, i, lightsArray) {
         item.addEventListener("click", function () {
             turnOn(item, i);
         });
     });
-<<<<<<< HEAD
-    function turnOn(item, i) {
-
-        console.log(item.className);
-        if (item.classList.contains(ACTIVE)) {
-            turnOff();
-        } else {
-            item.classList.add(ACTIVE);
-        }
-        index = i;
-    }
-    function turnOff() {
-        lightsArray[index].classList.remove(ACTIVE);
-    }
-=======
     btn.addEventListener("click", function () {
         if (lighter.classList.contains("disabled")) {
             lighter.classList.remove("disabled");
@@ -168,17 +151,29 @@ function lighter() {
                     item.classList.add(ACTIVE);
                 }
             } else {
-                item.classList.add(ACTIVE);
+                // item.classList.add(ACTIVE);
             }
             index = i;
         }
     }
+
     function turnOff() {
+
         console.log("index = " + index);
         if (index !== undefined) lightsArray[index].classList.remove(ACTIVE);
     }
 
     timer = setInterval(function () {
+
+        if (index++ < lights.length) {
+            turnOn(lights[index], index);
+            turnOff();
+        } else {
+            index = 0;
+            turnOn(lights[index], index);
+            turnOff();
+            index++;
+        }
         if (!isDisabled) {
             if (index < lights.length) {
                 console.log("111 " + index);
@@ -194,7 +189,6 @@ function lighter() {
             }
         }
     }, 1500);
->>>>>>> 049645787480ef49fd4526ba479b5b3ecb60367a
 }
 lighter();
 
