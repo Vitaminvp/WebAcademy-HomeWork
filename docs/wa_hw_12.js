@@ -122,9 +122,10 @@ exports.accordion = accordion;
 __webpack_require__(359);
 
 function accordion(element, array) {
-    var AC_CONTENT = "accordion__item_content";
-    var AC_TITLE = "accordion__item_title";
-    var AC_ITEM = "accordion__item";
+    var AC_NAME = element.className;
+    var AC_CONTENT = AC_NAME + "__item_content";
+    var AC_TITLE = AC_NAME + "__item_title";
+    var AC_ITEM = AC_NAME + "__item";
     var AC_I = "fas fa-chevron-down";
     var index = void 0;
     array.forEach(function (item, i, arr) {

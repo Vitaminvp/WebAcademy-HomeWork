@@ -118,14 +118,20 @@ exports.lighter = lighter;
 __webpack_require__(339);
 
 function lighter() {
+
     var lighter = document.querySelector(".lighter");
     var lights = lighter.querySelectorAll(".lighter__light");
     var ACTIVE = "lighter__light_active";
     var lightsArray = Array.from(lights);
     var btn = lighter.querySelector(".btn");
+    var myswitch = lighter.querySelector(".switch");
+    var myinput = myswitch.querySelector("#switch-1");
+    // console.log(myinput);
     var index = 0;
     var previndex = 0;
-    var isDisabled = lighter.classList.contains("disabled");
+    //let isDisabled = lighter.classList.contains("disabled");
+    var isDisabled = myinput.checked;
+    // console.log(isDisabled);
     var timer = void 0;
 
     lightsArray.forEach(function (item, i, lightsArray) {
@@ -142,7 +148,8 @@ function lighter() {
     lighter.addEventListener("mouseleave", function () {
         startInterval();
     });
-    btn.addEventListener("click", function () {
+    myinput.addEventListener("click", function () {
+        isDisabled = myinput.checked;
         if (isDisabled) {
             lighter.classList.remove("disabled");
             isDisabled = false;

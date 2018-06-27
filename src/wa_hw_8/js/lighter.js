@@ -1,14 +1,20 @@
 import '../styles/lighter.scss'
 
 export function lighter() {
+
     const lighter = document.querySelector(".lighter");
     const lights = lighter.querySelectorAll(".lighter__light");
     const ACTIVE = "lighter__light_active";
     const lightsArray = Array.from(lights);
     const btn = lighter.querySelector(".btn");
+    const myswitch = lighter.querySelector(".switch");
+    const myinput = myswitch.querySelector("#switch-1");
+    // console.log(myinput);
     let index=0;
     let previndex=0;
-    let isDisabled = lighter.classList.contains("disabled");
+    //let isDisabled = lighter.classList.contains("disabled");
+    let isDisabled = myinput.checked;
+    // console.log(isDisabled);
     let timer;
 
     lightsArray.forEach(function (item, i, lightsArray) {
@@ -25,7 +31,8 @@ export function lighter() {
     lighter.addEventListener("mouseleave", ()=>{
         startInterval();
     });
-    btn.addEventListener("click", function () {
+    myinput.addEventListener("click", function () {
+        isDisabled = myinput.checked;
         if (isDisabled){
             lighter.classList.remove("disabled");
             isDisabled = false;
