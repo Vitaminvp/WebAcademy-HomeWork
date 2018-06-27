@@ -38,7 +38,7 @@ body {
 .switch {
   position: relative;
   display: block;
-  margin: 20px auto; }
+  margin: 10px auto; }
 
 .switch-check {
   position: absolute;
