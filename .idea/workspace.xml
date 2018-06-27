@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f544f840-a9a8-4147-96c7-8d5dfcccb7c2" name="Default" comment="hw9">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/wa_hw_8.css" afterPath="$PROJECT_DIR$/docs/wa_hw_8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_8/styles/swich.scss" afterPath="$PROJECT_DIR$/src/wa_hw_8/styles/swich.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wa_hw_8/js/lighter.js" afterPath="$PROJECT_DIR$/src/wa_hw_8/js/lighter.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,17 +77,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lighter.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lighter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wa_hw_8/js/lighter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swich.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swich.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wa_hw_8/styles/swich.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -183,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/wa_hw_12/wa_hw_12.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_12/js/accordion.js" />
         <option value="$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.scss" />
-        <option value="$PROJECT_DIR$/src/wa_hw_8/js/lighter.js" />
         <option value="$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.html" />
         <option value="$PROJECT_DIR$/src/wa_hw_8/styles/swich.scss" />
+        <option value="$PROJECT_DIR$/src/wa_hw_8/js/lighter.js" />
       </list>
     </option>
   </component>
@@ -391,7 +390,7 @@
       <workItem from="1530004225761" duration="164000" />
       <workItem from="1530004411335" duration="5762000" />
       <workItem from="1530083191935" duration="4719000" />
-      <workItem from="1530104636654" duration="2042000" />
+      <workItem from="1530104636654" duration="2320000" />
     </task>
     <task id="LOCAL-00001" summary="animation">
       <created>1528430599081</created>
@@ -670,20 +669,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117394000" />
+    <option name="totallyTimeSpent" value="117672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11854584" sideWeight="0.5600522" order="0" side_tool="false" content_ui="combo" x="864" y="202" width="192" height="636" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11854584" sideWeight="0.5597484" order="0" side_tool="false" content_ui="combo" x="864" y="202" width="192" height="636" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673913" sideWeight="0.20758693" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30869564" sideWeight="0.36354056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11854584" sideWeight="0.43994778" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673913" sideWeight="0.79241306" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11854584" sideWeight="0.44025156" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1673913" sideWeight="0.79241306" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30869564" sideWeight="0.63909376" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30869564" sideWeight="0.6364594" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1068,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wa_hw_8/js/lighter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1088,6 +1079,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wa_hw_8/js/lighter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

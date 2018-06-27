@@ -13,8 +13,7 @@ export function lighter() {
     let index=0;
     let previndex=0;
     //let isDisabled = lighter.classList.contains("disabled");
-    let isDisabled = myinput.checked;
-    // console.log(isDisabled);
+    let isDisabled = !myinput.checked;
     let timer;
 
     lightsArray.forEach(function (item, i, lightsArray) {
@@ -32,7 +31,7 @@ export function lighter() {
         startInterval();
     });
     myinput.addEventListener("click", function () {
-        isDisabled = myinput.checked;
+        console.log(isDisabled);
         if (isDisabled){
             lighter.classList.remove("disabled");
             isDisabled = false;
