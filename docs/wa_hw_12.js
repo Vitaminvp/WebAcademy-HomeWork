@@ -126,6 +126,7 @@ function accordion(element, array) {
     var AC_TITLE = "accordion__item_title";
     var AC_ITEM = "accordion__item";
     var AC_I = "fas fa-chevron-down";
+    var index = void 0;
     array.forEach(function (item, i, arr) {
         var div_item = document.createElement("div");
         div_item.className = AC_ITEM;
@@ -144,30 +145,23 @@ function accordion(element, array) {
         div_content.appendChild(div_content_p);
         div_item.appendChild(div_title);
         div_item.appendChild(div_content);
+
         element.appendChild(div_item);
+        div_title.addEventListener("click", switchElement);
     });
 
-    var index = 0;
-    var accordItrms = Array.from(element.querySelectorAll(".accordion__item_title"));
-
-    var _loop = function _loop(i) {
-        accordItrms[i].addEventListener("click", function (e) {
-            if (this.parentNode.classList.contains("active")) {
-                this.parentNode.classList.remove("active");
+    function switchElement(e) {
+        if (this.parentNode.classList.contains("active")) {
+            this.parentNode.classList.remove("active");
+        } else {
+            if (index != undefined) {
+                index.parentNode.classList.remove("active");
+                this.parentNode.classList.add("active");
             } else {
-                if (index !== i) {
-                    this.parentNode.classList.add("active");
-                    accordItrms[index].parentNode.classList.remove("active");
-                } else {
-                    this.parentNode.classList.add("active");
-                }
+                this.parentNode.classList.add("active");
             }
-            index = i;
-        });
-    };
-
-    for (var i = 0; i < accordItrms.length; i++) {
-        _loop(i);
+            index = this;
+        }
     }
 }
 

@@ -5,7 +5,8 @@ export function accordion(element, array) {
     const AC_TITLE = "accordion__item_title";
     const AC_ITEM = "accordion__item";
     const AC_I = "fas fa-chevron-down";
-    array.forEach((item, i, arr)=>{
+    let index;
+    array.forEach((item, i, arr)=> {
         const div_item = document.createElement("div");
         div_item.className = AC_ITEM;
         const div_title = document.createElement("div");
@@ -23,24 +24,22 @@ export function accordion(element, array) {
         div_content.appendChild(div_content_p);
         div_item.appendChild(div_title);
         div_item.appendChild(div_content);
+
         element.appendChild(div_item);
+        div_title.addEventListener("click", switchElement);
     });
 
-    let index = 0;
-    const accordItrms = Array.from(element.querySelectorAll(".accordion__item_title"));
-    for(let i = 0; i < accordItrms.length; i++){
-        accordItrms[i].addEventListener("click", function (e) {
-            if( this.parentNode.classList.contains("active")){
-                this.parentNode.classList.remove("active");
+    function switchElement(e){
+        if( this.parentNode.classList.contains("active")){
+            this.parentNode.classList.remove("active");
+        }else{
+            if( index != undefined ){
+                index.parentNode.classList.remove("active");
+                this.parentNode.classList.add("active");
             }else{
-                if( index !==  i){
-                    this.parentNode.classList.add("active");
-                    accordItrms[index].parentNode.classList.remove("active");
-                }else{
-                    this.parentNode.classList.add("active");
-                }
+                this.parentNode.classList.add("active");
             }
-            index = i;
-        });
+            index = this;
+        }
     }
 }
