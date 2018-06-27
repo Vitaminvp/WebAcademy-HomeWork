@@ -1,9 +1,10 @@
 import '../styles/accordion.scss'
 
 export function accordion(element, array) {
-    const AC_CONTENT = "accordion__item_content";
-    const AC_TITLE = "accordion__item_title";
-    const AC_ITEM = "accordion__item";
+    const AC_NAME = element.className;
+    const AC_CONTENT = `${AC_NAME}__item_content`;
+    const AC_TITLE = `${AC_NAME}__item_title`;
+    const AC_ITEM = `${AC_NAME}__item`;
     const AC_I = "fas fa-chevron-down";
     let index;
     array.forEach((item, i, arr)=> {
