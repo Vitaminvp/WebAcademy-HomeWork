@@ -1,12 +1,14 @@
 import '../styles/lights.scss';
+import {LightsManager} from "./lights_manager";
 
 const ITEM_CLASS = "wrap";
 
 export class Lights {
-    constructor(targetLight){
+    constructor(targetLight, arr){
         this.targetLight = targetLight;
         this.render();
         this.isOn = false;
+        this.arrItems = arr;
     }
     render(){
         this.wrapp = document.createElement('div');
@@ -29,7 +31,6 @@ export class Lights {
         this.btn.addEventListener('click', ()=>{
             this.wrapp.classList.toggle('active');
             this.isOn = !this.isOn;
-            console.log(this.isOn);
         });
     }
     on()  {
@@ -41,6 +42,13 @@ export class Lights {
         this.isOn = false;
     }
     removeItem(){
+        if (this.arrItems){
+            this.arrItems.forEach((item, i, array) =>{
+                if(item.wrapp == this.wrapp){
+                    array.splice(i, 1);
+                }
+            });
+        }
         this.wrapp.remove();
     }
 }
