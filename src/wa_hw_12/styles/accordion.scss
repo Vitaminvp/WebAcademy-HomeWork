@@ -1,0 +1,68 @@
+@import './mixins';
+
+.accordion{
+  width: 100%;
+  max-width:  $size;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  color: $main-color;
+  overflow: hidden;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, .5);
+  &__item{
+    @include transition;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    &:last-child{
+      border-bottom: none;
+    }
+    &.active{
+      .accordion__item_title{
+        background-color: gray;
+        & i{
+          transform: rotate(180deg);
+        }
+      }
+      .accordion__item_content{
+        visibility: visible;
+        padding: $padding;
+        opacity: 1;
+        height: auto;
+        border: 1px solid transparent;
+      }
+    }
+    &_title{
+      background-color: $bg-color;
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      padding: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      @include transition;
+      & i{
+        position: relative;
+        @include transition;
+      }
+    }
+    &_content{
+      visibility: hidden;
+
+      opacity: 0;
+      height: 0px;
+      //@include transition;
+      transition: opacity 0.25s 0.05s;
+      transform-origin: 0 center;
+      p{
+        margin: 0;
+        &+p{
+          margin-top: 10px;
+        }
+      }
+    }
+
+  }
+}

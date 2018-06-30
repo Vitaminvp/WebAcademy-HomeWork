@@ -7,8 +7,16 @@
 </head>
 <body>
 <div class="wrapper" id="wrapper">
-    <div class="lighter">
-        <button class="btn">on/off</button>
+    <div class="lighter disabled">
+        <!--<button class="btn">on/off</button>-->
+        <div class="switch">
+            <input type="checkbox"  id="switch-1" class="switch-check">
+            <label for="switch-1" class="switch-label">
+                Опция
+                <span class="switch-slider switch-slider-on"></span>
+                <span class="switch-slider switch-slider-off"></span>
+            </label>
+        </div>
         <div class="lighter__light lighter__light_red">0</div>
         <div class="lighter__light lighter__light_yellow">1</div>
         <div class="lighter__light lighter__light_green">2</div>
