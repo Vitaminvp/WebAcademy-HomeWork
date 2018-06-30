@@ -60,43 +60,16 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 350);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(349);
-
-
-/***/ }),
-
-/***/ 349:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(350);
-
-__webpack_require__(351);
-
-var _accordion = __webpack_require__(352);
-
-var accordions = document.querySelectorAll(".accordion");
-
-for (var i = 0; i < accordions.length; i++) {
-    (0, _accordion.accordion)(accordions[i]);
-}
-
-/***/ }),
-
 /***/ 350:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__(351);
+
 
 /***/ }),
 
@@ -106,9 +79,36 @@ for (var i = 0; i < accordions.length; i++) {
 "use strict";
 
 
+__webpack_require__(352);
+
+__webpack_require__(353);
+
+var _accordion = __webpack_require__(354);
+
+var accordions = document.querySelectorAll(".accordion");
+
+for (var i = 0; i < accordions.length; i++) {
+    (0, _accordion.accordion)(accordions[i]);
+}
+
 /***/ }),
 
 /***/ 352:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 353:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -119,7 +119,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.accordion = accordion;
 
-__webpack_require__(353);
+__webpack_require__(355);
 
 function accordion(element) {
     var index = 0;
@@ -150,7 +150,7 @@ function accordion(element) {
 
 /***/ }),
 
-/***/ 353:
+/***/ 355:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
