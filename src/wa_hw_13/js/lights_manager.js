@@ -8,6 +8,7 @@ export class LightsManager{
         this.renderRemoveBtn();
         this.renderToggleBtn();
         this.onOff = 0;
+        this.inputCount = 0;
     }
     renderAddBtn(){
         this.btn = document.createElement('button');
@@ -40,7 +41,8 @@ export class LightsManager{
         });
     }
     addLamp(){
-        let lampItem = new Lights(this.target, this.lamps);
+        this.inputCount++;
+        let lampItem = new Lights(this.target, this.lamps, this.inputCount);
         this.lamps.push(lampItem);
     }
     removeLamp(){
@@ -52,7 +54,6 @@ export class LightsManager{
         this.lamps.forEach((item)=>{
             this.onOff = item.isOn || this.onOff;
         });
-        console.log(this.onOff);
         if(this.onOff){
             this.lamps.forEach((item)=>{
                 item.off();

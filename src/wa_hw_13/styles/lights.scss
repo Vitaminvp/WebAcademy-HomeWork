@@ -1,14 +1,9 @@
 @import './mixins';
 
-
 .wrapper{
   display: flex;
   flex-wrap: wrap;
 }
-
-
-
-
 .wrap{
   display: inline-flex;
   flex-direction: column;
@@ -20,12 +15,13 @@
     font-size: 55px;
     margin-bottom: 5px;
     color: gray;
+    transition: all 0.25s;
   }
   .close{
     position: absolute;
     box-sizing: border-box;
-    top: 0;
-    right: 0;
+    top: -3px;
+    right: -3px;
     padding: 0;
     border-radius: 50%;
     border: 2px solid gray;
@@ -35,16 +31,15 @@
     color: gray;
     width: 15px;
     height: 15px;
-    transition: all 0.25s;
     display: flex;
     text-align: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.25s;
     &:hover{
       transform: scale(1.2);
     }
   }
-
   &.active{
     .bulb{
       opacity: 0.7;
@@ -54,6 +49,9 @@
     .fa-lightbulb{
       color: yellow;
     }
+    .close{
+      background-color: yellow;
+    }
   }
   &:nth-child(2n+1).active{
     .fa-lightbulb{
@@ -62,7 +60,36 @@
     .bulb{
       border: 2px solid #6464ff;
       color: #b7bbff;
-
+    }
+    .close{
+      background-color: #6464ff;
+      color: #fff;
+    }
+  }
+  &:nth-child(3n).active{
+    .fa-lightbulb{
+      color: greenyellow;
+    }
+    .bulb{
+      border: 2px solid greenyellow;
+      color: greenyellow;
+    }
+    .close{
+      background-color: greenyellow;
+      color: #fff;
+    }
+  }
+  &:nth-child(4n).active{
+    .fa-lightbulb{
+      color: hotpink;
+    }
+    .bulb{
+      border: 2px solid hotpink;
+      color: hotpink;
+    }
+    .close{
+      background-color: hotpink;
+      color: #fff;
     }
   }
   }
@@ -88,8 +115,6 @@
 .wrap:last-child{
   justify-content: flex-end;
 }
-
-
 .all{
   align-self: flex-end;
   margin: 2px 10px;

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 362);
+/******/ 	return __webpack_require__(__webpack_require__.s = 361);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -74,11 +74,184 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Lights = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(366);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ITEM_CLASS = "wrap";
+
+var Lights = exports.Lights = function () {
+    function Lights(targetLight, arr, inputId) {
+        _classCallCheck(this, Lights);
+
+        this.targetLight = targetLight;
+        this.inputNumber = parseInt(inputId);
+        this.isOn = false;
+        this.arrItems = arr;
+        this.render();
+    }
+
+    _createClass(Lights, [{
+        key: 'render',
+        value: function render() {
+            var _this = this;
+
+            this.wrapp = document.createElement('div');
+            this.wrapp.className = ITEM_CLASS;
+            this.i = document.createElement('i');
+            this.i.className = 'far fa-lightbulb';
+            this.wrapp.appendChild(this.i);
+            this.close = document.createElement('div');
+            this.close.className = 'close';
+            this.close.innerHTML = '&times';
+            this.wrapp.appendChild(this.close);
+            this.close.addEventListener('click', function () {
+                _this.removeItem();
+            });
+            this.targetLight.appendChild(this.wrapp);
+            this.renderSwitch();
+        }
+    }, {
+        key: 'renderBtn',
+        value: function renderBtn() {
+            var _this2 = this;
+
+            this.btn = document.createElement('button');
+            this.btn.classList.add('bulb');
+            this.btn.textContent = 'on/off';
+            this.wrapp.appendChild(this.btn);
+            this.btn.addEventListener('click', function () {
+                _this2.wrapp.classList.toggle('active');
+                _this2.isOn = !_this2.isOn;
+            });
+        }
+    }, {
+        key: 'renderSwitch',
+        value: function renderSwitch() {
+            var _this3 = this;
+
+            var forAttribute = 'switch-' + this.inputNumber;
+            this.switch = document.createElement('div');
+            this.switch.className = "switch";
+            this.switch.addEventListener('click', function () {
+                if (_this3.input.checked) {
+                    _this3.off();
+                } else {
+                    _this3.on();
+                }
+            });
+            this.input = document.createElement('input');
+            this.input.className = "switch-check";
+            this.input.id = 'switch-' + this.inputNumber;
+            this.input.setAttribute('type', 'checkbox');
+            this.label = document.createElement('label');
+            this.label.className = "switch-label";
+            this.label.setAttribute('for', 'switch-' + this.inputNumber);
+            this.label.textContent = "Опция";
+            this.span1 = document.createElement('span');
+            this.span1.className = 'switch-slider switch-slider-on';
+            this.span2 = document.createElement('span');
+            this.span2.className = 'switch-slider switch-slider-off';
+            this.label.appendChild(this.span1);
+            this.label.appendChild(this.span2);
+            this.switch.appendChild(this.input);
+            this.switch.appendChild(this.label);
+            this.wrapp.appendChild(this.switch);
+        }
+    }, {
+        key: 'on',
+        value: function on() {
+            if (!this.wrapp.classList.contains('active')) this.wrapp.classList.add('active');
+            this.isOn = true;
+            this.input.checked = true;
+        }
+    }, {
+        key: 'off',
+        value: function off() {
+            if (this.wrapp.classList.contains('active')) this.wrapp.classList.remove('active');
+            this.isOn = false;
+            this.input.checked = false;
+        }
+    }, {
+        key: 'removeItem',
+        value: function removeItem() {
+            var _this4 = this;
+
+            if (this.arrItems) {
+                this.arrItems.forEach(function (item, i, array) {
+                    if (item.wrapp == _this4.wrapp) {
+                        array.splice(i, 1);
+                    }
+                });
+            }
+            this.wrapp.remove();
+        }
+    }]);
+
+    return Lights;
+}();
+
+/***/ }),
+
+/***/ 361:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(362);
+
+
+/***/ }),
+
+/***/ 362:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(363);
+
+__webpack_require__(364);
+
+var _lights_manager = __webpack_require__(365);
+
+var _lights = __webpack_require__(125);
+
+var light = new _lights_manager.LightsManager(document.querySelector('.wrapper'));
+
+/***/ }),
+
+/***/ 363:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 364:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+
+/***/ 365:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.LightsManager = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _lights = __webpack_require__(126);
+var _lights = __webpack_require__(125);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -92,6 +265,7 @@ var LightsManager = exports.LightsManager = function () {
         this.renderRemoveBtn();
         this.renderToggleBtn();
         this.onOff = 0;
+        this.inputCount = 0;
     }
 
     _createClass(LightsManager, [{
@@ -139,7 +313,8 @@ var LightsManager = exports.LightsManager = function () {
     }, {
         key: 'addLamp',
         value: function addLamp() {
-            var lampItem = new _lights.Lights(this.target, this.lamps);
+            this.inputCount++;
+            var lampItem = new _lights.Lights(this.target, this.lamps, this.inputCount);
             this.lamps.push(lampItem);
         }
     }, {
@@ -157,7 +332,6 @@ var LightsManager = exports.LightsManager = function () {
             this.lamps.forEach(function (item) {
                 _this4.onOff = item.isOn || _this4.onOff;
             });
-            console.log(this.onOff);
             if (this.onOff) {
                 this.lamps.forEach(function (item) {
                     item.off();
@@ -172,144 +346,6 @@ var LightsManager = exports.LightsManager = function () {
 
     return LightsManager;
 }();
-
-/***/ }),
-
-/***/ 126:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Lights = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(366);
-
-var _lights_manager = __webpack_require__(125);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var ITEM_CLASS = "wrap";
-
-var Lights = exports.Lights = function () {
-    function Lights(targetLight, arr) {
-        _classCallCheck(this, Lights);
-
-        this.targetLight = targetLight;
-        this.render();
-        this.isOn = false;
-        this.arrItems = arr;
-    }
-
-    _createClass(Lights, [{
-        key: "render",
-        value: function render() {
-            var _this = this;
-
-            this.wrapp = document.createElement('div');
-            this.wrapp.className = ITEM_CLASS;
-            this.i = document.createElement('i');
-            this.i.className = 'far fa-lightbulb';
-            this.btn = document.createElement('button');
-            this.btn.classList.add('bulb');
-            this.btn.textContent = 'on/off';
-            this.close = document.createElement('div');
-            this.close.className = 'close';
-            this.close.innerHTML = '&times';
-            this.wrapp.appendChild(this.i);
-            this.wrapp.appendChild(this.btn);
-            this.wrapp.appendChild(this.close);
-            this.targetLight.appendChild(this.wrapp);
-            this.close.addEventListener('click', function () {
-                _this.removeItem();
-            });
-            this.btn.addEventListener('click', function () {
-                _this.wrapp.classList.toggle('active');
-                _this.isOn = !_this.isOn;
-            });
-        }
-    }, {
-        key: "on",
-        value: function on() {
-            if (!this.wrapp.classList.contains('active')) this.wrapp.classList.add('active');
-            this.isOn = true;
-        }
-    }, {
-        key: "off",
-        value: function off() {
-            if (this.wrapp.classList.contains('active')) this.wrapp.classList.remove('active');
-            this.isOn = false;
-        }
-    }, {
-        key: "removeItem",
-        value: function removeItem() {
-            var _this2 = this;
-
-            if (this.arrItems) {
-                this.arrItems.forEach(function (item, i, array) {
-                    if (item.wrapp == _this2.wrapp) {
-                        array.splice(i, 1);
-                    }
-                });
-            }
-            this.wrapp.remove();
-        }
-    }]);
-
-    return Lights;
-}();
-
-/***/ }),
-
-/***/ 362:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(363);
-
-
-/***/ }),
-
-/***/ 363:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(364);
-
-__webpack_require__(365);
-
-var _lights_manager = __webpack_require__(125);
-
-var _lights = __webpack_require__(126);
-
-var light = new _lights_manager.LightsManager(document.querySelector('.wrapper'));
-
-var light1 = new _lights.Lights(document.querySelector('.wrapper'));
-// const light2 = new Lights(document.querySelector('.wrapper'));
-// const light3 = new Lights(document.querySelector('.wrapper'));
-// const light4 = new Lights(document.querySelector('.wrapper'));
-// const light5 = new Lights(document.querySelector('.wrapper'));
-
-/***/ }),
-
-/***/ 364:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 365:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 /***/ }),
 
