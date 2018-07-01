@@ -20,7 +20,7 @@ export class Lights {
         this.close.className = 'close';
         this.close.innerHTML = '&times';
         this.wrapp.appendChild(this.close);
-        this.close.addEventListener('click', ()=>{
+        this.close.addEventListener('click', () => {
             this.removeItem();
         });
         this.targetLight.appendChild(this.wrapp);
@@ -31,7 +31,7 @@ export class Lights {
         this.btn.classList.add('bulb');
         this.btn.textContent = 'on/off';
         this.wrapp.appendChild(this.btn);
-        this.btn.addEventListener('click', ()=>{
+        this.btn.addEventListener('click', () => {
             this.wrapp.classList.toggle('active');
             this.isOn = !this.isOn;
         });
@@ -40,7 +40,7 @@ export class Lights {
         let forAttribute = 'switch-' +  this.inputNumber;
         this.switch = document.createElement('div');
         this.switch.className = "switch";
-        this.switch.addEventListener('click', ()=>{
+        this.switch.addEventListener('click', () => {
             if(this.input.checked){
                 this.off();
             } else {
@@ -69,7 +69,6 @@ export class Lights {
         if(!this.wrapp.classList.contains('active'))  this.wrapp.classList.add('active');
         this.isOn = true;
         this.input.checked = true;
-
     }
     off() {
         if(this.wrapp.classList.contains('active')) this.wrapp.classList.remove('active');
@@ -77,8 +76,8 @@ export class Lights {
         this.input.checked = false;
     }
     removeItem(){
-        if (this.arrItems){
-            this.arrItems.forEach((item, i, array) =>{
+        if (this.arrItems.length){
+            this.arrItems.forEach((item, i, array) => {
                 if(item.wrapp == this.wrapp){
                     array.splice(i, 1);
                 }

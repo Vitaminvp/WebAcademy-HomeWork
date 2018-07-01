@@ -52,9 +52,11 @@ export class LightsManager{
         this.lamps.push(lampItem);
     }
     removeLamp(){
-        let lampItem = this.lamps.pop();
-        let temp =this.target.lastChild;
-        this.target.removeChild(temp);
+        if(this.lamps.length > 0){
+            let lampItem = this.lamps.pop();
+            let temp =this.target.lastChild;
+            this.target.removeChild(temp);
+        }
     }
     toggleLamps(){
         this.lamps.forEach((item)=>{
@@ -69,6 +71,5 @@ export class LightsManager{
                 item.on();
             });
         }
-
     }
 }

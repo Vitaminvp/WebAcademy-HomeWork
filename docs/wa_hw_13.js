@@ -181,7 +181,7 @@ var Lights = exports.Lights = function () {
         value: function removeItem() {
             var _this4 = this;
 
-            if (this.arrItems) {
+            if (this.arrItems.length) {
                 this.arrItems.forEach(function (item, i, array) {
                     if (item.wrapp == _this4.wrapp) {
                         array.splice(i, 1);
@@ -328,9 +328,11 @@ var LightsManager = exports.LightsManager = function () {
     }, {
         key: 'removeLamp',
         value: function removeLamp() {
-            var lampItem = this.lamps.pop();
-            var temp = this.target.lastChild;
-            this.target.removeChild(temp);
+            if (this.lamps.length > 0) {
+                var lampItem = this.lamps.pop();
+                var temp = this.target.lastChild;
+                this.target.removeChild(temp);
+            }
         }
     }, {
         key: 'toggleLamps',
