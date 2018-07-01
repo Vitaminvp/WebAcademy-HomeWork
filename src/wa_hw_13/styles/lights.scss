@@ -3,6 +3,11 @@
 .wrapper{
   display: flex;
   flex-wrap: wrap;
+  .btnwrapp{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 .wrap{
   display: inline-flex;

@@ -115,6 +115,10 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .wrapper .btnwrapp {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center; }
 
 .wrap {
   display: -ms-inline-flexbox;

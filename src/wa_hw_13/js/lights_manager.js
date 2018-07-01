@@ -4,17 +4,23 @@ export class LightsManager{
     constructor(target){
         this.target =  target;
         this.lamps = [];
+        this.render();
+        this.onOff = 0;
+        this.inputCount = 0;
+    }
+    render(){
+        this.btnwrapp = document.createElement('div');
+        this.btnwrapp.className = 'btnwrapp';
+        this.target.appendChild(this.btnwrapp);
         this.renderAddBtn();
         this.renderRemoveBtn();
         this.renderToggleBtn();
-        this.onOff = 0;
-        this.inputCount = 0;
     }
     renderAddBtn(){
         this.btn = document.createElement('button');
         this.btn.className = 'all bulb';
         this.btn.textContent = 'add';
-        this.target.appendChild(this.btn);
+        this.btnwrapp.appendChild(this.btn);
         this.btn.addEventListener('click', ()=>{
             this.addLamp();
         });
@@ -23,7 +29,7 @@ export class LightsManager{
         this.btn = document.createElement('button');
         this.btn.className = 'all bulb';
         this.btn.textContent = 'remove';
-        this.target.appendChild(this.btn);
+        this.btnwrapp.appendChild(this.btn);
         this.btn.addEventListener('click', ()=>{
             this.removeLamp();
         });
@@ -32,7 +38,7 @@ export class LightsManager{
         this.btn = document.createElement('button');
         this.btn.className = 'all bulb';
         this.btn.textContent = 'toggle';
-        this.target.appendChild(this.btn);
+        this.btnwrapp.appendChild(this.btn);
         this.btn.addEventListener('click', ()=>{
             if(this.lamps.length){
                 this.onOff = false;

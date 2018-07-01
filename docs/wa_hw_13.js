@@ -261,14 +261,22 @@ var LightsManager = exports.LightsManager = function () {
 
         this.target = target;
         this.lamps = [];
-        this.renderAddBtn();
-        this.renderRemoveBtn();
-        this.renderToggleBtn();
+        this.render();
         this.onOff = 0;
         this.inputCount = 0;
     }
 
     _createClass(LightsManager, [{
+        key: 'render',
+        value: function render() {
+            this.btnwrapp = document.createElement('div');
+            this.btnwrapp.className = 'btnwrapp';
+            this.target.appendChild(this.btnwrapp);
+            this.renderAddBtn();
+            this.renderRemoveBtn();
+            this.renderToggleBtn();
+        }
+    }, {
         key: 'renderAddBtn',
         value: function renderAddBtn() {
             var _this = this;
@@ -276,7 +284,7 @@ var LightsManager = exports.LightsManager = function () {
             this.btn = document.createElement('button');
             this.btn.className = 'all bulb';
             this.btn.textContent = 'add';
-            this.target.appendChild(this.btn);
+            this.btnwrapp.appendChild(this.btn);
             this.btn.addEventListener('click', function () {
                 _this.addLamp();
             });
@@ -289,7 +297,7 @@ var LightsManager = exports.LightsManager = function () {
             this.btn = document.createElement('button');
             this.btn.className = 'all bulb';
             this.btn.textContent = 'remove';
-            this.target.appendChild(this.btn);
+            this.btnwrapp.appendChild(this.btn);
             this.btn.addEventListener('click', function () {
                 _this2.removeLamp();
             });
@@ -302,7 +310,7 @@ var LightsManager = exports.LightsManager = function () {
             this.btn = document.createElement('button');
             this.btn.className = 'all bulb';
             this.btn.textContent = 'toggle';
-            this.target.appendChild(this.btn);
+            this.btnwrapp.appendChild(this.btn);
             this.btn.addEventListener('click', function () {
                 if (_this3.lamps.length) {
                     _this3.onOff = false;
