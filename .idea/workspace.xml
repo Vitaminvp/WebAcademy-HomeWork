@@ -2,311 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/styles/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/styles/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/styles/variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/js/lights.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/js/lights_manager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/styles/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/styles/lights.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/styles/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/styles/variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/wa_hw_4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/wa_hw_4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/wa_hw_4.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/js/_base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/styles/swich.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/wa_hw_2/.idea/wa_hw_2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/wa_hw_6/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/README.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/hello_world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/models/comments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/models/fruites.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/models/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/lighter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/lighterController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/todo.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/calc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/comments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/fruites.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/users.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/client/.babelrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/client/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/client/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/client/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/about.png" afterPath="$PROJECT_DIR$/client/assets/images/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/blog-image.png" afterPath="$PROJECT_DIR$/client/assets/images/blog-image.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/contact.png" afterPath="$PROJECT_DIR$/client/assets/images/contact.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/favicon.ico" afterPath="$PROJECT_DIR$/client/assets/images/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/hire.png" afterPath="$PROJECT_DIR$/client/assets/images/hire.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/home.png" afterPath="$PROJECT_DIR$/client/assets/images/home.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/images.jpg" afterPath="$PROJECT_DIR$/client/assets/images/images.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/off.svg" afterPath="$PROJECT_DIR$/client/assets/images/off.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/on.svg" afterPath="$PROJECT_DIR$/client/assets/images/on.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/pattern.jpg" afterPath="$PROJECT_DIR$/client/assets/images/pattern.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/pattern9.jpg" afterPath="$PROJECT_DIR$/client/assets/images/pattern9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/photos.png" afterPath="$PROJECT_DIR$/client/assets/images/photos.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/base.js" afterPath="$PROJECT_DIR$/client/config/base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/dev.js" afterPath="$PROJECT_DIR$/client/config/dev.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/prod.js" afterPath="$PROJECT_DIR$/client/config/prod.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-brands-400.eot" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-brands-400.ttf" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-brands-400.woff" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-brands-400.woff2" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-regular-400.eot" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-regular-400.ttf" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-regular-400.woff" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-regular-400.woff2" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-solid-900.eot" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-solid-900.ttf" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-solid-900.woff" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/fonts/fa-solid-900.woff2" afterPath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/about.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/blog-image.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/blog-image.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/contact.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/contact.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/fa-brands-400.svg" afterPath="$PROJECT_DIR$/client/docs/assets/images/fa-brands-400.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/fa-regular-400.svg" afterPath="$PROJECT_DIR$/client/docs/assets/images/fa-regular-400.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/fa-solid-900.svg" afterPath="$PROJECT_DIR$/client/docs/assets/images/fa-solid-900.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/hire.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/hire.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/home.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/home.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/off.svg" afterPath="$PROJECT_DIR$/client/docs/assets/images/off.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/on.svg" afterPath="$PROJECT_DIR$/client/docs/assets/images/on.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/pattern.jpg" afterPath="$PROJECT_DIR$/client/docs/assets/images/pattern.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/pattern9.jpg" afterPath="$PROJECT_DIR$/client/docs/assets/images/pattern9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/assets/images/photos.png" afterPath="$PROJECT_DIR$/client/docs/assets/images/photos.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/index.css" afterPath="$PROJECT_DIR$/client/docs/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/client/docs/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/index.js" afterPath="$PROJECT_DIR$/client/docs/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/vendors.js" afterPath="$PROJECT_DIR$/client/docs/vendors.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_10.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_10.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_10.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_10.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_10.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_10.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_11.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_11.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_11.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_11.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_11.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_11.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_12.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_12.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_12.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_12.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_12.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_12.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_13.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_13.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_13.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_13.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_13.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_13.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_7.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_7.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_7.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_8.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_8.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_8.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_8.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_8.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_9.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_9.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_9.html" afterPath="$PROJECT_DIR$/client/docs/wa_hw_9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/wa_hw_9.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_9.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/client/package-lock.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/scripts/vendors.js" afterPath="$PROJECT_DIR$/client/src/common/scripts/vendors.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/styles/base.scss" afterPath="$PROJECT_DIR$/client/src/common/styles/base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index/index.html" afterPath="$PROJECT_DIR$/client/src/index/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index/index.js" afterPath="$PROJECT_DIR$/client/src/index/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index/index.scss" afterPath="$PROJECT_DIR$/client/src/index/index.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_10/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_10/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_10/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_10/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_10/wa_hw_10.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_10/wa_hw_10.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_10/wa_hw_10.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_10/wa_hw_10.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_10/wa_hw_10.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_10/wa_hw_10.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/js/accordion.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/js/accordion.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/styles/accordion.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/styles/accordion.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/styles/mixins.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/styles/mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/styles/variables.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/styles/variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/wa_hw_11.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/wa_hw_11.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/wa_hw_11.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/wa_hw_11.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_11/wa_hw_11.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_11/wa_hw_11.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/js/accordion.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/js/accordion.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/styles/accordion.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/styles/accordion.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/styles/mixins.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/styles/mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/styles/variables.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/styles/variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/wa_hw_12.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/wa_hw_12.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/wa_hw_12.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/wa_hw_12.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_12/wa_hw_12.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_12/wa_hw_12.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/js/lights.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/js/lights.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/js/lights_manager.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/js/lights_manager.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/styles/lights.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/styles/lights.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/styles/mixins.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/styles/mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/styles/swich.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/styles/swich.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/styles/variables.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/styles/variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/wa_hw_13.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/wa_hw_13.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/wa_hw_13.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/wa_hw_13.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_13/wa_hw_13.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_13/wa_hw_13.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/styles/_grid.css" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/styles/_grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/wa_hw_7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/wa_hw_7.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_7/wa_hw_7.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_7/wa_hw_7.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/js/lighter.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/js/lighter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/styles/lighter.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/styles/lighter.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/styles/swich.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/styles/swich.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/wa_hw_8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/wa_hw_8.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_8/wa_hw_8.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_8/wa_hw_8.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/styles/_base.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/styles/_grid.css" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/styles/_grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/wa_hw_9.html" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/wa_hw_9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/wa_hw_9.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/wa_hw_9.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wa_hw_9/wa_hw_9.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_9/wa_hw_9.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/css/main.min.css" afterPath="$PROJECT_DIR$/client/wa_hw_1/css/main.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghBold/AaarghBold.eot" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghBold/AaarghBold.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghBold/AaarghBold.ttf" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghBold/AaarghBold.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghBold/AaarghBold.woff" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghBold/AaarghBold.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghRegular/AaarghRegular.eot" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghRegular/AaarghRegular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghRegular/AaarghRegular.ttf" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghRegular/AaarghRegular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/fonts/AaarghRegular/AaarghRegular.woff" afterPath="$PROJECT_DIR$/client/wa_hw_1/fonts/AaarghRegular/AaarghRegular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/big1.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/big1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/big2.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/big2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/big3.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/big3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/big4.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/big4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/big5.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/big5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/favicon/apple-touch-icon-180x180.png" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/favicon/apple-touch-icon-180x180.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/favicon/favicon.ico" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/favicon/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/img/utensils.svg" afterPath="$PROJECT_DIR$/client/wa_hw_1/img/utensils.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/index.html" afterPath="$PROJECT_DIR$/client/wa_hw_1/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/js/common.js" afterPath="$PROJECT_DIR$/client/wa_hw_1/js/common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_1/js/scripts.min.js" afterPath="$PROJECT_DIR$/client/wa_hw_1/js/scripts.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/.idea/encodings.xml" afterPath="$PROJECT_DIR$/client/wa_hw_2/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/.idea/misc.xml" afterPath="$PROJECT_DIR$/client/wa_hw_2/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/.idea/modules.xml" afterPath="$PROJECT_DIR$/client/wa_hw_2/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/.idea/wa_hw_2.iml" afterPath="$PROJECT_DIR$/.idea/HW.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/client/wa_hw_2/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/css/style.css" afterPath="$PROJECT_DIR$/client/wa_hw_2/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/index.html" afterPath="$PROJECT_DIR$/client/wa_hw_2/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_2/js/script.js" afterPath="$PROJECT_DIR$/client/wa_hw_2/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/client/wa_hw_3/css/font-awesome.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/css/style.css" afterPath="$PROJECT_DIR$/client/wa_hw_3/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/icomoon.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/icomoon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/icomoon.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/client/wa_hw_3/fonts/icomoon.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/freebie.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/freebie.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/freebie.psd" afterPath="$PROJECT_DIR$/client/wa_hw_3/freebie.psd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer 16.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer 16.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer 30.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer 30.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer 33.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer 33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer 59.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer 59.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer 60.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer 60.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer5.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer59.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer59.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Layer60.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Layer60.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Play.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/Rounded Rectangle 8.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/Rounded Rectangle 8.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/arrow.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/chat.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/chat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/chat.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/chat.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/dropdown.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/dropdown.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/flag.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/flag.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/forward.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/forward.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/girl.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/girl.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/graph.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/graph.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/image.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/image.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/inbox.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/inbox.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/lady_bg.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/lady_bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/like.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/like.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/like.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/like.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/mail.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/mail.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/man_bg.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/man_bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/medok_ua.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/medok_ua.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/mountains.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/mountains.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/person.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/person.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/person2.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/person2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/photo.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/photo.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/rewind.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/rewind.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/room.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/room.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/settings.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/settings.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/share.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/share.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/share.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/share.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/sofa.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/sofa.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/sound.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/sound.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/img/trash.svg" afterPath="$PROJECT_DIR$/client/wa_hw_3/img/trash.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/index.html" afterPath="$PROJECT_DIR$/client/wa_hw_3/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/js/script.js" afterPath="$PROJECT_DIR$/client/wa_hw_3/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/js/temp.js" afterPath="$PROJECT_DIR$/client/wa_hw_3/js/temp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 16.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 16.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 30.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 30.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 33.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 5.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 59.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 59.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Layer 60.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Layer 60.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/Play.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/Play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/chat.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/chat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/image.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/image.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/like.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/like.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/photo.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/photo.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/assets/share.png" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/assets/share.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/freebie.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/freebie.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_3/lesson_3/freebie.psd" afterPath="$PROJECT_DIR$/client/wa_hw_3/lesson_3/freebie.psd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/bootstrap-grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/footer.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/footer.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/header.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/header.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/main.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/media.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/media.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/css/section.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/css/section.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/fonts/kerola-bold.woff2" afterPath="$PROJECT_DIR$/client/wa_hw_5/fonts/kerola-bold.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/fonts/kerola-light.woff2" afterPath="$PROJECT_DIR$/client/wa_hw_5/fonts/kerola-light.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/fonts/kerola-normal.woff2" afterPath="$PROJECT_DIR$/client/wa_hw_5/fonts/kerola-normal.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/fonts/kerola.woff2" afterPath="$PROJECT_DIR$/client/wa_hw_5/fonts/kerola.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/gri-image-2.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/gri-image-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/grid-image-4.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/grid-image-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/grid-image-5.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/grid-image-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/grid-image.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/grid-image.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/icon.svg" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/icon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/img/main-baner.png" afterPath="$PROJECT_DIR$/client/wa_hw_5/img/main-baner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/index.html" afterPath="$PROJECT_DIR$/client/wa_hw_5/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/inject.preload.js" afterPath="$PROJECT_DIR$/client/wa_hw_5/inject.preload.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/js/jquery.min.js" afterPath="$PROJECT_DIR$/client/wa_hw_5/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/js/script.js" afterPath="$PROJECT_DIR$/client/wa_hw_5/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_5/style.css" afterPath="$PROJECT_DIR$/client/wa_hw_5/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/.gitignore" afterPath="$PROJECT_DIR$/client/wa_hw_6/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/css/style.css" afterPath="$PROJECT_DIR$/client/wa_hw_6/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/about.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/blog-image.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/blog-image.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/contact.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/contact.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/hire.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/hire.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/home.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/home.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/pattern.jpg" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/pattern.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/img/photos.png" afterPath="$PROJECT_DIR$/client/wa_hw_6/img/photos.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/index.html" afterPath="$PROJECT_DIR$/client/wa_hw_6/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wa_hw_6/js/script.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_4/js/_base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/client/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -320,16 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/config/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wa_hw_14.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -344,17 +30,27 @@
         <entry file="file://$PROJECT_DIR$/client/src/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lights_manager.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lights_manager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_4/js/lights_manager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="610">
-              <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+              <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -463,7 +159,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2415" />
     <option name="y" value="-4" />
     <option name="width" value="1083" />
@@ -504,6 +200,12 @@
               <item name="HW" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW" type="b2602c69:ProjectViewProjectNode" />
@@ -597,24 +299,25 @@
       <option name="presentableId" value="Default" />
       <updated>1530598421321</updated>
       <workItem from="1530598424350" duration="8124000" />
-      <workItem from="1530616414719" duration="9117000" />
+      <workItem from="1530616414719" duration="9587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17241000" />
+    <option name="totallyTimeSpent" value="17711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-12" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-12" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.6671141" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.66710013" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.3328859" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45543477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.33289987" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16413043" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16413043" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -884,7 +587,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -900,7 +603,15 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_4/js/lights_manager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
-          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
