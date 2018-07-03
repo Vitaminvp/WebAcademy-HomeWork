@@ -1,0 +1,130 @@
+@import './mixins';
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  .btnwrapp{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.wrap{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 2px;
+  .fa-lightbulb{
+    font-size: 55px;
+    margin-bottom: 5px;
+    color: gray;
+    transition: all 0.25s;
+  }
+  .close{
+    position: absolute;
+    box-sizing: border-box;
+    top: -3px;
+    right: -3px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-color: lightgrey;
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &.active{
+    .bulb{
+      opacity: 0.7;
+      border: 2px solid yellow;
+      color: #fffb3c;
+    }
+    .fa-lightbulb{
+      color: yellow;
+    }
+    .close{
+      background-color: yellow;
+    }
+  }
+  &:nth-child(2n+1).active{
+    .fa-lightbulb{
+      color: #6464ff;
+    }
+    .bulb{
+      border: 2px solid #6464ff;
+      color: #b7bbff;
+    }
+    .close{
+      background-color: #6464ff;
+      color: #fff;
+    }
+  }
+  &:nth-child(3n).active{
+    .fa-lightbulb{
+      color: greenyellow;
+    }
+    .bulb{
+      border: 2px solid greenyellow;
+      color: greenyellow;
+    }
+    .close{
+      background-color: greenyellow;
+      color: #fff;
+    }
+  }
+  &:nth-child(4n).active{
+    .fa-lightbulb{
+      color: hotpink;
+    }
+    .bulb{
+      border: 2px solid hotpink;
+      color: hotpink;
+    }
+    .close{
+      background-color: hotpink;
+      color: #fff;
+    }
+  }
+  }
+.bulb {
+  outline: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: gray;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid lightgrey;
+  &:hover{
+    opacity: 0.7;
+  }
+  &:active{
+    opacity: 1;
+  }
+}
+.wrap:last-child{
+  justify-content: flex-end;
+}
+.all{
+  align-self: flex-end;
+  margin: 2px 10px;
+  order: 1;
+  &:first-child{
+    order: 0;
+  }
+}
