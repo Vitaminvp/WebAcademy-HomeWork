@@ -17,7 +17,8 @@
     "jquery": "^3.1.1",
     "lodash": "^3.10.1",
     "mocha": "^2.3.4",
-    "node-static": "^0.7.7"
+    "node-static": "^0.7.7",
+    "npm": "^6.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
