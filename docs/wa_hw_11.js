@@ -60,30 +60,30 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 349);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
+/***/ 349:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(350);
 
 
 /***/ }),
 
-/***/ 349:
+/***/ 350:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(350);
-
 __webpack_require__(351);
 
-var _accordion = __webpack_require__(352);
+__webpack_require__(352);
+
+var _accordion = __webpack_require__(353);
 
 var accordions = document.querySelectorAll(".accordion");
 
@@ -93,14 +93,14 @@ for (var i = 0; i < accordions.length; i++) {
 
 /***/ }),
 
-/***/ 350:
+/***/ 351:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 351:
+/***/ 352:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108,7 +108,7 @@ for (var i = 0; i < accordions.length; i++) {
 
 /***/ }),
 
-/***/ 352:
+/***/ 353:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -119,7 +119,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.accordion = accordion;
 
-__webpack_require__(353);
+__webpack_require__(354);
 
 function accordion(element) {
     var index = 0;
@@ -150,7 +150,7 @@ function accordion(element) {
 
 /***/ }),
 
-/***/ 353:
+/***/ 354:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
