@@ -98,6 +98,40 @@ __webpack_require__(377);
 "use strict";
 
 
+var xhr = new XMLHttpRequest();
+var btn = void 0;
+var output = void 0;
+var wrapp = document.querySelector(".wrapper");
+(function render() {
+    btn = document.createElement('button');
+    btn.innerHTML = "GET DATA";
+    output = document.createElement('div');
+    output.className = "output";
+    wrapp.appendChild(btn);
+    btn.addEventListener('click', function () {
+        wrapp.appendChild(output);
+        output.innerHTML = "Loading ...";
+        xhr.open("GET", "http://localhost:4001/list");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                output.innerHTML = "";
+                var data = JSON.parse(xhr.responseText);
+                data = Array.from(data);
+                data.forEach(function (item) {
+                    var content = "";
+                    content += "<ul>";
+                    for (var key in item) {
+                        content += '<li>' + key + ': "' + item[key] + '"</li>';
+                    }
+                    content += "</ul>";
+                    output.innerHTML += content;
+                });
+            }
+        };
+        xhr.send();
+    });
+})();
+
 /***/ })
 
 /******/ });
