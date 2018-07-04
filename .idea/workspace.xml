@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_14.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,12 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_base.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wa_hw_14.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/docs/wa_hw_14.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="112" column="38" lean-forward="false" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,6 +81,7 @@
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.html" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/styles/_base.scss" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
+        <option value="$PROJECT_DIR$/client/docs/wa_hw_14.js" />
       </list>
     </option>
   </component>
@@ -130,14 +143,7 @@
               <item name="HW" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW" type="b2602c69:ProjectViewProjectNode" />
@@ -257,7 +263,7 @@
       <workItem from="1530598424350" duration="8124000" />
       <workItem from="1530616414719" duration="9587000" />
       <workItem from="1530641190243" duration="1141000" />
-      <workItem from="1530707148137" duration="999000" />
+      <workItem from="1530707148137" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -294,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530708137359</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="14">
+      <created>1530708155676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530708155676</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21716000" />
+    <option name="totallyTimeSpent" value="21918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-12" width="1936" height="1056" extended-state="6" />
@@ -338,7 +351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/JSONHandler.ashx" />
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_13/js/lights.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
@@ -701,6 +713,16 @@
         <state relative-caret-position="360">
           <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/docs/wa_hw_14.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="112" column="38" lean-forward="false" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
