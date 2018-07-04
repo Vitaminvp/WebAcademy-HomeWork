@@ -8,12 +8,13 @@ const wrapp = document.querySelector(".wrapper");
     output  = document.createElement('div');
     output.className = "output";
     wrapp.appendChild(btn);
-    wrapp.appendChild(output);
     btn.addEventListener('click', function() {
-        output.innerHTML = "";
+        wrapp.appendChild(output);
+        output.innerHTML = "Loading ...";
         xhr.open("GET", "http://localhost:4001/list");
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200){
+                output.innerHTML = "";
                 let data = JSON.parse(xhr.responseText);
                 data = Array.from(data);
                 data.forEach( (item) => {

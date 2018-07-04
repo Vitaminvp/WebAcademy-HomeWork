@@ -30,6 +30,14 @@ body{
   padding: 50px;
 
 }
+ul{
+  padding: 0;
+  margin: 0 20px 20px 0;
+  border: 1px solid lightgray;
+  &:last-child{
+    margin-right: 0;
+  }
+}
 li{
   list-style-type: none;
   background-color: #f3f3f3;
@@ -37,10 +45,20 @@ li{
   padding: 10px;
   color: #2d2d2d;
   font-weight: 500;
-  &:nth-child(2n){
+  text-align-last: left;
+  &:nth-of-type(2n){
     background-color: #dddddd;
   }
   &:hover{
     background-color: lightgray;
   }
+
+}
+.output{
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 20px 0;
+  border: 1px solid lightgray;
 }
