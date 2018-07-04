@@ -10,7 +10,7 @@ const wrapp = document.querySelector(".wrapper");
     wrapp.appendChild(btn);
     btn.addEventListener('click', function() {
         wrapp.appendChild(output);
-        output.innerHTML = '<img src="../../assets/images/ajax-loader.gif">';
+        output.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
         const timeout = 3000;
         const timer = setTimeout(function () { xhr.abort(); alert("Зависон, однако!"); }, timeout);
         xhr.open("GET", "http://localhost:4001/list");
