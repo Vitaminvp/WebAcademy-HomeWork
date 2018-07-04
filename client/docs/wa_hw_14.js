@@ -110,7 +110,7 @@ var wrapp = document.querySelector(".wrapper");
     wrapp.appendChild(btn);
     btn.addEventListener('click', function () {
         wrapp.appendChild(output);
-        output.innerHTML = '<img src="./assets/images/ajax-loader.gif">';
+        output.innerHTML = '<img src="assets/images/ajax-loader.gif">';
         var timeout = 3000;
         var timer = setTimeout(function () {
             xhr.abort();alert("Зависон, однако!");
