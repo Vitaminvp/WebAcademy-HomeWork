@@ -26,5 +26,21 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 50px;
+
+}
+li{
+  list-style-type: none;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  padding: 10px;
+  color: #2d2d2d;
+  font-weight: 500;
+  &:nth-child(2n){
+    background-color: #dddddd;
+  }
+  &:hover{
+    background-color: lightgray;
+  }
 }
