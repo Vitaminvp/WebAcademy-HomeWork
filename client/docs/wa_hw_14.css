@@ -63,7 +63,14 @@ li {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-top: 30px;
   padding: 20px 20px 0;
   border: 1px solid lightgray; }
+  .output img {
+    margin-bottom: 20px; }

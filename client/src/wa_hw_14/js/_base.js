@@ -10,12 +10,15 @@ const wrapp = document.querySelector(".wrapper");
     wrapp.appendChild(btn);
     btn.addEventListener('click', function() {
         wrapp.appendChild(output);
-        output.innerHTML = "Loading ...";
+        output.innerHTML = '<img src="../../assets/images/ajax-loader.gif">';
+        const timeout = 3000;
+        const timer = setTimeout(function () { xhr.abort(); alert("Зависон, однако!"); }, timeout);
         xhr.open("GET", "http://localhost:4001/list");
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200){
                 output.innerHTML = "";
                 let data = JSON.parse(xhr.responseText);
+
                 data = Array.from(data);
                 data.forEach( (item) => {
                     let content = "";
@@ -25,6 +28,7 @@ const wrapp = document.querySelector(".wrapper");
                     }
                     content += "</ul>";
                     output.innerHTML += content;
+                    clearTimeout(timer);
                 });
 
             }
