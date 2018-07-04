@@ -42,8 +42,6 @@ ul {
   padding: 0;
   margin: 0 20px 20px 0;
   border: 1px solid lightgray; }
-  ul:last-child {
-    margin-right: 0; }
 
 li {
   list-style-type: none;
@@ -70,7 +68,7 @@ li {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 30px;
-  padding: 20px 20px 0;
+  padding: 20px 0 0 20px;
   border: 1px solid lightgray; }
   .output img {
-    margin-bottom: 20px; }
+    margin: 0 20px 20px 0; }

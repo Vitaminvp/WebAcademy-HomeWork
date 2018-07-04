@@ -25,6 +25,26 @@ var items = [
     completed: true,
     title: "Nello",
     id: Date.now() + 25
+  },
+  {
+    completed: true,
+    title: "Nello",
+    id: Date.now() + 35
+  },
+  {
+    completed: true,
+    title: "Nello",
+    id: Date.now() + 45
+  },
+  {
+    completed: true,
+    title: "Nello",
+    id: Date.now() + 55
+  },
+  {
+    completed: true,
+    title: "Nello",
+    id: Date.now() + 65
   }
 ];
 
