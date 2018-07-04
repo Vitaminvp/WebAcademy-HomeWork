@@ -30,7 +30,6 @@ const wrapp = document.querySelector(".wrapper");
                     output.innerHTML += content;
                     clearTimeout(timer);
                 });
-
             }
         };
         xhr.send();
