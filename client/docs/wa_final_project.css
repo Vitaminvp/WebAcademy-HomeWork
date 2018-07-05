@@ -2102,7 +2102,7 @@ html {
         height: 100%; }
 
 .best {
-  background-color: saddlebrown;
+  background-image: radial-gradient(circle at 50% 0, #686c6f, #373a3c);
   color: #fff;
   padding: 64px 0 162px; }
   .best h1 {
@@ -2147,6 +2147,18 @@ html {
     .card__content_link .card-btn {
       width: 100%;
       padding: 19px 23px; }
+
+.games {
+  padding: 97px 0 140px;
+  background-image: url(./assets/images/rectangle@3x.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .games h3 {
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center; }
 
 html {
   font-family: 'HelveticaNeue', Arial, sans-serif;
