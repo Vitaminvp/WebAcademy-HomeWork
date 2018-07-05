@@ -110,17 +110,19 @@ var wrapp = document.querySelector(".wrapper");
     wrapp.appendChild(btn);
     btn.addEventListener('click', function () {
         wrapp.appendChild(output);
+        output.style.display = "flex";
         output.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
         var timeout = 3000;
         var timer = setTimeout(function () {
-            xhr.abort();alert("Зависон, однако!");
+            xhr.abort();
+            alert("Зависон, однако!");
+            output.style.display = "none";
         }, timeout);
         xhr.open("GET", "http://localhost:4001/list");
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 output.innerHTML = "";
                 var data = JSON.parse(xhr.responseText);
-
                 data = Array.from(data);
                 data.forEach(function (item) {
                     var content = "";

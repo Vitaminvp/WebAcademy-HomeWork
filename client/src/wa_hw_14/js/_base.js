@@ -21,10 +21,8 @@ const wrapp = document.querySelector(".wrapper");
         xhr.open("GET", "http://localhost:4001/list");
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200){
-
                 output.innerHTML = "";
                 let data = JSON.parse(xhr.responseText);
-
                 data = Array.from(data);
                 data.forEach( (item) => {
                     let content = "";
