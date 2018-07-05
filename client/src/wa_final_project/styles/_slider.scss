@@ -1,0 +1,97 @@
+.slider{
+  background-image: url(../../assets/images/final_project/carousel.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 648px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__block{
+    margin-left: 20px;
+    &_title {
+      font-size: 2.1rem;
+      span {
+        display: block;
+        font-size: 1.4rem;
+      }
+    }
+    &_text{
+      line-height: 1.6;
+      margin: 10px 0 20px;
+    }
+    &_buttons a{
+      margin-right: 15px;
+    }
+  }
+  &__arrows{
+    &_next, &_prev{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      i{
+        color: $accent;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        @include transition;
+        &:before{
+          position: relative;
+        }
+        &:hover{
+          color: #fff;
+          z-index: 1;
+          background-color: #587C1F;
+          transform: scale(1.2);
+        }
+      }
+    }
+    &_prev{
+      left: 4%;
+      i{
+        &:before{
+          left: -2px;
+        }
+      }
+    }
+    &_next{
+      right: 4%;
+      i{
+        &:before{
+          left: 2px;
+        }
+      }
+    }
+  }
+  &_dots{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    ul{
+      li + li{
+        margin-left: $dot;
+      }
+      li{
+        border: 2px solid $dot-color;
+        border-radius: 50%;
+        width: $dot;
+        height: $dot;
+
+        &.active{
+          background-color: $dot-color;
+        }
+        a{
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

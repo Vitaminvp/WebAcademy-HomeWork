@@ -1,5 +1,8 @@
 @import './mixins';
 @import './fonts';
+@import './header';
+@import './slider';
+@import './best';
 
 html {
   font-family: 'HelveticaNeue', Arial, sans-serif;
@@ -31,66 +34,38 @@ ul{
   display: flex;
   align-items: center;
 }
-.header{
+.wrapper{
   margin: 25px auto 0;
   padding: 0;
   max-width: 1400px;
-  height: 60px;
-  border-radius: 4px 4px 0 0;
-  background-color: $bg-color;
-  display: flex;
-  align-items: center;
-  svg{
-    width: 96px;
-    height: auto;
-    border: none;
-    padding: 0;
-    margin: 0;
+}
+.btn{
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #686c6f, #373a3c);
+  color: #fff;
+  line-height: 2.5;
+  text-decoration: none;
+  padding: 0 19px;
+  min-width: 136px;
+  @include transition;
+  &:hover{
+    background-image: linear-gradient(to bottom, #55595c, #373a3c);
   }
-  &__nav{
-    display: flex;
-    align-items: center;
-    &_item{
-      margin-right: $padding;
-      position: relative;
-      &-expand{
-        a::after{
-          position: relative;
-          font-family: 'icomoon';
-          content: "\e900";
-          color: $accent;
-          font-size: .4rem;
-          margin-left: $arrow-margin;
-          top: -1px;
-        }
-      &:last-child{
-        a::before{
-          position: relative;
-          font-family: 'icomoon';
-          content: "\e901";
-          color: $accent;
-          font-size: 1.25rem;
-          margin-left: $arrow-margin;
-          top: 2px;
-        }
-      }
-      }
-      a{
-        color: rgba(255, 255, 255, 0.5);
-        text-decoration: none;
-        @include transition;
-        &:hover{
-          color: white;
-        }
-      }
-    }
-    &_input{
-      padding: 9px 16px 7.6px;
-      border-radius: 4px;
-      border: solid 1px #cccccc;
-      line-height: 1.31;
-    }
-
+  &:active{
+    background-image: linear-gradient(to bottom, #4a4e51, #373a3c);
   }
 }
-
+.btn-green{
+  background-color: $accent;
+  background-image: none;
+  &:hover{
+    background-color: #79c13a;
+    background-image: none;
+  }
+  &:active{
+    background-color: #71af30;
+    background-image: none;
+  }
+}

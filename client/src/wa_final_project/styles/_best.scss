@@ -1,0 +1,24 @@
+.best{
+  background-color: saddlebrown;
+  padding-top: 65px;
+  color: #fff;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    span{
+      display: block;
+      font-size: 2.2rem;
+    }
+  }
+  svg{
+    width: 64px;
+    height: auto;
+  }
+}
+.card{
+  margin: 10px;
+  &__img{
+    height: 180px;
+  }
+}
