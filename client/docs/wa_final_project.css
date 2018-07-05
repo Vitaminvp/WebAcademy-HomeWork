@@ -2103,8 +2103,8 @@ html {
 
 .best {
   background-color: saddlebrown;
-  padding-top: 65px;
-  color: #fff; }
+  color: #fff;
+  padding: 64px 0 162px; }
   .best h1 {
     text-align: center;
     font-size: 3rem;
@@ -2117,13 +2117,36 @@ html {
     height: auto; }
 
 .card {
-  margin: 10px; }
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #8dd83d;
+  overflow: hidden;
+  color: #546a79;
+  transition: all 0.25s ease-in-out; }
+  .card:hover {
+    -ms-transform: scale(1.05);
+        transform: scale(1.05); }
   .card__img {
     height: 180px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/carousel.jpg); }
+    background-color: gray; }
+  .card__content {
+    padding: 22px 22px 27px; }
+    .card__content_name {
+      font-size: 1.125rem;
+      padding: 0; }
+    .card__content_title {
+      margin: 13px 0 40px 0;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: normal; }
+    .card__content_link .card-btn {
+      width: 100%;
+      padding: 19px 23px; }
 
 html {
   font-family: 'HelveticaNeue', Arial, sans-serif;
@@ -2135,7 +2158,7 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100%;
-  background-size: 100% 100%;
+  color: #546a79;
   box-sizing: border-box;
   background-image: linear-gradient(transparent 0px, transparent 2px, white 2px, white 20px), linear-gradient(to right, #c8c3c7 0px, #c8c3c7 2px, white 2px, white 20px);
   background-position: 109px -2px;
@@ -2185,6 +2208,7 @@ ul {
   text-decoration: none;
   padding: 0 19px;
   min-width: 136px;
+  white-space: nowrap;
   transition: all 0.25s ease-in-out; }
   .btn:hover {
     background-image: linear-gradient(to bottom, #55595c, #373a3c); }
