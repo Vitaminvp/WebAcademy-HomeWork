@@ -6,7 +6,6 @@
  */
 var _ = require('lodash');
 var items = [
-<<<<<<< HEAD
     {
         completed: false,
         title: "Test",
@@ -46,8 +45,7 @@ var items = [
         completed: true,
         title: "Nello",
         id: Date.now() + 65
-    }
-=======
+    },
   {
     completed: false,
     title: "Test",
@@ -88,7 +86,7 @@ var items = [
     title: "Nello",
     id: Date.now() + 65
   }
->>>>>>> 818eea2c913c1e9f11d2a3f0d6e452e08eb2b45d
+
 ];
 
 var listModel = {

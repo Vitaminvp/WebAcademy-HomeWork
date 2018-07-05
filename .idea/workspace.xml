@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/list.js" afterPath="$PROJECT_DIR$/server/models/list.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_base.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
@@ -30,9 +30,16 @@
       <file leaf-file-name="wa_hw_14.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/docs/wa_hw_14.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2440">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2480">
+              <caret line="124" column="56" lean-forward="false" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+              <folding>
+                <marker date="1530772098849" expanded="true" signature="3005:4394" ph="{...}" />
+                <marker date="1530772098849" expanded="true" signature="3234:4390" ph="{...}" />
+                <marker date="1530772098849" expanded="true" signature="3878:4353" ph="{...}" />
+                <marker date="1530772098849" expanded="true" signature="3878:4363" ph="{...}" />
+                <marker date="1530772098849" expanded="true" signature="3965:4337" ph="{...}" />
+                <marker date="1530772098849" expanded="true" signature="4086:4189" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,14 +54,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/models/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1720">
-              <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1530771999939" expanded="true" signature="135:137" ph="[...]" />
               </folding>
             </state>
           </provider>
@@ -111,10 +117,10 @@
         <option value="$PROJECT_DIR$/client/src/wa_hw_4/js/lights_manager.js" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.html" />
         <option value="$PROJECT_DIR$/client/docs/wa_hw_14.js" />
-        <option value="$PROJECT_DIR$/server/models/list.js" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/styles/_base.scss" />
         <option value="$PROJECT_DIR$/client/.gitignore" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
+        <option value="$PROJECT_DIR$/server/models/list.js" />
       </list>
     </option>
   </component>
@@ -138,7 +144,7 @@
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2875" />
     <option name="y" value="42" />
     <option name="width" value="1083" />
@@ -193,6 +199,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wa_hw_14" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,7 +296,7 @@
       <workItem from="1530641190243" duration="1141000" />
       <workItem from="1530707148137" duration="5170000" />
       <workItem from="1530714861163" duration="653000" />
-      <workItem from="1530770749847" duration="1257000" />
+      <workItem from="1530770749847" duration="1554000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -362,10 +379,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27797000" />
+    <option name="totallyTimeSpent" value="28094000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-12" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-12" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13593256" sideWeight="0.6312595" order="1" side_tool="false" content_ui="combo" />
@@ -373,9 +390,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13593256" sideWeight="0.36874053" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28369564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28369564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.442371" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44130436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -717,9 +734,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/docs/wa_hw_14.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2440">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2480">
+          <caret line="124" column="56" lean-forward="false" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+          <folding>
+            <marker date="1530772098849" expanded="true" signature="3005:4394" ph="{...}" />
+            <marker date="1530772098849" expanded="true" signature="3234:4390" ph="{...}" />
+            <marker date="1530772098849" expanded="true" signature="3878:4353" ph="{...}" />
+            <marker date="1530772098849" expanded="true" signature="3878:4363" ph="{...}" />
+            <marker date="1530772098849" expanded="true" signature="3965:4337" ph="{...}" />
+            <marker date="1530772098849" expanded="true" signature="4086:4189" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,17 +752,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1530771999939" expanded="true" signature="135:137" ph="[...]" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,6 +776,16 @@
         <state relative-caret-position="464">
           <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
