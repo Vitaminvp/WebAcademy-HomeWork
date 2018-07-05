@@ -20,5 +20,9 @@
   margin: 10px;
   &__img{
     height: 180px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/final_project/carousel.jpg);
   }
 }
