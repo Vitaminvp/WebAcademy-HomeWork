@@ -10,12 +10,18 @@ const wrapp = document.querySelector(".wrapper");
     wrapp.appendChild(btn);
     btn.addEventListener('click', function() {
         wrapp.appendChild(output);
+        output.style.display = "flex";
         output.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
         const timeout = 3000;
-        const timer = setTimeout(function () { xhr.abort(); alert("Зависон, однако!"); }, timeout);
+        const timer = setTimeout(function () {
+            xhr.abort();
+            alert("Зависон, однако!");
+            output.style.display = "none";
+        }, timeout);
         xhr.open("GET", "http://localhost:4001/list");
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200){
+
                 output.innerHTML = "";
                 let data = JSON.parse(xhr.responseText);
 
