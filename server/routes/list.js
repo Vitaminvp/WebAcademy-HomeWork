@@ -10,7 +10,7 @@ var express = require('express'),
 router.get('/', function (req, res) {
     setTimeout(function () {
         res.status(200).send(listModel.getItems());
-    }, 1000);
+    }, 2500);
 });
 
 router.post('/', function (req, res) {
