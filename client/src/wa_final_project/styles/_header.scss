@@ -44,6 +44,8 @@
         color: rgba(255, 255, 255, 0.5);
         text-decoration: none;
         @include transition;
+        white-space: nowrap;
+
         &:hover{
           color: white;
           &:after{
@@ -58,6 +60,7 @@
       border: solid 1px #cccccc;
       line-height: 1.31;
       outline: none;
+      color: $main-color;
     }
 
   }

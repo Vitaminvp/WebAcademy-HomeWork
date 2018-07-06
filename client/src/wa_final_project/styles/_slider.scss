@@ -8,31 +8,15 @@
   display: flex;
   align-items: center;
   position: relative;
-  &__block{
-    margin-left: 20px;
-    &_title {
-      font-size: 2.1rem;
-      span {
-        display: block;
-        font-size: 1.4rem;
-      }
-    }
-    &_text{
-      line-height: 1.6;
-      margin: 10px 0 20px;
-    }
-    &_buttons a{
-      margin-right: 15px;
-    }
-  }
+
   &__arrows{
     &_next, &_prev{
+      font-size: 1.2rem;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       i{
         color: $accent;
-        font-size: 1.2rem;
         cursor: pointer;
         border-radius: 50%;
         display: inline-flex;
