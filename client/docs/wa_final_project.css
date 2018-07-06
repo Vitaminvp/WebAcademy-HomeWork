@@ -2038,13 +2038,13 @@ html {
       align-items: center;
   position: relative; }
   .slider__arrows_next, .slider__arrows_prev {
+    font-size: 1.2rem;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
     .slider__arrows_next i, .slider__arrows_prev i {
       color: #8dd83d;
-      font-size: 1.2rem;
       cursor: pointer;
       border-radius: 50%;
       display: -ms-inline-flexbox;
@@ -2106,49 +2106,35 @@ html {
     width: 64px;
     height: auto; }
 
-.card {
-  margin: 0 10px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  border: solid 1px #8dd83d;
-  overflow: hidden;
-  color: #546a79;
-  transition: all 0.25s ease-in-out; }
-  .card:hover {
-    -ms-transform: scale(1.05);
-        transform: scale(1.05); }
-  .card__img {
-    height: 180px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: gray; }
-  .card__content {
-    padding: 22px 22px 27px; }
-    .card__content_name {
-      font-size: 1.125rem;
-      padding: 0; }
-    .card__content_title {
-      margin: 13px 0 40px 0;
-      padding: 0;
-      font-size: 1.5rem;
-      line-height: normal; }
-    .card__content_link .card-btn {
-      width: 100%;
-      padding: 19px 23px; }
-
 .games {
   padding: 97px 0 140px;
   background-image: url(./assets/images/co-d-wwii.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative; }
+  .games .slider__arrows-game {
+    color: #c1ff7f; }
+    .games .slider__arrows-game .slider__arrows_next, .games .slider__arrows-game .slider__arrows_prev {
+      position: absolute;
+      top: 155px;
+      font-size: 2rem; }
+    .games .slider__arrows-game .slider__arrows_prev {
+      left: 20px; }
+    .games .slider__arrows-game .slider__arrows_next {
+      font-size: 2rem;
+      right: 20px; }
   .games h3 {
     font-size: 2.25rem;
     color: #ffffff;
     font-weight: normal;
     text-align: center; }
+  .games .card-wrapper {
+    margin-bottom: 70px; }
+  .games .btn-game {
+    font-size: 1.32rem;
+    padding: 5px 47px; }
 
 .design {
   padding: 118px 0 141px;
@@ -2156,6 +2142,15 @@ html {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
+  .design .iblock-design .iblock_title {
+    font-size: 3rem; }
+  .design .iblock-design .iblock_text {
+    font-size: 1.5rem;
+    margin-bottom: 30px; }
+  .design .btn-design {
+    padding: 10px 23px;
+    min-width: 207px;
+    font-size: 1rem; }
 
 footer {
   padding: 58px 0 35px;
@@ -2275,11 +2270,13 @@ ul {
   white-space: nowrap;
   transition: all 0.25s ease-in-out; }
   .btn:hover {
+    transition: all 0.25s ease-in-out;
     background-image: linear-gradient(to bottom, #55595c, #373a3c); }
   .btn:active {
     background-image: linear-gradient(to bottom, #4a4e51, #373a3c); }
 
 .btn-green {
+  background-color: #8dd83d;
   background-image: radial-gradient(circle at 50% 0, #c1ff7f, #8dd83d); }
   .btn-green:hover {
     background-image: radial-gradient(circle at 50% 0, #c1ff7f, #79c13a); }
@@ -2299,3 +2296,62 @@ ul {
     margin: 10px 0 20px; }
   .iblock_buttons a {
     margin-right: 15px; }
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  margin: 0 10px;
+  border-radius: 4px;
+  min-width: 318px;
+  background-color: #ffffff;
+  border: solid 1px #8dd83d;
+  overflow: hidden;
+  color: #546a79;
+  transition: all 0.25s ease-in-out; }
+  .card:hover {
+    -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+  .card__img {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    overflow: hidden; }
+    .card__img img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .card__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 22px 22px 27px; }
+    .card__content_name {
+      font-size: 1.125rem;
+      padding: 0; }
+    .card__content_title {
+      margin: 13px 0 40px 0;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: normal; }
+    .card__content_link {
+      -ms-flex: 1;
+          flex: 1;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      width: 100%; }
+      .card__content_link .card-btn {
+        width: 100%;
+        padding: 19px 23px; }
