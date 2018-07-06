@@ -1,7 +1,7 @@
 .best{
-  background-color: saddlebrown;
-  padding-top: 65px;
+  background-image: radial-gradient(circle at 50% 0, #686c6f, #373a3c);
   color: #fff;
+  padding: 64px 0 162px;
   h1{
     text-align: center;
     font-size: 3rem;
@@ -17,8 +17,41 @@
   }
 }
 .card{
-  margin: 10px;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px $accent;
+  overflow: hidden;
+  color: $main-color;
+  @include transition;
+  &:hover{
+    transform: scale(1.05);
+  }
   &__img{
     height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+  }
+  &__content{
+    padding: 22px 22px 27px;
+    &_name{
+      font-size: 1.125rem;
+      padding: 0;
+    }
+    &_title{
+      margin: 13px 0 40px 0;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+    &_link{
+      .card-btn{
+        width: 100%;
+        padding: 19px 23px;
+      }
+    }
   }
 }
