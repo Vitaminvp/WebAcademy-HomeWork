@@ -104,9 +104,11 @@ ul{
   border: solid 1px $accent;
   overflow: hidden;
   color: $main-color;
+  opacity: 0.99;
   @include transition;
   &:hover{
     transform: scale(1.1);
+    z-index: 1000;
   }
   &__img{
     height: 180px;
@@ -143,9 +145,10 @@ ul{
       align-items: flex-end;
       align-self: flex-end;
       width: 100%;
+      margin-bottom: 10px;
       .card-btn{
         width: 100%;
-        padding: 19px 23px;
+        padding: 14px 23px;
       }
     }
   }
