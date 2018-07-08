@@ -4,7 +4,6 @@ export class TaskList{
     constructor (target) {
         this.target = target;
         this.render();
-        Ajax.get('http://localhost:4001/list',);
 }
     render(){
         this.ul = document.createElement('ul');
@@ -15,13 +14,13 @@ export class TaskList{
         this.output = document.createElement('div');
         this.output.className = "output";
         this.output.style.display = "flex";
-        this.output.appendChild(this.ul);
         this.btn.addEventListener('click', ()=> {
-            this.target.appendChild(this.output);
+            this.output.innerHTML = "";
+            this.output.appendChild(this.ul);
             this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
+            this.target.appendChild(this.output);
             Ajax.get('http://localhost:4001/list', this.renderItems.bind(this));
         });
-
     }
     renderItems(ajaxRespons){
         console.log(ajaxRespons);
