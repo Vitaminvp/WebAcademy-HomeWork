@@ -171,7 +171,6 @@ var TaskList = exports.TaskList = function () {
 
         this.target = target;
         this.render();
-        _ajax.Ajax.get('http://localhost:4001/list');
     }
 
     _createClass(TaskList, [{
@@ -187,17 +186,17 @@ var TaskList = exports.TaskList = function () {
             this.output = document.createElement('div');
             this.output.className = "output";
             this.output.style.display = "flex";
-            this.output.appendChild(this.ul);
             this.btn.addEventListener('click', function () {
-                _this.target.appendChild(_this.output);
+                _this.output.innerHTML = "";
+                _this.output.appendChild(_this.ul);
                 _this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
+                _this.target.appendChild(_this.output);
                 _ajax.Ajax.get('http://localhost:4001/list', _this.renderItems.bind(_this));
             });
         }
     }, {
         key: 'renderItems',
         value: function renderItems(ajaxRespons) {
-            console.log(ajaxRespons);
             this.output.innerHTML = "";
             this.Respons = Array.from(ajaxRespons);
             var docFragment = document.createDocumentFragment();

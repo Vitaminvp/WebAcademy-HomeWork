@@ -23,7 +23,6 @@ export class TaskList{
         });
     }
     renderItems(ajaxRespons){
-        console.log(ajaxRespons);
         this.output.innerHTML = "";
         this.Respons = Array.from(ajaxRespons);
         const docFragment  = document.createDocumentFragment();
