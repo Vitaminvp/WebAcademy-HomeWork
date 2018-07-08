@@ -19,7 +19,7 @@ export class TaskList{
             this.output.appendChild(this.ul);
             this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
             this.target.appendChild(this.output);
-            Ajax.get('http://localhost:4001/list', this.renderItems.bind(this));
+            Ajax.get('https://evening-dawn-11092.herokuapp.com/list', this.renderItems.bind(this));
         });
     }
     renderItems(ajaxRespons){

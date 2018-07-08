@@ -2,9 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/js/_base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/_base.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Roman.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Roman.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/HelveticaNeue-Roman.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-brands-400.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-regular-400.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/fa-solid-900.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/fonts/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/1-c-93-fdc-8-0-f-06-4-f-34-a-54-c-7-ac-2-a-45-c-58-ae.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/215535.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/blog-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/call-of-duty-ww-2-review-j-23-m.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/carousel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/co-d-wwii.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/fa-brands-400.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/fa-regular-400.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/fa-solid-900.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/hire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/off.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/on.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/pattern.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/pattern9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/photos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/ranked-callofduty-lead.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/rectangle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/assets/images/xbox-one-x.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/vendors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_10.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_11.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_11.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_11.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_12.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_12.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_12.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_13.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_13.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_13.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/docs/wa_hw_9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/config/base.js" afterPath="$PROJECT_DIR$/client/config/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index/index.html" afterPath="$PROJECT_DIR$/client/src/index/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,93 +112,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/utils/ajax.js">
+      <file leaf-file-name="taskListReact.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taskList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/styles/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wa_hw_15.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1531073670337" expanded="true" signature="1415:1812" ph="..." />
+                <marker date="1531073670337" expanded="true" signature="1415:1847" ph="..." />
+                <marker date="1531073670337" expanded="true" signature="1575:1662" ph="..." />
+                <marker date="1531073670337" expanded="true" signature="1726:1812" ph="..." />
+                <marker date="1531073670337" expanded="true" signature="1940:2378" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wa_hw_15.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.html">
+      <file leaf-file-name="comments.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/comments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wa_hw_15.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1008">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js">
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="84">
+              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js">
+      <file leaf-file-name="taskList.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="462">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/_base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,14 +223,25 @@
         <option value="$PROJECT_DIR$/client/src/wa_final_project/wa_final_project.html" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.js" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.html" />
-        <option value="$PROJECT_DIR$/client/config/base.js" />
-        <option value="$PROJECT_DIR$/client/src/index/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/Utils/ajax.js" />
-        <option value="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/styles/_base.scss" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/utils/ajax.js" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15/app.jsx" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15/components/taskListReact.jsx" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" />
+        <option value="$PROJECT_DIR$/client/src/index/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/js/_base.js" />
+        <option value="$PROJECT_DIR$/client/config/base.js" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15_1.js" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/_base.scss" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/mixins.scss" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
       </list>
     </option>
   </component>
@@ -181,13 +263,14 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="77" />
-    <option name="y" value="188" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="864" />
+    <option name="y" value="7" />
     <option name="width" value="1932" />
-    <option name="height" value="1048" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -223,6 +306,12 @@
               <item name="WA" type="b2602c69:ProjectViewProjectNode" />
               <item name="WA" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WA" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,61 +319,33 @@
               <item name="WA" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_13" type="462c0819:PsiDirectoryNode" />
+              <item name="wa_hw_15_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WA" type="b2602c69:ProjectViewProjectNode" />
               <item name="WA" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_13" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_15" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_15" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_15" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_15" type="462c0819:PsiDirectoryNode" />
+              <item name="wa_hw_15_1" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WA" type="b2602c69:ProjectViewProjectNode" />
               <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_hw_15" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WA" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,9 +408,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="npm.publish" />
+        <item index="0" class="java.lang.String" itemvalue="npm.start (1)" />
         <item index="1" class="java.lang.String" itemvalue="npm.start" />
-        <item index="2" class="java.lang.String" itemvalue="npm.start (1)" />
+        <item index="2" class="java.lang.String" itemvalue="npm.publish" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +432,9 @@
       <workItem from="1530770749847" duration="25646000" />
       <workItem from="1530812088676" duration="7076000" />
       <workItem from="1530819854988" duration="992000" />
-      <workItem from="1531029521499" duration="6958000" />
+      <workItem from="1531029521499" duration="10173000" />
+      <workItem from="1531060140785" duration="771000" />
+      <workItem from="1531060937453" duration="12883000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -468,18 +531,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67212000" />
+    <option name="totallyTimeSpent" value="84081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13590693" sideWeight="0.6006339" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508725" sideWeight="0.58428806" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2813212" sideWeight="0.50185084" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13590693" sideWeight="0.39936608" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2813212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30410022" sideWeight="0.49814913" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12903225" sideWeight="0.41571194" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4407745" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -489,6 +552,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -507,107 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_4/js/lights.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_4/js/lights_manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_13/js/_base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/wa_hw_14.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/docs/wa_hw_14.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2480">
-          <caret line="124" column="56" lean-forward="false" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/styles/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/js/lights.js" />
-    <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/js/lights_manager.js" />
-    <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/wa_hw_13.js" />
     <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/styles/lights.scss" />
     <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/styles/swich.scss" />
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_7/styles/_grid.css">
@@ -651,7 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,9 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2184">
           <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-          <folding>
-            <marker date="1531030239117" expanded="true" signature="285:350" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="71" lean-forward="false" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,10 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <marker date="1531030238992" expanded="true" signature="3094:3098" ph="{...}" />
-            <marker date="1531030238992" expanded="true" signature="3094:3100" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,26 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <marker date="1531030239132" expanded="true" signature="7:1498" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="425:851" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="425:857" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="425:1063" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="660:701" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="717:843" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="868:958" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="893:952" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="911:944" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="969:1059" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="995:1053" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1013:1045" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1072:1496" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1168:1492" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1183:1219" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1228:1486" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1356:1407" ph="{...}" />
-            <marker date="1531030239132" expanded="true" signature="1417:1478" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <marker date="1531030239085" expanded="true" signature="6:740" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,11 +677,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="93" column="99" lean-forward="false" selection-start-line="93" selection-start-column="99" selection-end-line="93" selection-end-column="99" />
-          <folding>
-            <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/Utils/ajax" />
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_13/js/lights.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="34" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/styles/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -773,45 +728,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/components/taskListReact.jsx" />
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/app.jsx" />
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="79" />
-          <folding>
-            <element signature="e#1150#1156#0" expanded="false" />
-            <element signature="e#1160#1166#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="472">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/Utils/ajax">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/config/base.js">
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_13/js/lights.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="21">
+          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -821,63 +764,163 @@
         <state relative-caret-position="126">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/wa_hw_15.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="34" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/styles/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/utils/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+        <state relative-caret-position="357">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <marker date="1531038228772" expanded="true" signature="563:925" ph="{...}" />
+            <marker date="1531038228772" expanded="true" signature="1152:1445" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/config/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/js/_base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15_1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/comments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1531073670337" expanded="true" signature="1415:1812" ph="..." />
+            <marker date="1531073670337" expanded="true" signature="1415:1847" ph="..." />
+            <marker date="1531073670337" expanded="true" signature="1575:1662" ph="..." />
+            <marker date="1531073670337" expanded="true" signature="1726:1812" ph="..." />
+            <marker date="1531073670337" expanded="true" signature="1940:2378" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
