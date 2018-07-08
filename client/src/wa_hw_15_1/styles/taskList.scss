@@ -34,8 +34,10 @@
         &::placeholder{
           color: lightgrey;
         }
-
-        &::selection{
+        &:invalid:focus:not(:placeholder-shown){
+          border: 2px solid red;
+        }
+        &:selection{
           color: #29a1ff;
         }
         &:focus{
@@ -73,7 +75,9 @@
       &__date{
         text-align: right;
         color: gray;
+        margin-top: 10px;
         margin-bottom: 20px;
+        font-size: .9rem;
       }
     }
   }

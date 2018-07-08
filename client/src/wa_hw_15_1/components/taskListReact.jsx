@@ -24,12 +24,14 @@ export class TaskList2 extends React.Component {
                              author: this.state.title,
                              text: this.state.comment
         }, (response) => {
-            this.setState = {
+            console.log(response);
+            this.setState({
+                list: this.state.list.concat([response]),
                 title: '',
-                comment: '',
-                list: this.state.list.concat([response])
-            };
+                comment: ''
+            });
         });
+
         e.preventDefault();
     }
     inputHandler(e){
@@ -46,12 +48,15 @@ export class TaskList2 extends React.Component {
             comment: e.target.value
         });
     }
+
+
+
     render(){
         const listArray = [];
         this.state.list.forEach( (item) => {
             const comment = <div id={item.id} key={item.id} className='comment'>
                                 <div className='comment__title'><h2>{item.author}</h2></div>
-                                <div className='comment__content'>
+                                <div className='comment__content' key={item.id}>
                                     {item.text}
                                 </div>
                                 <div className='comment__date'>
@@ -63,7 +68,7 @@ export class TaskList2 extends React.Component {
         return  <div className="comments">
                 <form onSubmit={this.addComment.bind(this)}>
                     <input type="text" required={true} value={this.state.title} onInput={this.inputHandler.bind(this)}/>
-                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}>test</textarea>
+                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}></textarea>
                     <button>Add comment</button>
                 </form>
                     {listArray}
