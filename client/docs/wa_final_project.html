@@ -26,15 +26,33 @@
                 <div class="col-md-10 d-flex justify-content-end">
                     <nav class="header__nav">
                         <ul class="header__nav_menu">
-                            <li class="header__nav_item header__nav_item-expand"><a href="#">Games</a></li>
-                            <li class="header__nav_item header__nav_item-expand"><a href="#">Consoles</a></li>
+                            <li class="header__nav_item header__nav_item-expand"><a href="#">Games</a>
+                                <ul class="submenu">
+                                    <li><a href="#" target="_blank">Subparagraph #1</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #2</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #3</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__nav_item header__nav_item-expand"><a href="#">Consoles</a>
+                                <ul class="submenu">
+                                    <li><a href="#" target="_blank">Subparagraph #1</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #2</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #3</a></li>
+                                </ul>
+                            </li>
                             <li class="header__nav_item"><a href="#">Community</a></li>
                             <li class="header__nav_item">
                                 <form action="#" method="post" class="header__nav_form">
                                     <input type="text" placeholder="Search" class="header__nav_input">
                                 </form>
                             </li>
-                            <li class="header__nav_item header__nav_item-expand"><a href="#">My XBOX</a></li>
+                            <li class="header__nav_item header__nav_item-expand"><a href="#">My XBOX</a>
+                                <ul class="submenu">
+                                    <li><a href="#" target="_blank">Subparagraph #1</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #2</a></li>
+                                    <li><a href="#" target="_blank">Subparagraph #3</a></li>
+                                </ul>
+                            </li>
                         </ul>
 
                     </nav>
@@ -46,10 +64,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 offset-md-7">
-                    <div class="slider__block">
-                        <div class="slider__block_title">Star Wars <span>Battlefront II</span></div>
-                        <div class="slider__block_text">Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?</div>
-                        <div class="slider__block_buttons"><a href="#" class="btn btn-green">Watch Trailer</a><a href="#" class="btn">Explore Games</a></div>
+                    <div class="iblock">
+                        <div class="iblock_title">Star Wars <span>Battlefront II</span></div>
+                        <div class="iblock_text">Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?</div>
+                        <div class="iblock_buttons"><a href="#" class="btn btn-green">Watch Trailer</a><a href="#" class="btn">Explore Games</a></div>
                     </div>
 
                 </div>
@@ -139,7 +157,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card__img" style="background-image: url(./../../assets/images/xbox-one-x.jpg)"></div>
+                        <div class="card__img">
+                            <img src="./assets/images/xbox-one-x.jpg" alt="">
+                        </div>
                         <div class="card__content">
                             <div class="card__content_name">XBOX ONE X</div>
                             <div class="card__content_title">Faster Processing Smoother Gameplay</div>
@@ -149,20 +169,24 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card__img" style="background-image: url(./../../assets/images/215535.png)"></div>
+                        <div class="card__img">
+                            <img src="./assets/images/215535.png" alt="">
+                        </div>
                         <div class="card__content">
                             <div class="card__content_name">mixer Streaming</div>
-                            <div class="card__content_title">The Next Generation Of Life Game Streaming</div>
+                            <div class="card__content_title">The Next Generation<br> Of Life Game Streaming</div>
                             <div class="card__content_link"><a href="#" class="btn card-btn btn-green">Start Watching mixer</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card__img" style="background-image: url(./../../assets/images/1-c-93-fdc-8-0-f-06-4-f-34-a-54-c-7-ac-2-a-45-c-58-ae.png)"></div>
+                        <div class="card__img">
+                            <img src="./assets/images/1-c-93-fdc-8-0-f-06-4-f-34-a-54-c-7-ac-2-a-45-c-58-ae.png" alt="">
+                        </div>
                         <div class="card__content">
                             <div class="card__content_name">Free Games Every Month</div>
-                            <div class="card__content_title">FGet up to $700 in free games</div>
+                            <div class="card__content_title">FGet up to $700<br> in free <br>games</div>
                             <div class="card__content_link"><a href="#" class="btn card-btn btn-green">Get Free Games</a></div>
                         </div>
                     </div>
@@ -171,10 +195,73 @@
         </div>
     </section>
     <section class="games">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <h3>Exclusive games on XBOX</h3>
+                </div>
+                <div class="slider__arrows slider__arrows-game">
+                    <div class="slider__arrows_prev"><i class="icon-icon-prev"></i></div>
+                    <div class="slider__arrows_next"><i class="icon-icon-next"></i></div>
+                </div>
+                <div class="col-md-12 d-flex card-wrapper">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content_name">Call of Duty: WWII</div>
+                            <div class="card__content_title">The C.O.D.E. Bravery Pack is now available in WWII</div>
+                            <div class="card__content_link"><a href="#" class="btn card-btn btn-green">See Details</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/ranked-callofduty-lead.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content_name">Destiny 2</div>
+                            <div class="card__content_title">Photographs are a way of preserving a moment in our lives for the rest of our lives. </div>
+                            <div class="card__content_link"><a href="#" class="btn card-btn btn-green">See Details</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/img.png" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content_name">STEEP</div>
+                            <div class="card__content_title">Here, I focus on a range of items and features that we use in life without giving them</div>
+                            <div class="card__content_link"><a href="#" class="btn card-btn btn-green">See Details</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/xbox-one-x.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content_name">Forza Motorsport 7</div>
+                            <div class="card__content_title">The Myspace page defines the individual, his or her characteristics, traits.</div>
+                            <div class="card__content_link"><a href="#" class="btn card-btn btn-green">See Details</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content_name">Forza Motorsport 7</div>
+                            <div class="card__content_title">The Myspace page defines the individual, his or her characteristics, traits.</div>
+                            <div class="card__content_link"><a href="#" class="btn card-btn btn-green">See Details</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="game__link"><a href="#" class="btn btn-game">XBOX Store</a></div>
                 </div>
             </div>
         </div>
@@ -183,17 +270,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="design__block">
-                        <div class="design__block_title">Star Wars <span>Battlefront II</span></div>
-                        <div class="design__block_text">Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?</div>
-                        <div class="design__block_buttons"><a href="#" class="btn">Watch Trailer</a><a href="#" class="btn  btn-green">Explore Games</a></div>
+                    <div class="iblock iblock-design">
+                        <div class="iblock_title">Xbox Design Lab</div>
+                        <div class="iblock_text">Make yours one in a billion with new colors, metallic finishes and rubberized grips.</div>
+                        <div class="iblock_buttons"><a href="#" class="btn btn-design">Design Yours</a><a href="#" class="btn btn-green btn-design">Explore Consoles & Accessories</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>XBOX</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy & cookies </a></li>
+                        <li><a href="#">Terms of use </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Developers</h4>
+                    <ul>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Windows 10</a></li>
+                        <li><a href="#">Creators Program</a></li>
+                        <li><a href="#">Designed for XBOX</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hr"></div>
+                <div class="credits"><span>English (United States)</span><span>© Microsoft 2017</span></div>
+            </div>
+        </div>
     </footer>
 </div>
 <script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="wa_final_project.js"></script></body>

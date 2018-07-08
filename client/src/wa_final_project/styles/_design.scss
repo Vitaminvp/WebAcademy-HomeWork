@@ -1,0 +1,22 @@
+.design{
+  padding: 118px 0 141px;
+  background-image: url(../../assets/images/rectangle.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .iblock-design{
+    .iblock_title{
+      font-size: 3rem;
+    }
+    .iblock_text{
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .btn-design{
+    padding: 10px 23px;
+    min-width: 207px;
+    font-size: 1rem;
+  }
+}
