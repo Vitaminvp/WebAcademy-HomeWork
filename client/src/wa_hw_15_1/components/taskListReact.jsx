@@ -5,6 +5,8 @@ import './../styles/taskList.scss';
 const URLEXT = "https://evening-dawn-11092.herokuapp.com/comments";
 const URLLOC = "http://localhost:4001/comments";
 
+
+
 export class TaskList2 extends React.Component {
 
     constructor(){
@@ -27,8 +29,8 @@ export class TaskList2 extends React.Component {
             console.log(response);
             this.setState({
                 list: this.state.list.concat([response]),
-                title: '',
-                comment: ''
+                // title: '',
+                // comment: ''
             });
         });
 
@@ -54,15 +56,15 @@ export class TaskList2 extends React.Component {
     render(){
         const listArray = [];
         this.state.list.forEach( (item) => {
-            const comment = <div id={item.id} key={item.id} className='comment'>
-                                <div className='comment__title'><h2>{item.author}</h2></div>
-                                <div className='comment__content' key={item.id}>
+            const comment = <li className='comment' key={item.id}>
+                                <h2 className='comment__title'>{item.author}</h2>
+                                <div className='comment__content'>
                                     {item.text}
                                 </div>
                                 <div className='comment__date'>
                                    {item.date}
                                 </div>
-                            </div>;
+                            </li>;
             listArray.push(comment);
         });
         return  <div className="comments">
@@ -71,7 +73,9 @@ export class TaskList2 extends React.Component {
                     <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}></textarea>
                     <button>Add comment</button>
                 </form>
+                <ul>
                     {listArray}
+                </ul>
                 </div>
     }
 }

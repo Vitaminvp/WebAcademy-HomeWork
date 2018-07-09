@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="taskListReact.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="taskListReact.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="15" />
+            <state relative-caret-position="343">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1531083096330" expanded="true" signature="1453:1864" ph="..." />
-                <marker date="1531083096330" expanded="true" signature="1453:1899" ph="..." />
-                <marker date="1531083096330" expanded="true" signature="1627:1714" ph="..." />
-                <marker date="1531083096330" expanded="true" signature="1778:1864" ph="..." />
-                <marker date="1531083096330" expanded="true" signature="1992:2426" ph="..." />
+                <marker date="1531108911656" expanded="true" signature="1447:1833" ph="..." />
+                <marker date="1531108911656" expanded="true" signature="1447:1867" ph="..." />
+                <marker date="1531108911656" expanded="true" signature="1596:1683" ph="..." />
+                <marker date="1531108911656" expanded="true" signature="1747:1833" ph="..." />
+                <marker date="1531108911656" expanded="true" signature="1960:2437" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taskList.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,8 +146,8 @@
         <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/_base.scss" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/mixins.scss" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/variables.scss" />
-        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
         <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
+        <option value="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
       </list>
     </option>
   </component>
@@ -234,17 +243,6 @@
               <item name="wa_hw_15_1" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -313,8 +311,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="npm.publish" />
-        <item index="1" class="java.lang.String" itemvalue="npm.start (1)" />
+        <item index="0" class="java.lang.String" itemvalue="npm.start (1)" />
+        <item index="1" class="java.lang.String" itemvalue="npm.publish" />
         <item index="2" class="java.lang.String" itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -339,7 +337,7 @@
       <workItem from="1530819854988" duration="992000" />
       <workItem from="1531029521499" duration="10173000" />
       <workItem from="1531060140785" duration="771000" />
-      <workItem from="1531060937453" duration="18132000" />
+      <workItem from="1531060937453" duration="21283000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -436,19 +434,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89330000" />
+    <option name="totallyTimeSpent" value="92481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508725" sideWeight="0.57610476" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2813212" sideWeight="0.50185084" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30410022" sideWeight="0.49814913" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30410022" sideWeight="0.49814913" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508725" sideWeight="0.42389524" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4407745" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.238041" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -471,7 +470,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="14" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -772,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="79" column="22" lean-forward="false" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/wa_hw_15_1.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -816,16 +809,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="15" />
+        <state relative-caret-position="343">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1531083096330" expanded="true" signature="1453:1864" ph="..." />
-            <marker date="1531083096330" expanded="true" signature="1453:1899" ph="..." />
-            <marker date="1531083096330" expanded="true" signature="1627:1714" ph="..." />
-            <marker date="1531083096330" expanded="true" signature="1778:1864" ph="..." />
-            <marker date="1531083096330" expanded="true" signature="1992:2426" ph="..." />
+            <marker date="1531108911656" expanded="true" signature="1447:1833" ph="..." />
+            <marker date="1531108911656" expanded="true" signature="1447:1867" ph="..." />
+            <marker date="1531108911656" expanded="true" signature="1596:1683" ph="..." />
+            <marker date="1531108911656" expanded="true" signature="1747:1833" ph="..." />
+            <marker date="1531108911656" expanded="true" signature="1960:2437" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
