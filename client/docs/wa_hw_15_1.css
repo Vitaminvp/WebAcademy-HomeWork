@@ -98,7 +98,11 @@ body {
           background-color: #217ac3; }
     .wrapper .comments .comment {
       border-bottom: 1px solid lightgrey; }
+      .wrapper .comments .comment:hover {
+        background-color: #f2f2f2; }
       .wrapper .comments .comment__title {
+        margin-top: 0;
+        padding-top: 20px;
         color: #29a1ff; }
       .wrapper .comments .comment__content {
         font-size: 1.3em;

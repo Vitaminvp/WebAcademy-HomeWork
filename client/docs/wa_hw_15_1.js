@@ -20162,8 +20162,8 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
                 React.createElement(
                     'form',
                     { onSubmit: this.addComment.bind(this) },
-                    React.createElement('input', { type: 'text', required: true, value: this.state.title, onInput: this.inputHandler.bind(this) }),
-                    React.createElement('textarea', { required: true, value: this.state.comment, onInput: this.textHandler.bind(this) }),
+                    React.createElement('input', { type: 'text', required: true, value: this.state.title, onInput: this.inputHandler.bind(this), placeholder: 'Enter your Name' }),
+                    React.createElement('textarea', { required: true, value: this.state.comment, onInput: this.textHandler.bind(this), placeholder: 'Enter your comment' }),
                     React.createElement(
                         'button',
                         null,

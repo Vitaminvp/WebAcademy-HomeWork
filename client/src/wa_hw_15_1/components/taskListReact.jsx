@@ -66,8 +66,8 @@ export class TaskList2 extends React.Component {
         });
         return  <div className="comments">
                 <form onSubmit={this.addComment.bind(this)}>
-                    <input type="text" required={true} value={this.state.title} onInput={this.inputHandler.bind(this)}/>
-                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}></textarea>
+                    <input type="text" required={true} value={this.state.title} onInput={this.inputHandler.bind(this)} placeholder="Enter your Name"/>
+                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}  placeholder="Enter your comment"></textarea>
                     <button>Add comment</button>
                 </form>
                 <ul>
