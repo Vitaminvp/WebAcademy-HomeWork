@@ -20088,7 +20088,7 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
             title: '',
             comment: ''
         };
-        _ajax.Ajax.get(URLLOC, function (response) {
+        _ajax.Ajax.get(URLEXT, function (response) {
             _this.setState({ list: response });
         });
         return _this;
@@ -20099,14 +20099,14 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
         value: function addComment(e) {
             var _this2 = this;
 
-            _ajax.Ajax.post(URLLOC, {
+            _ajax.Ajax.post(URLEXT, {
                 author: this.state.title,
                 text: this.state.comment
             }, function (response) {
                 _this2.setState({
-                    list: response,
                     title: '',
-                    comment: ''
+                    comment: '',
+                    list: _this2.state.list.concat([response])
                 });
             });
 

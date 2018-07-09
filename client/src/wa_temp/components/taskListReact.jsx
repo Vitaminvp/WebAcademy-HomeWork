@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Ajax } from './../utils/ajax';
 
-const URL = 'http://localhost:4001/comments';
+const URL = 'https://evening-dawn-11092.herokuapp.com/comments';
 
 export class TaskList extends React.Component {
     constructor() {
@@ -22,7 +22,7 @@ export class TaskList extends React.Component {
         this.setState({
             title: '',
             comment: '',
-            list: task
+            list: this.state.list.concat([task])
         })
     }
 

@@ -16,20 +16,20 @@ export class TaskList2 extends React.Component {
           title: '',
           comment: ''
         };
-        Ajax.get(URLLOC, (response) => {
+        Ajax.get(URLEXT, (response) => {
             this.setState( {list: response} );
         });
     }
 
     addComment(e){
-        Ajax.post(URLLOC, {
+        Ajax.post(URLEXT, {
                              author: this.state.title,
                              text: this.state.comment
         }, (response) => {
             this.setState({
-                list: response,
                 title: '',
-                comment: ''
+                comment: '',
+                list: this.state.list.concat([response])
             });
         });
 
