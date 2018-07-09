@@ -50,8 +50,6 @@ export class TaskList2 extends React.Component {
         });
     }
 
-
-
     render(){
         const listArray = [];
         this.state.list.forEach( (item) => {

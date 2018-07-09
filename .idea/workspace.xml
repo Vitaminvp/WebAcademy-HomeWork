@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.html" afterPath="$PROJECT_DIR$/client/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.js" afterPath="$PROJECT_DIR$/client/docs/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/vendors.js" afterPath="$PROJECT_DIR$/client/docs/vendors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.js" afterPath="$PROJECT_DIR$/client/docs/wa_final_project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_10.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_11.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_12.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_12.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_13.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_13.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_14.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_4.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_7.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_8.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_9.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
-              <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+              <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -29,8 +42,8 @@
       <file leaf-file-name="taskListReact.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="192">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -294,9 +307,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="npm.start (1)" />
-        <item index="1" class="java.lang.String" itemvalue="npm.start" />
-        <item index="2" class="java.lang.String" itemvalue="npm.publish" />
+        <item index="0" class="java.lang.String" itemvalue="npm.publish" />
+        <item index="1" class="java.lang.String" itemvalue="npm.start (1)" />
+        <item index="2" class="java.lang.String" itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -422,19 +435,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78112000" />
+    <option name="totallyTimeSpent" value="78241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.5972763" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.6" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.40272373" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29347825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.4" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29347825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44130436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44130436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -687,8 +701,8 @@
         <state relative-caret-position="540">
           <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding>
-            <element signature="e#1312#1318#0" expanded="true" />
-            <element signature="e#1322#1328#0" expanded="true" />
+            <element signature="e#1312#1318#0" expanded="false" />
+            <element signature="e#1322#1328#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -781,15 +795,15 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+          <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="192">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
