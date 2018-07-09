@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="taskList.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+            <state relative-caret-position="155">
+              <caret line="82" column="19" lean-forward="false" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -411,7 +410,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80985000" />
+    <option name="totallyTimeSpent" value="81969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -780,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="155">
+          <caret line="82" column="19" lean-forward="false" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
           <folding />
         </state>
       </provider>
