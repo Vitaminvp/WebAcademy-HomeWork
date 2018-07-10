@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_temp/components/checkbox/checkbox.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_temp/components/checkbox/checkbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_temp/components/content/content.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_temp/components/footer/footer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/wa_temp/components/header/header.jsx" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/wa_temp/components/taskListReact.jsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index/index.html" afterPath="$PROJECT_DIR$/client/src/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_temp/styles/taskList.scss" afterPath="$PROJECT_DIR$/client/src/wa_temp/styles/taskList.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_temp/utils/ajax.js" afterPath="$PROJECT_DIR$/client/src/wa_temp/utils/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/list.js" afterPath="$PROJECT_DIR$/server/models/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.html" afterPath="$PROJECT_DIR$/client/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.js" afterPath="$PROJECT_DIR$/client/docs/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/vendors.js" afterPath="$PROJECT_DIR$/client/docs/vendors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.js" afterPath="$PROJECT_DIR$/client/docs/wa_final_project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_temp.css" afterPath="$PROJECT_DIR$/client/docs/wa_temp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_temp.js" afterPath="$PROJECT_DIR$/client/docs/wa_temp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/wa_temp/components/header/header.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -106,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/wa_temp/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -118,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/wa_temp/utils/ajax.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
-              <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+              <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -213,7 +209,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -432,9 +428,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="npm.start" />
-        <item index="1" class="java.lang.String" itemvalue="npm.start (1)" />
-        <item index="2" class="java.lang.String" itemvalue="npm.publish" />
+        <item index="0" class="java.lang.String" itemvalue="npm.publish" />
+        <item index="1" class="java.lang.String" itemvalue="npm.start" />
+        <item index="2" class="java.lang.String" itemvalue="npm.start (1)" />
         <item index="3" class="java.lang.String" itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -459,7 +455,7 @@
       <workItem from="1531116161626" duration="1445000" />
       <workItem from="1531118207096" duration="2883000" />
       <workItem from="1531146857182" duration="41000" />
-      <workItem from="1531203512202" duration="19585000" />
+      <workItem from="1531203512202" duration="19765000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -570,18 +566,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103440000" />
+    <option name="totallyTimeSpent" value="103620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.5876923" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.41230768" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13435195" sideWeight="0.41230768" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29347825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44130436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -952,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_temp/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -962,7 +957,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_temp/utils/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -980,7 +975,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_temp/components/header/header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding />
         </state>
       </provider>

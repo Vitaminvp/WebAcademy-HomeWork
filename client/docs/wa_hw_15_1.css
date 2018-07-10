@@ -72,10 +72,13 @@ body {
         padding: 10px 15px;
         transition: all .2s ease; }
         .wrapper .comments form input::-webkit-input-placeholder, .wrapper .comments form textarea::-webkit-input-placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
         .wrapper .comments form input:-ms-input-placeholder, .wrapper .comments form textarea:-ms-input-placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
         .wrapper .comments form input::placeholder, .wrapper .comments form textarea::placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
         .wrapper .comments form input:invalid:focus:placeholder-shown, .wrapper .comments form textarea:invalid:focus:placeholder-shown {
           border: 2px solid red; }
@@ -90,6 +93,7 @@ body {
       .wrapper .comments form input, .wrapper .comments form button {
         margin: 20px 0; }
       .wrapper .comments form button {
+        outline: none;
         border-radius: 7px;
         padding: 10px 15px;
         transition: all .2s ease;
