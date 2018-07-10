@@ -1,97 +1,12 @@
 @import "./variables";
-.wrapper{
-  box-sizing: border-box;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 50px;
-  .comments{
-    max-width: $size;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include transition;
-    ul{
-      list-style: none;
-      margin: 0 0 30px;
-      padding: 0;
-      @include transition;
-    }
-    form{
-      @include transition;
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: space-between;
-      input, textarea, button{
-        @include transition;
-        font-family: 'HelveticaNeue', Arial, sans-serif;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 7px;
-        box-shadow: none;
-        border: 2px solid lightgrey;
-        font-size: 1.6rem;
-        margin: 0;
-        outline: none;
-        color: grey;
-        padding: 10px 15px;
-        transition: all .2s ease;
-        &::placeholder{
-          color: lightgrey;
-        }
-        &:invalid:focus:not(:placeholder-shown){
-          border: 2px solid red;
-        }
-        &:selection{
-          color: #29a1ff;
-        }
-        &:focus{
-          border: 2px solid $main-color;
-        }
-      }
-      textarea{
-        min-height: 200px;
-      }
-      input, button{
-        margin: 20px 0;
-      }
-      button{
-        font-weight: bold;
-        color: #ffffff;
-        background-color: $main-color;
-        cursor: pointer;
-        border-color: transparent;
-        &:hover{
-          border-color: transparent;
-          background-color: #217ac3;
-        }
-      }
-    }
-    .comment{
-      @include transition;
-      border-bottom: 1px solid lightgrey;
-      &__title{
-        color: $main-color;
-      }
-      &__content{
-        font-size: 1.3em;
-        overflow: auto;
-      }
-      &__date{
-        text-align: right;
-        color: gray;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        font-size: .9rem;
-      }
-      &:last-child{
-        border-bottom: 1px solid black;
-      }
-    }
+@import "~@fortawesome/fontawesome-free/css/all.css";
+.tasks{
+  padding: 50px;
+}
+ul{
+  list-style-type: none;
+  padding-left: 10px;
+  li{
+    margin: 5px 0;
   }
 }
-

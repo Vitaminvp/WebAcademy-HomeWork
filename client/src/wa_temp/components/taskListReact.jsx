@@ -1,79 +1,44 @@
 import * as React from 'react';
 import { Ajax } from './../utils/ajax';
+import './../styles/taskList.scss';
+import { HeaderComponent } from "./header/header.jsx";
+import { ContentComponent } from "./content/content.jsx"
+import FooterComponent from "./footer/footer.jsx"
 
-const URL = 'https://evening-dawn-11092.herokuapp.com/comments';
+const LOC = 'http://localhost:4001/list';
 
 export class TaskList extends React.Component {
-    constructor() {
+    constructor(){
         super();
-        this.listName = 'Task List';
         this.state = {
-            list: [],
-            title: '',
-            comment: ''
+            taskList: [],
+            title: ''
         };
-
-        Ajax.get(URL, (resp) => {
-            this.setState({list: resp});
-        });
-    }
-
-    addTask(task) {
-        this.setState({
-            title: '',
-            comment: '',
-            list: this.state.list.concat([task])
+        Ajax.get(LOC, (response) => {
+            this.setState({
+                taskList: response
+            })
         })
     }
+    submitForm(inputValue){
+        Ajax.post(LOC, {title: inputValue}, (response) => {
 
-    submitForm(e) {
-        e.preventDefault();
-        Ajax.post(URL, {author: this.state.title, text: this.state.comment,}, (resp) => {
-            this.addTask(resp);
-        })
-    }
-
-    inputHandler(e) {
-        const target = e.target;
-        this.setState({
-            list: this.state.list,
-            title: target.value,
-            comment: this.state.comment
+            this.setState({
+                taskList: this.state.taskList.concat([response]),
+                title: ''
+            });
         });
-    }
-    inputHandler2(e) {
-        const target = e.target;
-        this.setState({
-            list: this.state.list,
-            title: this.state.title,
-            comment: target.value
-        });
+    };
+
+    render(){
+
+        return <div className="tasks">
+                    <HeaderComponent onSubmit={ this.submitForm.bind(this) }/>
+                    <ContentComponent taskList={this.state.taskList}/>
+                    <FooterComponent />
+
+               </div>
     }
 
-    render() {
-        const listItems = [];
-
-        this.state.list.forEach((item) => {
-            const li = <li id={item.id}><div>{ item.author }</div><div>{ item.text } </div> <div>{ item.date }</div></li>;
-            listItems.push(li);
-        });
-
-        return <div className='task-list'>
-            <form className="task-list__header" onSubmit={this.submitForm.bind(this)}>
-                <h2>{this.listName}</h2>
-                <input type="text" value={this.state.title} onInput={this.inputHandler.bind(this)}/>
-                <input type="text" value={this.state.comment} onInput={this.inputHandler2.bind(this)}/>
-                <button>Add</button>
-            </form>
-            <h2>{this.state.title}</h2>
-            <div className="task-list__content">
-                <ul>
-                    { listItems }
-                </ul>
-            </div>
-            <div className="task-list__footer">
-                Footer
-            </div>
-        </div>
-    }
 }
+

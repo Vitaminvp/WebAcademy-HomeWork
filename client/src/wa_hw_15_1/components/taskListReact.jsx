@@ -53,13 +53,20 @@ export class TaskList2 extends React.Component {
     render(){
         const listArray = [];
         this.state.list.forEach( (item) => {
+            let date = new Date( Date.parse(item.date) );
+            date = date.getFullYear() + '-' +
+                ('00' + (date.getMonth()+1)).slice(-2) + '-' +
+                ('00' + date.getDate()).slice(-2) + ' in ' +
+                ('00' + date.getHours()).slice(-2) + ':' +
+                ('00' + date.getMinutes()).slice(-2) + ':' +
+                ('00' + date.getSeconds()).slice(-2);
             const comment = <li className='comment' key={item.id}>
                                 <h2 className='comment__title'>{item.author}</h2>
                                 <div className='comment__content'>
                                     {item.text}
                                 </div>
                                 <div className='comment__date'>
-                                   {item.date}
+                                   {date}
                                 </div>
                             </li>;
             listArray.push(comment);

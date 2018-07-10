@@ -7,9 +7,8 @@ export class Ajax {
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
+                    console.log("ajax", JSON.parse(xhr.response));
                     responseCallback(JSON.parse(xhr.response));
-                } else {
-                    throw Error(xhr.responseText);
                 }
             }
         }
@@ -33,11 +32,34 @@ export class Ajax {
         }
     }
 
-    static put() {
+    static put(url, data, successCallback) {
+        const xhr = new XMLHttpRequest();
 
+        xhr.open('PUT', url);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify(data));
+
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    successCallback(JSON.parse(xhr.response));
+                }
+            }
+        }
     }
 
-    static delete() {
+    static delete(url, successCallback) {
+        const xhr = new XMLHttpRequest();
 
+        xhr.open('DELETE', url);
+        xhr.send();
+
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    successCallback(JSON.parse(xhr.response));
+                }
+            }
+        }
     }
 }

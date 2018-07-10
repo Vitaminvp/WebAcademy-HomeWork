@@ -22,71 +22,30 @@ var items = [
         id: Date.now() + 15
     },
     {
-        completed: true,
+        completed: false,
         title: "Nello",
         id: Date.now() + 25
     },
     {
         completed: true,
-        title: "Nello",
+        title: "Zello",
         id: Date.now() + 35
     },
     {
-        completed: true,
-        title: "Nello",
+        completed: false,
+        title: "Sello",
         id: Date.now() + 45
     },
     {
-        completed: true,
-        title: "Nello",
+        completed: false,
+        title: "Kello",
         id: Date.now() + 55
     },
     {
         completed: true,
-        title: "Nello",
+        title: "Trello",
         id: Date.now() + 65
-    },
-  {
-    completed: false,
-    title: "Test",
-    id: Date.now()
-  },
-  {
-    completed: true,
-    title: "Hello",
-    id: Date.now() + 5
-  },
-  {
-    completed: true,
-    title: "Mello",
-    id: Date.now() + 15
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 25
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 35
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 45
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 55
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 65
-  }
-
+    }
 ];
 
 var listModel = {

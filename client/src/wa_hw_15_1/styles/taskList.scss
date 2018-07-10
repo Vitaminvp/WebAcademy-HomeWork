@@ -37,6 +37,7 @@
         padding: 10px 15px;
         transition: all .2s ease;
         &::placeholder{
+          font-size: 1.6rem;
           color: lightgrey;
         }
         &:invalid:focus:placeholder-shown{
@@ -60,6 +61,7 @@
         margin: 20px 0;
       }
       button{
+        outline: none;
         border-radius: 7px;
         padding: 10px 15px;
         transition: all .2s ease;
