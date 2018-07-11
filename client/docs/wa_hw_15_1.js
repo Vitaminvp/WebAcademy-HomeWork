@@ -1864,7 +1864,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(33),ba=__webpack_require__(15),m=__webpack_require__(57),p=__webpack_require__(32),v=__webpack_require__(24),da=__webpack_require__(58),ea=__webpack_require__(59),fa=__webpack_require__(60),ha=__webpack_require__(34);
+var aa=__webpack_require__(33),ba=__webpack_require__(12),m=__webpack_require__(57),p=__webpack_require__(32),v=__webpack_require__(24),da=__webpack_require__(58),ea=__webpack_require__(59),fa=__webpack_require__(60),ha=__webpack_require__(34);
 function A(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}ba?void 0:A("227");
 function ia(a,b,c,d,e,f,g,h,k){this._hasCaughtError=!1;this._caughtError=null;var n=Array.prototype.slice.call(arguments,3);try{b.apply(c,n)}catch(r){this._caughtError=r,this._hasCaughtError=!0}}
 var B={_caughtError:null,_hasCaughtError:!1,_rethrowError:null,_hasRethrowError:!1,invokeGuardedCallback:function(a,b,c,d,e,f,g,h,k){ia.apply(B,arguments)},invokeGuardedCallbackAndCatchFirstError:function(a,b,c,d,e,f,g,h,k){B.invokeGuardedCallback.apply(this,arguments);if(B.hasCaughtError()){var n=B.clearCaughtError();B._hasRethrowError||(B._hasRethrowError=!0,B._rethrowError=n)}},rethrowCaughtError:function(){return ka.apply(B,arguments)},hasCaughtError:function(){return B._hasCaughtError},clearCaughtError:function(){if(B._hasCaughtError){var a=
@@ -2176,7 +2176,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var invariant = __webpack_require__(33);
-var React = __webpack_require__(15);
+var React = __webpack_require__(12);
 var warning = __webpack_require__(55);
 var ExecutionEnvironment = __webpack_require__(57);
 var _assign = __webpack_require__(32);
@@ -19753,7 +19753,7 @@ module.exports = camelize;
 
 /***/ }),
 
-/***/ 15:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20029,7 +20029,7 @@ __webpack_require__(411);
 "use strict";
 
 
-var _react = __webpack_require__(15);
+var _react = __webpack_require__(12);
 
 var React = _interopRequireWildcard(_react);
 
@@ -20056,7 +20056,7 @@ exports.TaskList2 = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(15);
+var _react = __webpack_require__(12);
 
 var React = _interopRequireWildcard(_react);
 

@@ -10,8 +10,9 @@ export class CheckBox extends React.Component{
         super();
         this.id = generateId();
     }
-    checkBoxHandler(event){
-        console.log('checkbox', event.target.checked);
+    toggleCheked(){
+        console.log("changeOnCheckBox", this.props.checked);
+        this.props.changeOnListitem(!this.props.checked)
     };
     render(){
         return  <label htmlFor={this.id} className="checkbox">
@@ -20,7 +21,7 @@ export class CheckBox extends React.Component{
                         id={this.id}
                         type="checkbox"
                         checked={this.props.checked}
-                        onChange={this.checkBoxHandler.bind(this)}
+                        onChange={this.toggleCheked.bind(this)}
                     />
                     <span className="checkbox__span">&nbsp;</span>
                 </label>
