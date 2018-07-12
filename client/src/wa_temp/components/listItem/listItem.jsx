@@ -13,6 +13,9 @@ export class ListItem extends React.Component{
         console.log("changeOnListItem", changedItem);
         console.log("this.props.listItem.completed", this.props.listItem.completed);
     }
+    onClickBtnDel(){
+        this.props.onDelete(this.props.listItem);
+    }
     render(){
         const lineThrought = (this.props.listItem.completed)? 'list-item list-item__checked' : 'list-item';
         return  <li className={lineThrought} >
@@ -21,7 +24,7 @@ export class ListItem extends React.Component{
                         changeOnListitem={this.onChange.bind(this)}
                     />
                     <span>{ this.props.listItem.title }</span>
-                <button className="delete resetbtn">&nbsp;</button>
+                <button className="delete resetbtn" onClick={this.onClickBtnDel.bind(this)}>&nbsp;</button>
                 </li>
     }
 }

@@ -30,4 +30,20 @@ export class Ajax {
         };
         xhr.send(JSON.stringify(data));
     }
+
+    static delete( urlpost, callback ){
+        const xhr  = new XMLHttpRequest();
+        const timeout = 15000;
+        const timer = setTimeout( () => {
+            xhr.abort();
+        }, timeout);
+        xhr.open('DELETE', urlpost);
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState == 4 && xhr.status == 200){
+                clearTimeout(timer);
+                callback( JSON.parse(xhr.response) );
+            }
+        };
+        xhr.send();
+    }
 }

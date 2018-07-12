@@ -32,27 +32,40 @@ export class TaskList extends React.Component {
     changeTask(task){
         console.log("changeOnTask", task.id);
         Ajax.put(`${LOC}/${task.id}`, task, (response) => {
-            console.log("response", response);
-
             this.setState((state) => {
                 state.taskList.forEach((item, i, arr) => {
                     if(item.id == response.id){
-                        console.log("item.id", item.id);
-                        console.log("response.id", response.id);
                         arr[i] = response;
-                        console.log("state", state);
                     }
                 });
                 return state;
             });
         });
     }
-    render(){
-        console.log("this.state.taskList", this.state.taskList)
+    onDelete(task){
+        Ajax.delete(`${LOC}/${task.id}`,  (response) => {
 
+            const newTaskList = this.state.taskList.filter((item) => {
+                return item.id !== task.id;
+            });
+            this.setState({
+                taskList: newTaskList
+            });
+            // this.setState((state) => {
+            //             state.taskList.splice(state.taskList.indexOf(task),1);
+            //             return state;
+            //     });
+            // });
+        });
+    }
+    render(){
         return <div className="tasks">
                     <HeaderComponent onSubmit={this.submitForm.bind(this)}/>
-                    <ContentComponent taskList={this.state.taskList} changeOnTask={this.changeTask.bind(this)}/>
+                    <ContentComponent
+                        taskList={this.state.taskList}
+                        changeOnTask={this.changeTask.bind(this)}
+                        onDelete={this.onDelete.bind(this)}
+                    />
                     <FooterComponent />
                </div>
     }
