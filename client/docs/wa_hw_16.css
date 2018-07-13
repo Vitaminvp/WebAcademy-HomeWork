@@ -25,12 +25,44 @@ body {
   color: #ff0000; }
 
 ::-moz-selection {
-  color: #29a1ff; }
+  color: orangered; }
 
 ::selection {
-  color: #29a1ff; }
+  color: orangered; }
 .comment {
-  position: relative; }
+  border-bottom: 1px solid lightgrey;
+  padding: 0 10px;
+  position: relative;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent; }
+  .comment:hover {
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    background-color: #f9f9f9; }
+    .comment:hover:first-child {
+      border-top: 1px solid lightgray; }
+    .comment:hover:last-child {
+      border-bottom: 1px solid lightgray; }
+    .comment:hover .comment__btn {
+      visibility: visible;
+      opacity: 1; }
+  .comment__title {
+    margin-top: 0;
+    padding-top: 20px;
+    color: #29a1ff; }
+  .comment__content {
+    font-size: 1.3em;
+    overflow: auto; }
+  .comment__date {
+    text-align: right;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: .9rem; }
+  .comment:last-child {
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent; }
   .comment__btn {
     transition: all 0.25s ease-in-out;
     position: absolute;
@@ -42,7 +74,10 @@ body {
     border: 0;
     font-size: 1.2rem;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    color: gray; }
     .comment__btn:hover {
       color: #29a1ff;
       -ms-transform: scale(1.1);
@@ -50,6 +85,49 @@ body {
     .comment__btn:before {
       font-family: "Font Awesome 5 Free";
       content: '\F057'; }
+
+.comment__content, .comment__title {
+  position: relative; }
+  .comment__content div, .comment__content h2, .comment__title div, .comment__title h2 {
+    display: block; }
+  .comment__content textarea, .comment__title textarea {
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+    width: 100%; }
+  .comment__content button, .comment__title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    right: 5px;
+    top: 100%;
+    font-size: 1.2rem;
+    z-index: 1;
+    color: white; }
+
+.comment__content_hide div, .comment__content_hide h2, comment__title_hide div, comment__title_hide h2 {
+  display: none; }
+
+.comment__content_hide textarea, comment__title_hide textarea {
+  display: block;
+  border-radius: 7px;
+  outline: none; }
+
+.comment__content_hide button, comment__title_hide button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  transition: all .2s ease;
+  font-weight: bold;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #29a1ff;
+  cursor: pointer;
+  border-color: transparent; }
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
@@ -131,22 +209,3 @@ body {
         .wrapper .comments form button:hover {
           border-color: transparent;
           background-color: #217ac3; }
-    .wrapper .comments .comment {
-      border-bottom: 1px solid lightgrey;
-      padding: 0 10px; }
-      .wrapper .comments .comment__title {
-        margin-top: 0;
-        padding-top: 20px;
-        color: #29a1ff; }
-      .wrapper .comments .comment__content {
-        font-size: 1.3em;
-        overflow: auto; }
-      .wrapper .comments .comment__date {
-        text-align: right;
-        color: gray;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        font-size: .9rem; }
-      .wrapper .comments .comment:last-child {
-        border-bottom: 0px solid black;
-        padding-bottom: 1px; }

@@ -70,9 +70,9 @@
     }
   }
 }
-.comment__content{
+.comment__content, .comment__title{
   position: relative;
-  div{
+  div, h2{
     display: block;
   }
   textarea{
@@ -94,8 +94,8 @@
     color: white;
   }
 }
-.comment__content_hide {
-  div{
+.comment__content_hide, comment__title_hide {
+  div, h2{
     display: none;
   }
   textarea{

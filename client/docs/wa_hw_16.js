@@ -660,12 +660,28 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
             });
         }
     }, {
-        key: 'onDelete',
-        value: function onDelete(task) {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(task) {
             var _this3 = this;
 
+            _ajax.Ajax.put(URLLOC + '/' + task.id, task, function (response) {
+                _this3.setState(function (state) {
+                    state.list.forEach(function (item, i, arr) {
+                        if (item.id == response.id) {
+                            arr[i] = response;
+                        }
+                    });
+                    return state;
+                });
+            });
+        }
+    }, {
+        key: 'onDelete',
+        value: function onDelete(task) {
+            var _this4 = this;
+
             _ajax.Ajax.delete(URLLOC + '/' + task.id, function (response) {
-                _this3.setState({
+                _this4.setState({
                     list: response //В моем back-end возвращается массив результирующий.
                 });
             });
@@ -677,7 +693,7 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
                 'div',
                 { className: 'comments' },
                 React.createElement(_formComponent.Form, { submit: this.addComment.bind(this) }),
-                React.createElement(_contentComponent.Content, { list: this.state.list, 'delete': this.onDelete.bind(this) })
+                React.createElement(_contentComponent.Content, { list: this.state.list, 'delete': this.onDelete.bind(this), onConfirmChange: this.onConfirmChange.bind(this) })
             );
         }
     }]);
@@ -804,6 +820,24 @@ var Ajax = exports.Ajax = function () {
                 xhr.abort();
             }, timeout);
             xhr.open('POST', urlpost);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }, {
+        key: 'put',
+        value: function put(urlpost, data, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('PUT', urlpost);
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
@@ -969,12 +1003,17 @@ var Content = exports.Content = function (_React$Component) {
             this.props.delete(item);
         }
     }, {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(item) {
+            this.props.onConfirmChange(item);
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
 
             var listArray = this.props.list.map(function (item) {
-                return React.createElement(_listItemComponents.ListItem, { key: item.id, commItem: item, 'delete': _this2.btnClickHandler.bind(_this2) });
+                return React.createElement(_listItemComponents.ListItem, { key: item.id, commItem: item, 'delete': _this2.btnClickHandler.bind(_this2), onConfirmChange: _this2.onConfirmChange.bind(_this2) });
             });
             return React.createElement(
                 'ul',
@@ -1022,22 +1061,73 @@ var ListItem = exports.ListItem = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).call(this));
 
-        _this.setState({
-            author: _this.props.commItem.author,
-            comText: _this.props.commItem.text
-        });
+        _this.isChangeble = false;
+        _this.isChangebleTitle = false;
+        _this.state = {
+            title: '',
+            comText: '',
+            hideClassCom: 'comment__content',
+            hideClassTitle: 'comment__title'
+        };
         return _this;
     }
 
     _createClass(ListItem, [{
+        key: 'toggleTextArea',
+        value: function toggleTextArea(e) {
+            this.setState({
+                title: this.state.title,
+                comText: e.target.textContent
+            });
+            if (this.isChangeble) {
+                this.setState({ hideClassCom: 'comment__content' });
+            } else {
+                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
+            }
+            this.isChangeble = !this.isChangeble;
+        }
+    }, {
+        key: 'toggleInput',
+        value: function toggleInput(e) {
+            this.setState({
+                title: e.target.textContent,
+                comText: this.state.comText
+            });
+            console.log(e.target.textContent);
+            if (this.hideClassTitle) {
+                this.setState({ hideClassTitle: 'comment__title' });
+            } else {
+                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
+            }
+            this.isChangebleTitle = !this.isChangebleTitle;
+            console.log("this.isChangebleTitle", this.isChangebleTitle);
+        }
+    }, {
         key: 'btnClickHandler',
         value: function btnClickHandler() {
             this.props.delete(this.props.commItem);
         }
     }, {
         key: 'changeComment',
-        value: function changeComment() {
-            console.log('onDoubleClick', this.props.commItem.text);
+        value: function changeComment(e) {
+            this.setState({
+                title: this.state.title,
+                comText: e.target.value
+            });
+        }
+    }, {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(itemEl) {
+            var changedItem = Object.assign({}, itemEl);
+            changedItem.text = this.state.comText;
+            this.props.onConfirmChange(changedItem);
+
+            if (this.isChangeble) {
+                this.setState({ hideClassCom: 'comment__content' });
+            } else {
+                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
+            }
+            this.isChangeble = !this.isChangeble;
         }
     }, {
         key: 'getDate',
@@ -1048,20 +1138,53 @@ var ListItem = exports.ListItem = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var item = this.props.commItem;
+            var _this2 = this;
 
+            var item = this.props.commItem;
             return React.createElement(
                 'li',
                 { className: 'comment' },
                 React.createElement(
-                    'h2',
-                    { className: 'comment__title' },
-                    item.author
+                    'div',
+                    { className: this.state.hideClassTitle },
+                    React.createElement(
+                        'h2',
+                        { onDoubleClick: this.toggleInput.bind(this) },
+                        item.author
+                    ),
+                    React.createElement(
+                        'textarea',
+                        { value: this.state.title, onChange: this.changeComment.bind(this) },
+                        '\xA0'
+                    ),
+                    React.createElement(
+                        'button',
+                        { className: 'btn', onClick: function onClick() {
+                                return _this2.onConfirmChange(item);
+                            } },
+                        React.createElement('i', { className: 'fas fa-wrench' })
+                    )
                 ),
                 React.createElement(
                     'div',
-                    { className: 'comment__content', onDoubleClick: this.changeComment.bind(this) },
-                    item.text
+                    { className: this.state.hideClassCom },
+                    React.createElement(
+                        'div',
+                        { onDoubleClick: this.toggleTextArea.bind(this) },
+                        item.text
+                    ),
+                    React.createElement(
+                        'textarea',
+                        { value: this.state.comText, onChange: this.changeComment.bind(this) },
+                        '\xA0'
+                    ),
+                    React.createElement(
+                        'button',
+                        { className: 'btn', onClick: function onClick() {
+                                return _this2.onConfirmChange(item);
+                            } },
+                        React.createElement('i', { className: 'fas fa-wrench' })
+                    )
                 ),
                 React.createElement(
                     'div',

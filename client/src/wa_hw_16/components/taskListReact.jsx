@@ -32,9 +32,7 @@ export class TaskList2 extends React.Component {
 
     }
     onConfirmChange(task){
-        console.log("task", task);
         Ajax.put(`${URLLOC}/${task.id}`, task, (response) => {
-            console.log("response", response);
             this.setState((state) => {
                 state.list.forEach((item, i, arr) => {
                     if(item.id == response.id){

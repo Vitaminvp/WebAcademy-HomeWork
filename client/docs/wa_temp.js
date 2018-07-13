@@ -787,7 +787,7 @@ var TaskList = exports.TaskList = function (_React$Component) {
         value: function changeTask(task) {
             var _this3 = this;
 
-            console.log("changeOnTask", task.id);
+            console.log("changeOnTask", task);
             _ajax.Ajax.put(LOC + '/' + task.id, task, function (response) {
                 _this3.setState(function (state) {
                     state.taskList.forEach(function (item, i, arr) {

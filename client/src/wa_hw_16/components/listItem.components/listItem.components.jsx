@@ -2,30 +2,41 @@ import * as React from 'react';
 export class ListItem extends React.Component{
     constructor(){
         super();
-
         this.isChangeble = false;
+        this.isChangebleTitle = false;
         this.state = {
             title: '',
             comText: '',
-            hideClass: 'comment__content'
+            hideClassCom: 'comment__content',
+            hideClassTitle: 'comment__title',
         };
-
     }
     toggleTextArea(e){
-        console.log("e.target.value", e.target.textContent);
-
         this.setState({
             title: this.state.title,
             comText: e.target.textContent
         });
-        // console.log("this.state", this.state);
-
         if(this.isChangeble){
-            this.setState({ hideClass: 'comment__content'});
+            this.setState({ hideClassCom: 'comment__content'});
         } else {
-            this.setState({ hideClass: 'comment__content comment__content_hide'});
+            this.setState({ hideClassCom: 'comment__content comment__content_hide'});
         }
         this.isChangeble = !this.isChangeble;
+    }
+
+    toggleInput(e){
+        this.setState({
+            title: e.target.textContent,
+            comText: this.state.comText
+        });
+        console.log(e.target.textContent);
+        if(this.hideClassTitle){
+            this.setState({ hideClassTitle: 'comment__title'});
+        } else {
+            this.setState({ hideClassTitle: 'comment__title comment__title_hide'});
+        }
+        this.isChangebleTitle = !this.isChangebleTitle;
+        console.log("this.isChangebleTitle", this.isChangebleTitle);
     }
 
     btnClickHandler(){
@@ -36,18 +47,16 @@ export class ListItem extends React.Component{
             title: this.state.title,
             comText: e.target.value
         });
-        // console.log('this.state.comText', this.state.comText);
     }
     onConfirmChange(itemEl){
         const changedItem = Object.assign({}, itemEl);
-        // console.log("changedItem", changedItem);
         changedItem.text = this.state.comText;
         this.props.onConfirmChange(changedItem);
 
         if(this.isChangeble){
-            this.setState({ hideClass: 'comment__content'});
+            this.setState({ hideClassCom: 'comment__content'});
         } else {
-            this.setState({ hideClass: 'comment__content comment__content_hide'});
+            this.setState({ hideClassCom: 'comment__content comment__content_hide'});
         }
         this.isChangeble = !this.isChangeble;
     }
@@ -63,23 +72,19 @@ export class ListItem extends React.Component{
     }
     render(){
         const item = this.props.commItem;
-
-
-
-        // console.log("item.text", item.text);
-        // console.log("item.author", item.author);
-
         return  <li className='comment'>
-                    <h2 className='comment__title'>{item.author}</h2>
-                    <div className={this.state.hideClass} >
+                    <div  className={this.state.hideClassTitle}>
+                        <h2 onDoubleClick={this.toggleInput.bind(this)}>{item.author}</h2>
+                        <textarea  value={this.state.title}  onChange={this.changeComment.bind(this)}>&nbsp;</textarea>
+                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench"></i></button>
+                    </div>
+                    <div className={this.state.hideClassCom} >
                         <div onDoubleClick={this.toggleTextArea.bind(this)}>
                             {item.text}
                         </div>
                         <textarea  value={this.state.comText}  onChange={this.changeComment.bind(this)}>&nbsp;</textarea>
                         <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench"></i></button>
                     </div>
-
-
                      <div className='comment__date'>
                         {this.getDate(item.date)}
                     </div>
