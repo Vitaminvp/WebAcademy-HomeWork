@@ -8,23 +8,23 @@
   align-items: center;
   flex-direction: column;
   padding: 0 50px;
-  .comments{
+  .comments {
     max-width: $size;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    ul{
+    ul {
       list-style: none;
       margin: 0 0 30px;
       padding: 0;
     }
-    form{
+    form {
       display: flex;
       width: 100%;
       flex-direction: column;
       justify-content: space-between;
-      input, textarea{
+      input, textarea {
         font-family: 'HelveticaNeue', Arial, sans-serif;
         width: 100%;
         box-sizing: border-box;
@@ -37,31 +37,31 @@
         border-radius: 7px;
         padding: 10px 15px;
         transition: all .2s ease;
-        &::placeholder{
+        &::placeholder {
           font-size: 1.6rem;
           color: lightgrey;
         }
-        &:invalid:focus:placeholder-shown{
+        &:invalid:focus:placeholder-shown {
           border: 2px solid red;
         }
-        &:not(:invalid):not(:focus){
+        &:not(:invalid):not(:focus) {
           border: 2px solid green;
         }
-        &:selection{
+        &:selection {
           color: #29a1ff;
         }
-        &:focus{
+        &:focus {
           border: 2px solid $main-color;
         }
 
       }
-      textarea{
+      textarea {
         min-height: 200px;
       }
-      input, button{
+      input, button {
         margin: 20px 0;
       }
-      button{
+      button {
         outline: none;
         border-radius: 7px;
         padding: 10px 15px;
@@ -72,36 +72,11 @@
         background-color: $main-color;
         cursor: pointer;
         border-color: transparent;
-        &:hover{
+        &:hover {
           border-color: transparent;
           background-color: #217ac3;
         }
       }
     }
-    .comment{
-      border-bottom: 1px solid lightgrey;
-      padding: 0 10px;
-      &__title{
-        margin-top: 0;
-        padding-top: 20px;
-        color: $main-color;
-      }
-      &__content{
-        font-size: 1.3em;
-        overflow: auto;
-      }
-      &__date{
-        text-align: right;
-        color: gray;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        font-size: .9rem;
-      }
-      &:last-child{
-        border-bottom: 0px solid black;
-        padding-bottom: 1px;
-      }
-    }
   }
 }
-

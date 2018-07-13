@@ -20,7 +20,6 @@ export class TaskList2 extends React.Component {
             this.setState( {list: response} );
         });
     }
-
     addComment(title, comment){
         Ajax.post(URLLOC, {
             author: title,
@@ -32,6 +31,20 @@ export class TaskList2 extends React.Component {
         });
 
     }
+    onConfirmChange(task){
+        console.log("task", task);
+        Ajax.put(`${URLLOC}/${task.id}`, task, (response) => {
+            console.log("response", response);
+            this.setState((state) => {
+                state.list.forEach((item, i, arr) => {
+                    if(item.id == response.id){
+                        arr[i] = response;
+                    }
+                });
+                return state;
+            });
+        });
+    }
     onDelete(task){
         Ajax.delete(`${URLLOC}/${task.id}`,  (response) => {
             this.setState({
@@ -42,7 +55,7 @@ export class TaskList2 extends React.Component {
     render(){
         return  <div className="comments">
                     <Form    submit={this.addComment.bind(this)} />
-                    <Content list={this.state.list} delete={this.onDelete.bind(this)}/>
+                    <Content list={this.state.list} delete={this.onDelete.bind(this)} onConfirmChange={this.onConfirmChange.bind(this)}/>
                 </div>
     }
 }

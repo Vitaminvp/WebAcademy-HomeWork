@@ -30,7 +30,7 @@ export class TaskList extends React.Component {
         });
     };
     changeTask(task){
-        console.log("changeOnTask", task.id);
+        console.log("changeOnTask", task);
         Ajax.put(`${LOC}/${task.id}`, task, (response) => {
             this.setState((state) => {
                 state.taskList.forEach((item, i, arr) => {

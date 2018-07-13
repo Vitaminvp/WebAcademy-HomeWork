@@ -65,22 +65,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(61);
-} else {
-  module.exports = __webpack_require__(62);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
-
-/***/ }),
-
 /***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -594,7 +578,7 @@ __webpack_require__(418);
 "use strict";
 
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(7);
 
 var React = _interopRequireWildcard(_react);
 
@@ -621,7 +605,7 @@ exports.TaskList2 = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(7);
 
 var React = _interopRequireWildcard(_react);
 
@@ -631,7 +615,7 @@ var _formComponent = __webpack_require__(421);
 
 var _contentComponent = __webpack_require__(422);
 
-__webpack_require__(424);
+__webpack_require__(425);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -866,7 +850,7 @@ exports.Form = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(7);
 
 var React = _interopRequireWildcard(_react);
 
@@ -954,11 +938,13 @@ exports.Content = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(7);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(423);
+var _listItemComponents = __webpack_require__(423);
+
+__webpack_require__(424);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -980,7 +966,6 @@ var Content = exports.Content = function (_React$Component) {
     _createClass(Content, [{
         key: 'btnClickHandler',
         value: function btnClickHandler(item) {
-            console.log(item.id);
             this.props.delete(item);
         }
     }, {
@@ -988,37 +973,8 @@ var Content = exports.Content = function (_React$Component) {
         value: function render() {
             var _this2 = this;
 
-            var listArray = [];
-            this.props.list.forEach(function (item) {
-                var date = new Date(Date.parse(item.date));
-                date = date.getFullYear() + '-' + ('00' + (date.getMonth() + 1)).slice(-2) + '-' + ('00' + date.getDate()).slice(-2) + ' in ' + ('00' + date.getHours()).slice(-2) + ':' + ('00' + date.getMinutes()).slice(-2) + ':' + ('00' + date.getSeconds()).slice(-2);
-                var comment = React.createElement(
-                    'li',
-                    { key: item.id, className: 'comment' },
-                    React.createElement(
-                        'h2',
-                        { className: 'comment__title' },
-                        item.author
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'comment__content' },
-                        item.text
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'comment__date' },
-                        date
-                    ),
-                    React.createElement(
-                        'button',
-                        { className: 'comment__btn', onClick: function onClick() {
-                                _this2.btnClickHandler(item);
-                            } },
-                        '\xA0'
-                    )
-                );
-                listArray.push(comment);
+            var listArray = this.props.list.map(function (item) {
+                return React.createElement(_listItemComponents.ListItem, { key: item.id, commItem: item, 'delete': _this2.btnClickHandler.bind(_this2) });
             });
             return React.createElement(
                 'ul',
@@ -1034,13 +990,106 @@ var Content = exports.Content = function (_React$Component) {
 /***/ }),
 
 /***/ 423:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ListItem = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var React = _interopRequireWildcard(_react);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ListItem = exports.ListItem = function (_React$Component) {
+    _inherits(ListItem, _React$Component);
+
+    function ListItem() {
+        _classCallCheck(this, ListItem);
+
+        var _this = _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).call(this));
+
+        _this.setState({
+            author: _this.props.commItem.author,
+            comText: _this.props.commItem.text
+        });
+        return _this;
+    }
+
+    _createClass(ListItem, [{
+        key: 'btnClickHandler',
+        value: function btnClickHandler() {
+            this.props.delete(this.props.commItem);
+        }
+    }, {
+        key: 'changeComment',
+        value: function changeComment() {
+            console.log('onDoubleClick', this.props.commItem.text);
+        }
+    }, {
+        key: 'getDate',
+        value: function getDate(data) {
+            var date = new Date(Date.parse(data));
+            return date.getFullYear() + '-' + ('00' + (date.getMonth() + 1)).slice(-2) + '-' + ('00' + date.getDate()).slice(-2) + ' in ' + ('00' + date.getHours()).slice(-2) + ':' + ('00' + date.getMinutes()).slice(-2) + ':' + ('00' + date.getSeconds()).slice(-2);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var item = this.props.commItem;
+
+            return React.createElement(
+                'li',
+                { className: 'comment' },
+                React.createElement(
+                    'h2',
+                    { className: 'comment__title' },
+                    item.author
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'comment__content', onDoubleClick: this.changeComment.bind(this) },
+                    item.text
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'comment__date' },
+                    this.getDate(item.date)
+                ),
+                React.createElement(
+                    'button',
+                    { className: 'comment__btn', onClick: this.btnClickHandler.bind(this) },
+                    '\xA0'
+                )
+            );
+        }
+    }]);
+
+    return ListItem;
+}(React.Component);
+
+/***/ }),
+
+/***/ 424:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 424:
+/***/ 425:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -2890,7 +2939,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(15),ba=__webpack_require__(10),m=__webpack_require__(40),p=__webpack_require__(14),v=__webpack_require__(12),da=__webpack_require__(41),ea=__webpack_require__(42),fa=__webpack_require__(43),ha=__webpack_require__(16);
+var aa=__webpack_require__(15),ba=__webpack_require__(7),m=__webpack_require__(40),p=__webpack_require__(14),v=__webpack_require__(12),da=__webpack_require__(41),ea=__webpack_require__(42),fa=__webpack_require__(43),ha=__webpack_require__(16);
 function A(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}ba?void 0:A("227");
 function ia(a,b,c,d,e,f,g,h,k){this._hasCaughtError=!1;this._caughtError=null;var n=Array.prototype.slice.call(arguments,3);try{b.apply(c,n)}catch(r){this._caughtError=r,this._hasCaughtError=!0}}
 var B={_caughtError:null,_hasCaughtError:!1,_rethrowError:null,_hasRethrowError:!1,invokeGuardedCallback:function(a,b,c,d,e,f,g,h,k){ia.apply(B,arguments)},invokeGuardedCallbackAndCatchFirstError:function(a,b,c,d,e,f,g,h,k){B.invokeGuardedCallback.apply(this,arguments);if(B.hasCaughtError()){var n=B.clearCaughtError();B._hasRethrowError||(B._hasRethrowError=!0,B._rethrowError=n)}},rethrowCaughtError:function(){return ka.apply(B,arguments)},hasCaughtError:function(){return B._hasCaughtError},clearCaughtError:function(){if(B._hasCaughtError){var a=
@@ -3202,7 +3251,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var invariant = __webpack_require__(15);
-var React = __webpack_require__(10);
+var React = __webpack_require__(7);
 var warning = __webpack_require__(38);
 var ExecutionEnvironment = __webpack_require__(40);
 var _assign = __webpack_require__(14);
@@ -20659,6 +20708,22 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
+
+/***/ }),
+
+/***/ 7:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(61);
+} else {
+  module.exports = __webpack_require__(62);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 

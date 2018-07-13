@@ -8,8 +8,11 @@ export class Content extends React.Component{
     btnClickHandler(item){
         this.props.delete(item);
     }
+    onConfirmChange(item){
+        this.props.onConfirmChange(item);
+    }
     render(){
-        const listArray = this.props.list.map( item => <ListItem key={item.id} commItem={item} delete={this.btnClickHandler.bind(this)}/>);
+        const listArray = this.props.list.map( item => <ListItem key={item.id} commItem={item} delete={this.btnClickHandler.bind(this)} onConfirmChange={this.onConfirmChange.bind(this)}/>);
         return  <ul>
                     {listArray}
                 </ul>
