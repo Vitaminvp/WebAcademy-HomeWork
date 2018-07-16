@@ -89,6 +89,8 @@ ul{
   }
   &_buttons a{
     margin-right: 15px;
+    margin-bottom: 10px;
+
   }
 }
 
@@ -100,6 +102,8 @@ ul{
   margin: 0 10px;
   border-radius: 4px;
   min-width: 318px;
+  max-width: 420px;
+  width: 100%;
   background-color: #ffffff;
   border: solid 1px $accent;
   overflow: hidden;

@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 .header{
   height: 60px;
   border-radius: 4px 4px 0 0;
@@ -14,9 +21,106 @@
   &__nav{
     display: flex;
     align-items: center;
+    &_menu{
+      @include tablet{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: #373a3c;
+        background-image: linear-gradient(to top, #686c6f, #373a3c);
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #727781;
+        padding: 20px 25px;
+        .header__nav_item{
+          margin-bottom: 12px;
+          margin-right: 0;
+          &-search{
+            order: -1;
+          }
+          &-expand:last-child a::before{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    &_control{
+      position: relative;
+      .toggle-mnu {
+        @include tablet{
+          display: block;
+        }
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        line-height: 48px;
+        width: 28px;
+        height: 20px;
+        @include mobile{
+          height: 38px;
+        }
+        & span:after,
+        & span:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+        & span:after {
+          top: 16px;
+        }
+        & span {
+          position: relative;
+          display: block;
+        }
+        & span,
+        & span:after,
+        & span:before {
+          width: 100%;
+          height: calc((1.5rem / 3) - 5px);
+          background-color: $accent;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border-radius: 3px;
+        }
+        &.on span {
+          background-color: transparent;
+        }
+
+        &.on span:before {
+          -webkit-transform: rotate(45deg) translate(-2px, 0);
+          transform: rotate(45deg) translate(-2px, 0);
+        }
+
+        &.on span:after {
+          -webkit-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
+        }
+
+        &.on + .header__nav_menu {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
     &_item{
       margin-right: $padding;
       position: relative;
+      &-search{
+        @include mobile{
+          order: -1;
+        }
+      }
       &:hover {
         .submenu {
           visibility: visible;

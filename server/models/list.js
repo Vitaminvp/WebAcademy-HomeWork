@@ -45,47 +45,7 @@ var items = [
         completed: true,
         title: "Nello",
         id: Date.now() + 65
-    },
-  {
-    completed: false,
-    title: "Test",
-    id: Date.now()
-  },
-  {
-    completed: true,
-    title: "Hello",
-    id: Date.now() + 5
-  },
-  {
-    completed: true,
-    title: "Mello",
-    id: Date.now() + 15
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 25
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 35
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 45
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 55
-  },
-  {
-    completed: true,
-    title: "Nello",
-    id: Date.now() + 65
-  }
+    }
 
 ];
 

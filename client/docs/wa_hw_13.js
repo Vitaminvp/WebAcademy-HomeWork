@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 380);
+/******/ 	return __webpack_require__(__webpack_require__.s = 392);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 132:
+/***/ 150:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78,7 +78,7 @@ exports.Lights = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(385);
+__webpack_require__(397);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -197,40 +197,40 @@ var Lights = exports.Lights = function () {
 
 /***/ }),
 
-/***/ 380:
+/***/ 392:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(381);
+module.exports = __webpack_require__(393);
 
 
 /***/ }),
 
-/***/ 381:
+/***/ 393:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(382);
+__webpack_require__(394);
 
-__webpack_require__(383);
+__webpack_require__(395);
 
-var _lights_manager = __webpack_require__(384);
+var _lights_manager = __webpack_require__(396);
 
-var _lights = __webpack_require__(132);
+var _lights = __webpack_require__(150);
 
 var light = new _lights_manager.LightsManager(document.querySelector('.wrapper'));
 
 /***/ }),
 
-/***/ 382:
+/***/ 394:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 383:
+/***/ 395:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -238,7 +238,7 @@ var light = new _lights_manager.LightsManager(document.querySelector('.wrapper')
 
 /***/ }),
 
-/***/ 384:
+/***/ 396:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -251,7 +251,7 @@ exports.LightsManager = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _lights = __webpack_require__(132);
+var _lights = __webpack_require__(150);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -359,7 +359,7 @@ var LightsManager = exports.LightsManager = function () {
 
 /***/ }),
 
-/***/ 385:
+/***/ 397:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

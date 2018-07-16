@@ -1,0 +1,123 @@
+@import './../../styles/mixins';
+
+
+.comment{
+  border-bottom: 1px solid lightgrey;
+  padding: 0 10px;
+  position: relative;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  &:hover{
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    background-color: #f9f9f9;
+    &:first-child{
+      border-top: 1px solid lightgray;
+    }
+    &:last-child{
+      border-bottom: 1px solid lightgray;
+    }
+    .comment__btn{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__title{
+    margin-top: 0;
+    padding-top: 20px;
+    color: $main-color;
+  }
+  &__content{
+    font-size: 1.3em;
+    overflow: auto;
+
+  }
+  &__date{
+    text-align: right;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+  }
+  &:last-child{
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__btn{
+    @include transition;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -13px;
+    right: -11px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    color: #b4b4b4;
+    &:hover{
+      color: $main-color;
+      transform: scale(1.1);
+    }
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      content: '\f057';
+    }
+  }
+}
+.comment__content, .comment__title{
+  position: relative;
+  div, h2{
+    display: block;
+  }
+  textarea{
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  button{
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    right: 5px;
+    top: 100%;
+    font-size: 1.2rem;
+    z-index: 1;
+    color: white;
+  }
+}
+.comment__content_hide, .comment__title_hide {
+  div, h2{
+    display: none;
+  }
+  textarea{
+    display: block;
+    border-radius: 7px;
+    outline: none;
+  }
+  button{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    transition: all .2s ease;
+    font-weight: bold;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #29a1ff;
+    cursor: pointer;
+    border-color: transparent;
+  }
+}

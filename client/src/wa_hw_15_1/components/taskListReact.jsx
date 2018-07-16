@@ -16,21 +16,20 @@ export class TaskList2 extends React.Component {
           title: '',
           comment: ''
         };
-        Ajax.get(URLLOC, (response) => {
+        Ajax.get(URLEXT, (response) => {
             this.setState( {list: response} );
         });
     }
 
     addComment(e){
-        Ajax.post(URLLOC, {
+        Ajax.post(URLEXT, {
                              author: this.state.title,
                              text: this.state.comment
         }, (response) => {
-            console.log(response);
             this.setState({
-                list: this.state.list.concat([response]),
-                // title: '',
-                // comment: ''
+                title: '',
+                comment: '',
+                list: this.state.list.concat([response])
             });
         });
 
@@ -51,26 +50,31 @@ export class TaskList2 extends React.Component {
         });
     }
 
-
-
     render(){
         const listArray = [];
         this.state.list.forEach( (item) => {
+            let date = new Date( Date.parse(item.date) );
+            date = date.getFullYear() + '-' +
+                ('00' + (date.getMonth()+1)).slice(-2) + '-' +
+                ('00' + date.getDate()).slice(-2) + ' in ' +
+                ('00' + date.getHours()).slice(-2) + ':' +
+                ('00' + date.getMinutes()).slice(-2) + ':' +
+                ('00' + date.getSeconds()).slice(-2);
             const comment = <li className='comment' key={item.id}>
                                 <h2 className='comment__title'>{item.author}</h2>
                                 <div className='comment__content'>
                                     {item.text}
                                 </div>
                                 <div className='comment__date'>
-                                   {item.date}
+                                   {date}
                                 </div>
                             </li>;
             listArray.push(comment);
         });
         return  <div className="comments">
                 <form onSubmit={this.addComment.bind(this)}>
-                    <input type="text" required={true} value={this.state.title} onInput={this.inputHandler.bind(this)}/>
-                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}></textarea>
+                    <input type="text" required={true} value={this.state.title} onInput={this.inputHandler.bind(this)} placeholder="Enter your Name"/>
+                    <textarea  required={true} value={this.state.comment} onInput={this.textHandler.bind(this)}  placeholder="Enter your comment"></textarea>
                     <button>Add comment</button>
                 </form>
                 <ul>

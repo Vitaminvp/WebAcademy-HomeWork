@@ -14,6 +14,12 @@ var items = [
         date: new Date(),
         text: 'Hello world, I am a dommy comment!!',
         id: guid()
+    },
+    {
+        author: 'Bob Brawn',
+        date: new Date(),
+        text: 'Hello dolly, I am a third comment!!',
+        id: guid()
     }];
 
 function guid() {

@@ -46,6 +46,10 @@ body {
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    .wrapper .comments ul {
+      list-style: none;
+      margin: 0 0 30px;
+      padding: 0; }
     .wrapper .comments form {
       display: -ms-flexbox;
       display: flex;
@@ -54,37 +58,47 @@ body {
           flex-direction: column;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-      .wrapper .comments form input, .wrapper .comments form textarea, .wrapper .comments form button {
+      .wrapper .comments form input, .wrapper .comments form textarea {
         font-family: 'HelveticaNeue', Arial, sans-serif;
         width: 100%;
         box-sizing: border-box;
-        border-radius: 7px;
         box-shadow: none;
         border: 2px solid lightgrey;
         font-size: 1.6rem;
         margin: 0;
         outline: none;
         color: grey;
+        border-radius: 7px;
         padding: 10px 15px;
         transition: all .2s ease; }
-        .wrapper .comments form input::-webkit-input-placeholder, .wrapper .comments form textarea::-webkit-input-placeholder, .wrapper .comments form button::-webkit-input-placeholder {
+        .wrapper .comments form input::-webkit-input-placeholder, .wrapper .comments form textarea::-webkit-input-placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
-        .wrapper .comments form input:-ms-input-placeholder, .wrapper .comments form textarea:-ms-input-placeholder, .wrapper .comments form button:-ms-input-placeholder {
+        .wrapper .comments form input:-ms-input-placeholder, .wrapper .comments form textarea:-ms-input-placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
-        .wrapper .comments form input::placeholder, .wrapper .comments form textarea::placeholder, .wrapper .comments form button::placeholder {
+        .wrapper .comments form input::placeholder, .wrapper .comments form textarea::placeholder {
+          font-size: 1.6rem;
           color: lightgrey; }
-        .wrapper .comments form input:invalid:focus:not(:placeholder-shown), .wrapper .comments form textarea:invalid:focus:not(:placeholder-shown), .wrapper .comments form button:invalid:focus:not(:placeholder-shown) {
+        .wrapper .comments form input:invalid:focus:placeholder-shown, .wrapper .comments form textarea:invalid:focus:placeholder-shown {
           border: 2px solid red; }
-        .wrapper .comments form input:selection, .wrapper .comments form textarea:selection, .wrapper .comments form button:selection {
+        .wrapper .comments form input:not(:invalid):not(:focus), .wrapper .comments form textarea:not(:invalid):not(:focus) {
+          border: 2px solid green; }
+        .wrapper .comments form input:selection, .wrapper .comments form textarea:selection {
           color: #29a1ff; }
-        .wrapper .comments form input:focus, .wrapper .comments form textarea:focus, .wrapper .comments form button:focus {
+        .wrapper .comments form input:focus, .wrapper .comments form textarea:focus {
           border: 2px solid #29a1ff; }
       .wrapper .comments form textarea {
         min-height: 200px; }
       .wrapper .comments form input, .wrapper .comments form button {
         margin: 20px 0; }
       .wrapper .comments form button {
+        outline: none;
+        border-radius: 7px;
+        padding: 10px 15px;
+        transition: all .2s ease;
         font-weight: bold;
+        font-size: 1.6rem;
         color: #ffffff;
         background-color: #29a1ff;
         cursor: pointer;
@@ -93,8 +107,13 @@ body {
           border-color: transparent;
           background-color: #217ac3; }
     .wrapper .comments .comment {
-      border-bottom: 1px solid lightgrey; }
+      border-bottom: 1px solid lightgrey;
+      padding: 0 10px; }
+      .wrapper .comments .comment:hover {
+        background-color: #f2f2f2; }
       .wrapper .comments .comment__title {
+        margin-top: 0;
+        padding-top: 20px;
         color: #29a1ff; }
       .wrapper .comments .comment__content {
         font-size: 1.3em;
@@ -105,3 +124,5 @@ body {
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: .9rem; }
+      .wrapper .comments .comment:last-child {
+        border-bottom: 0px solid black; }
