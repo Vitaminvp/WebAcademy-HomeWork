@@ -1,45 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="">
+    <list default="true" id="779ddfcb-27f6-4b81-8c3d-dd67001ddfaa" name="Default" comment="14">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/config/base.js" afterPath="$PROJECT_DIR$/client/config/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/config/dev.js" afterPath="$PROJECT_DIR$/client/config/dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/config/prod.js" afterPath="$PROJECT_DIR$/client/config/prod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.html" afterPath="$PROJECT_DIR$/client/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/index.js" afterPath="$PROJECT_DIR$/client/docs/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/vendors.js" afterPath="$PROJECT_DIR$/client/docs/vendors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.css" afterPath="$PROJECT_DIR$/client/docs/wa_final_project.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.html" afterPath="$PROJECT_DIR$/client/docs/wa_final_project.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_final_project.js" afterPath="$PROJECT_DIR$/client/docs/wa_final_project.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_10.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_11.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_11.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_12.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_12.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_13.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_13.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_14.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_14.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_15_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_4.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_7.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_8.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/docs/wa_hw_9.js" afterPath="$PROJECT_DIR$/client/docs/wa_hw_9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index/index.html" afterPath="$PROJECT_DIR$/client/src/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_final_project/js/_base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/styles/_base.scss" afterPath="$PROJECT_DIR$/client/src/wa_final_project/styles/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/styles/_best.scss" afterPath="$PROJECT_DIR$/client/src/wa_final_project/styles/_best.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/styles/_header.scss" afterPath="$PROJECT_DIR$/client/src/wa_final_project/styles/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/styles/mixins.scss" afterPath="$PROJECT_DIR$/client/src/wa_final_project/styles/mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_final_project/wa_final_project.html" afterPath="$PROJECT_DIR$/client/src/wa_final_project/wa_final_project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_14/js/_base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15/components/taskList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15/js/_base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15/utils/ajax.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15/utils/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/components/taskListReact.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/styles/taskList.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js" afterPath="$PROJECT_DIR$/client/src/wa_hw_15_1/utils/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/comments.js" afterPath="$PROJECT_DIR$/server/models/comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/list.js" afterPath="$PROJECT_DIR$/server/models/list.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/styles/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -221,29 +187,6 @@
               <item name="WA" type="b2602c69:ProjectViewProjectNode" />
               <item name="WA" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_final_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wa_final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WA" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="wa_hw_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,7 +343,7 @@
       <workItem from="1531060937453" duration="21916000" />
       <workItem from="1531250819505" duration="1267000" />
       <workItem from="1531424393135" duration="5289000" />
-      <workItem from="1531669844993" duration="8581000" />
+      <workItem from="1531669844993" duration="9546000" />
     </task>
     <task id="LOCAL-00001" summary="14">
       <created>1530706846669</created>
@@ -497,18 +440,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108251000" />
+    <option name="totallyTimeSpent" value="109216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18402961" sideWeight="0.5564648" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2813212" sideWeight="0.50185084" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18402961" sideWeight="0.44353518" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30410022" sideWeight="0.49814913" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30410022" sideWeight="0.49814913" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.238041" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -868,7 +810,7 @@
         <state relative-caret-position="-2331">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -954,7 +896,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/wa_final_project/styles/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
