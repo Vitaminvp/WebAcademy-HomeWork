@@ -96,14 +96,14 @@ export class ListItem extends React.Component{
                     <div  className={this.state.hideClassTitle}>
                         <h2 onDoubleClick={this.toggleInput.bind(this)}>{item.author}</h2>
                         <textarea  value={this.state.title}  onChange={this.changeTitle.bind(this)}>&nbsp;</textarea>
-                        <button className="btn" onClick={() => this.onConfirmTitleChange(item)}><i className="fas fa-wrench"></i></button>
+                        <button className="btn" onClick={() => this.onConfirmTitleChange(item)}><i className="fas fa-wrench">&nbsp;</i></button>
                     </div>
                     <div className={this.state.hideClassCom} >
                         <div onDoubleClick={this.toggleTextArea.bind(this)}>
                             {item.text}
                         </div>
                         <textarea  value={this.state.comText}  onChange={this.changeComment.bind(this)}>&nbsp;</textarea>
-                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench"></i></button>
+                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench">&nbsp;</i></button>
                     </div>
                      <div className='comment__date'>
                         {this.getDate(item.date)}
