@@ -60,43 +60,56 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 440);
+/******/ 	return __webpack_require__(__webpack_require__.s = 449);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 440:
+/***/ 449:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(441);
+module.exports = __webpack_require__(450);
 
 
 /***/ }),
 
-/***/ 441:
+/***/ 450:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(442);
+__webpack_require__(451);
 
-__webpack_require__(443);
+__webpack_require__(452);
 
 /***/ }),
 
-/***/ 442:
+/***/ 451:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 443:
+/***/ 452:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+
+var toggle = document.querySelector('.toggle-mnu');
+var menuList = document.querySelector('.header__nav_menu');
+toggle.addEventListener('click', function (e) {
+    if (!toggle.classList.contains('on')) {
+        toggle.classList.add('on');
+        menuList.style.display = 'flex';
+    } else {
+        toggle.classList.remove('on');
+        menuList.style.display = 'none';
+    }
+    e.preventDefault();
+});
 
 /***/ })
 

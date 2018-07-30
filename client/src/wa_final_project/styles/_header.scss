@@ -48,6 +48,9 @@
           }
         }
       }
+      @include tablet-mobile{
+        display: flex!important;
+      }
     }
     &_control{
       position: relative;
@@ -65,7 +68,7 @@
         width: 28px;
         height: 20px;
         @include mobile{
-          height: 38px;
+          height: 50px;
         }
         & span:after,
         & span:before {

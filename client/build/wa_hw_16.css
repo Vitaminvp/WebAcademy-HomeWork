@@ -66,9 +66,12 @@ body {
   .comment__btn {
     transition: all 0.25s ease-in-out;
     position: absolute;
-    top: 3px;
-    right: 0;
-    background-color: transparent;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -13px;
+    right: -11px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -77,7 +80,7 @@ body {
     outline: none;
     visibility: hidden;
     opacity: 0;
-    color: gray; }
+    color: #b4b4b4; }
     .comment__btn:hover {
       color: #29a1ff;
       -ms-transform: scale(1.1);
@@ -86,16 +89,16 @@ body {
       font-family: "Font Awesome 5 Free";
       content: '\F057'; }
 
-.comment__content {
+.comment__content, .comment__title {
   position: relative; }
-  .comment__content div {
+  .comment__content div, .comment__content h2, .comment__title div, .comment__title h2 {
     display: block; }
-  .comment__content textarea {
+  .comment__content textarea, .comment__title textarea {
     box-sizing: border-box;
     display: none;
     max-width: 100%;
     width: 100%; }
-  .comment__content button {
+  .comment__content button, .comment__title button {
     display: none;
     border: none;
     background-color: transparent;
@@ -106,15 +109,15 @@ body {
     z-index: 1;
     color: white; }
 
-.comment__content_hide div {
+.comment__content_hide div, .comment__content_hide h2, .comment__title_hide div, .comment__title_hide h2 {
   display: none; }
 
-.comment__content_hide textarea {
+.comment__content_hide textarea, .comment__title_hide textarea {
   display: block;
   border-radius: 7px;
   outline: none; }
 
-.comment__content_hide button {
+.comment__content_hide button, .comment__title_hide button {
   display: block;
   width: 100%;
   margin: 5px 0;

@@ -1,5 +1,9 @@
 .best{
-  background-image: radial-gradient(circle at 50% 0, #686c6f, #373a3c);
+  //background-image: radial-gradient(circle at 50% 0, #686c6f, #373a3c), url(../../assets/images/bgimage.jpg);
+  background-image: url(../../assets/images/bgimage.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 64px 0 162px;
   .col-md-4{

@@ -1,0 +1,15 @@
+@import './variables';
+.callofduty{
+    padding: 100px 0;
+      background-color: #EFEFEF;
+      h1{
+          font-size: 2.25rem;
+          text-align: center;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $main-color;
+      }
+}

@@ -1,0 +1,38 @@
+.games{
+  padding: 97px 0 140px;
+  background-image: url(../../assets/images/co-d-wwii.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  .slider__arrows-game{
+    color: #c1ff7f;
+    .slider__arrows_next, .slider__arrows_prev{
+      position: absolute;
+      top: 155px;
+      font-size: 2rem;
+    }
+    .slider__arrows_prev{
+      left: 20px;
+    }
+    .slider__arrows_next{
+      font-size: 2rem;
+      right: 20px;
+    }
+  }
+  h3{
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+  }
+  .card-wrapper{
+    margin-bottom: 70px;
+  }
+  .btn-game{
+    font-size: 1.32rem;
+    padding: 5px 47px;
+  }
+}
+
