@@ -1094,12 +1094,13 @@ var ListItem = exports.ListItem = function (_React$Component) {
                 comText: this.state.comText
             });
             console.log(e.target.textContent);
-            if (this.hideClassTitle) {
+            if (this.isChangebleTitle) {
                 this.setState({ hideClassTitle: 'comment__title' });
             } else {
                 this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
             }
             this.isChangebleTitle = !this.isChangebleTitle;
+
             console.log("this.isChangebleTitle", this.isChangebleTitle);
         }
     }, {
@@ -1116,6 +1117,14 @@ var ListItem = exports.ListItem = function (_React$Component) {
             });
         }
     }, {
+        key: 'changeTitle',
+        value: function changeTitle(e) {
+            this.setState({
+                title: e.target.value,
+                comText: this.state.comText
+            });
+        }
+    }, {
         key: 'onConfirmChange',
         value: function onConfirmChange(itemEl) {
             var changedItem = Object.assign({}, itemEl);
@@ -1128,6 +1137,20 @@ var ListItem = exports.ListItem = function (_React$Component) {
                 this.setState({ hideClassCom: 'comment__content comment__content_hide' });
             }
             this.isChangeble = !this.isChangeble;
+        }
+    }, {
+        key: 'onConfirmTitleChange',
+        value: function onConfirmTitleChange(itemEl) {
+            var changedItem = Object.assign({}, itemEl);
+            changedItem.author = this.state.title;
+            this.props.onConfirmChange(changedItem);
+
+            if (this.isChangebleTitle) {
+                this.setState({ hideClassTitle: 'comment__title' });
+            } else {
+                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
+            }
+            this.isChangebleTitle = !this.isChangebleTitle;
         }
     }, {
         key: 'getDate',
@@ -1154,13 +1177,13 @@ var ListItem = exports.ListItem = function (_React$Component) {
                     ),
                     React.createElement(
                         'textarea',
-                        { value: this.state.title, onChange: this.changeComment.bind(this) },
+                        { value: this.state.title, onChange: this.changeTitle.bind(this) },
                         '\xA0'
                     ),
                     React.createElement(
                         'button',
                         { className: 'btn', onClick: function onClick() {
-                                return _this2.onConfirmChange(item);
+                                return _this2.onConfirmTitleChange(item);
                             } },
                         React.createElement('i', { className: 'fas fa-wrench' })
                     )

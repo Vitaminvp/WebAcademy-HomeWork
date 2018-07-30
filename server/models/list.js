@@ -22,30 +22,31 @@ var items = [
         id: Date.now() + 15
     },
     {
-        completed: false,
+        completed: true,
         title: "Nello",
         id: Date.now() + 25
     },
     {
         completed: true,
-        title: "Zello",
+        title: "Nello",
         id: Date.now() + 35
     },
     {
-        completed: false,
-        title: "Sello",
+        completed: true,
+        title: "Nello",
         id: Date.now() + 45
     },
     {
-        completed: false,
-        title: "Kello",
+        completed: true,
+        title: "Nello",
         id: Date.now() + 55
     },
     {
         completed: true,
-        title: "Trello",
+        title: "Nello",
         id: Date.now() + 65
     }
+
 ];
 
 var listModel = {

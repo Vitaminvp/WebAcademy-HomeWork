@@ -8,7 +8,7 @@ export class ListItem extends React.Component{
             title: '',
             comText: '',
             hideClassCom: 'comment__content',
-            hideClassTitle: 'comment__title',
+            hideClassTitle: 'comment__title'
         };
     }
     toggleTextArea(e){
@@ -30,12 +30,13 @@ export class ListItem extends React.Component{
             comText: this.state.comText
         });
         console.log(e.target.textContent);
-        if(this.hideClassTitle){
+        if(this.isChangebleTitle){
             this.setState({ hideClassTitle: 'comment__title'});
         } else {
             this.setState({ hideClassTitle: 'comment__title comment__title_hide'});
         }
         this.isChangebleTitle = !this.isChangebleTitle;
+
         console.log("this.isChangebleTitle", this.isChangebleTitle);
     }
 
@@ -46,6 +47,12 @@ export class ListItem extends React.Component{
         this.setState({
             title: this.state.title,
             comText: e.target.value
+        });
+    }
+    changeTitle(e){
+        this.setState({
+            title: e.target.value,
+            comText: this.state.comText
         });
     }
     onConfirmChange(itemEl){
@@ -59,6 +66,19 @@ export class ListItem extends React.Component{
             this.setState({ hideClassCom: 'comment__content comment__content_hide'});
         }
         this.isChangeble = !this.isChangeble;
+    }
+
+    onConfirmTitleChange(itemEl){
+        const changedItem = Object.assign({}, itemEl);
+        changedItem.author = this.state.title;
+        this.props.onConfirmChange(changedItem);
+
+        if(this.isChangebleTitle){
+            this.setState({ hideClassTitle: 'comment__title'});
+        } else {
+            this.setState({ hideClassTitle: 'comment__title comment__title_hide'});
+        }
+        this.isChangebleTitle = !this.isChangebleTitle;
     }
 
     getDate(data){
@@ -75,15 +95,15 @@ export class ListItem extends React.Component{
         return  <li className='comment'>
                     <div  className={this.state.hideClassTitle}>
                         <h2 onDoubleClick={this.toggleInput.bind(this)}>{item.author}</h2>
-                        <textarea  value={this.state.title}  onChange={this.changeComment.bind(this)}>&nbsp;</textarea>
-                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench"></i></button>
+                        <textarea  value={this.state.title}  onChange={this.changeTitle.bind(this)}>&nbsp;</textarea>
+                        <button className="btn" onClick={() => this.onConfirmTitleChange(item)}><i className="fas fa-wrench">&nbsp;</i></button>
                     </div>
                     <div className={this.state.hideClassCom} >
                         <div onDoubleClick={this.toggleTextArea.bind(this)}>
                             {item.text}
                         </div>
                         <textarea  value={this.state.comText}  onChange={this.changeComment.bind(this)}>&nbsp;</textarea>
-                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench"></i></button>
+                        <button className="btn" onClick={() => this.onConfirmChange(item)}><i className="fas fa-wrench">&nbsp;</i></button>
                     </div>
                      <div className='comment__date'>
                         {this.getDate(item.date)}

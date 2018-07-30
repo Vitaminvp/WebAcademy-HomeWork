@@ -23,6 +23,7 @@ const baseConf = (_path) => {
         wa_hw_15_1: ['./src/wa_hw_15_1/wa_hw_15_1.js'],
         wa_hw_16: ['./src/wa_hw_16/wa_hw_16.js'],
         wa_temp: ['./src/wa_temp/wa_temp.js'],
+        ljs_1: ['./src/ljs_1/ljs_1.js'],
         wa_final_project: ['./src/wa_final_project/wa_final_project.js']
     };
 

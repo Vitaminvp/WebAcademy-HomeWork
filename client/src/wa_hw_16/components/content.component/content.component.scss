@@ -48,9 +48,12 @@
   &__btn{
     @include transition;
     position: absolute;
-    top: 3px;
-    right: 0;
-    background-color: transparent;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -13px;
+    right: -11px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -59,7 +62,7 @@
     outline: none;
     visibility: hidden;
     opacity: 0;
-    color: gray;
+    color: #b4b4b4;
     &:hover{
       color: $main-color;
       transform: scale(1.1);
@@ -82,7 +85,6 @@
     width: 100%;
   }
   button{
-    //position: absolute;
     display: none;
     border: none;
     background-color: transparent;
@@ -94,7 +96,7 @@
     color: white;
   }
 }
-.comment__content_hide, comment__title_hide {
+.comment__content_hide, .comment__title_hide {
   div, h2{
     display: none;
   }
