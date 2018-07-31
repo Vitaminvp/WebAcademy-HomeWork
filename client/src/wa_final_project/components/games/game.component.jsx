@@ -16,7 +16,7 @@ export class Game extends React.Component{
                         <div className="col-md-12 d-flex card-wrapper">
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="" />
+                                    <img src="./../assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">Call of Duty: WWII</div>
@@ -26,7 +26,7 @@ export class Game extends React.Component{
                             </div>
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/ranked-callofduty-lead.jpg" alt="" />
+                                    <img src="./../assets/images/ranked-callofduty-lead.jpg" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">Destiny 2</div>
@@ -36,7 +36,7 @@ export class Game extends React.Component{
                             </div>
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/img.png" alt="" />
+                                    <img src="./../assets/images/img.png" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">STEEP</div>
@@ -46,7 +46,7 @@ export class Game extends React.Component{
                             </div>
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/xbox-one-x.jpg" alt="" />
+                                    <img src="./../assets/images/xbox-one-x.jpg" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">Forza Motorsport 7</div>
@@ -56,7 +56,7 @@ export class Game extends React.Component{
                             </div>
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="" />
+                                    <img src="./../assets/images/call-of-duty-ww-2-review-j-23-m.jpg" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">Forza Motorsport 7</div>

@@ -3189,7 +3189,7 @@ var Best = exports.Best = function (_React$Component) {
                         React.createElement(
                             'div',
                             { className: 'col-md-12 d-flex align-items-center justify-content-center flex-column' },
-                            React.createElement('img', { className: 'best__logo', src: './../../assets/images/xbox-icon@3x.jpg', alt: '' }),
+                            React.createElement('img', { className: 'best__logo', src: './../assets/images/xbox-icon@3x.jpg', alt: '' }),
                             React.createElement(
                                 'h1',
                                 null,
@@ -3214,7 +3214,7 @@ var Best = exports.Best = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/xbox-one-x.jpg', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/xbox-one-x.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3250,7 +3250,7 @@ var Best = exports.Best = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './assets/images/215535.png', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/215535.png', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3454,7 +3454,7 @@ var Game = exports.Game = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3486,7 +3486,7 @@ var Game = exports.Game = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/ranked-callofduty-lead.jpg', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/ranked-callofduty-lead.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3518,7 +3518,7 @@ var Game = exports.Game = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/img.png', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/img.png', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3550,7 +3550,7 @@ var Game = exports.Game = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/xbox-one-x.jpg', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/xbox-one-x.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
@@ -3582,7 +3582,7 @@ var Game = exports.Game = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
+                                    React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',

@@ -7,7 +7,7 @@ export class Best extends React.Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 d-flex align-items-center justify-content-center flex-column">
-                            <img className="best__logo" src="./../../assets/images/xbox-icon@3x.jpg" alt="" />
+                            <img className="best__logo" src="./../assets/images/xbox-icon@3x.jpg" alt="" />
                             <h1>The best value <span>in games and entertainment</span></h1>
                         </div>
                     </div>
@@ -15,7 +15,7 @@ export class Best extends React.Component{
                         <div className="col-md-4 d-flex justify-content-center">
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/xbox-one-x.jpg" alt=""/>
+                                    <img src="./../assets/images/xbox-one-x.jpg" alt=""/>
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">XBOX ONE X</div>
@@ -27,7 +27,7 @@ export class Best extends React.Component{
                         <div className="col-md-4  d-flex justify-content-center">
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./assets/images/215535.png" alt="" />
+                                    <img src="./../assets/images/215535.png" alt="" />
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">mixer Streaming</div>
