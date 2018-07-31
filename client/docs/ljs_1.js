@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 409);
+/******/ 	return __webpack_require__(__webpack_require__.s = 441);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -339,6 +339,67 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 151:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+exports.default = function (OriginalComponent) {
+    return function (_React$Component) {
+        _inherits(WrappedComponent, _React$Component);
+
+        function WrappedComponent() {
+            _classCallCheck(this, WrappedComponent);
+
+            var _this = _possibleConstructorReturn(this, (WrappedComponent.__proto__ || Object.getPrototypeOf(WrappedComponent)).call(this));
+
+            _this.state = {
+                isOpen: false
+            };
+            return _this;
+        }
+
+        _createClass(WrappedComponent, [{
+            key: 'handleClick',
+            value: function handleClick() {
+                this.setState({
+                    isOpen: !this.state.isOpen
+                });
+            }
+        }, {
+            key: 'render',
+            value: function render() {
+                return _react2.default.createElement(OriginalComponent, _extends({}, this.props, { isOpen: this.state.isOpen, handleClick: this.handleClick.bind(this) }));
+            }
+        }]);
+
+        return WrappedComponent;
+    }(_react2.default.Component);
+};
 
 /***/ }),
 
@@ -727,14 +788,6 @@ module.exports = containsNode;
 
 /***/ }),
 
-/***/ 409:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(410);
-
-
-/***/ }),
-
 /***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -762,256 +815,6 @@ _calculateChangedBits:b,_defaultValue:a,_currentValue:a,_currentValue2:a,_change
 b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)K.call(b,c)&&!L.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];d.children=l}return{$$typeof:t,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=M.bind(null,a);b.type=a;return b},isValidElement:N,version:"16.4.1",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:J,
 assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
-
-/***/ }),
-
-/***/ 410:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(411);
-
-__webpack_require__(412);
-
-/***/ }),
-
-/***/ 411:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 412:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(2);
-
-var React = _interopRequireWildcard(_react);
-
-var _reactDom = __webpack_require__(44);
-
-var _taskListReact = __webpack_require__(413);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-(0, _reactDom.render)(React.createElement(_taskListReact.TaskList2, null), document.querySelector('.wrapper'));
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.TaskList2 = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(2);
-
-var React = _interopRequireWildcard(_react);
-
-var _ajax = __webpack_require__(414);
-
-__webpack_require__(415);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var URLEXT = "https://evening-dawn-11092.herokuapp.com/comments";
-var URLLOC = "http://localhost:4001/comments";
-
-var TaskList2 = exports.TaskList2 = function (_React$Component) {
-    _inherits(TaskList2, _React$Component);
-
-    function TaskList2() {
-        _classCallCheck(this, TaskList2);
-
-        var _this = _possibleConstructorReturn(this, (TaskList2.__proto__ || Object.getPrototypeOf(TaskList2)).call(this));
-
-        _this.state = {
-            list: [],
-            title: '',
-            comment: ''
-        };
-        _ajax.Ajax.get(URLEXT, function (response) {
-            _this.setState({ list: response });
-        });
-        return _this;
-    }
-
-    _createClass(TaskList2, [{
-        key: 'addComment',
-        value: function addComment(e) {
-            var _this2 = this;
-
-            _ajax.Ajax.post(URLEXT, {
-                author: this.state.title,
-                text: this.state.comment
-            }, function (response) {
-                _this2.setState({
-                    title: '',
-                    comment: '',
-                    list: _this2.state.list.concat([response])
-                });
-            });
-
-            e.preventDefault();
-        }
-    }, {
-        key: 'inputHandler',
-        value: function inputHandler(e) {
-            this.setState({
-                list: this.state.list,
-                title: e.target.value,
-                comment: this.state.comment
-            });
-        }
-    }, {
-        key: 'textHandler',
-        value: function textHandler(e) {
-            this.setState({
-                list: this.state.list,
-                title: this.state.title,
-                comment: e.target.value
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var listArray = [];
-            this.state.list.forEach(function (item) {
-                var date = new Date(Date.parse(item.date));
-                date = date.getFullYear() + '-' + ('00' + (date.getMonth() + 1)).slice(-2) + '-' + ('00' + date.getDate()).slice(-2) + ' in ' + ('00' + date.getHours()).slice(-2) + ':' + ('00' + date.getMinutes()).slice(-2) + ':' + ('00' + date.getSeconds()).slice(-2);
-                var comment = React.createElement(
-                    'li',
-                    { className: 'comment', key: item.id },
-                    React.createElement(
-                        'h2',
-                        { className: 'comment__title' },
-                        item.author
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'comment__content' },
-                        item.text
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'comment__date' },
-                        date
-                    )
-                );
-                listArray.push(comment);
-            });
-            return React.createElement(
-                'div',
-                { className: 'comments' },
-                React.createElement(
-                    'form',
-                    { onSubmit: this.addComment.bind(this) },
-                    React.createElement('input', { type: 'text', required: true, value: this.state.title, onInput: this.inputHandler.bind(this), placeholder: 'Enter your Name' }),
-                    React.createElement('textarea', { required: true, value: this.state.comment, onInput: this.textHandler.bind(this), placeholder: 'Enter your comment' }),
-                    React.createElement(
-                        'button',
-                        null,
-                        'Add comment'
-                    )
-                ),
-                React.createElement(
-                    'ul',
-                    null,
-                    listArray
-                )
-            );
-        }
-    }]);
-
-    return TaskList2;
-}(React.Component);
-
-/***/ }),
-
-/***/ 414:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Ajax = exports.Ajax = function () {
-    function Ajax() {
-        _classCallCheck(this, Ajax);
-    }
-
-    _createClass(Ajax, null, [{
-        key: 'get',
-        value: function get(url, responseCallback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('GET', url);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    responseCallback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send();
-        }
-    }, {
-        key: 'post',
-        value: function post(urlpost, data, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('POST', urlpost);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send(JSON.stringify(data));
-        }
-    }]);
-
-    return Ajax;
-}();
-
-/***/ }),
-
-/***/ 415:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -2574,6 +2377,516 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 441:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(442);
+
+
+/***/ }),
+
+/***/ 442:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(443);
+
+__webpack_require__(444);
+
+/***/ }),
+
+/***/ 443:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 444:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(2);
+
+var React = _interopRequireWildcard(_react);
+
+var _reactDom = __webpack_require__(44);
+
+var _articleList = __webpack_require__(445);
+
+var _articleList2 = _interopRequireDefault(_articleList);
+
+var _fixtures = __webpack_require__(448);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+(0, _reactDom.render)(React.createElement(_articleList2.default, { articles: _fixtures.articles }), document.getElementById('app'));
+
+/***/ }),
+
+/***/ 445:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _article = __webpack_require__(446);
+
+var _article2 = _interopRequireDefault(_article);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ArticleList = function (_React$Component) {
+    _inherits(ArticleList, _React$Component);
+
+    function ArticleList() {
+        _classCallCheck(this, ArticleList);
+
+        return _possibleConstructorReturn(this, (ArticleList.__proto__ || Object.getPrototypeOf(ArticleList)).call(this));
+    }
+
+    _createClass(ArticleList, [{
+        key: 'render',
+        value: function render() {
+            var articles = this.props.articles.map(function (article) {
+                return _react2.default.createElement(
+                    'li',
+                    { key: article.id },
+                    _react2.default.createElement(_article2.default, { article: article })
+                );
+            });
+            return _react2.default.createElement(
+                'ul',
+                null,
+                articles
+            );
+        }
+    }]);
+
+    return ArticleList;
+}(_react2.default.Component);
+
+exports.default = ArticleList;
+
+/***/ }),
+
+/***/ 446:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _comments = __webpack_require__(447);
+
+var _comments2 = _interopRequireDefault(_comments);
+
+var _toggleOpen = __webpack_require__(151);
+
+var _toggleOpen2 = _interopRequireDefault(_toggleOpen);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Article = function (_React$Component) {
+    _inherits(Article, _React$Component);
+
+    function Article() {
+        _classCallCheck(this, Article);
+
+        return _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).apply(this, arguments));
+    }
+
+    _createClass(Article, [{
+        key: 'render',
+        value: function render() {
+            var text = this.props.isOpen ? this.props.article.text : null;
+            var comments = this.props.article.comments;
+            var comment = this.props.isOpen ? _react2.default.createElement(_comments2.default, { com: comments }) : null;
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    this.props.article.title
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { onClick: this.props.handleClick.bind(this) },
+                    !this.props.isOpen ? 'open' : 'close'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    text
+                ),
+                _react2.default.createElement('br', null),
+                comment
+            );
+        }
+    }]);
+
+    return Article;
+}(_react2.default.Component);
+
+exports.default = (0, _toggleOpen2.default)(Article);
+
+/***/ }),
+
+/***/ 447:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _toggleOpen = __webpack_require__(151);
+
+var _toggleOpen2 = _interopRequireDefault(_toggleOpen);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Comments = function (_React$Component) {
+    _inherits(Comments, _React$Component);
+
+    function Comments() {
+        _classCallCheck(this, Comments);
+
+        return _possibleConstructorReturn(this, (Comments.__proto__ || Object.getPrototypeOf(Comments)).call(this));
+    }
+
+    _createClass(Comments, [{
+        key: 'render',
+        value: function render() {
+            var comments = this.props.com;
+            var comList = [];
+            if (!comments) {
+                return null;
+            }
+            comList = comments.map(function (item) {
+                return _react2.default.createElement(
+                    'li',
+                    { key: item.id },
+                    item.text,
+                    _react2.default.createElement(
+                        'strong',
+                        null,
+                        'by ',
+                        item.user
+                    )
+                );
+            });
+            var comText = this.props.isOpen ? comList : null;
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'button',
+                    { onClick: this.props.handleClick.bind(this) },
+                    !this.props.isOpen ? 'show' : ' hide '
+                ),
+                _react2.default.createElement(
+                    'ol',
+                    null,
+                    comText
+                )
+            );
+        }
+    }]);
+
+    return Comments;
+}(_react2.default.Component);
+
+Comments.defaultProps = {
+    comList: [],
+    comments: []
+};
+
+exports.default = (0, _toggleOpen2.default)(Comments);
+
+/***/ }),
+
+/***/ 448:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var normalizedComments = exports.normalizedComments = [{
+    "id": "qwerqwer",
+    "user": "Gilliam Underwood",
+    "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+}, {
+    "id": "lkjhsdlfkg",
+    "user": "Dolly Franklin",
+    "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+}, {
+    "id": "zxcvzcxvzxcv",
+    "user": "Brennan Atkins",
+    "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+}, {
+    "id": "fghjfghjfghj",
+    "user": "Jodi Humphrey",
+    "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+}, {
+    "id": "ertyoertywte",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "qwerqwertyy",
+    "user": "Gilliam Underwood",
+    "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+}, {
+    "id": "sdfgsdfghu7u7urtv",
+    "user": "Jodi Humphrey",
+    "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+}, {
+    "id": "kjfviudfv089w74",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "r23uyrghasdfb7",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "rflsbvyeuwr334rg5",
+    "user": "Random Name",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "234faasffasgfq3r3eda",
+    "user": "Felix Soyferman",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "23rfasdfasdvg",
+    "user": "Hello World",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "fqasfd4r35tga",
+    "user": "Sofia Michailenko",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "23qwfasdf3",
+    "user": "Brad McKeon",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+    "id": "dadsafw4f45w",
+    "user": "Dolly Franklin",
+    "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+}, {
+    "id": "234erasfdastw4a",
+    "user": "Brennan Atkins",
+    "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+}];
+
+var normalizedArticles = exports.normalizedArticles = [{
+    "id": "56c782f18990ecf954f6e027",
+    "date": "2016-06-09T15:03:23.000Z",
+    "title": "Commodo qui incididunt",
+    "text": "Commodo qui incididunt ex ut ea nulla et eu aliquip duis. Aute deserunt excepteur ullamco fugiat sunt aliquip exercitation do sint incididunt. Amet consectetur sint irure reprehenderit fugiat amet mollit. In commodo mollit ullamco cillum pariatur eiusmod cillum aute mollit. Culpa non sint eiusmod ad dolor velit dolore voluptate do adipisicing. Cupidatat sint est magna officia qui magna eu elit qui excepteur fugiat duis ex labore.\n\nAliquip veniam ad reprehenderit mollit exercitation id enim ut exercitation. Esse irure ipsum minim laborum reprehenderit irure ut. Tempor excepteur nisi nulla nostrud amet id cillum. Sint velit sint officia aliqua sint quis deserunt.\n\nAliquip dolor cillum deserunt enim nulla dolor amet irure cupidatat commodo laboris id aliqua. Labore aliqua adipisicing Lorem id adipisicing. Ad cupidatat et do anim ex commodo elit magna ad consequat. Nostrud sit eu laborum ut consequat fugiat aute culpa. Lorem tempor quis sunt ad consequat excepteur est. Enim voluptate cillum Lorem ex fugiat ea qui. Irure aute magna dolore eiusmod minim non ad anim dolore sint et.",
+    "comments": ["qwerqwer", "lkjhsdlfkg", "zxcvzcxvzxcv", "fghjfghjfghj", "ertyoertywte"]
+}, {
+    "id": "56c782f17b4e0ba78c7ad717",
+    "date": "2016-04-09T18:03:23.000Z",
+    "title": "Quis occaecat",
+    "text": "Quis occaecat duis aliqua reprehenderit excepteur nisi deserunt excepteur elit magna. Magna cillum anim veniam deserunt voluptate occaecat irure fugiat laboris proident. Tempor do magna deserunt cillum laborum cillum ut.\n\nEst sunt cupidatat in deserunt sit aliqua duis. Mollit consequat duis aliquip occaecat pariatur non do eiusmod dolore amet deserunt ullamco. Ea minim tempor exercitation do tempor nostrud dolor minim veniam laboris commodo ex duis. Do nostrud voluptate ullamco consequat anim tempor voluptate incididunt aliqua tempor.\n\nIn irure quis nostrud do. Labore laboris irure culpa reprehenderit pariatur laboris in commodo culpa enim cillum magna. Magna ipsum pariatur sunt in reprehenderit ipsum duis officia voluptate adipisicing ad officia. Duis est sint mollit amet laborum magna non quis nulla ipsum in veniam sit. Amet velit consequat esse esse ea. Ipsum non do ut cillum in adipisicing labore non commodo do laborum sunt.",
+    "comments": ["qwerqwertyy", "sdfgsdfghu7u7urtv"]
+}, {
+    "id": "56c782f1978fdf9a0100df52",
+    "date": "2016-06-02T11:03:23.000Z",
+    "title": "Hello my new world",
+    "text": "Culpa dolor deserunt veniam irure amet officia excepteur labore nisi labore ad labore laborum aute. Ea irure sit exercitation ex. Aliquip dolore duis ullamco labore qui. Et anim irure laborum quis ipsum. Adipisicing culpa est ea velit veniam dolor nisi. Sit cupidatat velit commodo eu.\n\nUt nulla ut irure cillum irure sint sunt cupidatat tempor laboris incididunt elit occaecat fugiat. Reprehenderit enim cupidatat consectetur pariatur ad pariatur consequat veniam do fugiat Lorem laborum do velit. Nulla aute magna magna nisi officia et. Aute adipisicing eu eiusmod tempor exercitation sint non enim laboris dolor adipisicing.\n\nEa do sint pariatur voluptate ad culpa irure. Cillum pariatur deserunt fugiat elit. Exercitation labore amet deserunt magna. Velit veniam aute officia aliqua ipsum veniam pariatur. Aliquip ullamco fugiat officia non sunt ad consequat ipsum est esse commodo reprehenderit. Ad quis consectetur est exercitation fugiat eiusmod. Laborum reprehenderit esse qui irure.",
+    "comments": ["kjfviudfv089w74", "r23uyrghasdfb7"]
+}, {
+    "id": "56c782f1e17f4f9311dfaa2c",
+    "date": "2016-05-19T23:03:23.000Z",
+    "title": "Voluptate est officia",
+    "text": "Voluptate est officia pariatur tempor labore consequat consequat consectetur culpa enim. Amet laborum commodo in ullamco magna aliquip. Cupidatat veniam adipisicing labore irure nostrud sunt proident aute in. Sit Lorem consequat cillum enim id excepteur aliqua nostrud sint quis aute est est dolor. Sunt culpa est magna ad qui consequat exercitation. Enim sit ex do cupidatat laborum.\n\nOccaecat do tempor ex in dolor cupidatat do quis laboris anim. Et duis esse pariatur magna ex ipsum ut do ut id cillum. Nostrud fugiat sit minim ea. Nisi nulla sunt et et voluptate. Velit reprehenderit enim nulla mollit dolore excepteur Lorem do Lorem do cillum est qui. Ipsum mollit duis laboris incididunt non sit sunt proident. Aute voluptate id sunt aute proident officia.\n\nEnim ut nulla cillum officia cupidatat eiusmod amet laborum do labore id. Laborum in laboris aliquip anim consectetur magna reprehenderit consequat eiusmod esse Lorem consequat aliqua. Eiusmod voluptate mollit sint consectetur eu deserunt laboris ad et sunt nulla fugiat quis non. Dolor qui do cupidatat proident mollit amet sint pariatur non aliquip enim ex.",
+    "comments": ["rflsbvyeuwr334rg5", "234faasffasgfq3r3eda"]
+}, {
+    "id": "56c782f197fe2bad471b3740",
+    "date": "2016-06-04T15:03:23.000Z",
+    "title": "Ex sunt sunt aliqua",
+    "text": "Ex sunt sunt aliqua reprehenderit aliqua occaecat. Minim anim commodo officia veniam proident aute cillum eu sunt aute nostrud. Laboris fugiat velit ut pariatur occaecat adipisicing pariatur occaecat. Duis sint enim et consectetur quis pariatur laborum excepteur. Ipsum aliquip qui laborum commodo consectetur do velit veniam occaecat. Ad nisi dolor cillum elit magna dolor voluptate ea. Enim in duis ea consequat sunt Lorem aute.\n\nEst elit sunt quis officia reprehenderit do elit commodo eiusmod esse voluptate. Sit ipsum commodo sint voluptate culpa labore elit magna ullamco nostrud. Laboris magna magna anim labore mollit irure voluptate. Aute non magna aliqua aliqua sunt. Velit mollit consectetur aliqua id tempor ut. Tempor cupidatat aliquip excepteur occaecat incididunt nulla Lorem sint.\n\nNon commodo anim deserunt in et aliquip incididunt ut consectetur sunt esse commodo deserunt et. Tempor fugiat laboris cillum laboris labore. Deserunt quis ad do labore amet culpa officia. Esse et officia nostrud tempor occaecat officia anim incididunt amet sunt excepteur Lorem. Aute occaecat magna velit nisi sit anim consequat velit qui pariatur. Esse incididunt id officia aliqua anim ut et.",
+    "comments": ["23rfasdfasdvg", "fqasfd4r35tga"]
+}, {
+    "id": "56c782f1a2c2c3268ddb3206",
+    "date": "2016-06-08T19:03:23.000Z",
+    "title": "Commodo laborum sit nostru",
+    "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut.",
+    "comments": ["23qwfasdf3", "dadsafw4f45w", "234erasfdastw4a"]
+}, {
+    "id": "56c782fghgfc2c3268ddb3206",
+    "date": "2016-06-08T19:03:23.000Z",
+    "title": "Lorem Ipsum dolor",
+    "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut."
+}];
+
+var articles = exports.articles = [{
+    "id": "56c782f18990ecf954f6e027",
+    "date": "2016-06-09T15:03:23.000Z",
+    "title": "Commodo qui incididunt",
+    "text": "Commodo qui incididunt ex ut ea nulla et eu aliquip duis. Aute deserunt excepteur ullamco fugiat sunt aliquip exercitation do sint incididunt. Amet consectetur sint irure reprehenderit fugiat amet mollit. In commodo mollit ullamco cillum pariatur eiusmod cillum aute mollit. Culpa non sint eiusmod ad dolor velit dolore voluptate do adipisicing. Cupidatat sint est magna officia qui magna eu elit qui excepteur fugiat duis ex labore.\n\nAliquip veniam ad reprehenderit mollit exercitation id enim ut exercitation. Esse irure ipsum minim laborum reprehenderit irure ut. Tempor excepteur nisi nulla nostrud amet id cillum. Sint velit sint officia aliqua sint quis deserunt.\n\nAliquip dolor cillum deserunt enim nulla dolor amet irure cupidatat commodo laboris id aliqua. Labore aliqua adipisicing Lorem id adipisicing. Ad cupidatat et do anim ex commodo elit magna ad consequat. Nostrud sit eu laborum ut consequat fugiat aute culpa. Lorem tempor quis sunt ad consequat excepteur est. Enim voluptate cillum Lorem ex fugiat ea qui. Irure aute magna dolore eiusmod minim non ad anim dolore sint et.",
+    "comments": [{
+        "id": "qwerqwer",
+        "user": "Gilliam Underwood",
+        "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+    }, {
+        "id": "lkjhsdlfkg",
+        "user": "Dolly Franklin",
+        "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+    }, {
+        "id": "zxcvzcxvzxcv",
+        "user": "Brennan Atkins",
+        "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+    }, {
+        "id": "fghjfghjfghj",
+        "user": "Jodi Humphrey",
+        "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+    }, {
+        "id": "ertyoertywte",
+        "user": "Joyce Weber",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }]
+}, {
+    "id": "56c782f17b4e0ba78c7ad717",
+    "date": "2016-04-09T18:03:23.000Z",
+    "title": "Quis occaecat",
+    "text": "Quis occaecat duis aliqua reprehenderit excepteur nisi deserunt excepteur elit magna. Magna cillum anim veniam deserunt voluptate occaecat irure fugiat laboris proident. Tempor do magna deserunt cillum laborum cillum ut.\n\nEst sunt cupidatat in deserunt sit aliqua duis. Mollit consequat duis aliquip occaecat pariatur non do eiusmod dolore amet deserunt ullamco. Ea minim tempor exercitation do tempor nostrud dolor minim veniam laboris commodo ex duis. Do nostrud voluptate ullamco consequat anim tempor voluptate incididunt aliqua tempor.\n\nIn irure quis nostrud do. Labore laboris irure culpa reprehenderit pariatur laboris in commodo culpa enim cillum magna. Magna ipsum pariatur sunt in reprehenderit ipsum duis officia voluptate adipisicing ad officia. Duis est sint mollit amet laborum magna non quis nulla ipsum in veniam sit. Amet velit consequat esse esse ea. Ipsum non do ut cillum in adipisicing labore non commodo do laborum sunt.",
+    "comments": [{
+        "id": "qwerqwertyy",
+        "user": "Gilliam Underwood",
+        "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+    }, {
+        "id": "sdfgsdfghu7u7urtv",
+        "user": "Jodi Humphrey",
+        "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+    }]
+}, {
+    "id": "56c782f1978fdf9a0100df52",
+    "date": "2016-06-02T11:03:23.000Z",
+    "title": "Hello my new world",
+    "text": "Culpa dolor deserunt veniam irure amet officia excepteur labore nisi labore ad labore laborum aute. Ea irure sit exercitation ex. Aliquip dolore duis ullamco labore qui. Et anim irure laborum quis ipsum. Adipisicing culpa est ea velit veniam dolor nisi. Sit cupidatat velit commodo eu.\n\nUt nulla ut irure cillum irure sint sunt cupidatat tempor laboris incididunt elit occaecat fugiat. Reprehenderit enim cupidatat consectetur pariatur ad pariatur consequat veniam do fugiat Lorem laborum do velit. Nulla aute magna magna nisi officia et. Aute adipisicing eu eiusmod tempor exercitation sint non enim laboris dolor adipisicing.\n\nEa do sint pariatur voluptate ad culpa irure. Cillum pariatur deserunt fugiat elit. Exercitation labore amet deserunt magna. Velit veniam aute officia aliqua ipsum veniam pariatur. Aliquip ullamco fugiat officia non sunt ad consequat ipsum est esse commodo reprehenderit. Ad quis consectetur est exercitation fugiat eiusmod. Laborum reprehenderit esse qui irure.",
+    "comments": [{
+        "id": "kjfviudfv089w74",
+        "user": "Joyce Weber",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }, {
+        "id": "r23uyrghasdfb7",
+        "user": "Joyce Weber",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }]
+}, {
+    "id": "56c782f1e17f4f9311dfaa2c",
+    "date": "2016-05-19T23:03:23.000Z",
+    "title": "Voluptate est officia",
+    "text": "Voluptate est officia pariatur tempor labore consequat consequat consectetur culpa enim. Amet laborum commodo in ullamco magna aliquip. Cupidatat veniam adipisicing labore irure nostrud sunt proident aute in. Sit Lorem consequat cillum enim id excepteur aliqua nostrud sint quis aute est est dolor. Sunt culpa est magna ad qui consequat exercitation. Enim sit ex do cupidatat laborum.\n\nOccaecat do tempor ex in dolor cupidatat do quis laboris anim. Et duis esse pariatur magna ex ipsum ut do ut id cillum. Nostrud fugiat sit minim ea. Nisi nulla sunt et et voluptate. Velit reprehenderit enim nulla mollit dolore excepteur Lorem do Lorem do cillum est qui. Ipsum mollit duis laboris incididunt non sit sunt proident. Aute voluptate id sunt aute proident officia.\n\nEnim ut nulla cillum officia cupidatat eiusmod amet laborum do labore id. Laborum in laboris aliquip anim consectetur magna reprehenderit consequat eiusmod esse Lorem consequat aliqua. Eiusmod voluptate mollit sint consectetur eu deserunt laboris ad et sunt nulla fugiat quis non. Dolor qui do cupidatat proident mollit amet sint pariatur non aliquip enim ex.",
+    "comments": [{
+        "id": "rflsbvyeuwr334rg5",
+        "user": "Random Name",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }, {
+        "id": "234faasffasgfq3r3eda",
+        "user": "Felix Soyferman",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }]
+}, {
+    "id": "56c782f197fe2bad471b3740",
+    "date": "2016-06-04T15:03:23.000Z",
+    "title": "Ex sunt sunt aliqua",
+    "text": "Ex sunt sunt aliqua reprehenderit aliqua occaecat. Minim anim commodo officia veniam proident aute cillum eu sunt aute nostrud. Laboris fugiat velit ut pariatur occaecat adipisicing pariatur occaecat. Duis sint enim et consectetur quis pariatur laborum excepteur. Ipsum aliquip qui laborum commodo consectetur do velit veniam occaecat. Ad nisi dolor cillum elit magna dolor voluptate ea. Enim in duis ea consequat sunt Lorem aute.\n\nEst elit sunt quis officia reprehenderit do elit commodo eiusmod esse voluptate. Sit ipsum commodo sint voluptate culpa labore elit magna ullamco nostrud. Laboris magna magna anim labore mollit irure voluptate. Aute non magna aliqua aliqua sunt. Velit mollit consectetur aliqua id tempor ut. Tempor cupidatat aliquip excepteur occaecat incididunt nulla Lorem sint.\n\nNon commodo anim deserunt in et aliquip incididunt ut consectetur sunt esse commodo deserunt et. Tempor fugiat laboris cillum laboris labore. Deserunt quis ad do labore amet culpa officia. Esse et officia nostrud tempor occaecat officia anim incididunt amet sunt excepteur Lorem. Aute occaecat magna velit nisi sit anim consequat velit qui pariatur. Esse incididunt id officia aliqua anim ut et.",
+    "comments": [{
+        "id": "23rfasdfasdvg",
+        "user": "Hello World",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }, {
+        "id": "fqasfd4r35tga",
+        "user": "Sofia Michailenko",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }]
+}, {
+    "id": "56c782f1a2c2c3268ddb3206",
+    "date": "2016-06-08T19:03:23.000Z",
+    "title": "Commodo laborum sit nostru",
+    "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut.",
+    "comments": [{
+        "id": "23qwfasdf3",
+        "user": "Brad McKeon",
+        "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+    }, {
+        "id": "dadsafw4f45w",
+        "user": "Dolly Franklin",
+        "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+    }, {
+        "id": "234erasfdastw4a",
+        "user": "Brennan Atkins",
+        "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+    }]
+}, {
+    "id": "56c782fghgfc2c3268ddb3206",
+    "date": "2016-06-08T19:03:23.000Z",
+    "title": "Lorem Ipsum dolor",
+    "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut."
+}];
 
 /***/ }),
 

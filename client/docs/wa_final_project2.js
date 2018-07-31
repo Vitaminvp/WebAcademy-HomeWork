@@ -60,126 +60,56 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 377);
+/******/ 	return __webpack_require__(__webpack_require__.s = 467);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 377:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(378);
+module.exports = __webpack_require__(468);
 
 
 /***/ }),
 
-/***/ 378:
+/***/ 468:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(379);
+__webpack_require__(469);
 
-__webpack_require__(380);
+__webpack_require__(470);
 
 /***/ }),
 
-/***/ 379:
+/***/ 469:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 380:
+/***/ 470:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-function Svetofor(w, h) {
-    this.svetofor = document.createElement("div");
-    this.svetofor.style.width = w + "px";
-    this.svetofor.style.minHeight = h + "px";
-    this.svetofor.className = "svetofor";
-}
-
-Svetofor.prototype.show = function () {
-    if (this.svetofor.parentNode != wrapper) {
-        wrapper.appendChild(this.svetofor);
-    }
-};
-Svetofor.prototype.insert = function (color) {
-    var element = color.color;
-    this.svetofor.appendChild(element);
-};
-
-function Color(color, w) {
-    this.color = document.createElement("div");
-    this.color.style.backgroundColor = color;
-    this.color.className = color;
-    this.color.style.width = w + "px";
-    this.color.style.height = w + "px";
-}
-
-var strLight = new Svetofor(200, 400);
-strLight.show();
-
-var red = new Color("red", 150);
-var yellow = new Color("yellow", 150);
-var green = new Color("green", 150);
-
-strLight.insert(red);
-strLight.insert(yellow);
-strLight.insert(green);
-
-var timer = void 0;
-var shortTime = 1500; //Желтый короче
-var longTime = 3000;
-var time = longTime;
-
-var colors = document.querySelectorAll("#wrapper>div div");
-
-for (var i = 0; i < colors.length; i++) {
-    colors[i].addEventListener("click", start);
-}function start(e) {
-    if (e.target) e = e.target;
-    if (e.classList.contains("active")) {
-        clearTimeout(timer);
-        turnoff();
+var toggle = document.querySelector('.toggle-mnu');
+var menuList = document.querySelector('.header__nav_menu');
+toggle.addEventListener('click', function (e) {
+    if (!toggle.classList.contains('on')) {
+        toggle.classList.add('on');
+        menuList.style.display = 'flex';
     } else {
-        clearTimeout(timer);
-        turnoff();
-        e.classList.add("active");
-        swtch(e);
+        toggle.classList.remove('on');
+        menuList.style.display = 'none';
     }
-}
-
-function turnoff() {
-    for (var j = 0; j < colors.length; j++) {
-        colors[j].classList.remove("active");
-    }
-}
-
-function swtch(e) {
-    if (e.nextSibling == null || !e.classList.contains("yellow")) {
-        time = longTime;
-    } else {
-        time = shortTime;
-    }
-
-    timer = setTimeout(function () {
-
-        if (e.nextSibling == null) {
-            start(colors[0]);
-        } else if (e.nextSibling.classList.contains("yellow") || e.nextSibling.classList.contains("green")) {
-            start(e.nextSibling);
-        } else {
-            alert("Непредвиденная херня.");
-        }
-    }, time);
-}
+    e.preventDefault();
+});
 
 /***/ })
 
