@@ -2658,15 +2658,15 @@ var React = _interopRequireWildcard(_react);
 
 var _headerComponent = __webpack_require__(455);
 
-var _sliderComponent = __webpack_require__(457);
+var _sliderComponent = __webpack_require__(459);
 
-var _bestComponent = __webpack_require__(459);
+var _bestComponent = __webpack_require__(461);
 
-var _gameComponent = __webpack_require__(461);
+var _gameComponent = __webpack_require__(463);
 
-var _designComponent = __webpack_require__(463);
+var _designComponent = __webpack_require__(465);
 
-var _footerComponent = __webpack_require__(465);
+var _footerComponent = __webpack_require__(467);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2725,6 +2725,8 @@ var React = _interopRequireWildcard(_react);
 
 __webpack_require__(456);
 
+var _navComponent = __webpack_require__(457);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2780,165 +2782,7 @@ var Header = exports.Header = function (_React$Component) {
                         React.createElement(
                             'div',
                             { className: 'col-md-10 d-flex justify-content-end' },
-                            React.createElement(
-                                'nav',
-                                { className: 'header__nav' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'header__nav_control' },
-                                    React.createElement(
-                                        'a',
-                                        { href: '#', className: 'toggle-mnu' },
-                                        React.createElement(
-                                            'span',
-                                            null,
-                                            '\xA0'
-                                        )
-                                    )
-                                ),
-                                React.createElement(
-                                    'ul',
-                                    { className: 'header__nav_menu' },
-                                    React.createElement(
-                                        'li',
-                                        { className: 'header__nav_item header__nav_item-expand' },
-                                        React.createElement(
-                                            'a',
-                                            { href: '#' },
-                                            'Games'
-                                        ),
-                                        React.createElement(
-                                            'ul',
-                                            { className: 'submenu' },
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #1'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #2'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #3'
-                                                )
-                                            )
-                                        )
-                                    ),
-                                    React.createElement(
-                                        'li',
-                                        { className: 'header__nav_item header__nav_item-expand' },
-                                        React.createElement(
-                                            'a',
-                                            { href: '#' },
-                                            'Consoles'
-                                        ),
-                                        React.createElement(
-                                            'ul',
-                                            { className: 'submenu' },
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #1'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #2'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: './#', target: '_blank' },
-                                                    'Subparagraph #3'
-                                                )
-                                            )
-                                        )
-                                    ),
-                                    React.createElement(
-                                        'li',
-                                        { className: 'header__nav_item' },
-                                        React.createElement(
-                                            'a',
-                                            { href: '#' },
-                                            'Community'
-                                        )
-                                    ),
-                                    React.createElement(
-                                        'li',
-                                        { className: 'header__nav_item header__nav_item-search' },
-                                        React.createElement(
-                                            'form',
-                                            { action: '#', method: 'post', className: 'header__nav_form' },
-                                            React.createElement('input', { type: 'text', placeholder: 'Search', className: 'header__nav_input' })
-                                        )
-                                    ),
-                                    React.createElement(
-                                        'li',
-                                        { className: 'header__nav_item header__nav_item-expand' },
-                                        React.createElement(
-                                            'a',
-                                            { href: '#' },
-                                            'My XBOX'
-                                        ),
-                                        React.createElement(
-                                            'ul',
-                                            { className: 'submenu' },
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: '#', target: '_blank' },
-                                                    'Subparagraph #1'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: '#', target: '_blank' },
-                                                    'Subparagraph #2'
-                                                )
-                                            ),
-                                            React.createElement(
-                                                'li',
-                                                null,
-                                                React.createElement(
-                                                    'a',
-                                                    { href: '#', target: '_blank' },
-                                                    'Subparagraph #3'
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
+                            React.createElement(_navComponent.Nav, null)
                         )
                     )
                 )
@@ -2969,7 +2813,7 @@ var Header = exports.Header = function (_React$Component) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Slider = undefined;
+exports.Nav = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -2978,6 +2822,221 @@ var _react = __webpack_require__(2);
 var React = _interopRequireWildcard(_react);
 
 __webpack_require__(458);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Nav = exports.Nav = function (_React$Component) {
+    _inherits(Nav, _React$Component);
+
+    function Nav() {
+        _classCallCheck(this, Nav);
+
+        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+    }
+
+    _createClass(Nav, [{
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'nav',
+                { className: 'header__nav' },
+                React.createElement(
+                    'div',
+                    { className: 'header__nav_control' },
+                    React.createElement(
+                        'a',
+                        { href: '#', className: 'toggle-mnu' },
+                        React.createElement(
+                            'span',
+                            null,
+                            '\xA0'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'ul',
+                    { className: 'header__nav_menu' },
+                    React.createElement(
+                        'li',
+                        { className: 'header__nav_item header__nav_item-expand' },
+                        React.createElement(
+                            'a',
+                            { href: '#' },
+                            'Games'
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'submenu' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #1'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #2'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #3'
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'header__nav_item header__nav_item-expand' },
+                        React.createElement(
+                            'a',
+                            { href: '#' },
+                            'Consoles'
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'submenu' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #1'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #2'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: './#', target: '_blank' },
+                                    'Subparagraph #3'
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'header__nav_item' },
+                        React.createElement(
+                            'a',
+                            { href: '#' },
+                            'Community'
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'header__nav_item header__nav_item-search' },
+                        React.createElement(
+                            'form',
+                            { action: '#', method: 'post', className: 'header__nav_form' },
+                            React.createElement('input', { type: 'text', placeholder: 'Search', className: 'header__nav_input' })
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'header__nav_item header__nav_item-expand' },
+                        React.createElement(
+                            'a',
+                            { href: '#' },
+                            'My XBOX'
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'submenu' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#', target: '_blank' },
+                                    'Subparagraph #1'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#', target: '_blank' },
+                                    'Subparagraph #2'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#', target: '_blank' },
+                                    'Subparagraph #3'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Nav;
+}(React.Component);
+
+;
+
+/***/ }),
+
+/***/ 458:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 459:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Slider = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var React = _interopRequireWildcard(_react);
+
+__webpack_require__(460);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3131,14 +3190,43 @@ var Slider = exports.Slider = function (_React$Component) {
 
 /***/ }),
 
-/***/ 458:
+/***/ 46:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+var isNode = __webpack_require__(47);
+
+/**
+ * @param {*} object The object to check.
+ * @return {boolean} Whether or not the object is a DOM text node.
+ */
+function isTextNode(object) {
+  return isNode(object) && object.nodeType == 3;
+}
+
+module.exports = isTextNode;
+
+/***/ }),
+
+/***/ 460:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 459:
+/***/ 461:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3155,7 +3243,7 @@ var _react = __webpack_require__(2);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(460);
+__webpack_require__(462);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3330,43 +3418,14 @@ var Best = exports.Best = function (_React$Component) {
 
 /***/ }),
 
-/***/ 46:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-var isNode = __webpack_require__(47);
-
-/**
- * @param {*} object The object to check.
- * @return {boolean} Whether or not the object is a DOM text node.
- */
-function isTextNode(object) {
-  return isNode(object) && object.nodeType == 3;
-}
-
-module.exports = isTextNode;
-
-/***/ }),
-
-/***/ 460:
+/***/ 462:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 461:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3383,7 +3442,7 @@ var _react = __webpack_require__(2);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(462);
+__webpack_require__(464);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3641,14 +3700,14 @@ var Game = exports.Game = function (_React$Component) {
 
 /***/ }),
 
-/***/ 462:
+/***/ 464:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 463:
+/***/ 465:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3665,7 +3724,7 @@ var _react = __webpack_require__(2);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(464);
+__webpack_require__(466);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3739,14 +3798,14 @@ var Design = exports.Design = function (_React$Component) {
 
 /***/ }),
 
-/***/ 464:
+/***/ 466:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 465:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3763,7 +3822,7 @@ var _react = __webpack_require__(2);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(466);
+__webpack_require__(468);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3982,7 +4041,7 @@ var Footer = exports.Footer = function (_React$Component) {
 
 /***/ }),
 
-/***/ 466:
+/***/ 468:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

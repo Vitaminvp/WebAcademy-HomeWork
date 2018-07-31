@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+  .card-wrapper{
+    .card{
+      min-width: 318px;
+    }
+  }
   .slider__arrows-game{
     color: #c1ff7f;
     .slider__arrows_next, .slider__arrows_prev{
