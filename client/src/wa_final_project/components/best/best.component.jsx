@@ -39,7 +39,7 @@ export class Best extends React.Component{
                         <div className="col-md-4  d-flex justify-content-center">
                             <div className="card">
                                 <div className="card__img">
-                                    <img src="./../../assets/images/1-c-93.png" alt=""/>
+                                    <img src="./../../../../assets/images/1-c-93.png" alt=""/>
                                 </div>
                                 <div className="card__content">
                                     <div className="card__content_name">Free Games Every Month</div>

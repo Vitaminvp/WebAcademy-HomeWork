@@ -3288,7 +3288,7 @@ var Best = exports.Best = function (_React$Component) {
                                 React.createElement(
                                     'div',
                                     { className: 'card__img' },
-                                    React.createElement('img', { src: './../../assets/images/1-c-93.png', alt: '' })
+                                    React.createElement('img', { src: './../../../../assets/images/1-c-93.png', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
