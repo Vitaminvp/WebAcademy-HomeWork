@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter  as Router, Route, Link } from "react-router-dom";
 import { Home } from "./components/home/home.component.jsx";
 import { Header } from "./components/header/header.component.jsx";
 import { Footer } from "./components/footer/footer.component.jsx";
