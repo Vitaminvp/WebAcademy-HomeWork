@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 434);
+/******/ 	return __webpack_require__(__webpack_require__.s = 435);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -777,34 +777,34 @@ assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
 /***/ }),
 
-/***/ 434:
+/***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(435);
+module.exports = __webpack_require__(436);
 
 
 /***/ }),
 
-/***/ 435:
+/***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(436);
-
 __webpack_require__(437);
+
+__webpack_require__(438);
 
 /***/ }),
 
-/***/ 436:
+/***/ 437:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 437:
+/***/ 438:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -816,7 +816,7 @@ var React = _interopRequireWildcard(_react);
 
 var _reactDom = __webpack_require__(45);
 
-var _taskListReact = __webpack_require__(438);
+var _taskListReact = __webpack_require__(439);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -824,7 +824,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 /***/ }),
 
-/***/ 438:
+/***/ 439:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -841,13 +841,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(439);
+var _ajax = __webpack_require__(440);
 
-var _formComponent = __webpack_require__(440);
+var _formComponent = __webpack_require__(441);
 
-var _contentComponent = __webpack_require__(441);
+var _contentComponent = __webpack_require__(442);
 
-__webpack_require__(444);
+__webpack_require__(445);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -932,102 +932,6 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
 
     return TaskList2;
 }(React.Component);
-
-/***/ }),
-
-/***/ 439:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Ajax = exports.Ajax = function () {
-    function Ajax() {
-        _classCallCheck(this, Ajax);
-    }
-
-    _createClass(Ajax, null, [{
-        key: 'get',
-        value: function get(url, responseCallback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('GET', url);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    responseCallback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send();
-        }
-    }, {
-        key: 'post',
-        value: function post(urlpost, data, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('POST', urlpost);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send(JSON.stringify(data));
-        }
-    }, {
-        key: 'put',
-        value: function put(urlpost, data, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('PUT', urlpost);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send(JSON.stringify(data));
-        }
-    }, {
-        key: 'delete',
-        value: function _delete(urlpost, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('DELETE', urlpost);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send();
-        }
-    }]);
-
-    return Ajax;
-}();
 
 /***/ }),
 
@@ -2535,6 +2439,102 @@ module.exports = react;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Ajax = exports.Ajax = function () {
+    function Ajax() {
+        _classCallCheck(this, Ajax);
+    }
+
+    _createClass(Ajax, null, [{
+        key: 'get',
+        value: function get(url, responseCallback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('GET', url);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    responseCallback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send();
+        }
+    }, {
+        key: 'post',
+        value: function post(urlpost, data, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('POST', urlpost);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }, {
+        key: 'put',
+        value: function put(urlpost, data, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('PUT', urlpost);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }, {
+        key: 'delete',
+        value: function _delete(urlpost, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('DELETE', urlpost);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send();
+        }
+    }]);
+
+    return Ajax;
+}();
+
+/***/ }),
+
+/***/ 441:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.Form = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2614,7 +2614,7 @@ var Form = exports.Form = function (_React$Component) {
 
 /***/ }),
 
-/***/ 441:
+/***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2631,9 +2631,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _listItemComponents = __webpack_require__(442);
+var _listItemComponents = __webpack_require__(443);
 
-__webpack_require__(443);
+__webpack_require__(444);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2683,7 +2683,7 @@ var Content = exports.Content = function (_React$Component) {
 
 /***/ }),
 
-/***/ 442:
+/***/ 443:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2891,14 +2891,14 @@ var ListItem = exports.ListItem = function (_React$Component) {
 
 /***/ }),
 
-/***/ 443:
+/***/ 444:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 444:
+/***/ 445:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

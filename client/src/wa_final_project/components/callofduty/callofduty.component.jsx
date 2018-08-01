@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './callofduty.component.scss';
+import {Btn} from "../button/button.component.jsx";
 export class CallOfDuty extends React.Component{
     render(){
         return  (
@@ -13,7 +14,10 @@ export class CallOfDuty extends React.Component{
                     <div className="row">
                         <div className="col-md-8 offset-md-2">
                             <div className="text-center callofduty__text">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck of your home or having a powerful but mobile telescope set up to take to the remove countryside to really get a good shot at some breath taking star gazing.</div>
-                            <div className="text-center"><a href="#" className="btn btn-green">Order Now</a><a href="#" className="btn">Technical Specifications</a></div>
+                            <div className="text-center">
+                                <Btn url="#" value="Order Now" class="btn btn-green"/>
+                                <Btn url="#" value="Technical Specifications" class="btn"/>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
@@ -65,7 +69,10 @@ export class CallOfDuty extends React.Component{
                     <div className="row">
                         <div className="col-md-12">
                             <div className="callofduty__text">
-                                <div className="text-center"><a href="#" className="btn">XBOX Consoles</a><a href="#" className="btn btn-green">Start streaming on mixer</a></div>
+                                <div className="text-center">
+                                    <Btn url="#" value="XBOX Consoles" class="btn"/>
+                                    <Btn url="#" value="Start streaming on mixer" class="btn btn-green"/>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Btn } from "../button/button.component.jsx";
 import './slider.component.scss';
 export class Slider extends React.Component{
     render(){
@@ -9,9 +10,12 @@ export class Slider extends React.Component{
                                         <div className="iblock">
                                             <div className="iblock_title">Star Wars <span>Battlefront II</span></div>
                                             <div className="iblock_text">Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?</div>
-                                            <div className="iblock_buttons"><a href="#" className="btn btn-green">Watch Trailer</a><a href="#" className="btn">Explore Games</a></div>
+                                            <div className="iblock_buttons">
+                                                <Btn url="#" value="Watch Trailer" class="btn btn-green"/>
+                                                <Btn url="#" value="Explore Games" class="btn"/>
+                                            </div>
                                         </div>
-                
+
                                     </div>
                                 </div>
                 

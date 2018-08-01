@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Btn} from "../button/button.component.jsx";
 import './best.component.scss';
 export class Best extends React.Component{
     render(){
@@ -20,7 +21,9 @@ export class Best extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">XBOX ONE X</div>
                                     <div className="card__content_title">Faster Processing Smoother Gameplay</div>
-                                    <div className="card__content_link"><a href="#" className="btn card-btn btn-green">Explore Consoles & Accessories</a></div>
+                                    <div className="card__content_link">
+                                        <Btn url="#" value="Explore Consoles & Accessories" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +35,9 @@ export class Best extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">mixer Streaming</div>
                                     <div className="card__content_title">The Next Generation<br /> Of Life Game Streaming</div>
-                                    <div className="card__content_link"><a href="#" className="btn card-btn btn-green">Start Watching mixer</a></div>
+                                    <div className="card__content_link">
+                                        <Btn url="#" value="Start Watching mixer" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +49,9 @@ export class Best extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">Free Games Every Month</div>
                                     <div className="card__content_title">FGet up to $700<br /> in free <br />games</div>
-                                    <div className="card__content_link"><a href="#" className="btn card-btn btn-green">Get Free Games</a></div>
+                                    <div className="card__content_link">
+                                        <Btn url="#" value="Get Free Games" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
