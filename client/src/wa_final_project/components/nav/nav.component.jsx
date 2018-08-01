@@ -2,14 +2,30 @@ import * as React from 'react';
 import './nav.component.scss';
 import {Items} from "./menuitems/menuitems.component.jsx";
 export class Nav extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            isExpand: false
+        };
+    }
+    toggleOpen(){
+        this.setState({
+           isExpand: !this.state.isExpand
+        });
+    }
+    close(){
+        this.setState({
+            isExpand: false
+        });
+    }
     render(){
         return   (
                                 <nav className="header__nav">
-                                    <div className="header__nav_control">
+                                    <div className={this.state.isExpand?'header__nav_control on':'header__nav_control'} onClick={this.toggleOpen.bind(this)}>
                                         <a href="#" className="toggle-mnu"><span>&nbsp;</span></a>
                                     </div>
                                     <ul className="header__nav_menu">
-                                        <Items />
+                                        <Items isOpen = {this.close.bind(this)}/>
                                         <li className="header__nav_item header__nav_item-search">
                                             <form action="#" method="post" className="header__nav_form">
                                                 <input type="text" placeholder="Search" className="header__nav_input" />

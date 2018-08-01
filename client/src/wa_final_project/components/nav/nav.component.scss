@@ -79,23 +79,29 @@
         backface-visibility: hidden;
         border-radius: 3px;
       }
-      &.on span {
-        background-color: transparent;
-      }
 
-      &.on span:before {
-        -webkit-transform: rotate(45deg) translate(-2px, 0);
-        transform: rotate(45deg) translate(-2px, 0);
-      }
+    }
+    &.on{
+      .toggle-mnu{
+        span {
+          background-color: transparent;
+        }
 
-      &.on span:after {
-        -webkit-transform: rotate(-45deg) translate(6px, -7px);
-        transform: rotate(-45deg) translate(6px, -7px);
-      }
+        span:before {
+          -webkit-transform: rotate(45deg) translate(-2px, 0);
+          transform: rotate(45deg) translate(-2px, 0);
+        }
 
-      &.on + .header__nav_menu {
+        span:after {
+          -webkit-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
+        }
+
+      }
+      & + .header__nav_menu {
         opacity: 1;
         visibility: visible;
+        display: flex;
       }
     }
   }
