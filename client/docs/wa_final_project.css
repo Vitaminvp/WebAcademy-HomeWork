@@ -2122,6 +2122,75 @@ ul {
     background-image: radial-gradient(circle at 50% 0, #c1ff7f, #79c13a); }
   .btn-green:active {
     background-image: radial-gradient(circle at 50% 0, #c1ff7f, #71af30); }
+.slider {
+  background-image: url(./assets/images/carousel.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 648px;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+  .slider__slide {
+    display: none; }
+    .slider__slide.slider__slide_active {
+      display: block; }
+  .slider__arrows_next, .slider__arrows_prev {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+    .slider__arrows_next i, .slider__arrows_prev i {
+      color: #8dd83d;
+      cursor: pointer;
+      border-radius: 50%;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 3rem;
+      height: 3rem;
+      transition: all 0.2s ease-in-out; }
+      .slider__arrows_next i:before, .slider__arrows_prev i:before {
+        position: relative; }
+      .slider__arrows_next i:hover, .slider__arrows_prev i:hover {
+        color: #fff;
+        z-index: 1;
+        background-color: #587C1F;
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+  .slider__arrows_prev {
+    left: 4%; }
+    .slider__arrows_prev i:before {
+      left: 3px; }
+  .slider__arrows_next {
+    right: 4%; }
+    .slider__arrows_next i:before {
+      left: 6px; }
+  .slider_dots {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .slider_dots ul li + li {
+      margin-left: 12px; }
+    .slider_dots ul li {
+      border: 2px solid #84e645;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px; }
+      .slider_dots ul li.active {
+        background-color: #84e645; }
+      .slider_dots ul li a {
+        display: block;
+        height: 100%; }
 .best {
   background-image: url(./assets/images/bgimage.jpg);
   background-size: cover;
@@ -2649,68 +2718,3 @@ footer {
     .callofduty__text p {
       line-height: 1.14;
       font-size: 1.3rem; }
-.slider {
-  background-image: url(./assets/images/carousel.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 648px;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative; }
-  .slider__arrows_next, .slider__arrows_prev {
-    font-size: 1.2rem;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
-    .slider__arrows_next i, .slider__arrows_prev i {
-      color: #8dd83d;
-      cursor: pointer;
-      border-radius: 50%;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      width: 3rem;
-      height: 3rem;
-      transition: all 0.2s ease-in-out; }
-      .slider__arrows_next i:before, .slider__arrows_prev i:before {
-        position: relative; }
-      .slider__arrows_next i:hover, .slider__arrows_prev i:hover {
-        color: #fff;
-        z-index: 1;
-        background-color: #587C1F;
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); }
-  .slider__arrows_prev {
-    left: 4%; }
-    .slider__arrows_prev i:before {
-      left: 3px; }
-  .slider__arrows_next {
-    right: 4%; }
-    .slider__arrows_next i:before {
-      left: 6px; }
-  .slider_dots {
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
-    .slider_dots ul li + li {
-      margin-left: 12px; }
-    .slider_dots ul li {
-      border: 2px solid #84e645;
-      border-radius: 50%;
-      width: 12px;
-      height: 12px; }
-      .slider_dots ul li.active {
-        background-color: #84e645; }
-      .slider_dots ul li a {
-        display: block;
-        height: 100%; }

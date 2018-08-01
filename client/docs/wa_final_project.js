@@ -3805,13 +3805,11 @@ var _reactRouterDom = __webpack_require__(77);
 
 var _homeComponent = __webpack_require__(498);
 
-var _headerComponent = __webpack_require__(506);
+var _headerComponent = __webpack_require__(510);
 
-var _footerComponent = __webpack_require__(516);
+var _footerComponent = __webpack_require__(520);
 
-var _callofdutyComponent = __webpack_require__(518);
-
-var _sliderComponent = __webpack_require__(520);
+var _callofdutyComponent = __webpack_require__(522);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3822,7 +3820,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
     'div',
     null,
     React.createElement(_headerComponent.Header, null),
-    React.createElement(_sliderComponent.Slider, null),
     React.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _homeComponent.Home }),
     React.createElement(_reactRouterDom.Route, { path: '/topic', component: _callofdutyComponent.CallOfDuty }),
     React.createElement(_footerComponent.Footer, null)
@@ -23866,11 +23863,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _bestComponent = __webpack_require__(499);
+var _sliderComponent = __webpack_require__(499);
 
-var _gameComponent = __webpack_require__(502);
+var _bestComponent = __webpack_require__(504);
 
-var _designComponent = __webpack_require__(504);
+var _gameComponent = __webpack_require__(506);
+
+var _designComponent = __webpack_require__(508);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -23895,6 +23894,7 @@ var Home = exports.Home = function (_React$Component) {
             return React.createElement(
                 "div",
                 null,
+                React.createElement(_sliderComponent.Slider, null),
                 React.createElement(_bestComponent.Best, null),
                 React.createElement(_gameComponent.Game, null),
                 React.createElement(_designComponent.Design, null)
@@ -23916,6 +23916,364 @@ var Home = exports.Home = function (_React$Component) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Slider = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _slideComponent = __webpack_require__(500);
+
+__webpack_require__(503);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Slider = exports.Slider = function (_React$Component) {
+    _inherits(Slider, _React$Component);
+
+    function Slider() {
+        _classCallCheck(this, Slider);
+
+        var _this = _possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).call(this));
+
+        _this.state = {
+            slideIndex: 0
+        };
+        _this.Interval = 0;
+        _this.slidesAmount = 0;
+        return _this;
+    }
+
+    _createClass(Slider, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.startInterval();
+        }
+    }, {
+        key: 'startInterval',
+        value: function startInterval() {
+            var _this2 = this;
+
+            this.Interval = setInterval(function () {
+                var activeSlide = _this2.state.slideIndex;
+                var nextSlide = activeSlide < _this2.slidesAmount - 1 ? ++activeSlide : 0;
+                _this2.setState({ slideIndex: nextSlide });
+            }, 2000);
+        }
+    }, {
+        key: 'stopInterval',
+        value: function stopInterval() {
+            clearInterval(this.Interval);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            var arr = [{
+                id: 1,
+                title: 'Star Wars',
+                title2: 'Battlefront II',
+                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 10,
+                title: 'Wars Star',
+                title2: ' Battlefront III',
+                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 20,
+                title: 'Wars',
+                title2: ' Battlefront IV',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 30,
+                title: 'Test',
+                title2: 'Battlefront Test',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }];
+            this.slidesAmount = arr.length;
+            var slides = [];
+            slides = arr.map(function (item, i) {
+                return React.createElement(_slideComponent.Slide, { key: item.id, item: item, isActive: _this3.state.slideIndex == i });
+            });
+            return React.createElement(
+                'section',
+                { className: 'slider', onMouseMove: this.stopInterval.bind(this), onMouseLeave: this.startInterval.bind(this) },
+                slides,
+                React.createElement(
+                    'div',
+                    { className: 'slider__arrows' },
+                    React.createElement(
+                        'div',
+                        { className: 'slider__arrows_prev' },
+                        React.createElement(
+                            'i',
+                            { className: 'icon-icon-prev' },
+                            '\xA0'
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'slider__arrows_next' },
+                        React.createElement(
+                            'i',
+                            { className: 'icon-icon-next' },
+                            '\xA0'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'slider_dots' },
+                    React.createElement(
+                        'ul',
+                        null,
+                        React.createElement(
+                            'li',
+                            { className: 'active' },
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                '\xA0'
+                            )
+                        ),
+                        React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                '\xA0'
+                            )
+                        ),
+                        React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                '\xA0'
+                            )
+                        ),
+                        React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                '\xA0'
+                            )
+                        ),
+                        React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                '\xA0'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Slider;
+}(React.Component);
+
+/***/ }),
+
+/***/ 50:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+
+
+var hyphenate = __webpack_require__(51);
+
+var msPattern = /^ms-/;
+
+/**
+ * Hyphenates a camelcased CSS property name, for example:
+ *
+ *   > hyphenateStyleName('backgroundColor')
+ *   < "background-color"
+ *   > hyphenateStyleName('MozTransition')
+ *   < "-moz-transition"
+ *   > hyphenateStyleName('msTransition')
+ *   < "-ms-transition"
+ *
+ * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
+ * is converted to `-ms-`.
+ *
+ * @param {string} string
+ * @return {string}
+ */
+function hyphenateStyleName(string) {
+  return hyphenate(string).replace(msPattern, '-ms-');
+}
+
+module.exports = hyphenateStyleName;
+
+/***/ }),
+
+/***/ 500:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Slide = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _buttonComponent = __webpack_require__(79);
+
+__webpack_require__(502);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Slide = exports.Slide = function (_React$Component) {
+    _inherits(Slide, _React$Component);
+
+    function Slide() {
+        _classCallCheck(this, Slide);
+
+        return _possibleConstructorReturn(this, (Slide.__proto__ || Object.getPrototypeOf(Slide)).apply(this, arguments));
+    }
+
+    _createClass(Slide, [{
+        key: 'render',
+        value: function render() {
+            var arr = [{
+                id: 1,
+                title: 'Star Wars',
+                title2: 'Battlefront II',
+                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 10,
+                title: 'Wars Star',
+                title2: ' Battlefront III',
+                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 20,
+                title: 'Wars',
+                title2: ' Battlefront IV',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }, {
+                id: 30,
+                title: 'Test',
+                title2: 'Battlefront Test',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+            }];
+
+            return React.createElement(
+                'div',
+                { key: this.props.item.id, className: this.props.isActive ? "container slider__slide slider__slide_active" : "container slider__slide" },
+                React.createElement(
+                    'div',
+                    { className: 'row' },
+                    React.createElement(
+                        'div',
+                        { className: 'col-md-5 offset-md-7' },
+                        React.createElement(
+                            'div',
+                            { className: 'iblock' },
+                            React.createElement(
+                                'div',
+                                { className: 'iblock_title' },
+                                this.props.item.title,
+                                ' ',
+                                React.createElement(
+                                    'span',
+                                    null,
+                                    this.props.item.title2
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'iblock_text' },
+                                this.props.item.text
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'iblock_buttons' },
+                                React.createElement(_buttonComponent.Btn, { url: '#', value: 'Watch Trailer', 'class': 'btn btn-green' }),
+                                React.createElement(_buttonComponent.Btn, { url: '#', value: 'Explore Games', 'class': 'btn' })
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Slide;
+}(React.Component);
+
+/***/ }),
+
+/***/ 501:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 502:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 503:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 504:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.Best = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23926,7 +24284,7 @@ var React = _interopRequireWildcard(_react);
 
 var _buttonComponent = __webpack_require__(79);
 
-__webpack_require__(501);
+__webpack_require__(505);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24089,64 +24447,14 @@ var Best = exports.Best = function (_React$Component) {
 
 /***/ }),
 
-/***/ 50:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-
-
-var hyphenate = __webpack_require__(51);
-
-var msPattern = /^ms-/;
-
-/**
- * Hyphenates a camelcased CSS property name, for example:
- *
- *   > hyphenateStyleName('backgroundColor')
- *   < "background-color"
- *   > hyphenateStyleName('MozTransition')
- *   < "-moz-transition"
- *   > hyphenateStyleName('msTransition')
- *   < "-ms-transition"
- *
- * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
- * is converted to `-ms-`.
- *
- * @param {string} string
- * @return {string}
- */
-function hyphenateStyleName(string) {
-  return hyphenate(string).replace(msPattern, '-ms-');
-}
-
-module.exports = hyphenateStyleName;
-
-/***/ }),
-
-/***/ 500:
+/***/ 505:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 501:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 502:
+/***/ 506:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24165,7 +24473,7 @@ var React = _interopRequireWildcard(_react);
 
 var _buttonComponent = __webpack_require__(79);
 
-__webpack_require__(503);
+__webpack_require__(507);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24399,14 +24707,14 @@ var Game = exports.Game = function (_React$Component) {
 
 /***/ }),
 
-/***/ 503:
+/***/ 507:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 504:
+/***/ 508:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24425,7 +24733,7 @@ var React = _interopRequireWildcard(_react);
 
 var _buttonComponent = __webpack_require__(79);
 
-__webpack_require__(505);
+__webpack_require__(509);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24491,14 +24799,51 @@ var Design = exports.Design = function (_React$Component) {
 
 /***/ }),
 
-/***/ 505:
+/***/ 509:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 506:
+/***/ 51:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+var _uppercasePattern = /([A-Z])/g;
+
+/**
+ * Hyphenates a camelcased string, for example:
+ *
+ *   > hyphenate('backgroundColor')
+ *   < "background-color"
+ *
+ * For CSS style names, use `hyphenateStyleName` instead which works properly
+ * with all vendor prefixes, including `ms`.
+ *
+ * @param {string} string
+ * @return {string}
+ */
+function hyphenate(string) {
+  return string.replace(_uppercasePattern, '-$1').toLowerCase();
+}
+
+module.exports = hyphenate;
+
+/***/ }),
+
+/***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24517,9 +24862,9 @@ var React = _interopRequireWildcard(_react);
 
 var _reactRouterDom = __webpack_require__(77);
 
-var _navComponent = __webpack_require__(507);
+var _navComponent = __webpack_require__(511);
 
-__webpack_require__(515);
+__webpack_require__(519);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24595,7 +24940,7 @@ var Header = exports.Header = function (_React$Component) {
 
 /***/ }),
 
-/***/ 507:
+/***/ 511:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24612,9 +24957,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(508);
+__webpack_require__(512);
 
-var _menuitemsComponent = __webpack_require__(509);
+var _menuitemsComponent = __webpack_require__(513);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24736,14 +25081,14 @@ var Nav = exports.Nav = function (_React$Component) {
 
 /***/ }),
 
-/***/ 508:
+/***/ 512:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 509:
+/***/ 513:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24762,13 +25107,13 @@ var React = _interopRequireWildcard(_react);
 
 var _reactRouterDom = __webpack_require__(77);
 
-var _config = __webpack_require__(510);
+var _config = __webpack_require__(514);
 
-var _ajax = __webpack_require__(511);
+var _ajax = __webpack_require__(515);
 
-var _submenuitemsComponent = __webpack_require__(512);
+var _submenuitemsComponent = __webpack_require__(516);
 
-__webpack_require__(514);
+__webpack_require__(518);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24852,44 +25197,7 @@ var Items = exports.Items = function (_React$Component) {
 
 /***/ }),
 
-/***/ 51:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-var _uppercasePattern = /([A-Z])/g;
-
-/**
- * Hyphenates a camelcased string, for example:
- *
- *   > hyphenate('backgroundColor')
- *   < "background-color"
- *
- * For CSS style names, use `hyphenateStyleName` instead which works properly
- * with all vendor prefixes, including `ms`.
- *
- * @param {string} string
- * @return {string}
- */
-function hyphenate(string) {
-  return string.replace(_uppercasePattern, '-$1').toLowerCase();
-}
-
-module.exports = hyphenate;
-
-/***/ }),
-
-/***/ 510:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24904,7 +25212,7 @@ var appConfig = exports.appConfig = {
 
 /***/ }),
 
-/***/ 511:
+/***/ 515:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25000,7 +25308,7 @@ var Ajax = exports.Ajax = function () {
 
 /***/ }),
 
-/***/ 512:
+/***/ 516:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25019,7 +25327,7 @@ var React = _interopRequireWildcard(_react);
 
 var _reactRouterDom = __webpack_require__(77);
 
-__webpack_require__(513);
+__webpack_require__(517);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -25070,28 +25378,72 @@ var SubmenuItems = exports.SubmenuItems = function (_React$Component) {
 
 /***/ }),
 
-/***/ 513:
+/***/ 517:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 514:
+/***/ 518:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 515:
+/***/ 519:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 516:
+/***/ 52:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+
+
+var camelize = __webpack_require__(53);
+
+var msPattern = /^-ms-/;
+
+/**
+ * Camelcases a hyphenated CSS property name, for example:
+ *
+ *   > camelizeStyleName('background-color')
+ *   < "backgroundColor"
+ *   > camelizeStyleName('-moz-transition')
+ *   < "MozTransition"
+ *   > camelizeStyleName('-ms-transition')
+ *   < "msTransition"
+ *
+ * As Andi Smith suggests
+ * (http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
+ * is converted to lowercase `ms`.
+ *
+ * @param {string} string
+ * @return {string}
+ */
+function camelizeStyleName(string) {
+  return camelize(string.replace(msPattern, 'ms-'));
+}
+
+module.exports = camelizeStyleName;
+
+/***/ }),
+
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25108,7 +25460,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(517);
+__webpack_require__(521);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -25327,14 +25679,14 @@ var Footer = exports.Footer = function (_React$Component) {
 
 /***/ }),
 
-/***/ 517:
+/***/ 521:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 518:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25351,7 +25703,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(519);
+__webpack_require__(523);
 
 var _buttonComponent = __webpack_require__(79);
 
@@ -25575,223 +25927,7 @@ var CallOfDuty = exports.CallOfDuty = function (_React$Component) {
 
 /***/ }),
 
-/***/ 519:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 52:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-
-
-var camelize = __webpack_require__(53);
-
-var msPattern = /^-ms-/;
-
-/**
- * Camelcases a hyphenated CSS property name, for example:
- *
- *   > camelizeStyleName('background-color')
- *   < "backgroundColor"
- *   > camelizeStyleName('-moz-transition')
- *   < "MozTransition"
- *   > camelizeStyleName('-ms-transition')
- *   < "msTransition"
- *
- * As Andi Smith suggests
- * (http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
- * is converted to lowercase `ms`.
- *
- * @param {string} string
- * @return {string}
- */
-function camelizeStyleName(string) {
-  return camelize(string.replace(msPattern, 'ms-'));
-}
-
-module.exports = camelizeStyleName;
-
-/***/ }),
-
-/***/ 520:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Slider = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-var _buttonComponent = __webpack_require__(79);
-
-__webpack_require__(521);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Slider = exports.Slider = function (_React$Component) {
-    _inherits(Slider, _React$Component);
-
-    function Slider() {
-        _classCallCheck(this, Slider);
-
-        return _possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).apply(this, arguments));
-    }
-
-    _createClass(Slider, [{
-        key: 'render',
-        value: function render() {
-            return React.createElement(
-                'section',
-                { className: 'slider' },
-                React.createElement(
-                    'div',
-                    { className: 'container' },
-                    React.createElement(
-                        'div',
-                        { className: 'row' },
-                        React.createElement(
-                            'div',
-                            { className: 'col-md-5 offset-md-7' },
-                            React.createElement(
-                                'div',
-                                { className: 'iblock' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'iblock_title' },
-                                    'Star Wars ',
-                                    React.createElement(
-                                        'span',
-                                        null,
-                                        'Battlefront II'
-                                    )
-                                ),
-                                React.createElement(
-                                    'div',
-                                    { className: 'iblock_text' },
-                                    'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
-                                ),
-                                React.createElement(
-                                    'div',
-                                    { className: 'iblock_buttons' },
-                                    React.createElement(_buttonComponent.Btn, { url: '#', value: 'Watch Trailer', 'class': 'btn btn-green' }),
-                                    React.createElement(_buttonComponent.Btn, { url: '#', value: 'Explore Games', 'class': 'btn' })
-                                )
-                            )
-                        )
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'slider__arrows' },
-                    React.createElement(
-                        'div',
-                        { className: 'slider__arrows_prev' },
-                        React.createElement(
-                            'i',
-                            { className: 'icon-icon-prev' },
-                            '\xA0'
-                        )
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'slider__arrows_next' },
-                        React.createElement(
-                            'i',
-                            { className: 'icon-icon-next' },
-                            '\xA0'
-                        )
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'slider_dots' },
-                    React.createElement(
-                        'ul',
-                        null,
-                        React.createElement(
-                            'li',
-                            { className: 'active' },
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Slider;
-}(React.Component);
-
-/***/ }),
-
-/***/ 521:
+/***/ 523:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -26191,7 +26327,7 @@ var React = _interopRequireWildcard(_react);
 
 var _reactRouterDom = __webpack_require__(77);
 
-__webpack_require__(500);
+__webpack_require__(501);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
