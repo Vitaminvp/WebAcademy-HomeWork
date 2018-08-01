@@ -24937,8 +24937,8 @@ var Items = exports.Items = function (_React$Component) {
                         'li',
                         { key: item.id, className: 'header__nav_item' },
                         React.createElement(
-                            'a',
-                            { href: item.url, onClick: _this3.close.bind(_this3) },
+                            _reactRouterDom.Link,
+                            { to: item.url, onClick: _this3.close.bind(_this3) },
                             item.title
                         )
                     );

@@ -24,7 +24,7 @@ export class Items extends React.Component{
     render(){
         const menulistItems = this.state.menuItems.map((item) => {
             if (!item.submenu){
-                return <li key = {item.id}  className="header__nav_item"><a href={item.url} onClick={this.close.bind(this)}>{item.title}</a></li>
+                return <li key = {item.id}  className="header__nav_item"><Link to={item.url} onClick={this.close.bind(this)}>{item.title}</Link></li>
             } else{
                 return <li key = {item.id} className="header__nav_item header__nav_item-expand"><Link to={item.url} onClick={this.close.bind(this)}>{item.title}</Link>
                             <ul className="submenu">
