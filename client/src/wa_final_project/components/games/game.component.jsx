@@ -22,7 +22,9 @@ export class Game extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">Call of Duty: WWII</div>
                                     <div className="card__content_title">The C.O.D.E. Bravery Pack is now available in WWII</div>
-                                    <div className="card__content_link"><Btn url="#" value="See Details" class="btn card-btn btn-green"/></div>
+                                    <div className="card__content_link">
+                                        <Btn url="/topic" value="See Details" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                             <div className="card">
@@ -32,7 +34,9 @@ export class Game extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">Destiny 2</div>
                                     <div className="card__content_title">Photographs are a way of preserving a moment in our lives for the rest of our lives. </div>
-                                    <div className="card__content_link"><Btn url="#" value="See Details" class="btn card-btn btn-green"/></div>
+                                    <div className="card__content_link">
+                                        <Btn url="/topic" value="See Details" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                             <div className="card">
@@ -42,7 +46,9 @@ export class Game extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">STEEP</div>
                                     <div className="card__content_title">Here, I focus on a range of items and features that we use in life without giving them</div>
-                                    <div className="card__content_link"><Btn url="#" value="See Details" class="btn card-btn btn-green"/></div>
+                                    <div className="card__content_link">
+                                        <Btn url="/topic" value="See Details" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                             <div className="card">
@@ -52,7 +58,9 @@ export class Game extends React.Component{
                                 <div className="card__content">
                                     <div className="card__content_name">Forza Motorsport 7</div>
                                     <div className="card__content_title">The Myspace page defines the individual, his or her characteristics, traits.</div>
-                                    <div className="card__content_link"><Btn url="#" value="See Details" class="btn card-btn btn-green"/></div>
+                                    <div className="card__content_link">
+                                        <Btn url="/topic" value="See Details" class="btn card-btn btn-green"/>
+                                    </div>
                                 </div>
                             </div>
                             <div className="card">
@@ -63,7 +71,7 @@ export class Game extends React.Component{
                                     <div className="card__content_name">Forza Motorsport 7</div>
                                     <div className="card__content_title">The Myspace page defines the individual, his or her characteristics, traits.</div>
                                     <div className="card__content_link">
-                                        <Btn url="#" value="See Details" class="btn card-btn btn-green"/>
+                                        <Btn url="/topic" value="See Details" class="btn card-btn btn-green"/>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +82,7 @@ export class Game extends React.Component{
                     <div className="row">
                         <div className="col-md-12 d-flex justify-content-center">
                             <div className="game__link">
-                                <Btn url="#" value="XBOX Store" class="btn btn-game"/>
+                                <Btn url="/topic" value="XBOX Store" class="btn btn-game"/>
                             </div>
                         </div>
                     </div>
