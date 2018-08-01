@@ -23974,6 +23974,27 @@ var Slider = exports.Slider = function (_React$Component) {
             clearInterval(this.Interval);
         }
     }, {
+        key: 'enableSlide',
+        value: function enableSlide(i) {
+            this.setState({ slideIndex: i });
+        }
+    }, {
+        key: 'prevSlide',
+        value: function prevSlide() {
+            var activeSlide = this.state.slideIndex;
+            var slidesAmount = this.slidesAmount;
+            var nextSlide = activeSlide > 0 ? --activeSlide : --slidesAmount;
+            this.setState({ slideIndex: nextSlide });
+        }
+    }, {
+        key: 'nextSlide',
+        value: function nextSlide() {
+            var activeSlide = this.state.slideIndex;
+            var slidesAmount = this.slidesAmount;
+            var nextSlide = activeSlide < --slidesAmount ? ++activeSlide : 0;
+            this.setState({ slideIndex: nextSlide });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this3 = this;
@@ -24001,8 +24022,24 @@ var Slider = exports.Slider = function (_React$Component) {
             }];
             this.slidesAmount = arr.length;
             var slides = [];
+            var dots = [];
+            var isActive = false;
+            var dotClass = '';
             slides = arr.map(function (item, i) {
-                return React.createElement(_slideComponent.Slide, { key: item.id, item: item, isActive: _this3.state.slideIndex == i });
+                isActive = _this3.state.slideIndex == i ? true : false;
+                dotClass = isActive ? 'active' : '';
+                dots.push(React.createElement(
+                    'li',
+                    { key: item.id, className: dotClass, onClick: function onClick() {
+                            _this3.enableSlide(i);
+                        } },
+                    React.createElement(
+                        'a',
+                        null,
+                        '\xA0'
+                    )
+                ));
+                return React.createElement(_slideComponent.Slide, { key: item.id, item: item, isActive: isActive });
             });
             return React.createElement(
                 'section',
@@ -24016,7 +24053,7 @@ var Slider = exports.Slider = function (_React$Component) {
                         { className: 'slider__arrows_prev' },
                         React.createElement(
                             'i',
-                            { className: 'icon-icon-prev' },
+                            { className: 'icon-icon-prev', onClick: this.prevSlide.bind(this) },
                             '\xA0'
                         )
                     ),
@@ -24025,7 +24062,7 @@ var Slider = exports.Slider = function (_React$Component) {
                         { className: 'slider__arrows_next' },
                         React.createElement(
                             'i',
-                            { className: 'icon-icon-next' },
+                            { className: 'icon-icon-next', onClick: this.nextSlide.bind(this) },
                             '\xA0'
                         )
                     )
@@ -24036,51 +24073,7 @@ var Slider = exports.Slider = function (_React$Component) {
                     React.createElement(
                         'ul',
                         null,
-                        React.createElement(
-                            'li',
-                            { className: 'active' },
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        ),
-                        React.createElement(
-                            'li',
-                            null,
-                            React.createElement(
-                                'a',
-                                { href: '#' },
-                                '\xA0'
-                            )
-                        )
+                        dots
                     )
                 )
             );

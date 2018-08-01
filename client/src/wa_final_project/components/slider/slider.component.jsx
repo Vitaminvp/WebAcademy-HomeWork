@@ -24,6 +24,21 @@ export class Slider extends React.Component{
     stopInterval(){
         clearInterval(this.Interval);
     }
+    enableSlide(i){
+        this.setState({slideIndex: i});
+    }
+    prevSlide(){
+        let activeSlide = this.state.slideIndex;
+        let slidesAmount = this.slidesAmount;
+        let nextSlide = activeSlide > 0 ? --activeSlide : --slidesAmount;
+        this.setState({slideIndex: nextSlide});
+    }
+    nextSlide(){
+        let activeSlide = this.state.slideIndex;
+        let slidesAmount = this.slidesAmount;
+        let nextSlide = activeSlide < --slidesAmount ? ++activeSlide : 0;
+        this.setState({slideIndex: nextSlide});
+    }
     render(){
         const arr = [
             {
@@ -53,25 +68,27 @@ export class Slider extends React.Component{
         ];
         this.slidesAmount = arr.length;
         let slides = [];
+        let dots = [];
+        let isActive = false;
+        let dotClass = '';
         slides = arr.map((item, i) => {
-            return      <Slide key = {item.id} item = {item}  isActive = {this.state.slideIndex == i}/>;
+            isActive = (this.state.slideIndex == i ) ? true : false ;
+            dotClass = isActive ? 'active' : '';
+            dots.push(<li key = {item.id} className={dotClass} onClick={() => {this.enableSlide(i)}}><a>&nbsp;</a></li>);
+            return      <Slide key = {item.id} item = {item}  isActive = {isActive}/>;
         });
-        return  (    <section className="slider" onMouseMove={this.stopInterval.bind(this)} onMouseLeave={this.startInterval.bind(this)}>
-                            {slides}
-                            <div className="slider__arrows">
-                                <div className="slider__arrows_prev"><i className="icon-icon-prev">&nbsp;</i></div>
-                                <div className="slider__arrows_next"><i className="icon-icon-next">&nbsp;</i></div>
-                            </div>
-                            <div className="slider_dots">
-                                <ul>
-                                    <li className="active"><a href="#">&nbsp;</a></li>
-                                    <li><a href="#">&nbsp;</a></li>
-                                    <li><a href="#">&nbsp;</a></li>
-                                    <li><a href="#">&nbsp;</a></li>
-                                    <li><a href="#">&nbsp;</a></li>
-                                </ul>
-                            </div>
-                        </section>);
+        return <section className="slider" onMouseMove={this.stopInterval.bind(this)} onMouseLeave={this.startInterval.bind(this)}>
+                    {slides}
+                    <div className="slider__arrows">
+                        <div className="slider__arrows_prev"><i className="icon-icon-prev" onClick={this.prevSlide.bind(this)}>&nbsp;</i></div>
+                        <div className="slider__arrows_next"><i className="icon-icon-next" onClick={this.nextSlide.bind(this)}>&nbsp;</i></div>
+                    </div>
+                    <div className="slider_dots">
+                        <ul>
+                            {dots}
+                        </ul>
+                    </div>
+                </section>;
 
     }
 }

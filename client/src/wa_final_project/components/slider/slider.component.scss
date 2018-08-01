@@ -81,6 +81,8 @@
         a{
           display: block;
           height: 100%;
+          cursor: pointer;
+          transition: all .5s ease;
         }
       }
     }

@@ -2021,15 +2021,19 @@ ul {
 
 .iblock {
   margin-left: 20px;
-  color: white; }
+  color: white;
+  transition: all 1s ease-in; }
   .iblock_title {
-    font-size: 2.1rem; }
+    font-size: 2.1rem;
+    transition: all .25s ease-in; }
     .iblock_title span {
       display: block;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      transition: all .5s ease-in; }
   .iblock_text {
     line-height: 1.6;
-    margin: 10px 0 20px; }
+    margin: 10px 0 20px;
+    transition: all .75s ease-in; }
   .iblock_buttons a {
     margin-right: 15px;
     margin-bottom: 10px; }
@@ -2190,7 +2194,9 @@ ul {
         background-color: #84e645; }
       .slider_dots ul li a {
         display: block;
-        height: 100%; }
+        height: 100%;
+        cursor: pointer;
+        transition: all .5s ease; }
 .best {
   background-image: url(./assets/images/bgimage.jpg);
   background-size: cover;
