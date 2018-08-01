@@ -60,30 +60,30 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 386);
+/******/ 	return __webpack_require__(__webpack_require__.s = 387);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 386:
+/***/ 387:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(387);
+module.exports = __webpack_require__(388);
 
 
 /***/ }),
 
-/***/ 387:
+/***/ 388:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(388);
-
 __webpack_require__(389);
 
-var _accordion = __webpack_require__(390);
+__webpack_require__(390);
+
+var _accordion = __webpack_require__(391);
 
 var accordions = document.querySelectorAll(".accordion");
 var array = [[{ title: "Collapsible item #1-1", content: "1-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #1-2", content: "1-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #1-3", content: "1-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #1-4", content: "1-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #1-5", content: "1-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }], [{ title: "Collapsible item #2-1", content: "2-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-2", content: "2-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-3", content: "2-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-4", content: "2-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-5", content: "2-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-6", content: "2-6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #2-7", content: "2-7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }], [{ title: "Collapsible item #3-1", content: "3-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #3-2", content: "3-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #3-3", content: "3-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #3-4", content: "3-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #3-5", content: "3-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }, { title: "Collapsible item #3-6", content: "3-6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque est fuga impedit maxime, nisi nobis pariatur perferendis quisquam voluptates." }]];
@@ -93,14 +93,14 @@ for (var i = 0; i < accordions.length; i++) {
 
 /***/ }),
 
-/***/ 388:
+/***/ 389:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 389:
+/***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108,7 +108,7 @@ for (var i = 0; i < accordions.length; i++) {
 
 /***/ }),
 
-/***/ 390:
+/***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -119,7 +119,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.accordion = accordion;
 
-__webpack_require__(391);
+__webpack_require__(392);
 
 function accordion(element, array) {
     var AC_NAME = element.className;
@@ -168,7 +168,7 @@ function accordion(element, array) {
 
 /***/ }),
 
-/***/ 391:
+/***/ 392:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

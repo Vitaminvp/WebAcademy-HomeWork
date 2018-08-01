@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 392);
+/******/ 	return __webpack_require__(__webpack_require__.s = 393);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -78,7 +78,7 @@ exports.Lights = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(397);
+__webpack_require__(398);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -197,25 +197,25 @@ var Lights = exports.Lights = function () {
 
 /***/ }),
 
-/***/ 392:
+/***/ 393:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(393);
+module.exports = __webpack_require__(394);
 
 
 /***/ }),
 
-/***/ 393:
+/***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(394);
-
 __webpack_require__(395);
 
-var _lights_manager = __webpack_require__(396);
+__webpack_require__(396);
+
+var _lights_manager = __webpack_require__(397);
 
 var _lights = __webpack_require__(150);
 
@@ -223,14 +223,14 @@ var light = new _lights_manager.LightsManager(document.querySelector('.wrapper')
 
 /***/ }),
 
-/***/ 394:
+/***/ 395:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 395:
+/***/ 396:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -238,7 +238,7 @@ var light = new _lights_manager.LightsManager(document.querySelector('.wrapper')
 
 /***/ }),
 
-/***/ 396:
+/***/ 397:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -359,7 +359,7 @@ var LightsManager = exports.LightsManager = function () {
 
 /***/ }),
 
-/***/ 397:
+/***/ 398:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
