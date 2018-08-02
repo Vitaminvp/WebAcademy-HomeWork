@@ -6,6 +6,6 @@ export class Dot extends React.Component{
     }
     render(){
         let dotClass = this.props.isActive ? 'active' : '';
-        return <li className={dotClass}  onClick={() => {this.enableSlide(this.props.i)}}><a>&nbsp;</a></li>;
+        return <li className={dotClass}  onClick={() => {this.enableSlide(this.props.i)}}><button>&nbsp;</button></li>;
     }
 }

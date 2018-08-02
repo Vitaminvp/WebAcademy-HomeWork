@@ -46,25 +46,29 @@ export class Slider extends React.Component{
                 id: 1,
                 title: 'Star Wars',
                 title2: 'Battlefront II',
-                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'carousel.jpg'
             },
             {
                 id: 10,
                 title: 'Wars Star',
                 title2: ' Battlefront III',
-                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'rectangle.jpg'
             },
             {
                 id: 20,
                 title: 'Wars',
                 title2: ' Battlefront IV',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'ranked-callofduty-lead.jpg'
             },
             {
                 id: 30,
                 title: 'Test',
                 title2: 'Battlefront Test',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'call-of-duty-ww-2-review-j-23-m.jpg'
             }
         ];
         this.slidesAmount = arr.length;

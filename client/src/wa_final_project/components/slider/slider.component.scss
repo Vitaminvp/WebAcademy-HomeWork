@@ -13,7 +13,9 @@
   &__slide{
     display: none;
     &.slider__slide_active{
-      display: block;
+      display: flex;
+      align-items: center;
+
     }
   }
   &__arrows{
@@ -56,33 +58,6 @@
       i{
         &:before{
           left: 6px;
-        }
-      }
-    }
-  }
-  &_dots{
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    ul{
-      li + li{
-        margin-left: $dot;
-      }
-      li{
-        border: 2px solid $dot-color;
-        border-radius: 50%;
-        width: $dot;
-        height: $dot;
-
-        &.active{
-          background-color: $dot-color;
-        }
-        a{
-          display: block;
-          height: 100%;
-          cursor: pointer;
-          transition: all .5s ease;
         }
       }
     }

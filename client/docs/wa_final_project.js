@@ -24005,22 +24005,26 @@ var Slider = exports.Slider = function (_React$Component) {
                 id: 1,
                 title: 'Star Wars',
                 title2: 'Battlefront II',
-                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'carousel.jpg'
             }, {
                 id: 10,
                 title: 'Wars Star',
                 title2: ' Battlefront III',
-                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'rectangle.jpg'
             }, {
                 id: 20,
                 title: 'Wars',
                 title2: ' Battlefront IV',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'ranked-callofduty-lead.jpg'
             }, {
                 id: 30,
                 title: 'Test',
                 title2: 'Battlefront Test',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?',
+                bgimg: 'call-of-duty-ww-2-review-j-23-m.jpg'
             }];
             this.slidesAmount = arr.length;
             var slides = [];
@@ -24159,61 +24163,50 @@ var Slide = exports.Slide = function (_React$Component) {
     _createClass(Slide, [{
         key: 'render',
         value: function render() {
-            var arr = [{
-                id: 1,
-                title: 'Star Wars',
-                title2: 'Battlefront II',
-                text: 'Computer users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
-            }, {
-                id: 10,
-                title: 'Wars Star',
-                title2: ' Battlefront III',
-                text: 'Users and programmers have become so accustomed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
-            }, {
-                id: 20,
-                title: 'Wars',
-                title2: ' Battlefront IV',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
-            }, {
-                id: 30,
-                title: 'Test',
-                title2: 'Battlefront Test',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores facere in incidunt laborum repellat velit vitae voluptas voluptatem voluptatum?'
-            }];
-
+            var bgImage = this.props.item.bgimg;
+            var slideImage = {
+                width: "100%",
+                backgroundSize: "cover",
+                height: "100%",
+                backgroundImage: 'url(./../../../../assets/images/' + bgImage + ')'
+            };
             return React.createElement(
                 'div',
-                { key: this.props.item.id, className: this.props.isActive ? "container slider__slide slider__slide_active" : "container slider__slide" },
+                { key: this.props.item.id, className: this.props.isActive ? "slider__slide slider__slide_active" : "container slider__slide", style: slideImage },
                 React.createElement(
                     'div',
-                    { className: 'row' },
+                    { className: 'container' },
                     React.createElement(
                         'div',
-                        { className: 'col-md-5 offset-md-7' },
+                        { className: 'row' },
                         React.createElement(
                             'div',
-                            { className: 'iblock' },
+                            { className: 'col-md-5 offset-md-7' },
                             React.createElement(
                                 'div',
-                                { className: 'iblock_title' },
-                                this.props.item.title,
-                                ' ',
+                                { className: 'iblock' },
                                 React.createElement(
-                                    'span',
-                                    null,
-                                    this.props.item.title2
+                                    'div',
+                                    { className: 'iblock_title' },
+                                    this.props.item.title,
+                                    ' ',
+                                    React.createElement(
+                                        'span',
+                                        null,
+                                        this.props.item.title2
+                                    )
+                                ),
+                                React.createElement(
+                                    'div',
+                                    { className: 'iblock_text' },
+                                    this.props.item.text
+                                ),
+                                React.createElement(
+                                    'div',
+                                    { className: 'iblock_buttons' },
+                                    React.createElement(_buttonComponent.Btn, { url: '#', value: 'Watch Trailer', 'class': 'btn btn-green' }),
+                                    React.createElement(_buttonComponent.Btn, { url: '#', value: 'Explore Games', 'class': 'btn' })
                                 )
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'iblock_text' },
-                                this.props.item.text
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'iblock_buttons' },
-                                React.createElement(_buttonComponent.Btn, { url: '#', value: 'Watch Trailer', 'class': 'btn btn-green' }),
-                                React.createElement(_buttonComponent.Btn, { url: '#', value: 'Explore Games', 'class': 'btn' })
                             )
                         )
                     )
@@ -24301,7 +24294,7 @@ var Dot = exports.Dot = function (_React$Component) {
                         _this2.enableSlide(_this2.props.i);
                     } },
                 React.createElement(
-                    'a',
+                    'button',
                     null,
                     '\xA0'
                 )

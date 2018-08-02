@@ -1,2 +1,33 @@
 @import '../../../../common/styles/mixins';
 @import '../../../../common/styles/variables';
+.slider_dots{
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  ul{
+    li + li{
+      margin-left: $dot;
+    }
+    li{
+      border: 2px solid $dot-color;
+      border-radius: 50%;
+      width: $dot;
+      height: $dot;
+
+      &.active{
+        background-color: $dot-color;
+      }
+      button{
+        display: block;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: $dot;
+        height: $dot;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
