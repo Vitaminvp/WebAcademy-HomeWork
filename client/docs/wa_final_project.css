@@ -2140,6 +2140,15 @@ ul {
     opacity: 0;
     position: relative;
     right: 1000px; }
+    .slider__slide .iblock_title {
+      visibility: hidden;
+      opacity: 0; }
+    .slider__slide .iblock_text {
+      visibility: hidden;
+      opacity: 0; }
+    .slider__slide .iblock_buttons {
+      visibility: hidden;
+      opacity: 0; }
   .slider__slide.slider__slide_active {
     -ms-flex-align: center;
         align-items: center;
@@ -2147,10 +2156,21 @@ ul {
     visibility: visible;
     opacity: 1; }
     .slider__slide.slider__slide_active .iblock {
-      transition: all 1s ease-in-out;
       visibility: visible;
       opacity: 1;
       right: 0; }
+      .slider__slide.slider__slide_active .iblock_title {
+        right: 0;
+        visibility: visible;
+        opacity: 1; }
+      .slider__slide.slider__slide_active .iblock_text {
+        right: 0;
+        visibility: visible;
+        opacity: 1; }
+      .slider__slide.slider__slide_active .iblock_buttons {
+        right: 0;
+        visibility: visible;
+        opacity: 1; }
 .slider {
   background-image: url(./assets/images/rectangle2.jpg);
   background-size: cover;

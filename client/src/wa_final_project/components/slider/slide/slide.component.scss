@@ -1,18 +1,32 @@
 @import '../../../../common/styles/mixins';
 @import '../../../../common/styles/variables';
+$translation: 1000px;
 .slider__slide{
   width: 100%;
   display: flex;
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  left: 1000px;
+  left: $translation;
   transition: all 0.5s ease-in-out;
   .iblock{
     visibility: hidden;
     opacity: 0;
     position: relative;
-    right: 1000px;
+    right: $translation;
+    &_title {
+      visibility: hidden;
+      opacity: 0;
+    }
+    &_text{
+      visibility: hidden;
+      opacity: 0;
+    }
+    &_buttons{
+      visibility: hidden;
+      opacity: 0;
+
+    }
   }
   &.slider__slide_active{
     align-items: center;
@@ -20,10 +34,24 @@
     visibility: visible;
     opacity: 1;
     .iblock{
-      transition: all 1s ease-in-out;
       visibility: visible;
       opacity: 1;
       right: 0;
+      &_title {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+      &_text{
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+      &_buttons{
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 }
