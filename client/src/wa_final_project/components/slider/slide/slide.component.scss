@@ -15,14 +15,17 @@ $translation: 1000px;
     position: relative;
     right: $translation;
     &_title {
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0;
     }
     &_text{
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0;
     }
     &_buttons{
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0;
 

@@ -24168,7 +24168,7 @@ var Slide = exports.Slide = function (_React$Component) {
                 width: "100%",
                 backgroundSize: "cover",
                 height: "100%",
-                backgroundImage: 'url(./../../../../assets/images/' + bgImage + ')'
+                backgroundImage: 'url(./../assets/images/' + bgImage + ')'
             };
             return React.createElement(
                 'div',

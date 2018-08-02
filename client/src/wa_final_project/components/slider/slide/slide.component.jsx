@@ -9,7 +9,7 @@ export class Slide extends React.Component{
         width: "100%",
         backgroundSize: "cover",
         height: "100%",
-        backgroundImage: `url(./../../../../assets/images/${bgImage})`
+        backgroundImage: `url(./../assets/images/${bgImage})`
     };
     return <div  key = {this.props.item.id} className={ this.props.isActive ? "slider__slide slider__slide_active" : "container slider__slide"} style={ slideImage } >
             <div className="container">

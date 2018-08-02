@@ -2141,12 +2141,15 @@ ul {
     position: relative;
     right: 1000px; }
     .slider__slide .iblock_title {
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0; }
     .slider__slide .iblock_text {
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0; }
     .slider__slide .iblock_buttons {
+      transition: all 0.5s ease-in-out;
       visibility: hidden;
       opacity: 0; }
   .slider__slide.slider__slide_active {
