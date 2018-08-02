@@ -1,2 +1,29 @@
 @import '../../../../common/styles/mixins';
 @import '../../../../common/styles/variables';
+.slider__slide{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 1000px;
+  transition: all 0.5s ease-in-out;
+  .iblock{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    right: 1000px;
+  }
+  &.slider__slide_active{
+    align-items: center;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    .iblock{
+      transition: all 1s ease-in-out;
+      visibility: visible;
+      opacity: 1;
+      right: 0;
+    }
+  }
+}

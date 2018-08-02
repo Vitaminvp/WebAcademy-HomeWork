@@ -20,7 +20,7 @@ export class Slider extends React.Component{
             let nextSlide = activeSlide < this.slidesAmount - 1 ? ++activeSlide : 0 ;
             this.setState({slideIndex: nextSlide});
 
-        }, 2000);
+        }, 7000);
     }
     stopInterval(){
         clearInterval(this.Interval);

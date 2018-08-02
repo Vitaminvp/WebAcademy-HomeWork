@@ -23968,7 +23968,7 @@ var Slider = exports.Slider = function (_React$Component) {
                 var activeSlide = _this2.state.slideIndex;
                 var nextSlide = activeSlide < _this2.slidesAmount - 1 ? ++activeSlide : 0;
                 _this2.setState({ slideIndex: nextSlide });
-            }, 2000);
+            }, 7000);
         }
     }, {
         key: 'stopInterval',
