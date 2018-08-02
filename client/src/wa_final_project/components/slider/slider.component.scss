@@ -5,7 +5,10 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 648px;
+  @include tablet{
+    height: 94vh;
+  }
   color: #fff;
   display: flex;
   align-items: center;

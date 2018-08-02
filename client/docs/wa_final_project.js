@@ -24538,10 +24538,35 @@ var Game = exports.Game = function (_React$Component) {
     function Game() {
         _classCallCheck(this, Game);
 
-        return _possibleConstructorReturn(this, (Game.__proto__ || Object.getPrototypeOf(Game)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Game.__proto__ || Object.getPrototypeOf(Game)).call(this));
+
+        _this.movelength = 0;
+        _this.state = {
+            left: 0
+        };
+        return _this;
     }
 
     _createClass(Game, [{
+        key: 'moveRight',
+        value: function moveRight() {
+            if (this.state.left <= 1000) {
+                this.setState({ left: this.state.left + 50 });
+            } else {
+                this.setState({ left: 0 });
+            }
+            console.log(this.state.left);
+        }
+    }, {
+        key: 'moveLeft',
+        value: function moveLeft() {
+            if (this.state.left <= -1000) {
+                this.setState({ left: 0 });
+            } else {
+                this.setState({ left: this.state.left - 50 });
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
@@ -24567,7 +24592,7 @@ var Game = exports.Game = function (_React$Component) {
                             { className: 'slider__arrows slider__arrows-game' },
                             React.createElement(
                                 'div',
-                                { className: 'slider__arrows_prev' },
+                                { className: 'slider__arrows_prev', onClick: this.moveRight.bind(this) },
                                 React.createElement(
                                     'i',
                                     { className: 'icon-icon-prev' },
@@ -24576,7 +24601,7 @@ var Game = exports.Game = function (_React$Component) {
                             ),
                             React.createElement(
                                 'div',
-                                { className: 'slider__arrows_next' },
+                                { className: 'slider__arrows_next', onClick: this.moveLeft.bind(this) },
                                 React.createElement(
                                     'i',
                                     { className: 'icon-icon-next' },
@@ -24586,144 +24611,148 @@ var Game = exports.Game = function (_React$Component) {
                         ),
                         React.createElement(
                             'div',
-                            { className: 'col-md-12 d-flex card-wrapper' },
+                            { className: 'col-md-12 d-flex' },
                             React.createElement(
                                 'div',
-                                { className: 'card' },
+                                { className: 'd-flex card-wrapper', style: { left: this.state.left + 'px' } },
                                 React.createElement(
                                     'div',
-                                    { className: 'card__img' },
-                                    React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
-                                ),
-                                React.createElement(
-                                    'div',
-                                    { className: 'card__content' },
+                                    { className: 'card' },
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_name' },
-                                        'Call of Duty: WWII'
+                                        { className: 'card__img' },
+                                        React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
                                     ),
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_title' },
-                                        'The C.O.D.E. Bravery Pack is now available in WWII'
-                                    ),
-                                    React.createElement(
-                                        'div',
-                                        { className: 'card__content_link' },
-                                        React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        { className: 'card__content' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_name' },
+                                            'Call of Duty: WWII'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_title' },
+                                            'The C.O.D.E. Bravery Pack is now available in WWII'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_link' },
+                                            React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        )
                                     )
-                                )
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'card' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'card__img' },
-                                    React.createElement('img', { src: './../assets/images/ranked-callofduty-lead.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
-                                    { className: 'card__content' },
+                                    { className: 'card' },
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_name' },
-                                        'Destiny 2'
+                                        { className: 'card__img' },
+                                        React.createElement('img', { src: './../assets/images/ranked-callofduty-lead.jpg', alt: '' })
                                     ),
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_title' },
-                                        'Photographs are a way of preserving a moment in our lives for the rest of our lives. '
-                                    ),
-                                    React.createElement(
-                                        'div',
-                                        { className: 'card__content_link' },
-                                        React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        { className: 'card__content' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_name' },
+                                            'Destiny 2'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_title' },
+                                            'Photographs are a way of preserving a moment in our lives for the rest of our lives. '
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_link' },
+                                            React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        )
                                     )
-                                )
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'card' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'card__img' },
-                                    React.createElement('img', { src: './../assets/images/img.png', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
-                                    { className: 'card__content' },
+                                    { className: 'card' },
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_name' },
-                                        'STEEP'
+                                        { className: 'card__img' },
+                                        React.createElement('img', { src: './../assets/images/img.png', alt: '' })
                                     ),
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_title' },
-                                        'Here, I focus on a range of items and features that we use in life without giving them'
-                                    ),
-                                    React.createElement(
-                                        'div',
-                                        { className: 'card__content_link' },
-                                        React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        { className: 'card__content' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_name' },
+                                            'STEEP'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_title' },
+                                            'Here, I focus on a range of items and features that we use in life without giving them'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_link' },
+                                            React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        )
                                     )
-                                )
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'card' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'card__img' },
-                                    React.createElement('img', { src: './../assets/images/xbox-one-x.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
-                                    { className: 'card__content' },
+                                    { className: 'card' },
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_name' },
-                                        'Forza Motorsport 7'
+                                        { className: 'card__img' },
+                                        React.createElement('img', { src: './../assets/images/xbox-one-x.jpg', alt: '' })
                                     ),
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_title' },
-                                        'The Myspace page defines the individual, his or her characteristics, traits.'
-                                    ),
-                                    React.createElement(
-                                        'div',
-                                        { className: 'card__content_link' },
-                                        React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        { className: 'card__content' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_name' },
+                                            'Forza Motorsport 7'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_title' },
+                                            'The Myspace page defines the individual, his or her characteristics, traits.'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_link' },
+                                            React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        )
                                     )
-                                )
-                            ),
-                            React.createElement(
-                                'div',
-                                { className: 'card' },
-                                React.createElement(
-                                    'div',
-                                    { className: 'card__img' },
-                                    React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
                                 ),
                                 React.createElement(
                                     'div',
-                                    { className: 'card__content' },
+                                    { className: 'card' },
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_name' },
-                                        'Forza Motorsport 7'
+                                        { className: 'card__img' },
+                                        React.createElement('img', { src: './../assets/images/call-of-duty-ww-2-review-j-23-m.jpg', alt: '' })
                                     ),
                                     React.createElement(
                                         'div',
-                                        { className: 'card__content_title' },
-                                        'The Myspace page defines the individual, his or her characteristics, traits.'
-                                    ),
-                                    React.createElement(
-                                        'div',
-                                        { className: 'card__content_link' },
-                                        React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        { className: 'card__content' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_name' },
+                                            'Forza Motorsport 7'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_title' },
+                                            'The Myspace page defines the individual, his or her characteristics, traits.'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'card__content_link' },
+                                            React.createElement(_buttonComponent.Btn, { url: '/topic', value: 'See Details', 'class': 'btn card-btn btn-green' })
+                                        )
                                     )
                                 )
                             )
