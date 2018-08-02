@@ -4,7 +4,7 @@ import { HashRouter  as Router, Route, Link } from "react-router-dom";
 import { Home } from "./components/home/home.component.jsx";
 import { Header } from "./components/header/header.component.jsx";
 import { Footer } from "./components/footer/footer.component.jsx";
-import { CallOfDuty } from "./components/callofduty/callofduty.component.jsx";
+import { Topic } from "./components/topic/topic.component.jsx";
 
 
 
@@ -13,7 +13,7 @@ render(<Router>
             <Header/>
 
             <Route exact path="/" component={ Home } />
-            <Route path="/topic"  component={ CallOfDuty } />
+            <Route path="/topic"  component={ Topic } />
             <Footer/>
           </div>
        </Router>, document.querySelector('.wrapper'));

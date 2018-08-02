@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './callofduty.component.scss';
-import {Btn} from "../button/button.component.jsx";
+import {Btn} from "../../button/button.component.jsx";
 export class CallOfDuty extends React.Component{
     render(){
         return  (

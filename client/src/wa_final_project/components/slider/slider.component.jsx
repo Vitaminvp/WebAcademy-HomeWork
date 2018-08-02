@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Slide } from './slide/slide.component.jsx'
 import './slider.component.scss';
+import {Dot} from "./dot/dot.component.jsx";
 export class Slider extends React.Component{
     constructor(){
         super();
@@ -70,12 +71,10 @@ export class Slider extends React.Component{
         let slides = [];
         let dots = [];
         let isActive = false;
-        let dotClass = '';
-        slides = arr.map((item, i) => {
+        arr.forEach((item, i) => {
             isActive = (this.state.slideIndex == i ) ? true : false ;
-            dotClass = isActive ? 'active' : '';
-            dots.push(<li key = {item.id} className={dotClass} onClick={() => {this.enableSlide(i)}}><a>&nbsp;</a></li>);
-            return      <Slide key = {item.id} item = {item}  isActive = {isActive}/>;
+            dots.push(<Dot key = {item.id} isActive = {isActive} i = {i}  click={this.enableSlide.bind(this)} />);
+            slides.push(<Slide key = {item.id} item = {item}  isActive = {isActive}/>);
         });
         return <section className="slider" onMouseMove={this.stopInterval.bind(this)} onMouseLeave={this.startInterval.bind(this)}>
                     {slides}
@@ -89,6 +88,5 @@ export class Slider extends React.Component{
                         </ul>
                     </div>
                 </section>;
-
     }
 }

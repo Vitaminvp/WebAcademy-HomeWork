@@ -1,0 +1,13 @@
+@import '../../../../common/styles/mixins';
+@import '../../../../common/styles/variables';
+.callslider{
+  background-image: url(../../../../../assets/images/rectangle.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 648px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+}

@@ -2678,6 +2678,21 @@ footer {
   background-color: #fff;
   border-radius: 1px;
   opacity: 0.35; }
+.design {
+  padding: 118px 0 141px;
+  background-image: url(./assets/images/rectangle2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .design .iblock-design .iblock_title {
+    font-size: 3rem; }
+  .design .iblock-design .iblock_text {
+    font-size: 1.5rem;
+    margin-bottom: 30px; }
+  .design .btn-design {
+    padding: 10px 23px;
+    min-width: 207px;
+    font-size: 1rem; }
 .callofduty {
   padding: 100px 0;
   background-color: #EFEFEF; }
@@ -2724,3 +2739,15 @@ footer {
     .callofduty__text p {
       line-height: 1.14;
       font-size: 1.3rem; }
+.callslider {
+  background-image: url(./assets/images/rectangle.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 648px;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
