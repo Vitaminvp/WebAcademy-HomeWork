@@ -8,7 +8,7 @@ export class Header extends React.Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-md-2 d-flex">
-                                <Link to="/" className="d-flex">
+                                <Link to="/" className="d-flex" replace >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="96" height="29" viewBox="0 0 96 29">
                                         <g fill="none">
                                             <g fill="#8DD83D">

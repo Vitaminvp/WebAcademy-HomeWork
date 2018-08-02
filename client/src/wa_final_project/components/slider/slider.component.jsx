@@ -14,6 +14,9 @@ export class Slider extends React.Component{
     componentDidMount(){
         this.startInterval();
     }
+    componentWillUnmount(){
+        clearInterval(this.Interval);
+    }
     startInterval(){
         this.Interval = setInterval(() => {
             let activeSlide = this.state.slideIndex;

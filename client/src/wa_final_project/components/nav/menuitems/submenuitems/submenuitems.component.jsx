@@ -8,7 +8,7 @@ export class SubmenuItems extends React.Component{
     }
     render(){
         const submenuItems = this.props.submenu.map((item) => {
-                return <li key = {item.id}><Link to={item.url} onClick={this.close.bind(this)}>{item.title}</Link></li>
+                return <li key = {item.id}><Link to={item.url} onClick={this.close.bind(this)} replace >{item.title}</Link></li>
         });
         return   submenuItems;
     };

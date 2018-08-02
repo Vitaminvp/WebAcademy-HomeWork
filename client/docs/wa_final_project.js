@@ -23960,6 +23960,11 @@ var Slider = exports.Slider = function (_React$Component) {
             this.startInterval();
         }
     }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearInterval(this.Interval);
+        }
+    }, {
         key: 'startInterval',
         value: function startInterval() {
             var _this2 = this;
@@ -24978,7 +24983,7 @@ var Header = exports.Header = function (_React$Component) {
                             { className: 'col-md-2 d-flex' },
                             React.createElement(
                                 _reactRouterDom.Link,
-                                { to: '/', className: 'd-flex' },
+                                { to: '/', className: 'd-flex', replace: true },
                                 React.createElement(
                                     'svg',
                                     { xmlns: 'http://www.w3.org/2000/svg', width: '96', height: '29', viewBox: '0 0 96 29' },
@@ -25243,7 +25248,7 @@ var Items = exports.Items = function (_React$Component) {
                         { key: item.id, className: 'header__nav_item' },
                         React.createElement(
                             _reactRouterDom.Link,
-                            { to: item.url, onClick: _this3.close.bind(_this3) },
+                            { to: item.url, replace: true, onClick: _this3.close.bind(_this3) },
                             item.title
                         )
                     );
@@ -25253,7 +25258,7 @@ var Items = exports.Items = function (_React$Component) {
                         { key: item.id, className: 'header__nav_item header__nav_item-expand' },
                         React.createElement(
                             _reactRouterDom.Link,
-                            { to: item.url, onClick: _this3.close.bind(_this3) },
+                            { to: item.url, replace: true, onClick: _this3.close.bind(_this3) },
                             item.title
                         ),
                         React.createElement(
@@ -25440,7 +25445,7 @@ var SubmenuItems = exports.SubmenuItems = function (_React$Component) {
                     { key: item.id },
                     React.createElement(
                         _reactRouterDom.Link,
-                        { to: item.url, onClick: _this2.close.bind(_this2) },
+                        { to: item.url, onClick: _this2.close.bind(_this2), replace: true },
                         item.title
                     )
                 );
@@ -26454,7 +26459,7 @@ var Btn = exports.Btn = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 _reactRouterDom.Link,
-                { to: this.props.url, className: this.props.class },
+                { to: this.props.url, className: this.props.class, replace: true },
                 this.props.value
             );
         }
