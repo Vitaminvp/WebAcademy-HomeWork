@@ -24181,7 +24181,7 @@ var Slide = exports.Slide = function (_React$Component) {
                         { className: 'row' },
                         React.createElement(
                             'div',
-                            { className: 'col-md-5 offset-md-7' },
+                            { className: 'col-lg-5 offset-lg-7' },
                             React.createElement(
                                 'div',
                                 { className: 'iblock' },

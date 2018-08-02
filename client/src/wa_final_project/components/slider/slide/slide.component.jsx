@@ -14,7 +14,7 @@ export class Slide extends React.Component{
     return <div  key = {this.props.item.id} className={ this.props.isActive ? "slider__slide slider__slide_active" : "container slider__slide"} style={ slideImage } >
             <div className="container">
                 <div className="row">
-                    <div className="col-md-5 offset-md-7">
+                    <div className="col-lg-5 offset-lg-7">
                         <div className="iblock">
                             <div className="iblock_title">{this.props.item.title} <span>{this.props.item.title2}</span></div>
                             <div className="iblock_text">{this.props.item.text}</div>

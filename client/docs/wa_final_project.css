@@ -2015,7 +2015,7 @@ ul {
       align-items: center; }
 
 .wrapper {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0;
   max-width: 1400px; }
 
@@ -2179,7 +2179,7 @@ ul {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 648px;
+  height: 90vh;
   color: #fff;
   display: -ms-flexbox;
   display: flex;
@@ -2187,6 +2187,9 @@ ul {
       align-items: center;
   position: relative;
   overflow: hidden; }
+  @media (max-width: 979.9px) {
+    .slider__arrows {
+      display: none; } }
   .slider__arrows_next, .slider__arrows_prev {
     font-size: 1.2rem;
     position: absolute;
