@@ -10,7 +10,7 @@ export class Cards extends React.Component {
         this.state = {
 
         };
-        Ajax.get(`${URL}/api/v1/items`, (response) => {
+        Ajax.get(`${URL}api/v1/items`, (response) => {
             console.log(response);
         });
     }
