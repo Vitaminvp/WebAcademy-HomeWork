@@ -8,7 +8,8 @@ export class Nav extends React.Component{
             isExpand: false
         };
     }
-    toggleOpen(){
+    toggleOpen(ev){
+        ev.preventDefault();
         this.setState({
            isExpand: !this.state.isExpand
         });

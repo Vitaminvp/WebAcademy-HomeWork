@@ -25067,7 +25067,8 @@ var Nav = exports.Nav = function (_React$Component) {
 
     _createClass(Nav, [{
         key: 'toggleOpen',
-        value: function toggleOpen() {
+        value: function toggleOpen(ev) {
+            ev.preventDefault();
             this.setState({
                 isExpand: !this.state.isExpand
             });
