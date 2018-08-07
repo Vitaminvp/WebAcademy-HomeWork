@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 446);
+/******/ 	return __webpack_require__(__webpack_require__.s = 447);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -20126,50 +20126,30 @@ module.exports = hyphenate;
 
 /***/ }),
 
-/***/ 446:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(447);
-
-
-/***/ }),
-
 /***/ 447:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+module.exports = __webpack_require__(448);
 
-
-__webpack_require__(448);
-
-__webpack_require__(449);
 
 /***/ }),
 
 /***/ 448:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 449:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(1);
+__webpack_require__(449);
 
-var React = _interopRequireWildcard(_react);
+__webpack_require__(450);
 
-var _reactDom = __webpack_require__(38);
+/***/ }),
 
-var _taskListReact = __webpack_require__(450);
+/***/ 449:
+/***/ (function(module, exports) {
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-(0, _reactDom.render)(React.createElement(_taskListReact.TaskList, null), document.querySelector('#app'));
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -20223,6 +20203,26 @@ module.exports = camelizeStyleName;
 "use strict";
 
 
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _reactDom = __webpack_require__(38);
+
+var _taskListReact = __webpack_require__(451);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+(0, _reactDom.render)(React.createElement(_taskListReact.TaskList, null), document.querySelector('#app'));
+
+/***/ }),
+
+/***/ 451:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -20234,15 +20234,15 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(451);
+var _ajax = __webpack_require__(452);
 
-__webpack_require__(452);
+__webpack_require__(453);
 
-var _header = __webpack_require__(453);
+var _header = __webpack_require__(454);
 
-var _content = __webpack_require__(454);
+var _content = __webpack_require__(455);
 
-var _footer = __webpack_require__(459);
+var _footer = __webpack_require__(460);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -20350,7 +20350,7 @@ var TaskList = exports.TaskList = function (_React$Component) {
 
 /***/ }),
 
-/***/ 451:
+/***/ 452:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20444,14 +20444,14 @@ var Ajax = exports.Ajax = function () {
 
 /***/ }),
 
-/***/ 452:
+/***/ 453:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 453:
+/***/ 454:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20538,7 +20538,7 @@ var HeaderComponent = exports.HeaderComponent = function (_React$Component) {
 
 /***/ }),
 
-/***/ 454:
+/***/ 455:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20555,7 +20555,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _listItem = __webpack_require__(455);
+var _listItem = __webpack_require__(456);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20615,7 +20615,7 @@ var ContentComponent = exports.ContentComponent = function (_React$Component) {
 
 /***/ }),
 
-/***/ 455:
+/***/ 456:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20632,9 +20632,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _checkbox = __webpack_require__(456);
+var _checkbox = __webpack_require__(457);
 
-__webpack_require__(458);
+__webpack_require__(459);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20697,7 +20697,7 @@ var ListItem = exports.ListItem = function (_React$Component) {
 
 /***/ }),
 
-/***/ 456:
+/***/ 457:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20714,7 +20714,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(457);
+__webpack_require__(458);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20773,13 +20773,6 @@ var CheckBox = exports.CheckBox = function (_React$Component) {
 
 /***/ }),
 
-/***/ 457:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 458:
 /***/ (function(module, exports) {
 
@@ -20788,6 +20781,49 @@ var CheckBox = exports.CheckBox = function (_React$Component) {
 /***/ }),
 
 /***/ 459:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 46:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+var _hyphenPattern = /-(.)/g;
+
+/**
+ * Camelcases a hyphenated string, for example:
+ *
+ *   > camelize('background-color')
+ *   < "backgroundColor"
+ *
+ * @param {string} string
+ * @return {string}
+ */
+function camelize(string) {
+  return string.replace(_hyphenPattern, function (_, character) {
+    return character.toUpperCase();
+  });
+}
+
+module.exports = camelize;
+
+/***/ }),
+
+/***/ 460:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20835,42 +20871,6 @@ var FooterComponent = function (_React$Component) {
 }(React.Component);
 
 exports.default = FooterComponent;
-
-/***/ }),
-
-/***/ 46:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-var _hyphenPattern = /-(.)/g;
-
-/**
- * Camelcases a hyphenated string, for example:
- *
- *   > camelize('background-color')
- *   < "backgroundColor"
- *
- * @param {string} string
- * @return {string}
- */
-function camelize(string) {
-  return string.replace(_hyphenPattern, function (_, character) {
-    return character.toUpperCase();
-  });
-}
-
-module.exports = camelize;
 
 /***/ }),
 
