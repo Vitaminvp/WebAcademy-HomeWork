@@ -24560,7 +24560,6 @@ var Game = exports.Game = function (_React$Component) {
             } else {
                 this.setState({ left: 0 });
             }
-            console.log(this.state.left);
         }
     }, {
         key: 'moveLeft',

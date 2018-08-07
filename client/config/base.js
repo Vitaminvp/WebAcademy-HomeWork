@@ -25,7 +25,8 @@ const baseConf = (_path) => {
         wa_temp: ['./src/wa_temp/wa_temp.js'],
         ljs_1: ['./src/ljs_1/ljs_1.js'],
         wa_final_project: ['./src/wa_final_project/wa_final_project.js'],
-        wa_final_project2: ['./src/wa_final_project2/wa_final_project2.js']
+        wa_final_project2: ['./src/wa_final_project2/wa_final_project2.js'],
+        cards: ['./src/cards/cards.js']
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {

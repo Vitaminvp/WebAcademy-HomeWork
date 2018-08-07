@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Btn} from "../button/button.component.jsx";
+import { Btn } from "../button/button.component.jsx";
 import './game.component.scss';
 export class Game extends React.Component{
     constructor(){
@@ -7,7 +7,7 @@ export class Game extends React.Component{
         this.movelength = 0;
         this.state = {
             left: 0
-        }
+        };
      }
     moveRight(){
         if( this.state.left <= 1000 ){
@@ -15,7 +15,6 @@ export class Game extends React.Component{
         } else {
             this.setState({left: 0});
         }
-        console.log(this.state.left);
     }
     moveLeft(){
         if( this.state.left <= -1000 ){
@@ -113,6 +112,5 @@ export class Game extends React.Component{
                 </div>
             </section>
         );
-
     }
 }
