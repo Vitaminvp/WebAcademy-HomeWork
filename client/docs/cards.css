@@ -4,4 +4,9 @@
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .cards__box_img {
-    background-color: lightgrey; }
+    background-color: lightgrey;
+    cursor: pointer; }
+    .cards__box_img img {
+      filter: blur(20px); }
+    .cards__box_img.on img {
+      filter: blur(0px); }

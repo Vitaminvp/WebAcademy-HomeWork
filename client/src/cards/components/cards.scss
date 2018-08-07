@@ -3,5 +3,12 @@
   justify-content: space-around;
   &_img{
     background-color: lightgrey;
+    cursor: pointer;
+    & img{
+      filter: blur(20px);
+    }
+    &.on img{
+      filter: blur(0px);
+    }
   }
 }

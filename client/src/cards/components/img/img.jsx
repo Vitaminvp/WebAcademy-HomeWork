@@ -8,21 +8,33 @@ export class MyImg extends React.Component {
         this.state = {
             width: "100px",
             height: "100px"
-        }
+        };
+        this.count = 0;
     }
     componentDidMount(){
         Ajax.get(`${appConfig.apiUrl}api/v1/items`, (response) => {
             this.setState({
-                width: response.width + 150,
-                height: response.height + 150
+                imgStyle: {
+                    width: response.width + 150,
+                    height: response.height + 150
+                },
+                imgClass: "cards__box_img"
             });
         });
     }
-
-    render(){
-        return <div className="cards__box_img"><img src={'./../assets/' + this.props.item} style={ this.state } alt="alt"/></div>;
+    handleClick(){
+        if(this.count < 2){
+            this.setState({imgClass: "cards__box_img on"});
+            this.count++;
+            setTimeout(() => {
+                this.setState({imgClass: "cards__box_img"});
+                this.count--;
+            }, 1500);
+        }
     }
-
+    render(){
+        return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={'./../assets/' + this.props.item} style={ this.state.imgStyle } alt="alt"/></div>;
+    }
 }
 
 

@@ -20482,6 +20482,7 @@ var MyImg = exports.MyImg = function (_React$Component) {
             width: "100px",
             height: "100px"
         };
+        _this.count = 0;
         return _this;
     }
 
@@ -20492,18 +20493,35 @@ var MyImg = exports.MyImg = function (_React$Component) {
 
             _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/items', function (response) {
                 _this2.setState({
-                    width: response.width + 150,
-                    height: response.height + 150
+                    imgStyle: {
+                        width: response.width + 150,
+                        height: response.height + 150
+                    },
+                    imgClass: "cards__box_img"
                 });
             });
+        }
+    }, {
+        key: 'handleClick',
+        value: function handleClick() {
+            var _this3 = this;
+
+            if (this.count < 2) {
+                this.setState({ imgClass: "cards__box_img on" });
+                this.count++;
+                setTimeout(function () {
+                    _this3.setState({ imgClass: "cards__box_img" });
+                    _this3.count--;
+                }, 1500);
+            }
         }
     }, {
         key: 'render',
         value: function render() {
             return React.createElement(
                 'div',
-                { className: 'cards__box_img' },
-                React.createElement('img', { src: './../assets/' + this.props.item, style: this.state, alt: 'alt' })
+                { className: this.state.imgClass, onClick: this.handleClick.bind(this) },
+                React.createElement('img', { src: './../assets/' + this.props.item, style: this.state.imgStyle, alt: 'alt' })
             );
         }
     }]);
