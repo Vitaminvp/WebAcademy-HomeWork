@@ -282,18 +282,6 @@ module.exports = warning;
 "use strict";
 
 
-__webpack_require__(537);
-
-__webpack_require__(538);
-
-/***/ }),
-
-/***/ 172:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -327,6 +315,21 @@ var Ajax = exports.Ajax = function () {
 
     return Ajax;
 }();
+
+/***/ }),
+
+/***/ 172:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var appConfig = exports.appConfig = {
+    apiUrl: 'https://ec-test-react.herokuapp.com/'
+};
 
 /***/ }),
 
@@ -20263,19 +20266,31 @@ module.exports = camelize;
 /***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(171);
+module.exports = __webpack_require__(537);
 
 
 /***/ }),
 
 /***/ 537:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(538);
+
+__webpack_require__(539);
+
+/***/ }),
+
+/***/ 538:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 538:
+/***/ 539:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20287,7 +20302,7 @@ var React = _interopRequireWildcard(_react);
 
 var _reactDom = __webpack_require__(38);
 
-var _cards = __webpack_require__(539);
+var _cards = __webpack_require__(540);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20295,7 +20310,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 /***/ }),
 
-/***/ 539:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20312,11 +20327,11 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(172);
+var _ajax = __webpack_require__(171);
 
-var _card = __webpack_require__(540);
+var _card = __webpack_require__(541);
 
-var _config = __webpack_require__(542);
+var _config = __webpack_require__(172);
 
 __webpack_require__(543);
 
@@ -20366,7 +20381,7 @@ var Cards = exports.Cards = function (_React$Component) {
 
 /***/ }),
 
-/***/ 540:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20383,7 +20398,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _img = __webpack_require__(541);
+var _img = __webpack_require__(542);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20426,7 +20441,7 @@ var MyCard = exports.MyCard = function (_React$Component) {
 
 /***/ }),
 
-/***/ 541:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20443,9 +20458,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(172);
+var _ajax = __webpack_require__(171);
 
-var _cards = __webpack_require__(171);
+var _config = __webpack_require__(172);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20475,7 +20490,7 @@ var MyImg = exports.MyImg = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            _ajax.Ajax.get(_cards.appConfig.apiUrl + 'api/v1/items', function (response) {
+            _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/items', function (response) {
                 _this2.setState({
                     width: response.width + 150,
                     height: response.height + 150
@@ -20495,21 +20510,6 @@ var MyImg = exports.MyImg = function (_React$Component) {
 
     return MyImg;
 }(React.Component);
-
-/***/ }),
-
-/***/ 542:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var appConfig = exports.appConfig = {
-    apiUrl: 'https://ec-test-react.herokuapp.com/'
-};
 
 /***/ }),
 

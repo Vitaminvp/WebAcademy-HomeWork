@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Ajax } from './../../utils/ajax';
-import { appConfig }  from './../../cards';
+import { appConfig }  from './../../config';
 
 export class MyImg extends React.Component {
     constructor(){
