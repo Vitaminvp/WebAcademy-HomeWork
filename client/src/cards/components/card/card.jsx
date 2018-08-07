@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Ajax } from './../../utils/ajax';
-const URL = 'https://ec-test-react.herokuapp.com/';
+import { MyImg } from "../img/img.jsx";
 
 const generateId = () => {
     return '_'+Math.random().toString(36).substr(2, 9);
@@ -11,20 +10,13 @@ export class MyCard extends React.Component {
         super();
     }
 
-
     render(){
-        let imgStyle = {
-            width: "100px",
-            height: "100px"
-        };
-        Ajax.get(`${URL}api/v1/items`, (response) => {
-            imgStyle = Object.assign({}, response);
-             console.log(imgStyle);
-        });
+
+
         const pictures = this.props.imgsrc.map((item)=>{
-            return <img key = {generateId()} src={'./../assets/' + item} style={ imgStyle } alt=""/>;
+            return <MyImg key = {generateId()} item = {item}/>;
         });
-        return <div>{pictures}</div>;
+        return <div className="cards__box">{pictures}</div>;
     }
 
 }

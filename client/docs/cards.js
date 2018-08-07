@@ -20318,6 +20318,10 @@ __webpack_require__(540);
 
 var _card = __webpack_require__(541);
 
+var _config = __webpack_require__(543);
+
+__webpack_require__(544);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20325,8 +20329,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var URL = 'https://ec-test-react.herokuapp.com/';
 
 var Cards = exports.Cards = function (_React$Component) {
     _inherits(Cards, _React$Component);
@@ -20339,10 +20341,6 @@ var Cards = exports.Cards = function (_React$Component) {
         _this.state = {
             pics: []
         };
-        // Ajax.get(`${URL}api/v1/items`, (response) => {
-        //     console.log(response);
-        // });
-
 
         return _this;
     }
@@ -20352,7 +20350,7 @@ var Cards = exports.Cards = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            _ajax.Ajax.get(URL + 'api/v1/pictures', function (response) {
+            _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/pictures', function (response) {
                 _this2.setState({
                     pics: response
                 });
@@ -20395,7 +20393,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(171);
+var _img = __webpack_require__(542);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20404,8 +20402,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var URL = 'https://ec-test-react.herokuapp.com/';
 
 var generateId = function generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
@@ -20423,20 +20419,13 @@ var MyCard = exports.MyCard = function (_React$Component) {
     _createClass(MyCard, [{
         key: 'render',
         value: function render() {
-            var imgStyle = {
-                width: "100px",
-                height: "100px"
-            };
-            _ajax.Ajax.get(URL + 'api/v1/items', function (response) {
-                imgStyle = Object.assign({}, response);
-                console.log(imgStyle);
-            });
+
             var pictures = this.props.imgsrc.map(function (item) {
-                return React.createElement('img', { key: generateId(), src: './../assets/' + item, style: imgStyle, alt: '' });
+                return React.createElement(_img.MyImg, { key: generateId(), item: item });
             });
             return React.createElement(
                 'div',
-                null,
+                { className: 'cards__box' },
                 pictures
             );
         }
@@ -20444,6 +20433,100 @@ var MyCard = exports.MyCard = function (_React$Component) {
 
     return MyCard;
 }(React.Component);
+
+/***/ }),
+
+/***/ 542:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.MyImg = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _ajax = __webpack_require__(171);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var URL = 'https://ec-test-react.herokuapp.com/';
+
+var MyImg = exports.MyImg = function (_React$Component) {
+    _inherits(MyImg, _React$Component);
+
+    function MyImg() {
+        _classCallCheck(this, MyImg);
+
+        var _this = _possibleConstructorReturn(this, (MyImg.__proto__ || Object.getPrototypeOf(MyImg)).call(this));
+
+        _this.state = {
+            width: "100px",
+            height: "100px"
+        };
+        return _this;
+    }
+
+    _createClass(MyImg, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            _ajax.Ajax.get(URL + 'api/v1/items', function (response) {
+                _this2.setState({
+                    width: response.width,
+                    height: response.height
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                { className: 'cards__box_img' },
+                React.createElement('img', { src: './assets/' + this.props.item, style: this.state, alt: 'alt' })
+            );
+        }
+    }]);
+
+    return MyImg;
+}(React.Component);
+
+/***/ }),
+
+/***/ 543:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var appConfig = exports.appConfig = {
+    apiUrl: 'https://ec-test-react.herokuapp.com/'
+};
+
+/***/ }),
+
+/***/ 544:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

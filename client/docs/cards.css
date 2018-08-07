@@ -37,3 +37,8 @@ ul {
   padding-left: 10px; }
   ul li {
     margin: 5px 0; }
+.cards__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
