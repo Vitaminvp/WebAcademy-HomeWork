@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Ajax } from './../../utils/ajax';
-const URL = 'https://ec-test-react.herokuapp.com/';
-
+import { appConfig }  from './../../cards';
 
 export class MyImg extends React.Component {
     constructor(){
@@ -12,10 +11,10 @@ export class MyImg extends React.Component {
         }
     }
     componentDidMount(){
-        Ajax.get(`${URL}api/v1/items`, (response) => {
+        Ajax.get(`${appConfig.apiUrl}api/v1/items`, (response) => {
             this.setState({
-                width: response.width,
-                height: response.height,
+                width: response.width + 150,
+                height: response.height + 150
             });
         });
     }

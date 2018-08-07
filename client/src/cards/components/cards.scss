@@ -1,4 +1,7 @@
 .cards__box{
   display: flex;
   justify-content: space-around;
+  &_img{
+    background-color: lightgrey;
+  }
 }

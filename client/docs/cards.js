@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 535);
+/******/ 	return __webpack_require__(__webpack_require__.s = 536);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -277,6 +277,18 @@ module.exports = warning;
 /***/ }),
 
 /***/ 171:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(537);
+
+__webpack_require__(538);
+
+/***/ }),
+
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20248,23 +20260,11 @@ module.exports = camelize;
 
 /***/ }),
 
-/***/ 535:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(536);
-
-
-/***/ }),
-
 /***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+module.exports = __webpack_require__(171);
 
-
-__webpack_require__(537);
-
-__webpack_require__(538);
 
 /***/ }),
 
@@ -20312,15 +20312,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(171);
+var _ajax = __webpack_require__(172);
 
-__webpack_require__(540);
+var _card = __webpack_require__(540);
 
-var _card = __webpack_require__(541);
+var _config = __webpack_require__(542);
 
-var _config = __webpack_require__(543);
-
-__webpack_require__(544);
+__webpack_require__(543);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20359,7 +20357,6 @@ var Cards = exports.Cards = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            console.log(this.state.pics);
             return React.createElement(_card.MyCard, { imgsrc: this.state.pics });
         }
     }]);
@@ -20370,13 +20367,6 @@ var Cards = exports.Cards = function (_React$Component) {
 /***/ }),
 
 /***/ 540:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20393,7 +20383,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _img = __webpack_require__(542);
+var _img = __webpack_require__(541);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20436,7 +20426,7 @@ var MyCard = exports.MyCard = function (_React$Component) {
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20453,7 +20443,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(171);
+var _ajax = __webpack_require__(172);
+
+var _cards = __webpack_require__(171);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20462,8 +20454,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var URL = 'https://ec-test-react.herokuapp.com/';
 
 var MyImg = exports.MyImg = function (_React$Component) {
     _inherits(MyImg, _React$Component);
@@ -20485,10 +20475,10 @@ var MyImg = exports.MyImg = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            _ajax.Ajax.get(URL + 'api/v1/items', function (response) {
+            _ajax.Ajax.get(_cards.appConfig.apiUrl + 'api/v1/items', function (response) {
                 _this2.setState({
-                    width: response.width,
-                    height: response.height
+                    width: response.width + 150,
+                    height: response.height + 150
                 });
             });
         }
@@ -20508,7 +20498,7 @@ var MyImg = exports.MyImg = function (_React$Component) {
 
 /***/ }),
 
-/***/ 543:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20523,7 +20513,7 @@ var appConfig = exports.appConfig = {
 
 /***/ }),
 
-/***/ 544:
+/***/ 543:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

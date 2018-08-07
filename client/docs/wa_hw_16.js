@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 436);
+/******/ 	return __webpack_require__(__webpack_require__.s = 437);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -20089,50 +20089,30 @@ module.exports = hyphenateStyleName;
 
 /***/ }),
 
-/***/ 436:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(437);
-
-
-/***/ }),
-
 /***/ 437:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+module.exports = __webpack_require__(438);
 
-
-__webpack_require__(438);
-
-__webpack_require__(439);
 
 /***/ }),
 
 /***/ 438:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 439:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(1);
+__webpack_require__(439);
 
-var React = _interopRequireWildcard(_react);
+__webpack_require__(440);
 
-var _reactDom = __webpack_require__(38);
+/***/ }),
 
-var _taskListReact = __webpack_require__(440);
+/***/ 439:
+/***/ (function(module, exports) {
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-(0, _reactDom.render)(React.createElement(_taskListReact.TaskList2, null), document.querySelector('.wrapper'));
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -20179,6 +20159,26 @@ module.exports = hyphenate;
 "use strict";
 
 
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _reactDom = __webpack_require__(38);
+
+var _taskListReact = __webpack_require__(441);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+(0, _reactDom.render)(React.createElement(_taskListReact.TaskList2, null), document.querySelector('.wrapper'));
+
+/***/ }),
+
+/***/ 441:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -20190,13 +20190,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(441);
+var _ajax = __webpack_require__(442);
 
-var _formComponent = __webpack_require__(442);
+var _formComponent = __webpack_require__(443);
 
-var _contentComponent = __webpack_require__(443);
+var _contentComponent = __webpack_require__(444);
 
-__webpack_require__(446);
+__webpack_require__(447);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20284,7 +20284,7 @@ var TaskList2 = exports.TaskList2 = function (_React$Component) {
 
 /***/ }),
 
-/***/ 441:
+/***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20380,7 +20380,7 @@ var Ajax = exports.Ajax = function () {
 
 /***/ }),
 
-/***/ 442:
+/***/ 443:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20468,7 +20468,7 @@ var Form = exports.Form = function (_React$Component) {
 
 /***/ }),
 
-/***/ 443:
+/***/ 444:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20485,9 +20485,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _listItemComponents = __webpack_require__(444);
+var _listItemComponents = __webpack_require__(445);
 
-__webpack_require__(445);
+__webpack_require__(446);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20537,7 +20537,7 @@ var Content = exports.Content = function (_React$Component) {
 
 /***/ }),
 
-/***/ 444:
+/***/ 445:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20745,14 +20745,14 @@ var ListItem = exports.ListItem = function (_React$Component) {
 
 /***/ }),
 
-/***/ 445:
+/***/ 446:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 446:
+/***/ 447:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
