@@ -11,6 +11,6 @@ export class Ajax {
                     responseCallback(JSON.parse(xhr.response));
                 }
             }
-        };
+        }
     }
 }
