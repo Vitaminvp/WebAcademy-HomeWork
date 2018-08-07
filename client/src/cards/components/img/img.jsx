@@ -21,7 +21,7 @@ export class MyImg extends React.Component {
     }
 
     render(){
-        return <div className="cards__box_img"><img src={'./assets/' + this.props.item} style={ this.state } alt="alt"/></div>;
+        return <div className="cards__box_img"><img src={'./../assets/' + this.props.item} style={ this.state } alt="alt"/></div>;
     }
 
 }
