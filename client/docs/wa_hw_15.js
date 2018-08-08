@@ -60,51 +60,51 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 424);
+/******/ 	return __webpack_require__(__webpack_require__.s = 431);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 424:
+/***/ 431:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(425);
+module.exports = __webpack_require__(432);
 
 
 /***/ }),
 
-/***/ 425:
+/***/ 432:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(426);
+__webpack_require__(433);
 
-__webpack_require__(427);
+__webpack_require__(434);
 
 /***/ }),
 
-/***/ 426:
+/***/ 433:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 427:
+/***/ 434:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _taskList = __webpack_require__(428);
+var _taskList = __webpack_require__(435);
 
 var ajax = new _taskList.TaskList(document.querySelector('.wrapper'));
 
 /***/ }),
 
-/***/ 428:
+/***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -117,7 +117,7 @@ exports.TaskList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _ajax = __webpack_require__(429);
+var _ajax = __webpack_require__(436);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -174,7 +174,7 @@ var TaskList = exports.TaskList = function () {
 
 /***/ }),
 
-/***/ 429:
+/***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

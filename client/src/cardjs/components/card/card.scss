@@ -1,12 +1,26 @@
 .output{
-ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-li{
-    margin: 20px;
-}
-}
+    align-content: center;
+    justify-content: center;
+    div {
+        margin: 0;
+        padding: 0;
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            border: 1px solid gray;
+            background-color: lightgrey;
+            transition: all .5s ease;
+            img {
+                display: block;
+                cursor: pointer;
+                opacity: 0;
+            }
+            &.on{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }

@@ -2,40 +2,49 @@ import { Ajax } from '../../utils/ajax';
 import { appConfig } from '../../config.js';
 import './card.scss';
 
+
+const generateId = () => {
+    return '_'+Math.random().toString(36).substr(2, 9);
+};
+
 export class Card{
-    constructor (target) {
+    constructor (target, callback, getter) {
         this.target = target;
+        this.callback = callback;
+        this.getter = getter;
         this.render();
+        this.id = "";
     }
     render(){
-        this.ul = document.createElement('ul');
-        this.btn = document.createElement('button');
-        this.btn.innerHTML = "GET DATA";
-        this.btn.className = "btn";
-        this.target.appendChild(this.btn);
-        this.output = document.createElement('div');
-        this.output.className = "output";
-        this.output.style.display = "flex";
-        this.btn.addEventListener('click', () => {
-            this.output.innerHTML = "";
-            this.output.appendChild(this.ul);
-            this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
-            this.target.appendChild(this.output);
-            Ajax.get(`${appConfig.apiUrl}api/v1/pictures`, this.renderItems.bind(this));
-        });
+        Ajax.get(`${appConfig.apiUrl}api/v1/pictures`, this.renderItems.bind(this));
     }
     renderItems(ajaxRespons){
-        this.output.innerHTML = "";
         this.Respons = Array.from(ajaxRespons);
-        let ul = document.createElement('ul');
-        const docFragment  = document.createDocumentFragment();
-        this.Respons.forEach( (item) => {
-            let url = appConfig.apiUrl + item;
-            let li = document.createElement('li');
-            li.innerHTML = `<img src=${url} alt='alt'>`;
-            docFragment.appendChild(li);
+        let div = document.createElement('div');
+        div.id = generateId();
+        let imgsrc = Math.floor(Math.random() * (this.Respons.length));
+        div.addEventListener('click', () => {
+            if(this.id !== div.id){
+                if(this.getter() < appConfig.magicNumber){
+                    const item = div;
+                    console.log(div.firstChild.src);
+                    if(item.classList.contains('on')){
+                        item.classList.remove('on');
+                    } else {
+                        item.classList.add('on');
+                        this.callback(true);
+                        let timer = setTimeout(()=>{
+                            item.classList.remove('on');
+                            this.callback(false);
+                            this.id = "";
+                        }, 1500);
+                    }
+                    this.id = div.id;
+                }
+            }
         });
-        ul.appendChild(docFragment);
-        this.output.appendChild(ul);
+        let url = appConfig.apiUrl + this.Respons[ imgsrc ];
+        div.innerHTML = `<img src=${url} alt='alt'>`;
+        this.target.appendChild(div);
     }
 }

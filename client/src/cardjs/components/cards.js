@@ -1,10 +1,23 @@
 import { Ajax } from './../utils/ajax';
 import { appConfig } from './../config.js';
+import { Card } from "./card/card";
 
 export class Cards{
     constructor (target) {
         this.target = target;
         this.render();
+        this.count = 0;
+    }
+    countInc(bool){
+        if(bool){
+            this.count++;
+        } else {
+            this.count--;
+        }
+        console.log("count", this.count);
+    }
+    countGet(){
+        return this.count;
     }
     render(){
         this.ul = document.createElement('ul');
@@ -25,12 +38,16 @@ export class Cards{
     }
     renderItems(ajaxRespons){
         this.output.innerHTML = "";
-        let ul = document.createElement('ul');
-        for (let key in ajaxRespons){
-            let li = document.createElement('li');
-            li.innerHTML = key + ': ' + ajaxRespons[key];
-            ul.appendChild(li);
+        let {width, height} = ajaxRespons;
+        console.log(width, height);
+        const docFragment  = document.createDocumentFragment();
+        for (let i=0; i < height; i++){
+            let div = document.createElement('div');
+            for (let j=0; j < width; j++){
+                new Card(div, this.countInc.bind(this), this.countGet.bind(this));
+            }
+            docFragment.appendChild(div);
         }
-        this.output.appendChild(ul);
+        this.output.appendChild(docFragment);
     }
 }
