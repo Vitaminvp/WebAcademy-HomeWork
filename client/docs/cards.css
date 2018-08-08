@@ -1,12 +1,20 @@
 .cards__box {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: 50px; }
   .cards__box_img {
-    background-color: lightgrey;
-    cursor: pointer; }
+    margin: 50px;
+    cursor: pointer;
+    height: auto;
+    background-color: lightgray; }
     .cards__box_img img {
-      filter: blur(20px); }
+      filter: blur(20px);
+      opacity: 0.1;
+      border: 2px solid gray; }
     .cards__box_img.on img {
-      filter: blur(0px); }
+      filter: blur(0px);
+      opacity: 1; }

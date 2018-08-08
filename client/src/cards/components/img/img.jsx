@@ -2,37 +2,53 @@ import * as React from 'react';
 import { Ajax } from './../../utils/ajax';
 import { appConfig }  from './../../config';
 
-export class MyImg extends React.Component {
+export class MyImg extends React.PureComponent {
     constructor(){
         super();
         this.state = {
-            width: "100px",
-            height: "100px"
+            imgStyle: {
+                width: "100px",
+                height: "100px"
+            },
+            imgClass: "cards__box_img"
         };
         this.count = 0;
-    }
-    componentDidMount(){
+        this.prevImg = '';
         Ajax.get(`${appConfig.apiUrl}api/v1/items`, (response) => {
             this.setState({
                 imgStyle: {
                     width: response.width + 150,
                     height: response.height + 150
-                },
-                imgClass: "cards__box_img"
+                }
             });
         });
     }
+    componentDidMount(){
+    }
+    componentWillUnmount(){
+        clearTimeout(this.timer);
+     }
     handleClick(){
-        if(this.count < 2){
-            this.setState({imgClass: "cards__box_img on"});
+        if(this.props.item == this.prevImg){
+            this.prevImg = "";
+            return;
+        }
+        this.prevImg = this.props.item;
+        this.count = this.props.count;
+        if(this.props.handleClick()&& this.count < appConfig.magicNumber){
+            this.props.handleClickInc(this.props.item);
             this.count++;
-            setTimeout(() => {
-                this.setState({imgClass: "cards__box_img"});
+            this.setState({imgClass: "cards__box_img on"});
+            this.timer = setTimeout(() => {
                 this.count--;
-            }, 1500);
+                this.props.handleClickDec();
+                this.setState({imgClass: "cards__box_img"});
+            }, 2000);
         }
     }
+
     render(){
+        // return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src="http://lorempixel.com/180/200/sports" style={ this.state.imgStyle } alt="alt"/></div>;
         return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={'./../assets/' + this.props.item} style={ this.state.imgStyle } alt="alt"/></div>;
     }
 }
