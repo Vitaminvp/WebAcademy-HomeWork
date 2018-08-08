@@ -1,13 +1,21 @@
 .cards__box{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  margin: 50px;
   &_img{
+    margin: 50px;
     cursor: pointer;
+    height: auto;
+    background-color: lightgray;
     & img{
       filter: blur(20px);
+      opacity: 0.1;
+      border: 2px solid gray;
     }
     &.on img{
       filter: blur(0px);
+      opacity: 1;
     }
   }
 }

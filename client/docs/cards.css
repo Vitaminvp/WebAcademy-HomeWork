@@ -1,11 +1,24 @@
 .cards__box {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: 50px; }
   .cards__box_img {
+<<<<<<< HEAD
     cursor: pointer; }
+=======
+    margin: 50px;
+    cursor: pointer;
+    height: auto;
+    background-color: lightgray; }
+>>>>>>> ef48c0a190cdb90a7affd6fc7c983eed84202b02
     .cards__box_img img {
-      filter: blur(20px); }
+      filter: blur(20px);
+      opacity: 0.1;
+      border: 2px solid gray; }
     .cards__box_img.on img {
-      filter: blur(0px); }
+      filter: blur(0px);
+      opacity: 1; }

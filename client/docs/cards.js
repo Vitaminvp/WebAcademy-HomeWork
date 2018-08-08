@@ -106,6 +106,22 @@ module.exports = emptyObject;
 
 /***/ }),
 
+/***/ 127:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var appConfig = exports.appConfig = {
+    apiUrl: 'https://ec-test-react.herokuapp.com/',
+    magicNumber: 2
+};
+
+/***/ }),
+
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -276,7 +292,7 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -315,21 +331,6 @@ var Ajax = exports.Ajax = function () {
 
     return Ajax;
 }();
-
-/***/ }),
-
-/***/ 172:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var appConfig = exports.appConfig = {
-    apiUrl: 'https://ec-test-react.herokuapp.com/'
-};
 
 /***/ }),
 
@@ -20327,11 +20328,11 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(171);
+var _ajax = __webpack_require__(172);
 
 var _card = __webpack_require__(541);
 
-var _config = __webpack_require__(172);
+var _config = __webpack_require__(127);
 
 __webpack_require__(543);
 
@@ -20352,7 +20353,7 @@ var Cards = exports.Cards = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Cards.__proto__ || Object.getPrototypeOf(Cards)).call(this));
 
         _this.state = {
-            pics: []
+            pics: ["static/1.jpg", "static/2.jpg", "static/3.png", "static/4.jpg", "static/5.png", "static/6.jpg"]
         };
 
         return _this;
@@ -20365,14 +20366,21 @@ var Cards = exports.Cards = function (_React$Component) {
 
             _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/pictures', function (response) {
                 _this2.setState({
-                    pics: response
+                    pics: _this2.state.pics.concat(response)
                 });
+            });
+        }
+    }, {
+        key: 'handlState',
+        value: function handlState(arr) {
+            this.setState({
+                pics: arr
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            return React.createElement(_card.MyCard, { imgsrc: this.state.pics });
+            return React.createElement(_card.MyCard, { imgsrc: this.state.pics, handlState: this.handlState.bind(this) });
         }
     }]);
 
@@ -20400,6 +20408,8 @@ var React = _interopRequireWildcard(_react);
 
 var _img = __webpack_require__(542);
 
+var _config = __webpack_require__(127);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20418,15 +20428,56 @@ var MyCard = exports.MyCard = function (_React$Component) {
     function MyCard() {
         _classCallCheck(this, MyCard);
 
-        return _possibleConstructorReturn(this, (MyCard.__proto__ || Object.getPrototypeOf(MyCard)).call(this));
+        var _this = _possibleConstructorReturn(this, (MyCard.__proto__ || Object.getPrototypeOf(MyCard)).call(this));
+
+        _this.state = {
+            imgClass: "cards__box_img"
+        };
+        _this.firstImg = "";
+        _this.secondImg = "";
+        _this.count = 0;
+        return _this;
     }
 
     _createClass(MyCard, [{
+        key: 'handleClickInc',
+        value: function handleClickInc(firstImg) {
+            this.count++;
+            console.log("firstImg1", firstImg);
+            this.secondImg = this.firstImg;
+            this.firstImg = firstImg;
+            console.log("firstImg", this.firstImg);
+            console.log("secondImg", this.secondImg);
+            if (this.secondImg == this.firstImg) {
+                console.log("Bingo!");
+                var arr = this.props.imgsrc.slice();
+                for (var i = 0; i < _config.appConfig.magicNumber; i++) {
+                    arr.splice(arr.indexOf(this.firstImg), 1);
+                    console.log("arr", arr);
+                }
+                this.props.handlState(arr);
+                this.count = 0;
+                this.firstImg = "";
+                this.secondImg = "";
+            }
+        }
+    }, {
+        key: 'handleClick',
+        value: function handleClick() {
+            return this.count < _config.appConfig.magicNumber;
+        }
+    }, {
+        key: 'handleClickDec',
+        value: function handleClickDec() {
+            this.count--;
+        }
+    }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
 
             var pictures = this.props.imgsrc.map(function (item) {
-                return React.createElement(_img.MyImg, { key: generateId(), item: item });
+                return React.createElement(_img.MyImg, { key: generateId(), item: item, handleClickInc: _this2.handleClickInc.bind(_this2), handleClickDec: _this2.handleClickDec.bind(_this2), handleClick: _this2.handleClick.bind(_this2), count: _this2.count });
             });
             return React.createElement(
                 'div',
@@ -20458,9 +20509,9 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _ajax = __webpack_require__(171);
+var _ajax = __webpack_require__(172);
 
-var _config = __webpack_require__(172);
+var _config = __webpack_require__(127);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -20470,8 +20521,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MyImg = exports.MyImg = function (_React$Component) {
-    _inherits(MyImg, _React$Component);
+var MyImg = exports.MyImg = function (_React$PureComponent) {
+    _inherits(MyImg, _React$PureComponent);
 
     function MyImg() {
         _classCallCheck(this, MyImg);
@@ -20479,33 +20530,39 @@ var MyImg = exports.MyImg = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (MyImg.__proto__ || Object.getPrototypeOf(MyImg)).call(this));
 
         _this.state = {
-            width: "100px",
-            height: "100px"
+            imgStyle: {
+                width: "100px",
+                height: "100px"
+            },
+            imgClass: "cards__box_img"
         };
         _this.count = 0;
+        _this.prevImg = '';
+        _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/items', function (response) {
+            _this.setState({
+                imgStyle: {
+                    width: response.width + 150,
+                    height: response.height + 150
+                }
+            });
+        });
         return _this;
     }
 
     _createClass(MyImg, [{
         key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
-
-            _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/items', function (response) {
-                _this2.setState({
-                    imgStyle: {
-                        width: response.width + 150,
-                        height: response.height + 150
-                    },
-                    imgClass: "cards__box_img"
-                });
-            });
+        value: function componentDidMount() {}
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearTimeout(this.timer);
         }
     }, {
         key: 'handleClick',
         value: function handleClick() {
-            var _this3 = this;
+            var _this2 = this;
 
+<<<<<<< HEAD
             console.log("befor", this.count);
             if (this.count < 2) {
                 this.setState({ imgClass: "cards__box_img on" });
@@ -20516,6 +20573,23 @@ var MyImg = exports.MyImg = function (_React$Component) {
                     // this.count--;
                     console.log("decr", _this3.count);
                 }, 1500);
+=======
+            if (this.props.item == this.prevImg) {
+                this.prevImg = "";
+                return;
+            }
+            this.prevImg = this.props.item;
+            this.count = this.props.count;
+            if (this.props.handleClick() && this.count < _config.appConfig.magicNumber) {
+                this.props.handleClickInc(this.props.item);
+                this.count++;
+                this.setState({ imgClass: "cards__box_img on" });
+                this.timer = setTimeout(function () {
+                    _this2.count--;
+                    _this2.props.handleClickDec();
+                    _this2.setState({ imgClass: "cards__box_img" });
+                }, 2000);
+>>>>>>> ef48c0a190cdb90a7affd6fc7c983eed84202b02
             }
             return null;
         }
@@ -20531,7 +20605,7 @@ var MyImg = exports.MyImg = function (_React$Component) {
     }]);
 
     return MyImg;
-}(React.Component);
+}(React.PureComponent);
 
 /***/ }),
 
