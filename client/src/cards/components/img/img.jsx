@@ -23,17 +23,21 @@ export class MyImg extends React.Component {
         });
     }
     handleClick(){
+        console.log("befor", this.count);
         if(this.count < 2){
             this.setState({imgClass: "cards__box_img on"});
             this.count++;
+            console.log("incr", this.count);
             setTimeout(() => {
                 this.setState({imgClass: "cards__box_img"});
-                this.count--;
+                // this.count--;
+                console.log("decr", this.count);
             }, 1500);
         }
+        return null;
     }
     render(){
-        return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={'./../assets/' + this.props.item} style={ this.state.imgStyle } alt="alt"/></div>;
+        return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={"https://picsum.photos/200/300/?random"} style={ this.state.imgStyle } alt="alt"/></div>;
     }
 }
 

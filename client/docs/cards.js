@@ -20506,14 +20506,18 @@ var MyImg = exports.MyImg = function (_React$Component) {
         value: function handleClick() {
             var _this3 = this;
 
+            console.log("befor", this.count);
             if (this.count < 2) {
                 this.setState({ imgClass: "cards__box_img on" });
                 this.count++;
+                console.log("incr", this.count);
                 setTimeout(function () {
                     _this3.setState({ imgClass: "cards__box_img" });
-                    _this3.count--;
+                    // this.count--;
+                    console.log("decr", _this3.count);
                 }, 1500);
             }
+            return null;
         }
     }, {
         key: 'render',
@@ -20521,7 +20525,7 @@ var MyImg = exports.MyImg = function (_React$Component) {
             return React.createElement(
                 'div',
                 { className: this.state.imgClass, onClick: this.handleClick.bind(this) },
-                React.createElement('img', { src: './../assets/' + this.props.item, style: this.state.imgStyle, alt: 'alt' })
+                React.createElement('img', { src: "https://picsum.photos/200/300/?random", style: this.state.imgStyle, alt: 'alt' })
             );
         }
     }]);
