@@ -30,6 +30,9 @@ export class MyCard extends React.Component {
                 console.log("arr", arr);
             }
             this.props.handlState(arr);
+            this.count = 0;
+            this.firstImg = "";
+            this.secondImg = "";
         }
     }
     handleClick(){

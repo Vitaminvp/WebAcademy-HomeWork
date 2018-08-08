@@ -20456,6 +20456,9 @@ var MyCard = exports.MyCard = function (_React$Component) {
                     console.log("arr", arr);
                 }
                 this.props.handlState(arr);
+                this.count = 0;
+                this.firstImg = "";
+                this.secondImg = "";
             }
         }
     }, {
@@ -20579,7 +20582,6 @@ var MyImg = exports.MyImg = function (_React$PureComponent) {
     }, {
         key: 'render',
         value: function render() {
-            // return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src="http://lorempixel.com/180/200/sports" style={ this.state.imgStyle } alt="alt"/></div>;
             return React.createElement(
                 'div',
                 { className: this.state.imgClass, onClick: this.handleClick.bind(this) },
