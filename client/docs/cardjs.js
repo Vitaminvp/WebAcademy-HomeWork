@@ -144,7 +144,7 @@ var Cards = exports.Cards = function () {
         value: function countInc(bool, src, id) {
             if (bool) {
                 this.count++;
-                if (this.firstPicSrc == src) {
+                if (this.firstPicSrc == src && this.firstId !== id) {
                     document.getElementById(id).classList.add('end');
                     document.getElementById(this.firstId).classList.add('end');
                     this.firstPicSrc = '';
@@ -162,6 +162,11 @@ var Cards = exports.Cards = function () {
         key: 'countGet',
         value: function countGet() {
             return this.count;
+        }
+    }, {
+        key: 'idGet',
+        value: function idGet() {
+            return this.secondId;
         }
     }, {
         key: 'render',
@@ -196,7 +201,7 @@ var Cards = exports.Cards = function () {
             for (var i = 0; i < height; i++) {
                 var div = document.createElement('div');
                 for (var j = 0; j < width; j++) {
-                    new _card.Card(div, this.countInc.bind(this), this.countGet.bind(this));
+                    new _card.Card(div, this.countInc.bind(this), this.countGet.bind(this), this.idGet.bind(this));
                 }
                 docFragment.appendChild(div);
             }
@@ -235,12 +240,13 @@ var generateId = function generateId() {
 };
 
 var Card = exports.Card = function () {
-    function Card(target, callback, getter) {
+    function Card(target, callback, getterCount, getterId) {
         _classCallCheck(this, Card);
 
         this.target = target;
         this.callback = callback;
-        this.getter = getter;
+        this.getterCount = getterCount;
+        this.getterId = getterId;
         this.render();
         this.id = "";
     }
@@ -260,8 +266,12 @@ var Card = exports.Card = function () {
             div.id = generateId();
             var imgsrc = Math.floor(Math.random() * this.Respons.length);
             div.addEventListener('click', function () {
+                console.log("this.id", _this.id);
+                console.log("div.id", div.id);
+                var getId = _this.getterId();
+                console.log("this.getterId", getId);
                 if (_this.id !== div.id) {
-                    if (_this.getter() < _config.appConfig.magicNumber) {
+                    if (_this.getterCount() < _config.appConfig.magicNumber) {
                         var item = div;
                         if (item.classList.contains('on')) {
                             item.classList.remove('on');

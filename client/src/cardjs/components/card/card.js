@@ -8,10 +8,11 @@ const generateId = () => {
 };
 
 export class Card{
-    constructor (target, callback, getter) {
+    constructor (target, callback, getterCount, getterId) {
         this.target = target;
         this.callback = callback;
-        this.getter = getter;
+        this.getterCount = getterCount;
+        this.getterId = getterId;
         this.render();
         this.id = "";
     }
@@ -25,8 +26,12 @@ export class Card{
         div.id = generateId();
         let imgsrc = Math.floor(Math.random() * (this.Respons.length));
         div.addEventListener('click', () => {
+            console.log("this.id", this.id);
+            console.log("div.id", div.id);
+            let getId  = this.getterId();
+            console.log("this.getterId", getId);
             if(this.id !== div.id){
-            if(this.getter() < appConfig.magicNumber){
+            if(this.getterCount() < appConfig.magicNumber){
                 const item = div;
                 if(item.classList.contains('on')){
                     item.classList.remove('on');

@@ -15,7 +15,7 @@ export class Cards{
     countInc(bool, src, id ){
         if(bool){
             this.count++;
-            if(this.firstPicSrc == src){
+            if(this.firstPicSrc == src && this.firstId !== id){
                 document.getElementById(id).classList.add('end');
                 document.getElementById(this.firstId).classList.add('end');
                 this.firstPicSrc = '';
@@ -32,7 +32,9 @@ export class Cards{
     countGet(){
         return this.count;
     }
-
+    idGet(){
+        return this.secondId;
+    }
     render(){
         this.loader = document.createElement('div');
         this.btn = document.createElement('button');
@@ -58,7 +60,7 @@ export class Cards{
         for (let i=0; i < height; i++){
             let div = document.createElement('div');
             for (let j=0; j < width; j++){
-                new Card(div, this.countInc.bind(this), this.countGet.bind(this));
+                new Card(div, this.countInc.bind(this), this.countGet.bind(this), this.idGet.bind(this));
             }
             docFragment.appendChild(div);
         }
