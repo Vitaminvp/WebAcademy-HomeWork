@@ -18,30 +18,31 @@ export class Card{
     render(){
         Ajax.get(`${appConfig.apiUrl}api/v1/pictures`, this.renderItems.bind(this));
     }
-    renderItems(ajaxRespons){
+
+   renderItems(ajaxRespons){
         this.Respons = Array.from(ajaxRespons);
         let div = document.createElement('div');
         div.id = generateId();
         let imgsrc = Math.floor(Math.random() * (this.Respons.length));
         div.addEventListener('click', () => {
             if(this.id !== div.id){
-                if(this.getter() < appConfig.magicNumber){
-                    const item = div;
-                    console.log(div.firstChild.src);
-                    if(item.classList.contains('on')){
+            if(this.getter() < appConfig.magicNumber){
+                const item = div;
+                if(item.classList.contains('on')){
+                    item.classList.remove('on');
+                } else {
+                    item.classList.add('on');
+                    this.callback(true, imgsrc, div.id);
+
+                    let timer = setTimeout(()=>{
                         item.classList.remove('on');
-                    } else {
-                        item.classList.add('on');
-                        this.callback(true);
-                        let timer = setTimeout(()=>{
-                            item.classList.remove('on');
-                            this.callback(false);
-                            this.id = "";
-                        }, 1500);
-                    }
-                    this.id = div.id;
+                    this.callback(false);
+                    this.id = "";
+                }, 1500);
                 }
+                this.id = div.id;
             }
+        }
         });
         let url = appConfig.apiUrl + this.Respons[ imgsrc ];
         div.innerHTML = `<img src=${url} alt='alt'>`;

@@ -133,17 +133,30 @@ var Cards = exports.Cards = function () {
         this.target = target;
         this.render();
         this.count = 0;
+        this.firstPicSrc = '';
+        this.secondPicSrc = '';
+        this.firstId = '';
+        this.secondId = '';
     }
 
     _createClass(Cards, [{
         key: 'countInc',
-        value: function countInc(bool) {
+        value: function countInc(bool, src, id) {
             if (bool) {
                 this.count++;
+                if (this.firstPicSrc == src) {
+                    document.getElementById(id).classList.add('end');
+                    document.getElementById(this.firstId).classList.add('end');
+                    this.firstPicSrc = '';
+                    return false;
+                }
+                this.secondPicSrc = this.firstPicSrc;
+                this.firstPicSrc = src;
+                this.secondId = this.firstId;
+                this.firstId = id;
             } else {
                 this.count--;
             }
-            console.log("count", this.count);
         }
     }, {
         key: 'countGet',
@@ -155,7 +168,7 @@ var Cards = exports.Cards = function () {
         value: function render() {
             var _this = this;
 
-            this.ul = document.createElement('ul');
+            this.loader = document.createElement('div');
             this.btn = document.createElement('button');
             this.btn.innerHTML = "GET DATA";
             this.btn.className = "btn";
@@ -165,8 +178,8 @@ var Cards = exports.Cards = function () {
             this.output.style.display = "flex";
             this.btn.addEventListener('click', function () {
                 _this.output.innerHTML = "";
-                _this.output.appendChild(_this.ul);
-                _this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
+                _this.output.appendChild(_this.loader);
+                _this.loader.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
                 _this.target.appendChild(_this.output);
                 _ajax.Ajax.get(_config.appConfig.apiUrl + 'api/v1/items', _this.renderItems.bind(_this));
             });
@@ -250,12 +263,12 @@ var Card = exports.Card = function () {
                 if (_this.id !== div.id) {
                     if (_this.getter() < _config.appConfig.magicNumber) {
                         var item = div;
-                        console.log(div.firstChild.src);
                         if (item.classList.contains('on')) {
                             item.classList.remove('on');
                         } else {
                             item.classList.add('on');
-                            _this.callback(true);
+                            _this.callback(true, imgsrc, div.id);
+
                             var timer = setTimeout(function () {
                                 item.classList.remove('on');
                                 _this.callback(false);

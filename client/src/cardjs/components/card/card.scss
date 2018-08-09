@@ -1,6 +1,11 @@
 .output{
     align-content: center;
     justify-content: center;
+    ul{
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+    }
     div {
         margin: 0;
         padding: 0;
@@ -17,6 +22,11 @@
                 opacity: 0;
             }
             &.on{
+                img{
+                    opacity: 1;
+                }
+            }
+            &.end{
                 img{
                     opacity: 1;
                 }

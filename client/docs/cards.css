@@ -8,6 +8,10 @@
       align-content: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  .output ul {
+    padding: 0;
+    margin-left: 0;
+    text-align: center; }
   .output div {
     margin: 0;
     padding: 0; }
@@ -25,4 +29,6 @@
         cursor: pointer;
         opacity: 0; }
       .output div div.on img {
+        opacity: 1; }
+      .output div div.end img {
         opacity: 1; }

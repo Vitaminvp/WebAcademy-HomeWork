@@ -7,20 +7,34 @@ export class Cards{
         this.target = target;
         this.render();
         this.count = 0;
+        this.firstPicSrc = '';
+        this.secondPicSrc = '';
+        this.firstId = '';
+        this.secondId = '';
     }
-    countInc(bool){
+    countInc(bool, src, id ){
         if(bool){
             this.count++;
+            if(this.firstPicSrc == src){
+                document.getElementById(id).classList.add('end');
+                document.getElementById(this.firstId).classList.add('end');
+                this.firstPicSrc = '';
+                return false;
+            }
+            this.secondPicSrc = this.firstPicSrc;
+            this.firstPicSrc = src;
+            this.secondId = this.firstId;
+            this.firstId = id;
         } else {
             this.count--;
         }
-        console.log("count", this.count);
     }
     countGet(){
         return this.count;
     }
+
     render(){
-        this.ul = document.createElement('ul');
+        this.loader = document.createElement('div');
         this.btn = document.createElement('button');
         this.btn.innerHTML = "GET DATA";
         this.btn.className = "btn";
@@ -30,8 +44,8 @@ export class Cards{
         this.output.style.display = "flex";
         this.btn.addEventListener('click', () => {
             this.output.innerHTML = "";
-            this.output.appendChild(this.ul);
-            this.ul.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
+            this.output.appendChild(this.loader);
+            this.loader.innerHTML = '<img src="https://vitaminvp.github.io/WA/client/assets/images/ajax-loader.gif">';
             this.target.appendChild(this.output);
             Ajax.get(`${appConfig.apiUrl}api/v1/items`, this.renderItems.bind(this));
         });
