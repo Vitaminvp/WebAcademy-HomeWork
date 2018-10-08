@@ -35,7 +35,7 @@ export class Card{
                 } else {
                     item.classList.add('on');
                     this.callback(true, imgsrc, div.id);
-                    let timer = setTimeout(()=>{
+                    setTimeout(()=>{
                         item.classList.remove('on');
                     this.callback(false);
                     this.id = "";
