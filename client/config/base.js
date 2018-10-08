@@ -26,7 +26,7 @@ const baseConf = (_path) => {
         ljs_1: ['./src/ljs_1/ljs_1.js'],
         wa_final_project: ['./src/wa_final_project/wa_final_project.js'],
         wa_final_project2: ['./src/wa_final_project2/wa_final_project2.js'],
-        cards: ['./src/cardjs/cardjs.js'],
+        cards: ['./src/cards/cards.js'],
         cardjs: ['./src/cardjs/cardjs.js']
     };
 

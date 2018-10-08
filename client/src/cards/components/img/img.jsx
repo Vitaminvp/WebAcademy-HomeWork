@@ -48,8 +48,8 @@ export class MyImg extends React.PureComponent {
     }
 
     render(){
-        return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src="http://lorempixel.com/180/200/sports" style={ this.state.imgStyle } alt="alt"/></div>;
-        // return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={'./../assets/' + this.props.item} style={ this.state.imgStyle } alt="alt"/></div>;
+        // return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src="http://lorempixel.com/180/200/sports" style={ this.state.imgStyle } alt="alt"/></div>;
+        return <div className= {this.state.imgClass} onClick = { this.handleClick.bind(this) }><img src={'./../assets/' + this.props.item} style={ this.state.imgStyle } alt="alt"/></div>;
     }
 }
 

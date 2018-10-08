@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 444);
+/******/ 	return __webpack_require__(__webpack_require__.s = 439);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -72,9 +72,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(43);
+  module.exports = __webpack_require__(36);
 } else {
-  module.exports = __webpack_require__(44);
+  module.exports = __webpack_require__(37);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
@@ -82,67 +82,6 @@ if (process.env.NODE_ENV === 'production') {
 /***/ }),
 
 /***/ 10:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function validateFormat(format) {};
-
-if (process.env.NODE_ENV !== 'production') {
-  validateFormat = function validateFormat(format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
-
-/***/ }),
-
-/***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -167,7 +106,7 @@ module.exports = emptyObject;
 
 /***/ }),
 
-/***/ 17:
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -183,7 +122,7 @@ module.exports = emptyObject;
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(35);
+  var ReactPropTypesSecret = __webpack_require__(26);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -267,7 +206,7 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -281,7 +220,7 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(4);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -337,7 +276,7 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -374,6 +313,49 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
+
+/***/ }),
+
+/***/ 19:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ */
+
+/* eslint-disable fb-www/typeof-undefined */
+
+/**
+ * Same as document.activeElement but wraps in a try-catch block. In IE it is
+ * not safe to call document.activeElement if there is nothing focused.
+ *
+ * The activeElement will be null only if the document or document body is not
+ * yet defined.
+ *
+ * @param {?DOMDocument} doc Defaults to current document.
+ * @return {?DOMElement}
+ */
+function getActiveElement(doc) /*?DOMElement*/{
+  doc = doc || (typeof document !== 'undefined' ? document : undefined);
+  if (typeof doc === 'undefined') {
+    return null;
+  }
+  try {
+    return doc.activeElement || doc.body;
+  } catch (e) {
+    return doc.body;
+  }
+}
+
+module.exports = getActiveElement;
 
 /***/ }),
 
@@ -572,49 +554,6 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- */
-
-/* eslint-disable fb-www/typeof-undefined */
-
-/**
- * Same as document.activeElement but wraps in a try-catch block. In IE it is
- * not safe to call document.activeElement if there is nothing focused.
- *
- * The activeElement will be null only if the document or document body is not
- * yet defined.
- *
- * @param {?DOMDocument} doc Defaults to current document.
- * @return {?DOMElement}
- */
-function getActiveElement(doc) /*?DOMElement*/{
-  doc = doc || (typeof document !== 'undefined' ? document : undefined);
-  if (typeof doc === 'undefined') {
-    return null;
-  }
-  try {
-    return doc.activeElement || doc.body;
-  } catch (e) {
-    return doc.body;
-  }
-}
-
-module.exports = getActiveElement;
-
-/***/ }),
-
-/***/ 21:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -683,7 +622,7 @@ module.exports = shallowEqual;
 
 /***/ }),
 
-/***/ 22:
+/***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -698,7 +637,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(47);
+var isTextNode = __webpack_require__(40);
 
 /*eslint-disable no-bitwise */
 
@@ -727,7 +666,7 @@ module.exports = containsNode;
 
 /***/ }),
 
-/***/ 35:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -747,7 +686,7 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ 43:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -760,7 +699,7 @@ module.exports = ReactPropTypesSecret;
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(9),n=__webpack_require__(10),p=__webpack_require__(11),q=__webpack_require__(7),r="function"===typeof Symbol&&Symbol.for,t=r?Symbol.for("react.element"):60103,u=r?Symbol.for("react.portal"):60106,v=r?Symbol.for("react.fragment"):60107,w=r?Symbol.for("react.strict_mode"):60108,x=r?Symbol.for("react.profiler"):60114,y=r?Symbol.for("react.provider"):60109,z=r?Symbol.for("react.context"):60110,A=r?Symbol.for("react.async_mode"):60111,B=
+var k=__webpack_require__(8),n=__webpack_require__(9),p=__webpack_require__(10),q=__webpack_require__(4),r="function"===typeof Symbol&&Symbol.for,t=r?Symbol.for("react.element"):60103,u=r?Symbol.for("react.portal"):60106,v=r?Symbol.for("react.fragment"):60107,w=r?Symbol.for("react.strict_mode"):60108,x=r?Symbol.for("react.profiler"):60114,y=r?Symbol.for("react.provider"):60109,z=r?Symbol.for("react.context"):60110,A=r?Symbol.for("react.async_mode"):60111,B=
 r?Symbol.for("react.forward_ref"):60112;r&&Symbol.for("react.timeout");var C="function"===typeof Symbol&&Symbol.iterator;function D(a){for(var b=arguments.length-1,e="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)e+="&args[]="+encodeURIComponent(arguments[c+1]);n(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",e)}
 var E={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function F(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||E}F.prototype.isReactComponent={};F.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?D("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};F.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function G(){}
 G.prototype=F.prototype;function H(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||E}var I=H.prototype=new G;I.constructor=H;k(I,F.prototype);I.isPureReactComponent=!0;var J={current:null},K=Object.prototype.hasOwnProperty,L={key:!0,ref:!0,__self:!0,__source:!0};
@@ -777,7 +716,7 @@ assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
 /***/ }),
 
-/***/ 44:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -798,12 +737,12 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(9);
-var invariant = __webpack_require__(10);
-var emptyObject = __webpack_require__(11);
-var warning = __webpack_require__(18);
-var emptyFunction = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(17);
+var _assign = __webpack_require__(8);
+var invariant = __webpack_require__(9);
+var emptyObject = __webpack_require__(10);
+var warning = __webpack_require__(17);
+var emptyFunction = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(16);
 
 // TODO: this is special because it gets imported during build.
 
@@ -2272,261 +2211,7 @@ module.exports = react;
 
 /***/ }),
 
-/***/ 444:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(445);
-
-
-/***/ }),
-
-/***/ 445:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(446);
-
-__webpack_require__(447);
-
-/***/ }),
-
-/***/ 446:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 447:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-var _reactDom = __webpack_require__(45);
-
-var _taskListReact = __webpack_require__(448);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-(0, _reactDom.render)(React.createElement(_taskListReact.TaskList2, null), document.querySelector('.wrapper'));
-
-/***/ }),
-
-/***/ 448:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.TaskList2 = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-var _ajax = __webpack_require__(449);
-
-var _formComponent = __webpack_require__(450);
-
-var _contentComponent = __webpack_require__(451);
-
-__webpack_require__(454);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var URLEXT = "https://evening-dawn-11092.herokuapp.com/comments";
-var URLLOC = "http://localhost:4001/comments";
-
-var TaskList2 = exports.TaskList2 = function (_React$Component) {
-    _inherits(TaskList2, _React$Component);
-
-    function TaskList2() {
-        _classCallCheck(this, TaskList2);
-
-        var _this = _possibleConstructorReturn(this, (TaskList2.__proto__ || Object.getPrototypeOf(TaskList2)).call(this));
-
-        _this.state = {
-            list: []
-        };
-        _ajax.Ajax.get(URLLOC, function (response) {
-            _this.setState({ list: response });
-        });
-        return _this;
-    }
-
-    _createClass(TaskList2, [{
-        key: 'addComment',
-        value: function addComment(title, comment) {
-            var _this2 = this;
-
-            _ajax.Ajax.post(URLLOC, {
-                author: title,
-                text: comment
-            }, function (response) {
-                _this2.setState({
-                    list: response // локльный сервер отличается от внешнего где list: this.state.concat([response])
-                });
-            });
-        }
-    }, {
-        key: 'onConfirmChange',
-        value: function onConfirmChange(task) {
-            var _this3 = this;
-
-            _ajax.Ajax.put(URLLOC + '/' + task.id, task, function (response) {
-                _this3.setState(function (state) {
-                    state.list.forEach(function (item, i, arr) {
-                        if (item.id == response.id) {
-                            arr[i] = response;
-                        }
-                    });
-                    return state;
-                });
-            });
-        }
-    }, {
-        key: 'onDelete',
-        value: function onDelete(task) {
-            var _this4 = this;
-
-            _ajax.Ajax.delete(URLLOC + '/' + task.id, function (response) {
-                _this4.setState({
-                    list: response //В моем back-end возвращается массив результирующий.
-                });
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return React.createElement(
-                'div',
-                { className: 'comments' },
-                React.createElement(_formComponent.Form, { submit: this.addComment.bind(this) }),
-                React.createElement(_contentComponent.Content, { list: this.state.list, 'delete': this.onDelete.bind(this), onConfirmChange: this.onConfirmChange.bind(this) })
-            );
-        }
-    }]);
-
-    return TaskList2;
-}(React.Component);
-
-/***/ }),
-
-/***/ 449:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Ajax = exports.Ajax = function () {
-    function Ajax() {
-        _classCallCheck(this, Ajax);
-    }
-
-    _createClass(Ajax, null, [{
-        key: 'get',
-        value: function get(url, responseCallback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('GET', url);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    responseCallback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send();
-        }
-    }, {
-        key: 'post',
-        value: function post(urlpost, data, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('POST', urlpost);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send(JSON.stringify(data));
-        }
-    }, {
-        key: 'put',
-        value: function put(urlpost, data, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('PUT', urlpost);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send(JSON.stringify(data));
-        }
-    }, {
-        key: 'delete',
-        value: function _delete(urlpost, callback) {
-            var xhr = new XMLHttpRequest();
-            var timeout = 15000;
-            var timer = setTimeout(function () {
-                xhr.abort();
-            }, timeout);
-            xhr.open('DELETE', urlpost);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    clearTimeout(timer);
-                    callback(JSON.parse(xhr.response));
-                }
-            };
-            xhr.send();
-        }
-    }]);
-
-    return Ajax;
-}();
-
-/***/ }),
-
-/***/ 45:
+/***/ 38:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2564,395 +2249,16 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(46);
+  module.exports = __webpack_require__(39);
 } else {
-  module.exports = __webpack_require__(49);
+  module.exports = __webpack_require__(42);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
 
-/***/ 450:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Form = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Form = exports.Form = function (_React$Component) {
-    _inherits(Form, _React$Component);
-
-    function Form() {
-        _classCallCheck(this, Form);
-
-        var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this));
-
-        _this.state = {
-            title: '',
-            comment: ''
-        };
-        return _this;
-    }
-
-    _createClass(Form, [{
-        key: 'inputHandler',
-        value: function inputHandler(e) {
-            this.setState({
-                title: e.target.value,
-                comment: this.state.comment
-            });
-        }
-    }, {
-        key: 'textHandler',
-        value: function textHandler(e) {
-            this.setState({
-                title: this.state.title,
-                comment: e.target.value
-            });
-        }
-    }, {
-        key: 'submitHendler',
-        value: function submitHendler(event) {
-            event.preventDefault();
-            this.props.submit(this.state.title, this.state.comment);
-            this.setState({
-                title: '',
-                comment: ''
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return React.createElement(
-                'form',
-                { onSubmit: this.submitHendler.bind(this) },
-                React.createElement('input', { type: 'text', required: true, value: this.state.title, onInput: this.inputHandler.bind(this), placeholder: 'Enter your Name' }),
-                React.createElement('textarea', { required: true, value: this.state.comment, onInput: this.textHandler.bind(this), placeholder: 'Enter your comment' }),
-                React.createElement(
-                    'button',
-                    { type: 'submit' },
-                    'Add comment'
-                )
-            );
-        }
-    }]);
-
-    return Form;
-}(React.Component);
-
-/***/ }),
-
-/***/ 451:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Content = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-var _listItemComponents = __webpack_require__(452);
-
-__webpack_require__(453);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Content = exports.Content = function (_React$Component) {
-    _inherits(Content, _React$Component);
-
-    function Content() {
-        _classCallCheck(this, Content);
-
-        return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).call(this));
-    }
-
-    _createClass(Content, [{
-        key: 'btnClickHandler',
-        value: function btnClickHandler(item) {
-            this.props.delete(item);
-        }
-    }, {
-        key: 'onConfirmChange',
-        value: function onConfirmChange(item) {
-            this.props.onConfirmChange(item);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var listArray = this.props.list.map(function (item) {
-                return React.createElement(_listItemComponents.ListItem, { key: item.id, commItem: item, 'delete': _this2.btnClickHandler.bind(_this2), onConfirmChange: _this2.onConfirmChange.bind(_this2) });
-            });
-            return React.createElement(
-                'ul',
-                null,
-                listArray
-            );
-        }
-    }]);
-
-    return Content;
-}(React.Component);
-
-/***/ }),
-
-/***/ 452:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.ListItem = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var React = _interopRequireWildcard(_react);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ListItem = exports.ListItem = function (_React$Component) {
-    _inherits(ListItem, _React$Component);
-
-    function ListItem() {
-        _classCallCheck(this, ListItem);
-
-        var _this = _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).call(this));
-
-        _this.isChangeble = false;
-        _this.isChangebleTitle = false;
-        _this.state = {
-            title: '',
-            comText: '',
-            hideClassCom: 'comment__content',
-            hideClassTitle: 'comment__title'
-        };
-        return _this;
-    }
-
-    _createClass(ListItem, [{
-        key: 'toggleTextArea',
-        value: function toggleTextArea(e) {
-            this.setState({
-                title: this.state.title,
-                comText: e.target.textContent
-            });
-            if (this.isChangeble) {
-                this.setState({ hideClassCom: 'comment__content' });
-            } else {
-                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
-            }
-            this.isChangeble = !this.isChangeble;
-        }
-    }, {
-        key: 'toggleInput',
-        value: function toggleInput(e) {
-            this.setState({
-                title: e.target.textContent,
-                comText: this.state.comText
-            });
-            console.log(e.target.textContent);
-            if (this.isChangebleTitle) {
-                this.setState({ hideClassTitle: 'comment__title' });
-            } else {
-                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
-            }
-            this.isChangebleTitle = !this.isChangebleTitle;
-
-            console.log("this.isChangebleTitle", this.isChangebleTitle);
-        }
-    }, {
-        key: 'btnClickHandler',
-        value: function btnClickHandler() {
-            this.props.delete(this.props.commItem);
-        }
-    }, {
-        key: 'changeComment',
-        value: function changeComment(e) {
-            this.setState({
-                title: this.state.title,
-                comText: e.target.value
-            });
-        }
-    }, {
-        key: 'changeTitle',
-        value: function changeTitle(e) {
-            this.setState({
-                title: e.target.value,
-                comText: this.state.comText
-            });
-        }
-    }, {
-        key: 'onConfirmChange',
-        value: function onConfirmChange(itemEl) {
-            var changedItem = Object.assign({}, itemEl);
-            changedItem.text = this.state.comText;
-            this.props.onConfirmChange(changedItem);
-
-            if (this.isChangeble) {
-                this.setState({ hideClassCom: 'comment__content' });
-            } else {
-                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
-            }
-            this.isChangeble = !this.isChangeble;
-        }
-    }, {
-        key: 'onConfirmTitleChange',
-        value: function onConfirmTitleChange(itemEl) {
-            var changedItem = Object.assign({}, itemEl);
-            changedItem.author = this.state.title;
-            this.props.onConfirmChange(changedItem);
-
-            if (this.isChangebleTitle) {
-                this.setState({ hideClassTitle: 'comment__title' });
-            } else {
-                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
-            }
-            this.isChangebleTitle = !this.isChangebleTitle;
-        }
-    }, {
-        key: 'getDate',
-        value: function getDate(data) {
-            var date = new Date(Date.parse(data));
-            return date.getFullYear() + '-' + ('00' + (date.getMonth() + 1)).slice(-2) + '-' + ('00' + date.getDate()).slice(-2) + ' in ' + ('00' + date.getHours()).slice(-2) + ':' + ('00' + date.getMinutes()).slice(-2) + ':' + ('00' + date.getSeconds()).slice(-2);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var item = this.props.commItem;
-            return React.createElement(
-                'li',
-                { className: 'comment' },
-                React.createElement(
-                    'div',
-                    { className: this.state.hideClassTitle },
-                    React.createElement(
-                        'h2',
-                        { onDoubleClick: this.toggleInput.bind(this) },
-                        item.author
-                    ),
-                    React.createElement(
-                        'textarea',
-                        { value: this.state.title, onChange: this.changeTitle.bind(this) },
-                        '\xA0'
-                    ),
-                    React.createElement(
-                        'button',
-                        { className: 'btn', onClick: function onClick() {
-                                return _this2.onConfirmTitleChange(item);
-                            } },
-                        React.createElement(
-                            'i',
-                            { className: 'fas fa-wrench' },
-                            '\xA0'
-                        )
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: this.state.hideClassCom },
-                    React.createElement(
-                        'div',
-                        { onDoubleClick: this.toggleTextArea.bind(this) },
-                        item.text
-                    ),
-                    React.createElement(
-                        'textarea',
-                        { value: this.state.comText, onChange: this.changeComment.bind(this) },
-                        '\xA0'
-                    ),
-                    React.createElement(
-                        'button',
-                        { className: 'btn', onClick: function onClick() {
-                                return _this2.onConfirmChange(item);
-                            } },
-                        React.createElement(
-                            'i',
-                            { className: 'fas fa-wrench' },
-                            '\xA0'
-                        )
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'comment__date' },
-                    this.getDate(item.date)
-                ),
-                React.createElement(
-                    'button',
-                    { className: 'comment__btn', onClick: this.btnClickHandler.bind(this) },
-                    '\xA0'
-                )
-            );
-        }
-    }]);
-
-    return ListItem;
-}(React.Component);
-
-/***/ }),
-
-/***/ 453:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 454:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 46:
+/***/ 39:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2968,7 +2274,7 @@ var ListItem = exports.ListItem = function (_React$Component) {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(10),ba=__webpack_require__(1),m=__webpack_require__(19),p=__webpack_require__(9),v=__webpack_require__(7),da=__webpack_require__(20),ea=__webpack_require__(21),fa=__webpack_require__(22),ha=__webpack_require__(11);
+var aa=__webpack_require__(9),ba=__webpack_require__(1),m=__webpack_require__(18),p=__webpack_require__(8),v=__webpack_require__(4),da=__webpack_require__(19),ea=__webpack_require__(20),fa=__webpack_require__(21),ha=__webpack_require__(10);
 function A(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}ba?void 0:A("227");
 function ia(a,b,c,d,e,f,g,h,k){this._hasCaughtError=!1;this._caughtError=null;var n=Array.prototype.slice.call(arguments,3);try{b.apply(c,n)}catch(r){this._caughtError=r,this._hasCaughtError=!0}}
 var B={_caughtError:null,_hasCaughtError:!1,_rethrowError:null,_hasRethrowError:!1,invokeGuardedCallback:function(a,b,c,d,e,f,g,h,k){ia.apply(B,arguments)},invokeGuardedCallbackAndCatchFirstError:function(a,b,c,d,e,f,g,h,k){B.invokeGuardedCallback.apply(this,arguments);if(B.hasCaughtError()){var n=B.clearCaughtError();B._hasRethrowError||(B._hasRethrowError=!0,B._rethrowError=n)}},rethrowCaughtError:function(){return ka.apply(B,arguments)},hasCaughtError:function(){return B._hasCaughtError},clearCaughtError:function(){if(B._hasCaughtError){var a=
@@ -3200,7 +2506,50 @@ var Ai={default:vi},Bi=Ai&&vi||Ai;module.exports=Bi.default?Bi.default:Bi;
 
 /***/ }),
 
-/***/ 47:
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
+
+/***/ }),
+
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3215,7 +2564,7 @@ var Ai={default:vi},Bi=Ai&&vi||Ai;module.exports=Bi.default?Bi.default:Bi;
  * @typechecks
  */
 
-var isNode = __webpack_require__(48);
+var isNode = __webpack_require__(41);
 
 /**
  * @param {*} object The object to check.
@@ -3229,7 +2578,7 @@ module.exports = isTextNode;
 
 /***/ }),
 
-/***/ 48:
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3258,7 +2607,7 @@ module.exports = isNode;
 
 /***/ }),
 
-/***/ 49:
+/***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3279,19 +2628,19 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var invariant = __webpack_require__(10);
+var invariant = __webpack_require__(9);
 var React = __webpack_require__(1);
-var warning = __webpack_require__(18);
-var ExecutionEnvironment = __webpack_require__(19);
-var _assign = __webpack_require__(9);
-var emptyFunction = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(17);
-var getActiveElement = __webpack_require__(20);
-var shallowEqual = __webpack_require__(21);
-var containsNode = __webpack_require__(22);
-var emptyObject = __webpack_require__(11);
-var hyphenateStyleName = __webpack_require__(50);
-var camelizeStyleName = __webpack_require__(52);
+var warning = __webpack_require__(17);
+var ExecutionEnvironment = __webpack_require__(18);
+var _assign = __webpack_require__(8);
+var emptyFunction = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(16);
+var getActiveElement = __webpack_require__(19);
+var shallowEqual = __webpack_require__(20);
+var containsNode = __webpack_require__(21);
+var emptyObject = __webpack_require__(10);
+var hyphenateStyleName = __webpack_require__(43);
+var camelizeStyleName = __webpack_require__(45);
 
 // Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
@@ -20697,7 +20046,7 @@ module.exports = reactDom;
 
 /***/ }),
 
-/***/ 50:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20712,7 +20061,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(51);
+var hyphenate = __webpack_require__(44);
 
 var msPattern = /^ms-/;
 
@@ -20740,7 +20089,15 @@ module.exports = hyphenateStyleName;
 
 /***/ }),
 
-/***/ 51:
+/***/ 439:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(440);
+
+
+/***/ }),
+
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20777,7 +20134,632 @@ module.exports = hyphenate;
 
 /***/ }),
 
-/***/ 52:
+/***/ 440:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(441);
+
+__webpack_require__(442);
+
+/***/ }),
+
+/***/ 441:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 442:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _reactDom = __webpack_require__(38);
+
+var _taskListReact = __webpack_require__(443);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+(0, _reactDom.render)(React.createElement(_taskListReact.TaskList2, null), document.querySelector('.wrapper'));
+
+/***/ }),
+
+/***/ 443:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.TaskList2 = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _ajax = __webpack_require__(444);
+
+var _formComponent = __webpack_require__(445);
+
+var _contentComponent = __webpack_require__(446);
+
+__webpack_require__(449);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var URLEXT = "https://evening-dawn-11092.herokuapp.com/comments";
+var URLLOC = "http://localhost:4001/comments";
+
+var TaskList2 = exports.TaskList2 = function (_React$Component) {
+    _inherits(TaskList2, _React$Component);
+
+    function TaskList2() {
+        _classCallCheck(this, TaskList2);
+
+        var _this = _possibleConstructorReturn(this, (TaskList2.__proto__ || Object.getPrototypeOf(TaskList2)).call(this));
+
+        _this.state = {
+            list: []
+        };
+        _ajax.Ajax.get(URLLOC, function (response) {
+            _this.setState({ list: response });
+        });
+        return _this;
+    }
+
+    _createClass(TaskList2, [{
+        key: 'addComment',
+        value: function addComment(title, comment) {
+            var _this2 = this;
+
+            _ajax.Ajax.post(URLLOC, {
+                author: title,
+                text: comment
+            }, function (response) {
+                _this2.setState({
+                    list: response // локльный сервер отличается от внешнего где list: this.state.concat([response])
+                });
+            });
+        }
+    }, {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(task) {
+            var _this3 = this;
+
+            _ajax.Ajax.put(URLLOC + '/' + task.id, task, function (response) {
+                _this3.setState(function (state) {
+                    state.list.forEach(function (item, i, arr) {
+                        if (item.id == response.id) {
+                            arr[i] = response;
+                        }
+                    });
+                    return state;
+                });
+            });
+        }
+    }, {
+        key: 'onDelete',
+        value: function onDelete(task) {
+            var _this4 = this;
+
+            _ajax.Ajax.delete(URLLOC + '/' + task.id, function (response) {
+                _this4.setState({
+                    list: response //В моем back-end возвращается массив результирующий.
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                { className: 'comments' },
+                React.createElement(_formComponent.Form, { submit: this.addComment.bind(this) }),
+                React.createElement(_contentComponent.Content, { list: this.state.list, 'delete': this.onDelete.bind(this), onConfirmChange: this.onConfirmChange.bind(this) })
+            );
+        }
+    }]);
+
+    return TaskList2;
+}(React.Component);
+
+/***/ }),
+
+/***/ 444:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Ajax = exports.Ajax = function () {
+    function Ajax() {
+        _classCallCheck(this, Ajax);
+    }
+
+    _createClass(Ajax, null, [{
+        key: 'get',
+        value: function get(url, responseCallback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('GET', url);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    responseCallback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send();
+        }
+    }, {
+        key: 'post',
+        value: function post(urlpost, data, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('POST', urlpost);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }, {
+        key: 'put',
+        value: function put(urlpost, data, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('PUT', urlpost);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }, {
+        key: 'delete',
+        value: function _delete(urlpost, callback) {
+            var xhr = new XMLHttpRequest();
+            var timeout = 15000;
+            var timer = setTimeout(function () {
+                xhr.abort();
+            }, timeout);
+            xhr.open('DELETE', urlpost);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    clearTimeout(timer);
+                    callback(JSON.parse(xhr.response));
+                }
+            };
+            xhr.send();
+        }
+    }]);
+
+    return Ajax;
+}();
+
+/***/ }),
+
+/***/ 445:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Form = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Form = exports.Form = function (_React$Component) {
+    _inherits(Form, _React$Component);
+
+    function Form() {
+        _classCallCheck(this, Form);
+
+        var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this));
+
+        _this.state = {
+            title: '',
+            comment: ''
+        };
+        return _this;
+    }
+
+    _createClass(Form, [{
+        key: 'inputHandler',
+        value: function inputHandler(e) {
+            this.setState({
+                title: e.target.value,
+                comment: this.state.comment
+            });
+        }
+    }, {
+        key: 'textHandler',
+        value: function textHandler(e) {
+            this.setState({
+                title: this.state.title,
+                comment: e.target.value
+            });
+        }
+    }, {
+        key: 'submitHendler',
+        value: function submitHendler(event) {
+            event.preventDefault();
+            this.props.submit(this.state.title, this.state.comment);
+            this.setState({
+                title: '',
+                comment: ''
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'form',
+                { onSubmit: this.submitHendler.bind(this) },
+                React.createElement('input', { type: 'text', required: true, value: this.state.title, onInput: this.inputHandler.bind(this), placeholder: 'Enter your Name' }),
+                React.createElement('textarea', { required: true, value: this.state.comment, onInput: this.textHandler.bind(this), placeholder: 'Enter your comment' }),
+                React.createElement(
+                    'button',
+                    { type: 'submit' },
+                    'Add comment'
+                )
+            );
+        }
+    }]);
+
+    return Form;
+}(React.Component);
+
+/***/ }),
+
+/***/ 446:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Content = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+var _listItemComponents = __webpack_require__(447);
+
+__webpack_require__(448);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Content = exports.Content = function (_React$Component) {
+    _inherits(Content, _React$Component);
+
+    function Content() {
+        _classCallCheck(this, Content);
+
+        return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).call(this));
+    }
+
+    _createClass(Content, [{
+        key: 'btnClickHandler',
+        value: function btnClickHandler(item) {
+            this.props.delete(item);
+        }
+    }, {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(item) {
+            this.props.onConfirmChange(item);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var listArray = this.props.list.map(function (item) {
+                return React.createElement(_listItemComponents.ListItem, { key: item.id, commItem: item, 'delete': _this2.btnClickHandler.bind(_this2), onConfirmChange: _this2.onConfirmChange.bind(_this2) });
+            });
+            return React.createElement(
+                'ul',
+                null,
+                listArray
+            );
+        }
+    }]);
+
+    return Content;
+}(React.Component);
+
+/***/ }),
+
+/***/ 447:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ListItem = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var React = _interopRequireWildcard(_react);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ListItem = exports.ListItem = function (_React$Component) {
+    _inherits(ListItem, _React$Component);
+
+    function ListItem() {
+        _classCallCheck(this, ListItem);
+
+        var _this = _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).call(this));
+
+        _this.isChangeble = false;
+        _this.isChangebleTitle = false;
+        _this.state = {
+            title: '',
+            comText: '',
+            hideClassCom: 'comment__content',
+            hideClassTitle: 'comment__title'
+        };
+        return _this;
+    }
+
+    _createClass(ListItem, [{
+        key: 'toggleTextArea',
+        value: function toggleTextArea(e) {
+            this.setState({
+                title: this.state.title,
+                comText: e.target.textContent
+            });
+            if (this.isChangeble) {
+                this.setState({ hideClassCom: 'comment__content' });
+            } else {
+                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
+            }
+            this.isChangeble = !this.isChangeble;
+        }
+    }, {
+        key: 'toggleInput',
+        value: function toggleInput(e) {
+            this.setState({
+                title: e.target.textContent,
+                comText: this.state.comText
+            });
+            console.log(e.target.textContent);
+            if (this.isChangebleTitle) {
+                this.setState({ hideClassTitle: 'comment__title' });
+            } else {
+                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
+            }
+            this.isChangebleTitle = !this.isChangebleTitle;
+
+            console.log("this.isChangebleTitle", this.isChangebleTitle);
+        }
+    }, {
+        key: 'btnClickHandler',
+        value: function btnClickHandler() {
+            this.props.delete(this.props.commItem);
+        }
+    }, {
+        key: 'changeComment',
+        value: function changeComment(e) {
+            this.setState({
+                title: this.state.title,
+                comText: e.target.value
+            });
+        }
+    }, {
+        key: 'changeTitle',
+        value: function changeTitle(e) {
+            this.setState({
+                title: e.target.value,
+                comText: this.state.comText
+            });
+        }
+    }, {
+        key: 'onConfirmChange',
+        value: function onConfirmChange(itemEl) {
+            var changedItem = Object.assign({}, itemEl);
+            changedItem.text = this.state.comText;
+            this.props.onConfirmChange(changedItem);
+
+            if (this.isChangeble) {
+                this.setState({ hideClassCom: 'comment__content' });
+            } else {
+                this.setState({ hideClassCom: 'comment__content comment__content_hide' });
+            }
+            this.isChangeble = !this.isChangeble;
+        }
+    }, {
+        key: 'onConfirmTitleChange',
+        value: function onConfirmTitleChange(itemEl) {
+            var changedItem = Object.assign({}, itemEl);
+            changedItem.author = this.state.title;
+            this.props.onConfirmChange(changedItem);
+
+            if (this.isChangebleTitle) {
+                this.setState({ hideClassTitle: 'comment__title' });
+            } else {
+                this.setState({ hideClassTitle: 'comment__title comment__title_hide' });
+            }
+            this.isChangebleTitle = !this.isChangebleTitle;
+        }
+    }, {
+        key: 'getDate',
+        value: function getDate(data) {
+            var date = new Date(Date.parse(data));
+            return date.getFullYear() + '-' + ('00' + (date.getMonth() + 1)).slice(-2) + '-' + ('00' + date.getDate()).slice(-2) + ' in ' + ('00' + date.getHours()).slice(-2) + ':' + ('00' + date.getMinutes()).slice(-2) + ':' + ('00' + date.getSeconds()).slice(-2);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var item = this.props.commItem;
+            return React.createElement(
+                'li',
+                { className: 'comment' },
+                React.createElement(
+                    'div',
+                    { className: this.state.hideClassTitle },
+                    React.createElement(
+                        'h2',
+                        { onDoubleClick: this.toggleInput.bind(this) },
+                        item.author
+                    ),
+                    React.createElement(
+                        'textarea',
+                        { value: this.state.title, onChange: this.changeTitle.bind(this) },
+                        '\xA0'
+                    ),
+                    React.createElement(
+                        'button',
+                        { className: 'btn', onClick: function onClick() {
+                                return _this2.onConfirmTitleChange(item);
+                            } },
+                        React.createElement(
+                            'i',
+                            { className: 'fas fa-wrench' },
+                            '\xA0'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: this.state.hideClassCom },
+                    React.createElement(
+                        'div',
+                        { onDoubleClick: this.toggleTextArea.bind(this) },
+                        item.text
+                    ),
+                    React.createElement(
+                        'textarea',
+                        { value: this.state.comText, onChange: this.changeComment.bind(this) },
+                        '\xA0'
+                    ),
+                    React.createElement(
+                        'button',
+                        { className: 'btn', onClick: function onClick() {
+                                return _this2.onConfirmChange(item);
+                            } },
+                        React.createElement(
+                            'i',
+                            { className: 'fas fa-wrench' },
+                            '\xA0'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'comment__date' },
+                    this.getDate(item.date)
+                ),
+                React.createElement(
+                    'button',
+                    { className: 'comment__btn', onClick: this.btnClickHandler.bind(this) },
+                    '\xA0'
+                )
+            );
+        }
+    }]);
+
+    return ListItem;
+}(React.Component);
+
+/***/ }),
+
+/***/ 448:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 449:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20792,7 +20774,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(53);
+var camelize = __webpack_require__(46);
 
 var msPattern = /^-ms-/;
 
@@ -20821,7 +20803,7 @@ module.exports = camelizeStyleName;
 
 /***/ }),
 
-/***/ 53:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20857,50 +20839,7 @@ module.exports = camelize;
 
 /***/ }),
 
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-
-/***/ 9:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20995,6 +20934,67 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var validateFormat = function validateFormat(format) {};
+
+if (process.env.NODE_ENV !== 'production') {
+  validateFormat = function validateFormat(format) {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  };
+}
+
+function invariant(condition, format, a, b, c, d, e, f) {
+  validateFormat(format);
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+}
+
+module.exports = invariant;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ })
 
