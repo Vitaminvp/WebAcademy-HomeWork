@@ -26,10 +26,7 @@ export class Card{
         div.id = generateId();
         let imgsrc = Math.floor(Math.random() * (this.Respons.length));
         div.addEventListener('click', () => {
-            console.log("this.id", this.id);
-            console.log("div.id", div.id);
             let getId  = this.getterId();
-            console.log("this.getterId", getId);
             if(this.id !== div.id){
             if(this.getterCount() < appConfig.magicNumber){
                 const item = div;
@@ -38,7 +35,6 @@ export class Card{
                 } else {
                     item.classList.add('on');
                     this.callback(true, imgsrc, div.id);
-
                     let timer = setTimeout(()=>{
                         item.classList.remove('on');
                     this.callback(false);
