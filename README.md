@@ -1,7 +1,7 @@
 ## WebAcademy-HomeWork
 **Web Academy Home Work**
 - **[Home work&nbsp;   # &nbsp;&nbsp;1  ⚡](https://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_1/)**
-- **[Home work&nbsp;   # &nbsp;&nbsp;2  ➿](ttps://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_2/)**
+- **[Home work&nbsp;   # &nbsp;&nbsp;2  ➿](https://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_2/)**
 - **[Home work&nbsp;   # &nbsp;&nbsp;3  ☔](https://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_3/)**
 - **[Home work&nbsp;   # &nbsp;&nbsp;4  ➰](https://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_5/)**
 - **[Home work&nbsp;   # &nbsp;&nbsp;5  ⛄](https://vitaminvp.github.io/WebAcademy-HomeWork/client/docs/wa_hw_6/)**
