@@ -33,7 +33,7 @@ export class TaskList{
                 li.innerHTML = key+': '+item[key];
                 ul.appendChild(li);
             }
-            docFragment.appendChild(ul)
+            docFragment.appendChild(ul);
         });
         this.output.appendChild(docFragment);
     }

@@ -1,0 +1,19 @@
+@import "css/main.css";
+@import "css/header.css";
+@import "css/section.css";
+@import "css/footer.css";
+@import "css/media.css";
+
+.section > h1 {
+    font-weight: 400;
+    top: -4rem;
+    left: 0;
+    position: absolute;
+    transition: transform 2.5s;
+    transform: translateY(5rem);
+    font-size: 3.5rem;
+}
+
+.section:hover > h1 {
+    transform: translateY(1rem);
+}

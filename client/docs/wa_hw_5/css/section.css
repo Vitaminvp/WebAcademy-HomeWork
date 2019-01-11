@@ -1,0 +1,224 @@
+.section {
+    position: relative;
+    padding-top: 1.2rem;
+    height: 10rem;
+}
+
+
+
+
+
+
+
+.baner {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.baner-link {
+    display: block;
+    position: absolute;
+    top: 14%;
+    font-size: 0.9rem;
+    z-index: 2;
+    padding: 0.2rem 0.2rem 0.6rem;
+    overflow: hidden;
+    color: #42c5d8;
+}
+
+.baner-link_text {
+    display: block;
+}
+
+.baner-link_underline {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #42c5d8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+    -webkit-transform-origin: 100% center;
+    transform-origin: 100% center;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.baner-link:hover .baner-link_underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 center;
+    transform-origin: 0 center;
+}
+
+.baner-image {
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
+
+.baner-image > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.baner::before {
+    top: 40%;
+}
+
+.white-bg:before {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 9rem;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+    z-index: -1;
+    background-color: #fff;
+}
+
+.blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.block {
+    width: calc(50% - 0.5rem);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    cursor: pointer;
+    -webkit-transition: -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    position: relative;
+}
+
+.block:hover {
+    -webkit-box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+    box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+}
+
+.block:nth-child(odd) {
+    padding-right: 0.5rem;
+}
+
+.block:nth-child(even) {
+    padding-left: 0.5rem;
+}
+
+.block-image {
+    width: 100%;
+    height: auto;
+}
+
+.block-image > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.block-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.3rem;
+}
+
+.block-footer_info {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    padding-left: 1.2rem;
+}
+
+.block-footer_info-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    color: #1c1b1b;
+}
+
+.block-footer_info-text {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.load-more {
+    width: auto;
+    margin: 2rem auto;
+    min-width: 190px;
+}
+
+.btn-default {
+    background: transparent;
+    border: 1px solid #e6e6e6;
+    font-weight: 600;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    color: #1c1b1b;
+    min-height: 48px;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+}
+
+.btn-default:hover::before {
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn-default:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.btn > span {
+    position: relative;
+    z-index: 1;
+}
+
+.control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

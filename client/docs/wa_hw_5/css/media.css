@@ -1,0 +1,106 @@
+@media screen and (min-width: 767px) {
+    .menu_list{
+        display: flex!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo-container{
+        padding-left: 5rem;
+    }
+    .menu_list{
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .menu_item{
+        float: left;
+    }
+    .logo_text{
+        display: none;
+    }
+    .menu_control{
+        position: absolute;
+        left: 0;
+    }
+    .toggle-mnu {
+        display: block;
+    }
+    .baner-image {
+        margin-top: 3rem;
+    }
+    .baner-link {
+        top: -2rem;
+        
+    }
+    .blocks{
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        
+    }
+    .blocks .block{
+        width: 100%;
+        margin: 1rem 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .section > h1 {
+        font-size: 2.5rem;
+    }
+    .footer {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer-white, .footer-black {
+        width: 100%;
+        -ms-align-items: center;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        padding: 5rem 1rem 5rem 1rem;
+        position: static;
+    }
+    .footer-links > a {
+        color: #fff;
+    }
+    .footer-icons_text {
+        color: #fff;
+        
+    }
+    .footer-icons_items > * svg {
+       fill:#fff;
+        color: #fff;
+    }
+    .footer-links{
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .copyrights{
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    .footer-logo{
+        margin-bottom: 2rem;
+    }
+    .news-form_head{
+        text-align: center;
+    }
+    .footer-icons{
+        justify-content: space-between;
+    }
+    .footer-icons_items > * {
+        flex-basis: 20%;
+        max-width: 3rem;
+    }
+}

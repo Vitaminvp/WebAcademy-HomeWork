@@ -53,7 +53,7 @@ export class LightsManager{
     }
     removeLamp(){
         if(this.lamps.length > 0){
-            let lampItem = this.lamps.pop();
+            // let lampItem = this.lamps.pop();
             let temp =this.target.lastChild;
             this.target.removeChild(temp);
         }
